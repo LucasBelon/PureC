@@ -1,4 +1,4 @@
-/* */
+/* Calculando se um numero eh primo*/
 
 # include <stdio.h>
 

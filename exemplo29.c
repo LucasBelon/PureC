@@ -1,4 +1,4 @@
-/* */
+/* Simulando uma calculadora */
 
 # include <stdio.h>
 

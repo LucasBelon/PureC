@@ -1,4 +1,4 @@
-/* Nume empresa paga-se R$19.50 a hora e
+/* Numa empresa paga-se R$19.50 a hora e
  * recolhe-se para o imposto de renda 10%
  * dos salarios acima de R$1500,00. Dado o
  * numero de horas trabalhadas por um

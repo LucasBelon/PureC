@@ -23,9 +23,7 @@ int f;
 {
     /* Funcao ficticia*/
     printf(\
-"Funcao sound chamada com parametro f=%d\n",\
-f \
-    );
+"Funcao sound chamada com parametro f=%d\n",f);
 }
 
 

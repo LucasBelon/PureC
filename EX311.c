@@ -19,7 +19,7 @@ int main(){
     }
     if (n==triangular)\
         printf("Seu numero eh triangular\n");
-    else\
+    else
         printf("Seu numero nao eh triangular\n");
     return 0;
 }

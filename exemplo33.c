@@ -1,4 +1,4 @@
-/* */
+/* Fazendo uma contagem crescente de 0 a 10 */
 
 # include <stdio.h>
 

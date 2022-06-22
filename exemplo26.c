@@ -1,4 +1,4 @@
-/* */
+/* Operador Ternario */
 
 # include <stdio.h>
 
