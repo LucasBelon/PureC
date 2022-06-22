@@ -69,6 +69,8 @@ badd +1 EX516.c
 badd +1 EX518.c
 badd +1 EX519.c
 badd +1 EX520.c
+badd +0 boolean.h
+badd +0 macros.h
 argglobal
 %argdel
 set stal=2
@@ -1033,12 +1035,18 @@ vsplit
 1wincmd h
 wincmd _ | wincmd |
 split
-1wincmd k
+wincmd _ | wincmd |
+split
+2wincmd k
+wincmd w
 wincmd w
 wincmd w
 wincmd _ | wincmd |
 split
-1wincmd k
+wincmd _ | wincmd |
+split
+2wincmd k
+wincmd w
 wincmd w
 let &splitbelow = s:save_splitbelow
 let &splitright = s:save_splitright
@@ -1051,12 +1059,16 @@ set winminwidth=0
 set winwidth=1
 exe '1resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
+exe '2resize ' . ((&lines * 11 + 14) / 29)
 exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
+exe '3resize ' . ((&lines * 1 + 14) / 29)
 exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 13 + 14) / 29)
+exe '4resize ' . ((&lines * 1 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
+exe '5resize ' . ((&lines * 10 + 14) / 29)
+exe 'vert 5resize ' . ((&columns * 57 + 57) / 115)
+exe '6resize ' . ((&lines * 13 + 14) / 29)
+exe 'vert 6resize ' . ((&columns * 57 + 57) / 115)
 argglobal
 balt ~/C_Slago/EX44.c
 setlocal fdm=indent
@@ -1077,7 +1089,7 @@ lcd ~/C_Slago
 wincmd w
 argglobal
 if bufexists(fnamemodify("~/C_Slago/EX44.c", ":p")) | buffer ~/C_Slago/EX44.c | else | edit ~/C_Slago/EX44.c | endif
-balt ~/C_Slago/EX41.c
+balt ~/C_Slago/boolean.h
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1086,7 +1098,45 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
+let s:l = 1 - ((0 * winheight(0) + 5) / 11)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+lcd ~/C_Slago
+wincmd w
+argglobal
+if bufexists(fnamemodify("~/C_Slago/boolean.h", ":p")) | buffer ~/C_Slago/boolean.h | else | edit ~/C_Slago/boolean.h | endif
+balt ~/C_Slago/EX44.c
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 0) / 1)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+lcd ~/C_Slago
+wincmd w
+argglobal
+if bufexists(fnamemodify("~/C_Slago/macros.h", ":p")) | buffer ~/C_Slago/macros.h | else | edit ~/C_Slago/macros.h | endif
+balt ~/C_Slago/EX43.c
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 0) / 1)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -1096,7 +1146,7 @@ lcd ~/C_Slago
 wincmd w
 argglobal
 if bufexists(fnamemodify("~/C_Slago/EX43.c", ":p")) | buffer ~/C_Slago/EX43.c | else | edit ~/C_Slago/EX43.c | endif
-balt ~/C_Slago/EX4-8_9_10_11.c
+balt ~/C_Slago/macros.h
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1105,7 +1155,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 5) / 10)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -1134,12 +1184,16 @@ lcd ~/C_Slago
 wincmd w
 exe '1resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
+exe '2resize ' . ((&lines * 11 + 14) / 29)
 exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
+exe '3resize ' . ((&lines * 1 + 14) / 29)
 exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 13 + 14) / 29)
+exe '4resize ' . ((&lines * 1 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
+exe '5resize ' . ((&lines * 10 + 14) / 29)
+exe 'vert 5resize ' . ((&columns * 57 + 57) / 115)
+exe '6resize ' . ((&lines * 13 + 14) / 29)
+exe 'vert 6resize ' . ((&columns * 57 + 57) / 115)
 tabnext
 edit ~/C_Slago/EX415.c
 let s:save_splitbelow = &splitbelow
@@ -1711,7 +1765,6 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
