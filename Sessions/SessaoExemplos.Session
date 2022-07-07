@@ -47,26 +47,26 @@ badd +1 exemplo516.c
 badd +1 exemplo517.c
 badd +1 exemplo8_9_10_11.c
 badd +1 exemplo518.c
-badd +0 exemplo519.c
+badd +1 exemplo519.c
 badd +1 exemplo520.c
 badd +1 exemplo521.c
 badd +1 exemplo522.c
-badd +0 exemplo523.c
-badd +0 exemplo524.c
+badd +1 exemplo523.c
+badd +1 exemplo524.c
 badd +1 exemplo527.c
 badd +1 exemplo531.c
-badd +0 exemplo534.c
-badd +0 exemplo535.c
+badd +1 exemplo534.c
+badd +1 exemplo535.c
 badd +1 exemplo537.c
 badd +1 exemplo61.c
-badd +0 exemplo62.c
-badd +0 exemplo63.c
+badd +1 exemplo62.c
+badd +1 exemplo63.c
 badd +1 exemplo64.c
 badd +1 exemplo65.c
-badd +0 exemplo66.c
-badd +0 exemplo68.c
+badd +1 exemplo66.c
+badd +1 exemplo68.c
 badd +1 exemplo69.c
-badd +0 exemplo610.c
+badd +1 exemplo610.c
 argglobal
 %argdel
 set stal=2
@@ -85,44 +85,8 @@ tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
 tabrewind
-edit ~/C_Slago
-let s:save_splitbelow = &splitbelow
-let s:save_splitright = &splitright
-set splitbelow splitright
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
-let &splitbelow = s:save_splitbelow
-let &splitright = s:save_splitright
-wincmd t
-let s:save_winminheight = &winminheight
-let s:save_winminwidth = &winminwidth
-set winminheight=0
-set winheight=1
-set winminwidth=0
-set winwidth=1
-exe 'vert 1resize ' . ((&columns * 20 + 36) / 72)
-exe 'vert 2resize ' . ((&columns * 51 + 36) / 72)
+edit exemplo8_9_10_11.c
 argglobal
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 139 - ((37 * winheight(0) + 24) / 48)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 139
-normal! 0
-lcd ~/C_Slago
-wincmd w
-argglobal
-if bufexists(fnamemodify("~/C_Slago/exemplo8_9_10_11.c", ":p")) | buffer ~/C_Slago/exemplo8_9_10_11.c | else | edit ~/C_Slago/exemplo8_9_10_11.c | endif
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -137,11 +101,8 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-wincmd w
-exe 'vert 1resize ' . ((&columns * 20 + 36) / 72)
-exe 'vert 2resize ' . ((&columns * 51 + 36) / 72)
 tabnext
-edit ~/C_Slago/exemplo11.c
+edit exemplo11.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -175,7 +136,7 @@ exe 'vert 3resize ' . ((&columns * 36 + 36) / 72)
 exe '4resize ' . ((&lines * 21 + 25) / 51)
 exe 'vert 4resize ' . ((&columns * 36 + 36) / 72)
 argglobal
-balt ~/C_Slago/exemplo22.c
+balt exemplo22.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1570,14 +1531,14 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 23 + 25) / 51)
-exe 'vert 1resize ' . ((&columns * 35 + 36) / 72)
-exe '2resize ' . ((&lines * 24 + 25) / 51)
-exe 'vert 2resize ' . ((&columns * 35 + 36) / 72)
-exe '3resize ' . ((&lines * 23 + 25) / 51)
-exe 'vert 3resize ' . ((&columns * 36 + 36) / 72)
-exe '4resize ' . ((&lines * 24 + 25) / 51)
-exe 'vert 4resize ' . ((&columns * 36 + 36) / 72)
+exe '1resize ' . ((&lines * 24 + 25) / 51)
+exe 'vert 1resize ' . ((&columns * 36 + 36) / 72)
+exe '2resize ' . ((&lines * 23 + 25) / 51)
+exe 'vert 2resize ' . ((&columns * 36 + 36) / 72)
+exe '3resize ' . ((&lines * 24 + 25) / 51)
+exe 'vert 3resize ' . ((&columns * 35 + 36) / 72)
+exe '4resize ' . ((&lines * 23 + 25) / 51)
+exe 'vert 4resize ' . ((&columns * 35 + 36) / 72)
 argglobal
 balt ~/C_Slago/exemplo68.c
 setlocal fdm=indent
@@ -1588,7 +1549,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -1607,7 +1568,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 12) / 24)
+let s:l = 1 - ((0 * winheight(0) + 11) / 23)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -1626,7 +1587,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -1645,7 +1606,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 12) / 24)
+let s:l = 1 - ((0 * winheight(0) + 11) / 23)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -1653,14 +1614,14 @@ keepjumps 1
 normal! 0
 lcd ~/C_Slago
 wincmd w
-exe '1resize ' . ((&lines * 23 + 25) / 51)
-exe 'vert 1resize ' . ((&columns * 35 + 36) / 72)
-exe '2resize ' . ((&lines * 24 + 25) / 51)
-exe 'vert 2resize ' . ((&columns * 35 + 36) / 72)
-exe '3resize ' . ((&lines * 23 + 25) / 51)
-exe 'vert 3resize ' . ((&columns * 36 + 36) / 72)
-exe '4resize ' . ((&lines * 24 + 25) / 51)
-exe 'vert 4resize ' . ((&columns * 36 + 36) / 72)
+exe '1resize ' . ((&lines * 24 + 25) / 51)
+exe 'vert 1resize ' . ((&columns * 36 + 36) / 72)
+exe '2resize ' . ((&lines * 23 + 25) / 51)
+exe 'vert 2resize ' . ((&columns * 36 + 36) / 72)
+exe '3resize ' . ((&lines * 24 + 25) / 51)
+exe 'vert 3resize ' . ((&columns * 35 + 36) / 72)
+exe '4resize ' . ((&lines * 23 + 25) / 51)
+exe 'vert 4resize ' . ((&columns * 35 + 36) / 72)
 tabnext
 edit ~/C_Slago/exemplo610.c
 argglobal
@@ -1695,7 +1656,6 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
