@@ -105,8 +105,9 @@ float calcula_comp_semi_reta(SEMI_RETA semi_reta)
  * Faça uma funcao para analisar se um ponto
  * pertence à reta definida. Em outras palavras,
  * diga se 3 pontos sao colineares.*/
-
+// Comentarios logo acima de funcoes ajudam minha IDE
 void colinear(SEMI_RETA semi_reta, CARTESIANO ponto)
+    // teste.
     /* Essa funcao calcula f(x) com x sendo
      * o ponto a ser analisado. Se houver
      * diferença entre f(x) e y do ponto, saberemos
