@@ -26,7 +26,7 @@ int main(){
     // para perguntar qual sera o peso e altura usados no programa.
 
     scanf("%f %f",&peso, &altura );
-    // Fazemos um scaneamento formatado de dois numeros float, essa funcao eh muito esperta
+    // Fazemos um escaneamento formatado de dois numeros float, essa funcao eh muito esperta
     // e armazenamos os valores no ENDERECO de peso e altura, respectivamente.
 
     imc = peso / pow(altura, 2);

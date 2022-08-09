@@ -27,13 +27,13 @@ int main(){
 
     /* Imprime uma unica grande string, formatada usando a contra-barra
      * para se evitar o uso de varios prints.*/
-    printf(\
-"A circunferencia de um circulo de\n\
-raio %.3fcm eh %.3fcm.\n\
-A Area desse circulo\n\
-eh %.3fcm^2.\n\
-O volume de uma esfera\n\
-com esse raio eh %.3fcm^3\n",raio, circunferencia, area, volume);
+    printf("A circunferencia de um circulo de\n\
+            \rraio %.3fcm eh %.3fcm.\n\
+            \rA Area desse circulo\n\
+            \reh %.3fcm^2.\n\
+            \rO volume de uma esfera\n\
+            \rcom esse raio eh %.3fcm^3\n",
+            raio, circunferencia, area, volume);
 
     return 0;
 }

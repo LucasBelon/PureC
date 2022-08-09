@@ -9,15 +9,14 @@ int main(){
     printf("Escreva um unico caractere: \n");
     scanf("%c",  &caractere);
 
-    printf(\
-"Seu caractere em ASCII decimal eh %d \n\
-Em octal eh %o \n\
-Em hexadecimal eh %x\n\
-E em char eh %c\n",
-    caractere,
-    caractere, 
-    caractere,
-    caractere);
+    printf("Seu caractere em ASCII decimal eh %d \n\
+            \rEm octal eh %o \n\
+            \rEm hexadecimal eh %x\n\
+            \rE em char eh %c\n",
+            caractere,
+            caractere, 
+            caractere,
+            caractere);
 
     return 0;
 }

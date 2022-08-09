@@ -10,9 +10,10 @@ int main(){
 
     unsigned int a, b, c;
     /* Nao possui parte negativa 
-     * (mas dobra o tamanho
-     * por ter um bit a mais (do sinal)*/
-    
+     * Mas gera o mesmo efeito visto
+     * com o tipo char, dobramos o limite
+     * superior alcansavel.*/ 
+
     long int tam_arquivo;
     /* A depender da maquina, possui maior
      * range de valores para numero inteiro*/

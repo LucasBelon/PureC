@@ -16,6 +16,8 @@
  *
  * %s - cadeia de caracteres (string)
  *
+ * %Lf - Flutuante com precisao dupla aumentada: long double
+ *
  * %% - sinal de porcentagem.*/
 
 
@@ -30,6 +32,8 @@
  * \n - nova linha
  *
  * \r - retrocede para primeira coluna da linha
+ * Útil para prints com mais de uma linha no código
+ * fonte. Todos os exemplos foram alterados para usá-lo
  *
  * \t - tabulacao (tab)
  *
@@ -53,9 +57,10 @@ int main(){
 
     perim = 2*PI*raio;
 
-    printf(\
-"O perimetro da circunferencia eh %lf", 
-perim);
+    printf("O perimetro da \n\
+            \rcircunferencia eh %lf", 
+            perim
+            );
 
     return 0 ;
 }

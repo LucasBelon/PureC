@@ -10,10 +10,10 @@ int main(){
     printf("Escreva a tempera em Graus Fahrenheit: \n");
     scanf("%f",&temperatura);
 
-    printf(\
-"A temperatura correspondente em graus Celcius eh %.2f°C\n", 
-(temperatura-32)*(5.0/9.0)
-    );
+    printf("A temperatura correspondente \n\
+            \rem graus Celcius eh %.2f°C\n", 
+            (temperatura-32)*(5.0/9.0)
+            );
 
     return 0;
 }

@@ -9,9 +9,8 @@ int main(){
 
     float kilometragem, litros_combustivel;
 
-    printf(\
-    "informe a distancia[km]e o gasto de combustivel[l]:\n"\
-    );
+    printf("informe a distancia[km] e\
+            \ro gasto de combustivel[l]:\n");
 
     scanf("%f %f",&kilometragem, &litros_combustivel);
 
