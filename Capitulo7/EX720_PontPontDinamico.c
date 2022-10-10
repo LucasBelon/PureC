@@ -8,7 +8,21 @@
  * de ponteiro, para isso basta usar a 
  * declaração funcionario **f. Antes de 
  * programar, tente esquematizar como ficará 
- * a configuração da memória.]*/
+ * a configuração da memória.]
+ *
+ * **f:
+ * +-----------------------+
+ * |*f    *f    *f    *f   |<-offset a
+ * |funci|funci|funci|funci|
+ * |21c+f|21c+f|21c+f|21c+f|<-offset b
+ * +-----------------------+
+ * Preciso de um array dinamico de ponteiros
+ * para x numeros de estrutura.
+ * preciso de um array dinamico para alternar
+ * entre os ponteiros de cada estrutura.
+ *
+ *
+ * */
 
 # include <stdio.h>
 # include <stdlib.h>
@@ -25,7 +39,7 @@ int main(void){
     printf("Quantos funcionarios?\n");
     scanf("%d", &n);
     funcionario **f;
-    f = malloc(n*sizeof(funcionario));
+    f = malloc(n*sizeof(funcionario *));
     for(int i = 0; i<n; i++){
          f[i] = malloc( sizeof(funcionario) );
          printf("\nNome: ");
@@ -34,5 +48,16 @@ int main(void){
          scanf("%f", &f[i]->salario);
     }
     
+    for(int i=0;i<n;++i){
+        printf("Estrutura:%p\n",*(f+i));
+        printf("Ponteiro:%p\n",(f+i));
+    }
+    printf("TamFuncio:%d\n",
+            sizeof(funcionario));
+    printf("TamPontFuncio:%d\n",
+            sizeof(funcionario *));
+    printf("TamChar:%d\n",sizeof(char));
+    printf("TamFloat:%d\n",sizeof(float));
+
     return 0 ;
 }
