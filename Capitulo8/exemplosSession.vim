@@ -58,14 +58,14 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 16 + 17) / 35)
-exe 'vert 1resize ' . ((&columns * 36 + 36) / 72)
-exe '2resize ' . ((&lines * 16 + 17) / 35)
-exe 'vert 2resize ' . ((&columns * 35 + 36) / 72)
-exe '3resize ' . ((&lines * 15 + 17) / 35)
-exe 'vert 3resize ' . ((&columns * 36 + 36) / 72)
-exe '4resize ' . ((&lines * 15 + 17) / 35)
-exe 'vert 4resize ' . ((&columns * 35 + 36) / 72)
+exe '1resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 argglobal
 if bufexists(fnamemodify("exemplo81_Variaveis_Arquivo.c", ":p")) | buffer exemplo81_Variaveis_Arquivo.c | else | edit exemplo81_Variaveis_Arquivo.c | endif
 balt exemplo811_Exibindo_Conteudo.c
@@ -77,7 +77,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 8) / 16)
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -95,11 +95,11 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 8) / 16)
+let s:l = 19 - ((17 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 19
 normal! 0
 wincmd w
 argglobal
@@ -115,11 +115,11 @@ setlocal fdn=20
 setlocal fen
 12
 normal! zo
-let s:l = 1 - ((0 * winheight(0) + 7) / 15)
+let s:l = 7 - ((6 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 7
 normal! 0
 wincmd w
 argglobal
@@ -133,23 +133,48 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 7) / 15)
+let s:l = 6 - ((5 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 6
 normal! 0
 wincmd w
-exe '1resize ' . ((&lines * 16 + 17) / 35)
-exe 'vert 1resize ' . ((&columns * 36 + 36) / 72)
-exe '2resize ' . ((&lines * 16 + 17) / 35)
-exe 'vert 2resize ' . ((&columns * 35 + 36) / 72)
-exe '3resize ' . ((&lines * 15 + 17) / 35)
-exe 'vert 3resize ' . ((&columns * 36 + 36) / 72)
-exe '4resize ' . ((&lines * 15 + 17) / 35)
-exe 'vert 4resize ' . ((&columns * 35 + 36) / 72)
+exe '1resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 tabnext
 edit exemplo88_Gravando_Arquivo.c
+let s:save_splitbelow = &splitbelow
+let s:save_splitright = &splitright
+set splitbelow splitright
+wincmd _ | wincmd |
+split
+1wincmd k
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+wincmd w
+let &splitbelow = s:save_splitbelow
+let &splitright = s:save_splitright
+wincmd t
+let s:save_winminheight = &winminheight
+let s:save_winminwidth = &winminwidth
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+exe '1resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 20 + 21) / 43)
 argglobal
 if bufexists(fnamemodify("exemplo88_Gravando_Arquivo.c", ":p")) | buffer exemplo88_Gravando_Arquivo.c | else | edit exemplo88_Gravando_Arquivo.c | endif
 balt exemplo87_Abrindo_Arquivo.c
@@ -161,13 +186,58 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 16) / 32)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-tabnext 1
+wincmd w
+argglobal
+if bufexists(fnamemodify("exemplo89_Fechando.c", ":p")) | buffer exemplo89_Fechando.c | else | edit exemplo89_Fechando.c | endif
+balt exemplo88_Gravando_Arquivo.c
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+wincmd w
+argglobal
+if bufexists(fnamemodify("exemplo811_Exibindo_Conteudo.c", ":p")) | buffer exemplo811_Exibindo_Conteudo.c | else | edit exemplo811_Exibindo_Conteudo.c | endif
+balt exemplo89_Fechando.c
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+10
+normal! zo
+let s:l = 18 - ((7 * winheight(0) + 10) / 20)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 18
+normal! 0
+wincmd w
+3wincmd w
+exe '1resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 20 + 21) / 43)
+tabnext 2
 set stal=1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf

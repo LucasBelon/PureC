@@ -3,6 +3,7 @@
 
 # include <stdio.h>
 # include <stdlib.h>
+# include <stdlib.h>
 
 
 int main(void){
@@ -10,7 +11,7 @@ int main(void){
     char nome[100];
     int c;
 
-    printf("Arquivo: ");
+    puts("Arquivo: ");
     gets(nome);
 
     if ((e=fopen(nome, "r")) == NULL){
