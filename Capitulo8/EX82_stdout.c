@@ -9,23 +9,22 @@
 
 # include <stdio.h>
 # include <stdlib.h>
-# define EOF '$'
 # define INICIO_MIN 97
 # define FIM_MIN 122
 # define INICIO_MAI 65 
 # define FIM_MAI 90
 # define OFFSET 32
 
-void maiuscula(char *l){
+void maiuscula(int *l){
     *l -= OFFSET;
 }
 
-void minuscula(char *l){
+void minuscula(int *l){
     *l += OFFSET;
 }
 
 
-void converte(char *l, char *sinal){
+void converte(int *l, char *sinal){
     if(*l>=INICIO_MIN && *l<=FIM_MIN)
         if(*sinal=='+') 
             maiuscula(l);
@@ -35,14 +34,24 @@ void converte(char *l, char *sinal){
 }
 
 void leitura_stdin(char sinal){
-    char c;
-    while((c=getchar())!=EOF){
+    int c=getchar();
+
+    while(c!=EOF){
         converte(&c,&sinal);
         fprintf(stdout,"%c",c);
+        c=getchar();
     }
 }
 
 int main(int argc, char **argv){
+    if (argc!=2 || 
+            (**(argv+1)!='+' &&
+             **(argv+1)!='-'))
+    {
+        puts("Ocorreu um erro no\n\
+        \rargumento passado ao programa\n");
+        exit(1);
+    }
     leitura_stdin(**(argv+1));
     return 0;
 }
