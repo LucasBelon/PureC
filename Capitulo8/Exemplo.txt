@@ -1,7 +1,7 @@
-Este é um texto exemplo.
+Este eh um texto exemplo.
 
 Sou estudante
 Sem uma estante
 Carrego meus livros
 e num instante
-me livro do restante
+me livro do restante.
