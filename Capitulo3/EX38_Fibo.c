@@ -10,16 +10,12 @@ int main(){
     scanf("%Lf",&n);
     n_copia = n;
 
-    for(
-    printf("Fibo n°1: %.0Lf\n", a);
-    3 <= n;
-    --n )
-    {
+    printf("Fibo n°1: %.0Lf\n", a) ;
+    for(;3 <= n;--n ){
         printf(
-        "Fibo n°%.0Lf: %.0Lf\n",
-        (n_copia-n+2),a
-        );
-
+            "Fibo n°%.0Lf: %.0Lf\n",
+            (n_copia-n+2),a
+            );
         temp=a;
         a += b;
         b = temp;

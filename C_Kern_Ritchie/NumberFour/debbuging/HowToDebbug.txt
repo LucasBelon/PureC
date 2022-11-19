@@ -1,0 +1,14 @@
+- We can debug (no need to keep recompiling)
+    - We have a tool called gdb
+    $ sudo apt install gdb
+    - It can tell us some runtime problems that
+    our compilation wasn't aware of (remember the runtime errors?)
+    - It can keep the track of our variables and other things. So...
+    It's yet another thing to learn.
+    - When we program in python there's no problem with it, 'cause
+    our program is interpreted, so, it gives us some time.
+    $ gcc -g main.c -o main
+    $ gdb main
+    And then... Need to learn how to debug our code with the
+    https://www.gnu.org/software/gdb/documentation/
+

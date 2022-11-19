@@ -1,0 +1,28 @@
+First Step:
+    - Create lib1.c
+    - Put functions on it
+    - When we create a .c we should also create a .h, header, file
+    - it's like declaring a function, but without actually defining it
+    - There's also some weird kind of "armor of hash", it's used to 
+    prevent from adding some lib twice.
+    - It's not 'void lib1.c()', it's 'void lib1()'
+    - When on main, we can use #include "lib1.h"
+    
+    - What about recompile only fragments of our code? Yes we can
+    $ gcc -c lib1.c
+    - it generates only lib1.o, so, part of what we're doing is already done, already compiled
+    - Then, when compiling main, we can
+    $ gcc -omain lib1.o main.c
+    
+    - Not so easy:
+        - We need the .h files to be in the same directory of the execution of gcc 
+        (we can have one for each lib.c, or one with all our libs).
+        - We still need to put together all the files with:
+        $ gcc -omain main.c lib1.c lib2.c lib...
+        There's no gcc -omain main.c alone
+
+    - Wait. Maybe it's easy actually...
+        - We can create a file called Makefile (yes, no extension [suffix] in here)
+        - Inside this file we can say what are the steps that we need to be able to compile our
+        program. And it's pretty much like shell scripting, weird and ugly.
+

@@ -1,0 +1,13 @@
+It was not on the book, but I found some sources to seek...
+Chapter four was about functions and the structure of a program.
+It covered the pattern of a function, what are it's entries,
+the scope of it's variables, and a special variable, the registers, 
+which are the super blaster mega fast slot in the memory that helps,
+specially if some data need to be called often.
+To use them it's simple. Just go like "register int x ;"
+I like to think about it as the cache on the python functions, 
+(It kinda is the cache in the python functions).
+Also, the difference between declaration and definition on a function.
+Seen recursion, the preprocessor, what are the #define, #include,
+what are the impacts of them in our code, and the #define as a 
+macro, with the macro-processor.
