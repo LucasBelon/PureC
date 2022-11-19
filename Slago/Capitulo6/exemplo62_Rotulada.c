@@ -4,14 +4,14 @@
 # include <stdio.h>
 
 int main(void){
-    typedef struct data {
+    typedef struct rotulo {
         int dia;
         int mes;
         int ano;
-    };
+    } nome;
 
-    struct data hoje;
-    struct data ontem, amanha;
+    struct rotulo hoje;
+    struct rotulo ontem, amanha;
     
     hoje.dia = 5;
     hoje.mes = 7;

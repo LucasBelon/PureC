@@ -4,7 +4,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/C_Slago/Capitulo8
+cd ~/C_Slago/Slago/Capitulo8
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -14,13 +14,14 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +1 exemplo811_Exibindo_Conteudo.c
 badd +1 exemplo81_Variaveis_Arquivo.c
 badd +1 exemplo82_Enviando.c
 badd +1 exemplo83_Cat.c
 badd +1 exemplo87_Abrindo_Arquivo.c
 badd +1 exemplo88_Gravando_Arquivo.c
 badd +1 exemplo89_Fechando.c
+badd +0 exemplo811_Lendo_arquivo.c
+badd +0 exemplo812_cripto.c
 argglobal
 %argdel
 $argadd exemplo811_Exibindo_Conteudo.c
@@ -68,7 +69,6 @@ exe '4resize ' . ((&lines * 19 + 21) / 43)
 exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 argglobal
 if bufexists(fnamemodify("exemplo81_Variaveis_Arquivo.c", ":p")) | buffer exemplo81_Variaveis_Arquivo.c | else | edit exemplo81_Variaveis_Arquivo.c | endif
-balt exemplo811_Exibindo_Conteudo.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -161,6 +161,10 @@ vsplit
 1wincmd h
 wincmd w
 wincmd w
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
 let &splitbelow = s:save_splitbelow
 let &splitright = s:save_splitright
 wincmd t
@@ -170,11 +174,14 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 19 + 21) / 43)
+exe '1resize ' . ((&lines * 20 + 21) / 43)
 exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
-exe '2resize ' . ((&lines * 19 + 21) / 43)
+exe '2resize ' . ((&lines * 20 + 21) / 43)
 exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
-exe '3resize ' . ((&lines * 20 + 21) / 43)
+exe '3resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 argglobal
 if bufexists(fnamemodify("exemplo88_Gravando_Arquivo.c", ":p")) | buffer exemplo88_Gravando_Arquivo.c | else | edit exemplo88_Gravando_Arquivo.c | endif
 balt exemplo87_Abrindo_Arquivo.c
@@ -186,7 +193,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 9) / 19)
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -195,7 +202,25 @@ normal! 0
 wincmd w
 argglobal
 if bufexists(fnamemodify("exemplo89_Fechando.c", ":p")) | buffer exemplo89_Fechando.c | else | edit exemplo89_Fechando.c | endif
-balt exemplo88_Gravando_Arquivo.c
+balt exemplo811_Lendo_arquivo.c
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+wincmd w
+argglobal
+if bufexists(fnamemodify("exemplo811_Lendo_arquivo.c", ":p")) | buffer exemplo811_Lendo_arquivo.c | else | edit exemplo811_Lendo_arquivo.c | endif
+balt exemplo812_cripto.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -212,8 +237,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("exemplo811_Exibindo_Conteudo.c", ":p")) | buffer exemplo811_Exibindo_Conteudo.c | else | edit exemplo811_Exibindo_Conteudo.c | endif
-balt exemplo89_Fechando.c
+if bufexists(fnamemodify("exemplo812_cripto.c", ":p")) | buffer exemplo812_cripto.c | else | edit exemplo812_cripto.c | endif
+balt exemplo811_Lendo_arquivo.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -222,21 +247,21 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-10
-normal! zo
-let s:l = 18 - ((7 * winheight(0) + 10) / 20)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 18
+keepjumps 1
 normal! 0
 wincmd w
-3wincmd w
-exe '1resize ' . ((&lines * 19 + 21) / 43)
+exe '1resize ' . ((&lines * 20 + 21) / 43)
 exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
-exe '2resize ' . ((&lines * 19 + 21) / 43)
+exe '2resize ' . ((&lines * 20 + 21) / 43)
 exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
-exe '3resize ' . ((&lines * 20 + 21) / 43)
+exe '3resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 tabnext 2
 set stal=1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0

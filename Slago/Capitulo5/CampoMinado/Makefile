@@ -7,3 +7,6 @@ main: main.c Utils.o
 
 Utils.o: Utils.c
 	gcc -c Utils.c
+
+clean:
+	rm main

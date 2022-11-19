@@ -4,7 +4,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/C_Slago/Capitulo6
+cd ~/C_Slago/Slago/Capitulo6
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -21,7 +21,6 @@ badd +1 exemplo614_Usando_Etiquetado.c
 badd +1 exemplo615_Campos_Bits.c
 badd +1 exemplo616_Fora_Do_Campo.c
 badd +1 exemplo617_Overflow_Underflow.c
-badd +1 exemplo618_Byte_Impressora.c
 badd +1 exemplo61_Estru_Data.c
 badd +1 exemplo62_Rotulada.c
 badd +1 exemplo63_Rot_Nomeada.c
@@ -30,6 +29,7 @@ badd +1 exemplo65_Inicializa_Data.c
 badd +1 exemplo66_Pessoa.c
 badd +1 exemplo68_Inicializa_Aninhado.c
 badd +1 exemplo69_Tabela.c
+badd +1 exemplo618_Byte_Impressora.c
 argglobal
 %argdel
 $argadd exemplo610_Inicializa_Tabela.c
@@ -49,7 +49,6 @@ $argadd exemplo66_Pessoa.c
 $argadd exemplo68_Inicializa_Aninhado.c
 $argadd exemplo69_Tabela.c
 set stal=2
-tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
@@ -79,14 +78,14 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
+exe '1resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 argglobal
 if bufexists(fnamemodify("exemplo61_Estru_Data.c", ":p")) | buffer exemplo61_Estru_Data.c | else | edit exemplo61_Estru_Data.c | endif
 balt exemplo610_Inicializa_Tabela.c
@@ -98,7 +97,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -116,7 +115,9 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
+7
+normal! zo
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -134,7 +135,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -152,21 +153,21 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
 wincmd w
-exe '1resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
+exe '1resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 tabnext
 edit exemplo65_Inicializa_Data.c
 let s:save_splitbelow = &splitbelow
@@ -193,14 +194,14 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
+exe '1resize ' . ((&lines * 21 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 21 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 18 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 18 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 argglobal
 if bufexists(fnamemodify("exemplo65_Inicializa_Data.c", ":p")) | buffer exemplo65_Inicializa_Data.c | else | edit exemplo65_Inicializa_Data.c | endif
 balt exemplo64_Nomeada.c
@@ -212,7 +213,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
+let s:l = 1 - ((0 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -230,7 +231,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
+let s:l = 1 - ((0 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -248,7 +249,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -266,21 +267,21 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
 wincmd w
-exe '1resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
+exe '1resize ' . ((&lines * 21 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 21 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 18 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 18 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 tabnext
 edit exemplo610_Inicializa_Tabela.c
 let s:save_splitbelow = &splitbelow
@@ -307,14 +308,14 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
+exe '1resize ' . ((&lines * 21 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 21 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 18 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 18 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 argglobal
 balt exemplo69_Tabela.c
 setlocal fdm=indent
@@ -325,7 +326,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
+let s:l = 1 - ((0 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -343,7 +344,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
+let s:l = 1 - ((0 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -361,7 +362,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -379,21 +380,21 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
 wincmd w
-exe '1resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
+exe '1resize ' . ((&lines * 21 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 21 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 18 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 18 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 tabnext
 edit exemplo615_Campos_Bits.c
 let s:save_splitbelow = &splitbelow
@@ -420,17 +421,17 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
+exe '1resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 argglobal
 if bufexists(fnamemodify("exemplo615_Campos_Bits.c", ":p")) | buffer exemplo615_Campos_Bits.c | else | edit exemplo615_Campos_Bits.c | endif
-balt exemplo614_Usando_Etiquetado.c
+balt exemplo616_Fora_Do_Campo.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -439,11 +440,11 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
+let s:l = 2 - ((1 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 2
 normal! 0
 wincmd w
 argglobal
@@ -457,7 +458,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -475,7 +476,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -493,40 +494,21 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
 wincmd w
-exe '1resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
-tabnext
-edit exemplo618_Byte_Impressora.c
-argglobal
-if bufexists(fnamemodify("exemplo618_Byte_Impressora.c", ":p")) | buffer exemplo618_Byte_Impressora.c | else | edit exemplo618_Byte_Impressora.c | endif
-balt exemplo617_Overflow_Underflow.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 13) / 26)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
+exe '1resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 tabnext 1
 set stal=1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0

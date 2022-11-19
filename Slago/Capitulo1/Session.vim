@@ -4,7 +4,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/C_Slago/Capitulo2
+cd ~/C_Slago/Slago/Capitulo1
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -14,36 +14,37 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +1 EX210_Calc_Vaza_Switch.c
-badd +1 EX211_Peso_Ideal.c
-badd +1 EX212_Personalidade.c
-badd +1 EX21_Preveja_a_saida.c
-badd +1 EX22_Maior.c
-badd +1 EX23_Bissexto.c
-badd +1 EX24_Abs.c
-badd +1 EX25_Reajuste_salarial.c
-badd +1 EX26_Erro_Detectado.c
-badd +1 EX27_Str_True_False.c
-badd +1 EX28_Rec_Apr_Repr.c
-badd +1 EX29_Bhaskara.c
+badd +1 ~/C_Slago/Slago/Capitulo1
+badd +1 EX12_Circulo.c
+badd +1 EX13_Media_Notas.c
+badd +1 EX14_Km_Litro.c
+badd +1 EX15_Dec_Oc_Hex.c
+badd +1 EX16_Converte_Temperatura.c
+badd +1 EX17_Pitagoras.c
+badd +1 exemplo11_IMC.c
+badd +1 exemplo12_Declara_Variavel.c
+badd +1 exemplo13_Tipos_Modificados.c
+badd +1 exemplo14_Scanf.c
+badd +1 exemplo15_Printf.c
+badd +1 exemplo16_Saida_Formatada.c
 argglobal
 %argdel
-$argadd EX210_Calc_Vaza_Switch.c
-$argadd EX211_Peso_Ideal.c
-$argadd EX212_Personalidade.c
-$argadd EX21_Preveja_a_saida.c
-$argadd EX22_Maior.c
-$argadd EX23_Bissexto.c
-$argadd EX24_Abs.c
-$argadd EX25_Reajuste_salarial.c
-$argadd EX26_Erro_Detectado.c
-$argadd EX27_Str_True_False.c
-$argadd EX28_Rec_Apr_Repr.c
-$argadd EX29_Bhaskara.c
+$argadd EX12_Circulo.c
+$argadd EX13_Media_Notas.c
+$argadd EX14_Km_Litro.c
+$argadd EX15_Dec_Oc_Hex.c
+$argadd EX16_Converte_Temperatura.c
+$argadd EX17_Pitagoras.c
+$argadd exemplo11_IMC.c
+$argadd exemplo12_Declara_Variavel.c
+$argadd exemplo13_Tipos_Modificados.c
+$argadd exemplo14_Scanf.c
+$argadd exemplo15_Printf.c
+$argadd exemplo16_Saida_Formatada.c
 set stal=2
 tabnew +setlocal\ bufhidden=wipe
 tabrewind
-edit EX21_Preveja_a_saida.c
+edit EX12_Circulo.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -88,8 +89,29 @@ exe 'vert 5resize ' . ((&columns * 57 + 57) / 115)
 exe '6resize ' . ((&lines * 8 + 14) / 29)
 exe 'vert 6resize ' . ((&columns * 57 + 57) / 115)
 argglobal
-if bufexists(fnamemodify("EX21_Preveja_a_saida.c", ":p")) | buffer EX21_Preveja_a_saida.c | else | edit EX21_Preveja_a_saida.c | endif
-balt EX212_Personalidade.c
+balt EX13_Media_Notas.c
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+13
+normal! zo
+31
+normal! zo
+let s:l = 1 - ((0 * winheight(0) + 4) / 8)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+wincmd w
+argglobal
+if bufexists(fnamemodify("EX13_Media_Notas.c", ":p")) | buffer EX13_Media_Notas.c | else | edit EX13_Media_Notas.c | endif
+balt EX12_Circulo.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -106,8 +128,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX22_Maior.c", ":p")) | buffer EX22_Maior.c | else | edit EX22_Maior.c | endif
-balt EX210_Calc_Vaza_Switch.c
+if bufexists(fnamemodify("EX14_Km_Litro.c", ":p")) | buffer EX14_Km_Litro.c | else | edit EX14_Km_Litro.c | endif
+balt EX13_Media_Notas.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -116,6 +138,10 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
+10
+normal! zo
+13
+normal! zo
 let s:l = 1 - ((0 * winheight(0) + 4) / 8)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
@@ -124,8 +150,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX23_Bissexto.c", ":p")) | buffer EX23_Bissexto.c | else | edit EX23_Bissexto.c | endif
-balt EX210_Calc_Vaza_Switch.c
+if bufexists(fnamemodify("EX15_Dec_Oc_Hex.c", ":p")) | buffer EX15_Dec_Oc_Hex.c | else | edit EX15_Dec_Oc_Hex.c | endif
+balt EX14_Km_Litro.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -134,6 +160,10 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
+7
+normal! zo
+13
+normal! zo
 let s:l = 1 - ((0 * winheight(0) + 4) / 8)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
@@ -142,8 +172,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX24_Abs.c", ":p")) | buffer EX24_Abs.c | else | edit EX24_Abs.c | endif
-balt EX210_Calc_Vaza_Switch.c
+if bufexists(fnamemodify("EX16_Converte_Temperatura.c", ":p")) | buffer EX16_Converte_Temperatura.c | else | edit EX16_Converte_Temperatura.c | endif
+balt EX15_Dec_Oc_Hex.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -152,6 +182,10 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
+8
+normal! zo
+14
+normal! zo
 let s:l = 1 - ((0 * winheight(0) + 4) / 8)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
@@ -160,26 +194,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX25_Reajuste_salarial.c", ":p")) | buffer EX25_Reajuste_salarial.c | else | edit EX25_Reajuste_salarial.c | endif
-balt EX210_Calc_Vaza_Switch.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 4) / 8)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-wincmd w
-argglobal
-if bufexists(fnamemodify("EX26_Erro_Detectado.c", ":p")) | buffer EX26_Erro_Detectado.c | else | edit EX26_Erro_Detectado.c | endif
-balt EX210_Calc_Vaza_Switch.c
+if bufexists(fnamemodify("EX17_Pitagoras.c", ":p")) | buffer EX17_Pitagoras.c | else | edit EX17_Pitagoras.c | endif
+balt EX16_Converte_Temperatura.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -208,7 +224,7 @@ exe 'vert 5resize ' . ((&columns * 57 + 57) / 115)
 exe '6resize ' . ((&lines * 8 + 14) / 29)
 exe 'vert 6resize ' . ((&columns * 57 + 57) / 115)
 tabnext
-edit EX27_Str_True_False.c
+edit exemplo11_IMC.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -253,8 +269,8 @@ exe 'vert 5resize ' . ((&columns * 57 + 57) / 115)
 exe '6resize ' . ((&lines * 8 + 14) / 29)
 exe 'vert 6resize ' . ((&columns * 57 + 57) / 115)
 argglobal
-if bufexists(fnamemodify("EX27_Str_True_False.c", ":p")) | buffer EX27_Str_True_False.c | else | edit EX27_Str_True_False.c | endif
-balt EX210_Calc_Vaza_Switch.c
+if bufexists(fnamemodify("exemplo11_IMC.c", ":p")) | buffer exemplo11_IMC.c | else | edit exemplo11_IMC.c | endif
+balt exemplo12_Declara_Variavel.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -271,8 +287,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX28_Rec_Apr_Repr.c", ":p")) | buffer EX28_Rec_Apr_Repr.c | else | edit EX28_Rec_Apr_Repr.c | endif
-balt EX210_Calc_Vaza_Switch.c
+if bufexists(fnamemodify("exemplo12_Declara_Variavel.c", ":p")) | buffer exemplo12_Declara_Variavel.c | else | edit exemplo12_Declara_Variavel.c | endif
+balt exemplo11_IMC.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -289,8 +305,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX29_Bhaskara.c", ":p")) | buffer EX29_Bhaskara.c | else | edit EX29_Bhaskara.c | endif
-balt EX210_Calc_Vaza_Switch.c
+if bufexists(fnamemodify("exemplo13_Tipos_Modificados.c", ":p")) | buffer exemplo13_Tipos_Modificados.c | else | edit exemplo13_Tipos_Modificados.c | endif
+balt exemplo12_Declara_Variavel.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -307,7 +323,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX210_Calc_Vaza_Switch.c", ":p")) | buffer EX210_Calc_Vaza_Switch.c | else | edit EX210_Calc_Vaza_Switch.c | endif
+if bufexists(fnamemodify("exemplo14_Scanf.c", ":p")) | buffer exemplo14_Scanf.c | else | edit exemplo14_Scanf.c | endif
+balt exemplo13_Tipos_Modificados.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -324,8 +341,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX211_Peso_Ideal.c", ":p")) | buffer EX211_Peso_Ideal.c | else | edit EX211_Peso_Ideal.c | endif
-balt EX210_Calc_Vaza_Switch.c
+if bufexists(fnamemodify("exemplo15_Printf.c", ":p")) | buffer exemplo15_Printf.c | else | edit exemplo15_Printf.c | endif
+balt exemplo14_Scanf.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -334,6 +351,10 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
+53
+normal! zo
+61
+normal! zo
 let s:l = 1 - ((0 * winheight(0) + 4) / 8)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
@@ -342,8 +363,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX212_Personalidade.c", ":p")) | buffer EX212_Personalidade.c | else | edit EX212_Personalidade.c | endif
-balt EX27_Str_True_False.c
+if bufexists(fnamemodify("exemplo16_Saida_Formatada.c", ":p")) | buffer exemplo16_Saida_Formatada.c | else | edit exemplo16_Saida_Formatada.c | endif
+balt exemplo12_Declara_Variavel.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}

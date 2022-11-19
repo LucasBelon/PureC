@@ -4,7 +4,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/C_Slago/Capitulo7
+cd ~/C_Slago/Slago/Capitulo7
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -47,6 +47,10 @@ badd +1 exemplo732_acessa.c
 badd +1 exemplo733_insere_qqr.c
 badd +1 exemplo734_remove_qqr.c
 badd +1 exemplo735_alterando.c
+badd +0 exemplo737_ComprRecurs.c\ exemplo739_AcessaRecurs.c\ exemplo740_MaiorItem.c
+badd +0 exemplo737_ComprRecurs.c
+badd +0 exemplo739_AcessaRecurs.c
+badd +0 exemplo740_MaiorItem.c
 argglobal
 %argdel
 $argadd exemplo710_Incr_Decr.c
@@ -703,7 +707,7 @@ if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
-normal! 014|
+normal! 0
 wincmd w
 argglobal
 if bufexists(fnamemodify("exemplo724_Operador_Seta.c", ":p")) | buffer exemplo724_Operador_Seta.c | else | edit exemplo724_Operador_Seta.c | endif
@@ -907,14 +911,14 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 19 + 21) / 43)
+exe '1resize ' . ((&lines * 20 + 21) / 43)
 exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
-exe '2resize ' . ((&lines * 19 + 21) / 43)
+exe '2resize ' . ((&lines * 20 + 21) / 43)
 exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
-exe '3resize ' . ((&lines * 20 + 21) / 43)
-exe 'vert 3resize ' . ((&columns * 83 + 84) / 168)
-exe '4resize ' . ((&lines * 20 + 21) / 43)
-exe 'vert 4resize ' . ((&columns * 84 + 84) / 168)
+exe '3resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 argglobal
 if bufexists(fnamemodify("exemplo731_remove.c", ":p")) | buffer exemplo731_remove.c | else | edit exemplo731_remove.c | endif
 balt exemplo730_Vendo_Funcionar.c
@@ -926,7 +930,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 9) / 19)
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -944,7 +948,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 9) / 19)
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -962,7 +966,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 10) / 20)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
@@ -980,26 +984,58 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 10) / 20)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
 wincmd w
-exe '1resize ' . ((&lines * 19 + 21) / 43)
+exe '1resize ' . ((&lines * 20 + 21) / 43)
 exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
-exe '2resize ' . ((&lines * 19 + 21) / 43)
+exe '2resize ' . ((&lines * 20 + 21) / 43)
 exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
-exe '3resize ' . ((&lines * 20 + 21) / 43)
-exe 'vert 3resize ' . ((&columns * 83 + 84) / 168)
-exe '4resize ' . ((&lines * 20 + 21) / 43)
-exe 'vert 4resize ' . ((&columns * 84 + 84) / 168)
+exe '3resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 tabnext
 edit exemplo735_alterando.c
+let s:save_splitbelow = &splitbelow
+let s:save_splitright = &splitright
+set splitbelow splitright
+wincmd _ | wincmd |
+split
+1wincmd k
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+wincmd w
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+let &splitbelow = s:save_splitbelow
+let &splitright = s:save_splitright
+wincmd t
+let s:save_winminheight = &winminheight
+let s:save_winminwidth = &winminwidth
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+exe '1resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 argglobal
 if bufexists(fnamemodify("exemplo735_alterando.c", ":p")) | buffer exemplo735_alterando.c | else | edit exemplo735_alterando.c | endif
-balt exemplo734_remove_qqr.c
+balt exemplo737_ComprRecurs.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1008,12 +1044,75 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 20) / 40)
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
+wincmd w
+argglobal
+if bufexists(fnamemodify("exemplo737_ComprRecurs.c", ":p")) | buffer exemplo737_ComprRecurs.c | else | edit exemplo737_ComprRecurs.c | endif
+balt exemplo739_AcessaRecurs.c
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+wincmd w
+argglobal
+if bufexists(fnamemodify("exemplo739_AcessaRecurs.c", ":p")) | buffer exemplo739_AcessaRecurs.c | else | edit exemplo739_AcessaRecurs.c | endif
+balt exemplo740_MaiorItem.c
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+wincmd w
+argglobal
+if bufexists(fnamemodify("exemplo740_MaiorItem.c", ":p")) | buffer exemplo740_MaiorItem.c | else | edit exemplo740_MaiorItem.c | endif
+balt exemplo739_AcessaRecurs.c
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+wincmd w
+exe '1resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 1resize ' . ((&columns * 84 + 84) / 168)
+exe '2resize ' . ((&lines * 20 + 21) / 43)
+exe 'vert 2resize ' . ((&columns * 83 + 84) / 168)
+exe '3resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 3resize ' . ((&columns * 84 + 84) / 168)
+exe '4resize ' . ((&lines * 19 + 21) / 43)
+exe 'vert 4resize ' . ((&columns * 83 + 84) / 168)
 tabnext 1
 set stal=1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0

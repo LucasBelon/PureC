@@ -11,7 +11,7 @@ void Abre_Fecha(void (*funcao)(int, FILE*))
     int c;
 
     printf("Arquivo: ");
-    gets(nome);
+    scanf("%s", nome);
 
     if ((e=fopen(nome, "r")) == NULL){
         printf("Arquivo nao pode ser aberto\n");

@@ -4,7 +4,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/C_Slago/Capitulo5
+cd ~/C_Slago/Slago/Capitulo5
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -14,76 +14,58 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +1 EX510_Histograma.c
-badd +1 EX513_StrCpy.c
-badd +1 EX514_StrLen.c
-badd +1 EX515_StrUpr.c
-badd +1 EX516_StrCat.c
-badd +1 EX517_StrPos.c
-badd +1 EX518_StrDel.c
-badd +1 EX519_StrIns.c
-badd +1 EX51_Vet_Armazena.c
-badd +1 EX520_Freeman.c
-badd +1 EX521_Diag_Princ.c
-badd +1 EX522_NomesCapitalizados.c
-badd +1 EX523_Velha.c
-badd +1 EX524_CampoV1.c
-badd +1 EX525_CampoV2.c
-badd +1 EX526_CampoV3.c
-badd +1 EX528_Busca.c
-badd +1 EX529_Sentinela.c
-badd +1 EX52_Simule.c
-badd +1 EX530_Convidados.c
-badd +1 EX531_Busca_Binaria.c
-badd +1 EX532_Busca_Reverso.c
-badd +1 EX533_Trocas.c
-badd +1 EX535_Selecao.c
-badd +1 EX536_Enxuto.c
-badd +1 EX537_Ordena_Strings.c
-badd +1 EX538_Insercao.c
-badd +1 EX539_Benchmark.c
-badd +1 EX53_Exiba_Inverso.c
-badd +1 EX54_Desv_Pad.c
-badd +1 EX55_Polinomio.c
-badd +1 EX56_Cedulas.c
-badd +1 EX58_Temp_Media.c
-badd +1 EX59_minimax.c
+badd +1 exemplo5-8_9_10_11.c
+badd +1 exemplo512_Strings.c
+badd +1 exemplo513_Leia_String.c
+badd +1 exemplo514_Inicializa_String.c
+badd +1 exemplo515_OpRel_Strings.c
+badd +1 exemplo516_StrCmp.c
+badd +1 exemplo517_StrCmp_Exemplo.c
+badd +1 exemplo518_Matriz.c
+badd +1 exemplo519_Leia_Matriz.c
+badd +1 exemplo520_Vetor_Strings.c
+badd +1 exemplo521_Inicializa_Matriz.c
+badd +1 exemplo522_Menu_Opcoes.c
+badd +1 exemplo523_Labirinto10x10.c
+badd +1 exemplo524_Busca_Linear.c
+badd +1 exemplo527_Busca_Binaria.c
+badd +1 exemplo52_indices.c
+badd +1 exemplo531_Ordena_Trocas.c
+badd +1 exemplo534_Seleciona_Min.c
+badd +1 exemplo535_Ordena_Selecao.c
+badd +1 exemplo537_Ordena_Insercao.c
+badd +1 exemplo53_indice_inadequado.c
+badd +1 exemplo54_Vetor_Estatico.c
+badd +1 exemplo55_Inicializa_vetor.c
+badd +1 exemplo56_Tamanho_Implicito.c
+badd +1 exemplo57_Ender_vetor.c
 argglobal
 %argdel
-$argadd EX510_Histograma.c
-$argadd EX513_StrCpy.c
-$argadd EX514_StrLen.c
-$argadd EX515_StrUpr.c
-$argadd EX516_StrCat.c
-$argadd EX517_StrPos.c
-$argadd EX518_StrDel.c
-$argadd EX519_StrIns.c
-$argadd EX51_Vet_Armazena.c
-$argadd EX520_Freeman.c
-$argadd EX521_Diag_Princ.c
-$argadd EX522_NomesCapitalizados.c
-$argadd EX523_Velha.c
-$argadd EX524_CampoV1.c
-$argadd EX525_CampoV2.c
-$argadd EX526_CampoV3.c
-$argadd EX528_Busca.c
-$argadd EX529_Sentinela.c
-$argadd EX52_Simule.c
-$argadd EX530_Convidados.c
-$argadd EX531_Busca_Binaria.c
-$argadd EX532_Busca_Reverso.c
-$argadd EX533_Trocas.c
-$argadd EX535_Selecao.c
-$argadd EX536_Enxuto.c
-$argadd EX537_Ordena_Strings.c
-$argadd EX538_Insercao.c
-$argadd EX539_Benchmark.c
-$argadd EX53_Exiba_Inverso.c
-$argadd EX54_Desv_Pad.c
-$argadd EX55_Polinomio.c
-$argadd EX56_Cedulas.c
-$argadd EX58_Temp_Media.c
-$argadd EX59_minimax.c
+$argadd exemplo5-8_9_10_11.c
+$argadd exemplo512_Strings.c
+$argadd exemplo513_Leia_String.c
+$argadd exemplo514_Inicializa_String.c
+$argadd exemplo515_OpRel_Strings.c
+$argadd exemplo516_StrCmp.c
+$argadd exemplo517_StrCmp_Exemplo.c
+$argadd exemplo518_Matriz.c
+$argadd exemplo519_Leia_Matriz.c
+$argadd exemplo520_Vetor_Strings.c
+$argadd exemplo521_Inicializa_Matriz.c
+$argadd exemplo522_Menu_Opcoes.c
+$argadd exemplo523_Labirinto10x10.c
+$argadd exemplo524_Busca_Linear.c
+$argadd exemplo527_Busca_Binaria.c
+$argadd exemplo52_indices.c
+$argadd exemplo531_Ordena_Trocas.c
+$argadd exemplo534_Seleciona_Min.c
+$argadd exemplo535_Ordena_Selecao.c
+$argadd exemplo537_Ordena_Insercao.c
+$argadd exemplo53_indice_inadequado.c
+$argadd exemplo54_Vetor_Estatico.c
+$argadd exemplo55_Inicializa_vetor.c
+$argadd exemplo56_Tamanho_Implicito.c
+$argadd exemplo57_Ender_vetor.c
 set stal=2
 tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
@@ -91,10 +73,8 @@ tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
 tabnew +setlocal\ bufhidden=wipe
-tabnew +setlocal\ bufhidden=wipe
-tabnew +setlocal\ bufhidden=wipe
 tabrewind
-edit EX51_Vet_Armazena.c
+edit exemplo52_indices.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -128,8 +108,8 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 argglobal
-if bufexists(fnamemodify("EX51_Vet_Armazena.c", ":p")) | buffer EX51_Vet_Armazena.c | else | edit EX51_Vet_Armazena.c | endif
-balt EX517_StrPos.c
+if bufexists(fnamemodify("exemplo52_indices.c", ":p")) | buffer exemplo52_indices.c | else | edit exemplo52_indices.c | endif
+balt exemplo5-8_9_10_11.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -146,8 +126,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX52_Simule.c", ":p")) | buffer EX52_Simule.c | else | edit EX52_Simule.c | endif
-balt EX51_Vet_Armazena.c
+if bufexists(fnamemodify("exemplo53_indice_inadequado.c", ":p")) | buffer exemplo53_indice_inadequado.c | else | edit exemplo53_indice_inadequado.c | endif
+balt exemplo52_indices.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -164,8 +144,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX53_Exiba_Inverso.c", ":p")) | buffer EX53_Exiba_Inverso.c | else | edit EX53_Exiba_Inverso.c | endif
-balt EX52_Simule.c
+if bufexists(fnamemodify("exemplo54_Vetor_Estatico.c", ":p")) | buffer exemplo54_Vetor_Estatico.c | else | edit exemplo54_Vetor_Estatico.c | endif
+balt exemplo53_indice_inadequado.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -182,8 +162,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX54_Desv_Pad.c", ":p")) | buffer EX54_Desv_Pad.c | else | edit EX54_Desv_Pad.c | endif
-balt EX53_Exiba_Inverso.c
+if bufexists(fnamemodify("exemplo55_Inicializa_vetor.c", ":p")) | buffer exemplo55_Inicializa_vetor.c | else | edit exemplo55_Inicializa_vetor.c | endif
+balt exemplo54_Vetor_Estatico.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -208,7 +188,7 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 tabnext
-edit EX55_Polinomio.c
+edit exemplo56_Tamanho_Implicito.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -242,8 +222,8 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 argglobal
-if bufexists(fnamemodify("EX55_Polinomio.c", ":p")) | buffer EX55_Polinomio.c | else | edit EX55_Polinomio.c | endif
-balt EX54_Desv_Pad.c
+if bufexists(fnamemodify("exemplo56_Tamanho_Implicito.c", ":p")) | buffer exemplo56_Tamanho_Implicito.c | else | edit exemplo56_Tamanho_Implicito.c | endif
+balt exemplo55_Inicializa_vetor.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -260,8 +240,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX56_Cedulas.c", ":p")) | buffer EX56_Cedulas.c | else | edit EX56_Cedulas.c | endif
-balt EX55_Polinomio.c
+if bufexists(fnamemodify("exemplo57_Ender_vetor.c", ":p")) | buffer exemplo57_Ender_vetor.c | else | edit exemplo57_Ender_vetor.c | endif
+balt exemplo56_Tamanho_Implicito.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -278,8 +258,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX58_Temp_Media.c", ":p")) | buffer EX58_Temp_Media.c | else | edit EX58_Temp_Media.c | endif
-balt EX56_Cedulas.c
+if bufexists(fnamemodify("exemplo5-8_9_10_11.c", ":p")) | buffer exemplo5-8_9_10_11.c | else | edit exemplo5-8_9_10_11.c | endif
+balt exemplo57_Ender_vetor.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -296,8 +276,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX59_minimax.c", ":p")) | buffer EX59_minimax.c | else | edit EX59_minimax.c | endif
-balt EX58_Temp_Media.c
+if bufexists(fnamemodify("exemplo512_Strings.c", ":p")) | buffer exemplo512_Strings.c | else | edit exemplo512_Strings.c | endif
+balt exemplo5-8_9_10_11.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -322,7 +302,7 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 tabnext
-edit EX510_Histograma.c
+edit exemplo513_Leia_String.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -356,7 +336,8 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 argglobal
-balt EX59_minimax.c
+if bufexists(fnamemodify("exemplo513_Leia_String.c", ":p")) | buffer exemplo513_Leia_String.c | else | edit exemplo513_Leia_String.c | endif
+balt exemplo512_Strings.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -373,8 +354,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX513_StrCpy.c", ":p")) | buffer EX513_StrCpy.c | else | edit EX513_StrCpy.c | endif
-balt EX510_Histograma.c
+if bufexists(fnamemodify("exemplo514_Inicializa_String.c", ":p")) | buffer exemplo514_Inicializa_String.c | else | edit exemplo514_Inicializa_String.c | endif
+balt exemplo513_Leia_String.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -391,8 +372,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX514_StrLen.c", ":p")) | buffer EX514_StrLen.c | else | edit EX514_StrLen.c | endif
-balt EX513_StrCpy.c
+if bufexists(fnamemodify("exemplo515_OpRel_Strings.c", ":p")) | buffer exemplo515_OpRel_Strings.c | else | edit exemplo515_OpRel_Strings.c | endif
+balt exemplo514_Inicializa_String.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -409,8 +390,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX515_StrUpr.c", ":p")) | buffer EX515_StrUpr.c | else | edit EX515_StrUpr.c | endif
-balt EX514_StrLen.c
+if bufexists(fnamemodify("exemplo516_StrCmp.c", ":p")) | buffer exemplo516_StrCmp.c | else | edit exemplo516_StrCmp.c | endif
+balt exemplo515_OpRel_Strings.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -435,7 +416,7 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 tabnext
-edit EX516_StrCat.c
+edit exemplo517_StrCmp_Exemplo.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -469,8 +450,8 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 argglobal
-if bufexists(fnamemodify("EX516_StrCat.c", ":p")) | buffer EX516_StrCat.c | else | edit EX516_StrCat.c | endif
-balt EX515_StrUpr.c
+if bufexists(fnamemodify("exemplo517_StrCmp_Exemplo.c", ":p")) | buffer exemplo517_StrCmp_Exemplo.c | else | edit exemplo517_StrCmp_Exemplo.c | endif
+balt exemplo516_StrCmp.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -487,8 +468,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX517_StrPos.c", ":p")) | buffer EX517_StrPos.c | else | edit EX517_StrPos.c | endif
-balt EX516_StrCat.c
+if bufexists(fnamemodify("exemplo518_Matriz.c", ":p")) | buffer exemplo518_Matriz.c | else | edit exemplo518_Matriz.c | endif
+balt exemplo517_StrCmp_Exemplo.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -505,8 +486,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX518_StrDel.c", ":p")) | buffer EX518_StrDel.c | else | edit EX518_StrDel.c | endif
-balt EX517_StrPos.c
+if bufexists(fnamemodify("exemplo519_Leia_Matriz.c", ":p")) | buffer exemplo519_Leia_Matriz.c | else | edit exemplo519_Leia_Matriz.c | endif
+balt exemplo518_Matriz.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -523,8 +504,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX519_StrIns.c", ":p")) | buffer EX519_StrIns.c | else | edit EX519_StrIns.c | endif
-balt EX518_StrDel.c
+if bufexists(fnamemodify("exemplo520_Vetor_Strings.c", ":p")) | buffer exemplo520_Vetor_Strings.c | else | edit exemplo520_Vetor_Strings.c | endif
+balt exemplo519_Leia_Matriz.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -549,7 +530,7 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 tabnext
-edit EX520_Freeman.c
+edit exemplo521_Inicializa_Matriz.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -583,8 +564,8 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 argglobal
-if bufexists(fnamemodify("EX520_Freeman.c", ":p")) | buffer EX520_Freeman.c | else | edit EX520_Freeman.c | endif
-balt EX51_Vet_Armazena.c
+if bufexists(fnamemodify("exemplo521_Inicializa_Matriz.c", ":p")) | buffer exemplo521_Inicializa_Matriz.c | else | edit exemplo521_Inicializa_Matriz.c | endif
+balt exemplo520_Vetor_Strings.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -601,8 +582,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX521_Diag_Princ.c", ":p")) | buffer EX521_Diag_Princ.c | else | edit EX521_Diag_Princ.c | endif
-balt EX520_Freeman.c
+if bufexists(fnamemodify("exemplo522_Menu_Opcoes.c", ":p")) | buffer exemplo522_Menu_Opcoes.c | else | edit exemplo522_Menu_Opcoes.c | endif
+balt exemplo521_Inicializa_Matriz.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -619,8 +600,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX522_NomesCapitalizados.c", ":p")) | buffer EX522_NomesCapitalizados.c | else | edit EX522_NomesCapitalizados.c | endif
-balt EX521_Diag_Princ.c
+if bufexists(fnamemodify("exemplo523_Labirinto10x10.c", ":p")) | buffer exemplo523_Labirinto10x10.c | else | edit exemplo523_Labirinto10x10.c | endif
+balt exemplo522_Menu_Opcoes.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -637,8 +618,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX523_Velha.c", ":p")) | buffer EX523_Velha.c | else | edit EX523_Velha.c | endif
-balt EX522_NomesCapitalizados.c
+if bufexists(fnamemodify("exemplo524_Busca_Linear.c", ":p")) | buffer exemplo524_Busca_Linear.c | else | edit exemplo524_Busca_Linear.c | endif
+balt exemplo523_Labirinto10x10.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -663,7 +644,7 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 tabnext
-edit EX524_CampoV1.c
+edit exemplo527_Busca_Binaria.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -697,8 +678,8 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 argglobal
-if bufexists(fnamemodify("EX524_CampoV1.c", ":p")) | buffer EX524_CampoV1.c | else | edit EX524_CampoV1.c | endif
-balt EX523_Velha.c
+if bufexists(fnamemodify("exemplo527_Busca_Binaria.c", ":p")) | buffer exemplo527_Busca_Binaria.c | else | edit exemplo527_Busca_Binaria.c | endif
+balt exemplo524_Busca_Linear.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -715,8 +696,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX525_CampoV2.c", ":p")) | buffer EX525_CampoV2.c | else | edit EX525_CampoV2.c | endif
-balt EX524_CampoV1.c
+if bufexists(fnamemodify("exemplo531_Ordena_Trocas.c", ":p")) | buffer exemplo531_Ordena_Trocas.c | else | edit exemplo531_Ordena_Trocas.c | endif
+balt exemplo52_indices.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -733,8 +714,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX526_CampoV3.c", ":p")) | buffer EX526_CampoV3.c | else | edit EX526_CampoV3.c | endif
-balt EX525_CampoV2.c
+if bufexists(fnamemodify("exemplo534_Seleciona_Min.c", ":p")) | buffer exemplo534_Seleciona_Min.c | else | edit exemplo534_Seleciona_Min.c | endif
+balt exemplo531_Ordena_Trocas.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -751,122 +732,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("EX528_Busca.c", ":p")) | buffer EX528_Busca.c | else | edit EX528_Busca.c | endif
-balt EX526_CampoV3.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-wincmd w
-exe '1resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
-tabnext
-edit EX529_Sentinela.c
-let s:save_splitbelow = &splitbelow
-let s:save_splitright = &splitright
-set splitbelow splitright
-wincmd _ | wincmd |
-split
-1wincmd k
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
-wincmd w
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
-let &splitbelow = s:save_splitbelow
-let &splitright = s:save_splitright
-wincmd t
-let s:save_winminheight = &winminheight
-let s:save_winminwidth = &winminwidth
-set winminheight=0
-set winheight=1
-set winminwidth=0
-set winwidth=1
-exe '1resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
-argglobal
-if bufexists(fnamemodify("EX529_Sentinela.c", ":p")) | buffer EX529_Sentinela.c | else | edit EX529_Sentinela.c | endif
-balt EX528_Busca.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-wincmd w
-argglobal
-if bufexists(fnamemodify("EX530_Convidados.c", ":p")) | buffer EX530_Convidados.c | else | edit EX530_Convidados.c | endif
-balt EX52_Simule.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-wincmd w
-argglobal
-if bufexists(fnamemodify("EX531_Busca_Binaria.c", ":p")) | buffer EX531_Busca_Binaria.c | else | edit EX531_Busca_Binaria.c | endif
-balt EX530_Convidados.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-wincmd w
-argglobal
-if bufexists(fnamemodify("EX532_Busca_Reverso.c", ":p")) | buffer EX532_Busca_Reverso.c | else | edit EX532_Busca_Reverso.c | endif
-balt EX531_Busca_Binaria.c
+if bufexists(fnamemodify("exemplo535_Ordena_Selecao.c", ":p")) | buffer exemplo535_Ordena_Selecao.c | else | edit exemplo535_Ordena_Selecao.c | endif
+balt exemplo534_Seleciona_Min.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -891,142 +758,10 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 tabnext
-edit EX533_Trocas.c
-let s:save_splitbelow = &splitbelow
-let s:save_splitright = &splitright
-set splitbelow splitright
-wincmd _ | wincmd |
-split
-1wincmd k
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
-wincmd w
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
-let &splitbelow = s:save_splitbelow
-let &splitright = s:save_splitright
-wincmd t
-let s:save_winminheight = &winminheight
-let s:save_winminwidth = &winminwidth
-set winminheight=0
-set winheight=1
-set winminwidth=0
-set winwidth=1
-exe '1resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
+edit exemplo537_Ordena_Insercao.c
 argglobal
-if bufexists(fnamemodify("EX533_Trocas.c", ":p")) | buffer EX533_Trocas.c | else | edit EX533_Trocas.c | endif
-balt EX532_Busca_Reverso.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-wincmd w
-argglobal
-if bufexists(fnamemodify("EX535_Selecao.c", ":p")) | buffer EX535_Selecao.c | else | edit EX535_Selecao.c | endif
-balt EX533_Trocas.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-wincmd w
-argglobal
-if bufexists(fnamemodify("EX536_Enxuto.c", ":p")) | buffer EX536_Enxuto.c | else | edit EX536_Enxuto.c | endif
-balt EX535_Selecao.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-wincmd w
-argglobal
-if bufexists(fnamemodify("EX537_Ordena_Strings.c", ":p")) | buffer EX537_Ordena_Strings.c | else | edit EX537_Ordena_Strings.c | endif
-balt EX536_Enxuto.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-wincmd w
-exe '1resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
-tabnext
-edit EX538_Insercao.c
-let s:save_splitbelow = &splitbelow
-let s:save_splitright = &splitright
-set splitbelow splitright
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
-let &splitbelow = s:save_splitbelow
-let &splitright = s:save_splitright
-wincmd t
-let s:save_winminheight = &winminheight
-let s:save_winminwidth = &winminwidth
-set winminheight=0
-set winheight=1
-set winminwidth=0
-set winwidth=1
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-argglobal
-if bufexists(fnamemodify("EX538_Insercao.c", ":p")) | buffer EX538_Insercao.c | else | edit EX538_Insercao.c | endif
-balt EX537_Ordena_Strings.c
+if bufexists(fnamemodify("exemplo537_Ordena_Insercao.c", ":p")) | buffer exemplo537_Ordena_Insercao.c | else | edit exemplo537_Ordena_Insercao.c | endif
+balt exemplo535_Ordena_Selecao.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1041,27 +776,6 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-wincmd w
-argglobal
-if bufexists(fnamemodify("EX539_Benchmark.c", ":p")) | buffer EX539_Benchmark.c | else | edit EX539_Benchmark.c | endif
-balt EX538_Insercao.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 13) / 26)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-wincmd w
-exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
 tabnext 1
 set stal=1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0

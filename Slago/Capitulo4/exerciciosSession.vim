@@ -4,7 +4,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/C_Slago/Capitulo4
+cd ~/C_Slago/Slago/Capitulo4
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -14,28 +14,27 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +1 exemplo410_Recurs_Sem_Fim.c
-badd +1 exemplo411_Pot_Recursiva.c
-badd +1 exemplo41_Define.c
-badd +1 exemplo42_Include_Header.c
-badd +1 exemplo43_Func_Fic.c
-badd +1 exemplo46_Hip.c
-badd +1 exemplo47_max.c
-badd +1 exemplo48_Tipos_Armazenamento.c
+badd +1 EX4-8_9_10_11.c
+badd +1 EX415_aleat_time.c
+badd +1 EX416_Func_Recur.c
+badd +1 EX41_Conserte.c
+badd +1 EX43_Teste_Macros.c
+badd +1 EX44_Bool.c
+badd +1 boolean.h
+badd +0 macros.h
 argglobal
 %argdel
-$argadd exemplo410_Recurs_Sem_Fim.c
-$argadd exemplo411_Pot_Recursiva.c
-$argadd exemplo41_Define.c
-$argadd exemplo42_Include_Header.c
-$argadd exemplo43_Func_Fic.c
-$argadd exemplo46_Hip.c
-$argadd exemplo47_max.c
-$argadd exemplo48_Tipos_Armazenamento.c
+$argadd EX4-8_9_10_11.c
+$argadd EX415_aleat_time.c
+$argadd EX416_Func_Recur.c
+$argadd EX41_Conserte.c
+$argadd EX43_Teste_Macros.c
+$argadd EX44_Bool.c
 set stal=2
 tabnew +setlocal\ bufhidden=wipe
+tabnew +setlocal\ bufhidden=wipe
 tabrewind
-edit exemplo41_Define.c
+edit EX41_Conserte.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -69,8 +68,8 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 argglobal
-if bufexists(fnamemodify("exemplo41_Define.c", ":p")) | buffer exemplo41_Define.c | else | edit exemplo41_Define.c | endif
-balt exemplo411_Pot_Recursiva.c
+if bufexists(fnamemodify("EX41_Conserte.c", ":p")) | buffer EX41_Conserte.c | else | edit EX41_Conserte.c | endif
+balt EX416_Func_Recur.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -87,8 +86,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("exemplo42_Include_Header.c", ":p")) | buffer exemplo42_Include_Header.c | else | edit exemplo42_Include_Header.c | endif
-balt exemplo41_Define.c
+if bufexists(fnamemodify("EX43_Teste_Macros.c", ":p")) | buffer EX43_Teste_Macros.c | else | edit EX43_Teste_Macros.c | endif
+balt EX41_Conserte.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -105,8 +104,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("exemplo43_Func_Fic.c", ":p")) | buffer exemplo43_Func_Fic.c | else | edit exemplo43_Func_Fic.c | endif
-balt exemplo42_Include_Header.c
+if bufexists(fnamemodify("EX44_Bool.c", ":p")) | buffer EX44_Bool.c | else | edit EX44_Bool.c | endif
+balt EX43_Teste_Macros.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -123,8 +122,8 @@ keepjumps 1
 normal! 0
 wincmd w
 argglobal
-if bufexists(fnamemodify("exemplo46_Hip.c", ":p")) | buffer exemplo46_Hip.c | else | edit exemplo46_Hip.c | endif
-balt exemplo43_Func_Fic.c
+if bufexists(fnamemodify("EX4-8_9_10_11.c", ":p")) | buffer EX4-8_9_10_11.c | else | edit EX4-8_9_10_11.c | endif
+balt EX44_Bool.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -149,18 +148,10 @@ exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
 exe '4resize ' . ((&lines * 12 + 14) / 29)
 exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 tabnext
-edit exemplo47_max.c
+edit EX415_aleat_time.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
-wincmd _ | wincmd |
-split
-1wincmd k
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
-wincmd w
 wincmd _ | wincmd |
 vsplit
 1wincmd h
@@ -174,17 +165,10 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 13 + 14) / 29)
 exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
 exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
 argglobal
-if bufexists(fnamemodify("exemplo47_max.c", ":p")) | buffer exemplo47_max.c | else | edit exemplo47_max.c | endif
-balt exemplo46_Hip.c
+if bufexists(fnamemodify("EX415_aleat_time.c", ":p")) | buffer EX415_aleat_time.c | else | edit EX415_aleat_time.c | endif
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -193,16 +177,17 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
+lcd ~/C_Slago/Slago/Capitulo4
 wincmd w
 argglobal
-if bufexists(fnamemodify("exemplo48_Tipos_Armazenamento.c", ":p")) | buffer exemplo48_Tipos_Armazenamento.c | else | edit exemplo48_Tipos_Armazenamento.c | endif
-balt exemplo47_max.c
+if bufexists(fnamemodify("~/C_Slago/Slago/Capitulo4/EX416_Func_Recur.c", ":p")) | buffer ~/C_Slago/Slago/Capitulo4/EX416_Func_Recur.c | else | edit ~/C_Slago/Slago/Capitulo4/EX416_Func_Recur.c | endif
+balt ~/C_Slago/Slago/Capitulo4/EX415_aleat_time.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -211,57 +196,74 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 13)
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
+lcd ~/C_Slago/Slago/Capitulo4
 wincmd w
-argglobal
-if bufexists(fnamemodify("exemplo410_Recurs_Sem_Fim.c", ":p")) | buffer exemplo410_Recurs_Sem_Fim.c | else | edit exemplo410_Recurs_Sem_Fim.c | endif
-balt exemplo48_Tipos_Armazenamento.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-wincmd w
-argglobal
-if bufexists(fnamemodify("exemplo411_Pot_Recursiva.c", ":p")) | buffer exemplo411_Pot_Recursiva.c | else | edit exemplo411_Pot_Recursiva.c | endif
-balt exemplo41_Define.c
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 6) / 12)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 1
-normal! 0
-wincmd w
-exe '1resize ' . ((&lines * 13 + 14) / 29)
 exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
-exe '2resize ' . ((&lines * 13 + 14) / 29)
 exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
-exe '3resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 3resize ' . ((&columns * 57 + 57) / 115)
-exe '4resize ' . ((&lines * 12 + 14) / 29)
-exe 'vert 4resize ' . ((&columns * 57 + 57) / 115)
+tabnext
+edit ~/C_Slago/Slago/Capitulo4/macros.h
+let s:save_splitbelow = &splitbelow
+let s:save_splitright = &splitright
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+let &splitbelow = s:save_splitbelow
+let &splitright = s:save_splitright
+wincmd t
+let s:save_winminheight = &winminheight
+let s:save_winminwidth = &winminwidth
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
+exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
+argglobal
+if bufexists(fnamemodify("~/C_Slago/Slago/Capitulo4/macros.h", ":p")) | buffer ~/C_Slago/Slago/Capitulo4/macros.h | else | edit ~/C_Slago/Slago/Capitulo4/macros.h | endif
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+lcd ~/C_Slago/Slago/Capitulo4
+wincmd w
+argglobal
+if bufexists(fnamemodify("~/C_Slago/Slago/Capitulo4/boolean.h", ":p")) | buffer ~/C_Slago/Slago/Capitulo4/boolean.h | else | edit ~/C_Slago/Slago/Capitulo4/boolean.h | endif
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 13) / 26)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+lcd ~/C_Slago/Slago/Capitulo4
+wincmd w
+exe 'vert 1resize ' . ((&columns * 57 + 57) / 115)
+exe 'vert 2resize ' . ((&columns * 57 + 57) / 115)
 tabnext 1
 set stal=1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
