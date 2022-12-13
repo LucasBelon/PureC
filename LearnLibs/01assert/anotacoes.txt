@@ -1,0 +1,28 @@
+Assert eh uma biblioteca que define MACROS.
+A utilidade se mostra quando desejamos que
+algo seja escrito na forma
+if(!ok)
+    abortar
+E talvez mais interessante. Podemos pedir que
+essa ferramenta de debbugging não se ative, dessa
+forma podemos documentar onde os erros ocorrem e,
+apos corrigi-los, desativar essa verificacao.
+Essa ativacao eh feita pela macro NDEBUG, que, se
+definida, impede a expansao da macro.
+Com isso, definido NDEBUG, a macro assert.h nao
+gera codigo.
+
+# define NDEBUG 
+# include <assert.h>
+
+Assert eh uma biblioteca que pode ter seu 
+comportamento alterado a depender da definicao de
+ndebug no momento em que eh "chamada". Dessa 
+forma, pode estar ativa em certas partes do codigo
+e desativada em outras.
+
+# undef NDEBUG
+# include <assert.h>
+
+
+

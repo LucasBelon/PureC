@@ -1,0 +1,22 @@
+ctypes trata de identificar relacoes entre 
+caracteres. Por exemplo, se eh maiusculo, minusculo, numerico, alfanumerico, e os diferentes tipos de caracteres brancos, como \t, \r, \n e " " etc.
+Isso se torna complicado de se fazer por conta da inclusao de diferentes caracteres alem dos existentes na tabela ASCII, e os diferentes idiomas existentes. 
+Dica: Armazenar entradas como int sempre. Isso evita perder informacao como fim de arquivos, ou um caracter valido.
+Funcoes:
+isalnum - Caracteres alfanumericos
+isalpha - Caracteres alfabeticos
+iscntrl - \n \t etc. Pode falhar dependendo do 
+locale
+isdigit - Caracteres decimais
+isgraph - True se Caractere aparece no display
+quando usado em print
+islower - Caracteres minusculos. Dica: Nao vai achando que todo caractere tem um maiusculo correspondente. Tem alguns que isso nem se aplica.
+isupper - Maiusculas, mesmas regras do minusculo.
+isprint - Caracteres que ocupam uma posicao de impressao
+ispunct - Pontuacao, outros alem de alphanumerico
+isspace - espaco em branco
+isexdigit - Hexadecimais
+tolower - transforma em minuscula
+toupper - transforma em maiuscula
+
+

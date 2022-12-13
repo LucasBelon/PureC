@@ -1,0 +1,76 @@
+Em float.h reside tudo que interessa a programas
+matematicos serios. 
+Existe um modelo para construir um numero do
+tipo float.
+s = sinal (+ / -)
+b = base (inteiro maior que 1)
+e = expoente (um inteiro entre e_max e e_min)
+p = precisao (numero de digitos 
+significativos em b)
+f_k = inteiros não negativos menores que b
+
+x = s × b^e × SOMA_{k=1}^{p} f_k × b^(-k)
+
+Temos uma macro que define o modo de aproximaçao
+# define FLT_ROUNDS (U)
+com U significando
+-1 : indeterminado
+ 0 : em direçao a zero
+ 1 : para o mais proximo
+ 2 : em direcao ao infinito positivo
+ 3 : em direcao ao infinito negativo
+
+FLT_RADIX PRECISA SER CONSTANTE AO LONGO DO
+PROGRAMA
+
+Outros parâmetros interessantes dos floats
+
+Quantos digitos na mantissa
+FLT_MANT_DIG
+DBL_MANT_DIG
+LDBL_MANT_DIG
+
+Numero de casas decimais resistentes a arred
+FLT_DIG
+DBL_DIG
+LDBL_DIG
+
+Menor expoente negativo
+FLT_MIN_EXP
+DBL_MIN_EXP
+LDBL_MIN_EXP
+
+Expoente do maior numero de base 10
+FLT_MIN_10_EXP
+DBL_MIN_10_EXP
+LDBL_MIN_10_EXP
+
+Maior expoente negativo
+FLT_MAX_EXP
+DLT_MAX_EXP
+LDBL_MAX_EXP
+
+Expoente do maior numero de base 10
+FLT_MAX_10_EXP
+DBL_MAX_10_EXP
+LDBL_MAX_10_EXP
+
+Maximo valor de float
+FLT_MAX
+DBL_MAX
+LDBL_MAX
+Minimo valor de float
+FLT_MIN
+DBL_MIN
+LDBL_MIN
+
+b^(1-p) (Menor valor representável na base, 
+ou seja, fora da mantissa)
+FLT_EPSILON
+DBL_EPSILON
+LDBL_EPSILON
+
+Algumas dessas macros sao importantes para 
+detectar overflow, underflow e perda de 
+significancia.
+Exemplos no arquivo .c

@@ -1,0 +1,4 @@
+Errno é um objeto do sistema que se altera sempre
+que uma system call falha. É meio imprevisível,
+mas pode ser util pra shared libraries
+
