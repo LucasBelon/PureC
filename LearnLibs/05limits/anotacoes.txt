@@ -1,0 +1,25 @@
+O que float.h define em pontos flutuantes, limits
+define em inteiros e chars.
+Um nome melhor seria integers.h, mas a historia
+influencia com o passado.
+Algumas macros de definições
+
+Tamanho em bits do menor tipo que não é um 
+campo de bits(byte)
+CHAR_BIT    8
+
+Valores limite de um signed char
+SCHAR_MIN  -127
+SCHAR_MAX   128
+
+Valor maximo de um unsigned char
+UCHAR_MAX   255
+
+Verificar
+CHAR_MIN
+CHAR_MAX
+
+Numero maximo de bytes num char multibyte em 
+qualquer locale
+MB_LEN_MAX
+
