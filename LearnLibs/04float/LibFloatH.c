@@ -1,20 +1,33 @@
-/* */
+/* Arquivo que imprime as macros definidas
+ * por float.h, neste ambiente de desenvolvimento
+ * */
 
 # include <stdio.h>
 # include <float.h>
 
 int main(void){
-    printf("RADIX: %d\n", FLT_RADIX);
-    printf("DIGITS: %d\n", FLT_DIG);
-    printf("MAX: %f\n", FLT_MAX);
-    printf("EPSILON: %f\n", FLT_EPSILON);
     printf(
-    "MAX EXP 10: %d\n", FLT_MAX_10_EXP);
-    printf(
-    "MIN EXP 10: %d\n", FLT_MIN_10_EXP);
-    printf("MANT DIG: %d\n", FLT_MANT_DIG);
-    printf(
-    "HAS SUBNORM: %d\n", FLT_HAS_SUBNORM);
+        "RADIX: %d\n\
+        \rDIGITS: %d\n\
+        \rMAX: %f\n\
+        \rEPSILON: %f\n\
+        \rMAX EXP 10: %d\n\
+        \rMIN EXP 10: %d\n\
+        \rMANT DIG: %d\n\
+        \rHAS SUBNORM: %d\n"
+        , FLT_RADIX
+        , FLT_DIG
+        , FLT_MAX
+        , FLT_EPSILON
+        , FLT_MAX_10_EXP
+        , FLT_MIN_10_EXP
+        , FLT_MANT_DIG
+        , FLT_HAS_SUBNORM);
+
+    /*
+    // Esse pedaco eh uma tentativa de se
+    // encontrar quantos digitos tem de 
+    // significancia num long double
 
     long double x = 1;
     char a=0;
@@ -24,6 +37,6 @@ int main(void){
         if (!(i%1075))
         scanf("%c",&a);
     }
-
+    */
     return 0;
 }

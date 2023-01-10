@@ -1,0 +1,59 @@
+A biblioteca math.h define uma boa quantidade
+de funcoes e uma macro.
+Duvida: funcoes trigonometricas funcionam em graus ou em radianos?
+Aparentemente em radianos.
+
+funcoes:
+acos(double)
+acosf(float)
+
+asin(double)
+asinf(float)
+
+atan(double)
+atanf(float)
+
+Calcula o atan de y/x e usa os sinais
+para descobrir qual o quadrante:
+atan2(double x, double y)
+atanf2(float x, float y)
+
+cos(double)
+cosf(float)
+
+sin(double)
+sinf(float)
+
+tan(double)
+tanf(float)
+
+cosh(double)
+coshf(float)
+
+sinh(double)
+sinhf(float)
+
+tanh(double)
+tanhf(float)
+
+exp(double) mat. equivalente a pow(e, double)
+
+log(double) logaritmo natural
+log2(double) logaritmo base 2
+log10(double) logaritmo base 10
++ versoes com float
+
+ceil(double) arredonda pro inteiro superior
+floor(double) arredonda pro inteiro inferior
+
+Algumas funcoes quebram o numero em suas partes
+inteiras e suas fracoes. Nao vou coloca-las aqui.
+
+fabs(double) calcula o valor absoluto de um
+numero.
+
+fmod(double x, double y) computa o resto da
+divisao de x/y
+
+
+

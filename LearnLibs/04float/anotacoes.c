@@ -1,4 +1,8 @@
-/* */
+/* Arquivo com exemplos de usos das macros
+ * existenres em float.h
+ * Basicamente se mostra como são tratados os
+ * casos mais simples de erros provenientes
+ * do uso de numeros de ponto flutuante.*/
 
 # include <stdio.h>
 # include <float.h>
@@ -53,9 +57,7 @@ int main(void){
     int w = 1;
     while (++w < FLT_MAX_EXP);
     --w;
-    printf("%lf\n",ldexpf(1.0, w));
-
-
+    printf("FLT_MAX_EXP: %lf\n",ldexpf(1.0, w));
 
     return 0;
 }

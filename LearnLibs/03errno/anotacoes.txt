@@ -1,4 +1,5 @@
 Errno é um objeto do sistema que se altera sempre
 que uma system call falha. É meio imprevisível,
 mas pode ser util pra shared libraries
-
+Basicamente, ele verifica uma entidade do sistema
+linux que grava erros.
