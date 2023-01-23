@@ -52,12 +52,12 @@ int main(void){
         printf("Estrutura:%p\n",*(f+i));
         printf("Ponteiro:%p\n",(f+i));
     }
-    printf("TamFuncio:%d\n",
+    printf("TamFuncio:%lu\n",
             sizeof(funcionario));
-    printf("TamPontFuncio:%d\n",
+    printf("TamPontFuncio:%lu\n",
             sizeof(funcionario *));
-    printf("TamChar:%d\n",sizeof(char));
-    printf("TamFloat:%d\n",sizeof(float));
+    printf("TamChar:%lu\n",sizeof(char));
+    printf("TamFloat:%lu\n",sizeof(float));
 
     return 0 ;
 }

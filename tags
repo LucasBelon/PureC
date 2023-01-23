@@ -1,0 +1,1297 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/data/data/com.termux/files/home/C_Slago/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+$(filter %.o,$(obj_files))	LearnMake/13_filter/Makefile	/^$(filter %.o,$(obj_files)): %.o: %.c$/;"	t
+$(filter %.result,$(obj_files))	LearnMake/13_filter/Makefile	/^$(filter %.result,$(obj_files)): %.result: %.raw$/;"	t
+$(objects)	LearnMake/12_Static-ptrn-rules/Makefile	/^$(objects): %.o: %.c$/;"	t
+%.c	LearnMake/12_Static-ptrn-rules/Makefile	/^%.c:$/;"	t
+%.c	LearnMake/13_filter/Makefile	/^%.c %.raw:$/;"	t
+%.o	LearnMake/12_Static-ptrn-rules/Makefile	/^$(objects): %.o: %.c$/;"	t
+%.o	LearnMake/13_filter/Makefile	/^$(filter %.o,$(obj_files)): %.o: %.c$/;"	t
+%.raw	LearnMake/13_filter/Makefile	/^%.c %.raw:$/;"	t
+%.result	LearnMake/13_filter/Makefile	/^$(filter %.result,$(obj_files)): %.result: %.raw$/;"	t
+ALFAMAX	Slago/Capitulo5/EX515_StrUpr.c	/^# define ALFAMAX /;"	d	file:
+ALFAMAX	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^# define ALFAMAX /;"	d	file:
+ALFAMIN	Slago/Capitulo5/EX515_StrUpr.c	/^# define ALFAMIN /;"	d	file:
+ALFAMIN	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^# define ALFAMIN /;"	d	file:
+ALIMFORM	C_Kern_Ritchie/NumberTwo/01-1testingWithTypes.c	/^# define ALIMFORM /;"	d	file:
+ARRAYSIZE	C_Kern_Ritchie/NumberFive/01-3Pointers.c	/^# define ARRAYSIZE /;"	d	file:
+ARRAYSIZE	C_Kern_Ritchie/NumberFive/01-4PointersVsIndex.c	/^# define ARRAYSIZE /;"	d	file:
+ARRAYSIZE	C_Kern_Ritchie/NumberFive/01-5PointersVsIndexV2.c	/^# define ARRAYSIZE /;"	d	file:
+ASCII_A	C_Kern_Ritchie/NumberTwo/01-4AsciiTable.c	/^# define ASCII_A /;"	d	file:
+ASCII_END	C_Kern_Ritchie/NumberTwo/01-4AsciiTable.c	/^# define ASCII_END /;"	d	file:
+Abre_Fecha	Slago/Capitulo8/Simplifica_Sintaxe.c	/^void Abre_Fecha(void (*funcao)(int, FILE*))$/;"	f	typeref:typename:void
+BOMBA	Slago/Capitulo5/CampoMinado/Utils.h	/^# define BOMBA /;"	d
+BOMBA	Slago/Capitulo5/EX524_CampoV1.c	/^# define BOMBA /;"	d	file:
+BOMBA	Slago/Capitulo5/EX525_CampoV2.c	/^# define BOMBA /;"	d	file:
+BOMBA	Slago/Capitulo5/EX526_CampoV3.c	/^# define BOMBA /;"	d	file:
+BORDA	Slago/Capitulo5/CampoMinado/Utils.h	/^# define BORDA /;"	d
+BORDA	Slago/Capitulo5/EX524_CampoV1.c	/^# define BORDA /;"	d	file:
+BORDA	Slago/Capitulo5/EX525_CampoV2.c	/^# define BORDA /;"	d	file:
+BORDA	Slago/Capitulo5/EX526_CampoV3.c	/^# define BORDA /;"	d	file:
+C - A Linguagem de Programação	C_Kern_Ritchie/NumberEight/README.md	/^# C - A Linguagem de Programação$/;"	c
+C - A Linguagem de Programação	C_Kern_Ritchie/NumberFive/README.md	/^# C - A Linguagem de Programação$/;"	c
+C - A Linguagem de Programação	C_Kern_Ritchie/NumberFour/README.md	/^# C - A Linguagem de Programação$/;"	c
+C - A Linguagem de Programação	C_Kern_Ritchie/NumberOne/README.md	/^# C - A Linguagem de Programação$/;"	c
+C - A Linguagem de Programação	C_Kern_Ritchie/NumberSeven/README.md	/^# C - A Linguagem de Programação$/;"	c
+C - A Linguagem de Programação	C_Kern_Ritchie/NumberSix/README.md	/^# C - A Linguagem de Programação$/;"	c
+C - A Linguagem de Programação	C_Kern_Ritchie/NumberThree/README.md	/^# C - A Linguagem de Programação$/;"	c
+C - A Linguagem de Programação	C_Kern_Ritchie/NumberTwo/README.md	/^# C - A Linguagem de Programação$/;"	c
+C - A Linguagem de Programação	C_Kern_Ritchie/README.md	/^# C - A Linguagem de Programação$/;"	c
+CARACTERE	Slago/Capitulo3/EX39_Exibe_Quadrado.c	/^# define CARACTERE /;"	d	file:
+CARTESIANO	Slago/Capitulo6/EX66_Segmento_Reta.c	/^} CARTESIANO;$/;"	t	typeref:struct:__anond51e0d560108	file:
+CC	LearnMake/11_implicit/Makefile	/^CC = clang # Flag para regras implicitas$/;"	m
+CFLAGS	LearnMake/11_implicit/Makefile	/^CFLAGS = -g # Ativa as informações de debug$/;"	m
+COMPLEXO	Slago/Capitulo6/EX62_Complexo.c	/^} COMPLEXO;$/;"	t	typeref:struct:__anone50a01cc0108	file:
+C\\_Learning Repo	C_Kern_Ritchie/README.md	/^## C\\_Learning Repo$/;"	s
+C_Slago	Slago/README.md	/^# C_Slago$/;"	c
+ChapterEight - The interface with Unix Systems	C_Kern_Ritchie/NumberEight/README.md	/^## ChapterEight - The interface with Unix Systems$/;"	s
+ChapterFive - Pointers and arrangements	C_Kern_Ritchie/NumberFive/README.md	/^## ChapterFive - Pointers and arrangements$/;"	s
+ChapterFour - Functions and program structures	C_Kern_Ritchie/NumberFour/README.md	/^## ChapterFour - Functions and program structures$/;"	s
+ChapterOne - Intro with Examples	C_Kern_Ritchie/NumberOne/README.md	/^## ChapterOne - Intro with Examples$/;"	s
+ChapterSeven - Input & Output	C_Kern_Ritchie/NumberSeven/README.md	/^## ChapterSeven - Input & Output$/;"	s
+ChapterSix - Structures	C_Kern_Ritchie/NumberSix/README.md	/^## ChapterSix - Structures$/;"	s
+ChapterThree - Control Flow	C_Kern_Ritchie/NumberThree/README.md	/^## ChapterThree - Control Flow$/;"	s
+ChapterTwo - Types, expressions and operators	C_Kern_Ritchie/NumberTwo/README.md	/^## ChapterTwo - Types, expressions and operators$/;"	s
+CorrigeCase	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^void CorrigeCase(s)$/;"	f
+DATA	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^} DATA;$/;"	t	typeref:struct:__anon2526b6d60108	file:
+DATA	Slago/Capitulo6/exemplo63_Rot_Nomeada.c	/^    } DATA;$/;"	t	function:main	typeref:struct:main::data	file:
+DATA	Slago/Capitulo6/exemplo64_Nomeada.c	/^    } DATA;$/;"	t	function:main	typeref:struct:main::__anon9a46cdd90108	file:
+DATA	Slago/Capitulo6/exemplo65_Inicializa_Data.c	/^} DATA;$/;"	t	typeref:struct:__anon6b4661bb0108	file:
+DATA	Slago/Capitulo6/exemplo66_Pessoa.c	/^} DATA;$/;"	t	typeref:struct:__anon5f1e48310108	file:
+DATA	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^} DATA;$/;"	t	typeref:struct:__anon06da55260108	file:
+DATA	Slago/Capitulo6/exemplo69_Tabela.c	/^} DATA;$/;"	t	typeref:struct:__anonbfb5ad320108	file:
+DIST_DIAG	Slago/Capitulo5/EX520_Freeman.c	/^# define DIST_DIAG /;"	d	file:
+DIVISOR	Slago/Capitulo3/EX34_Converte_Pol.c	/^# define DIVISOR /;"	d	file:
+END	C_Kern_Ritchie/NumberOne/03-3Constants.c	/^#define END /;"	d	file:
+EOF	C_Kern_Ritchie/NumberOne/04-1GetcharPutchar.c	/^#define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberOne/04-2GetcharPutchar.c	/^#define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberOne/05-1CharCount.c	/^#define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberOne/05-2CharCount.c	/^#define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberOne/06-1LineCount.c	/^#define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberOne/06-2LineTabSpace.c	/^#define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberOne/06-3ManageIOstream.c	/^#define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberOne/07-1CharacterCount.c	/^#define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberOne/07-2Exercise.c	/^#define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberOne/08-1ArrayCharCount.c	/^#define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberOne/08-2CharInWordCount.c	/^#define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberSeven/00-1Histogram.c	/^#define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberSeven/01-2InOut.c	/^# define EOF /;"	d	file:
+EOF	C_Kern_Ritchie/NumberThree/01-1SwitchCaseDefault.c	/^# define EOF /;"	d	file:
+EOF	Slago/Capitulo8/exemplo83_Cat.c	/^# define EOF /;"	d	file:
+EQUACAO	Slago/Capitulo6/EX66_Segmento_Reta.c	/^} EQUACAO;$/;"	t	typeref:struct:__anond51e0d560308	file:
+EXTERN	C_Kern_Ritchie/NumberSix/01-4Fields.c	/^# define EXTERN /;"	d	file:
+FIM	Slago/Capitulo3/EX33_Regressivo.c	/^# define FIM /;"	d	file:
+FIM_MAI	Slago/Capitulo8/EX82_stdout.c	/^# define FIM_MAI /;"	d	file:
+FIM_MIN	Slago/Capitulo8/EX82_stdout.c	/^# define FIM_MIN /;"	d	file:
+HORA	Slago/Capitulo6/EX65_Voo.c	/^} HORA;$/;"	t	typeref:struct:__anonc297e15c0108	file:
+HORARIO	Slago/Capitulo6/EX64_Horario.c	/^} HORARIO;$/;"	t	typeref:struct:__anon9f26fc3b0108	file:
+INCR	C_Kern_Ritchie/NumberOne/03-3Constants.c	/^#define INCR /;"	d	file:
+INDEX	C_Kern_Ritchie/NumberFive/01-4PointersVsIndex.c	/^# define INDEX /;"	d	file:
+INFO	Slago/Capitulo7/EX718_Livro.c	/^} INFO;$/;"	t	typeref:struct:__anone38b916a0108	file:
+INFO_VOO	Slago/Capitulo6/EX65_Voo.c	/^} INFO_VOO;$/;"	t	typeref:struct:__anonc297e15c0308	file:
+INICIO	Slago/Capitulo3/EX33_Regressivo.c	/^# define INICIO /;"	d	file:
+INICIO_MAI	Slago/Capitulo8/EX82_stdout.c	/^# define INICIO_MAI /;"	d	file:
+INICIO_MIN	Slago/Capitulo8/EX82_stdout.c	/^# define INICIO_MIN /;"	d	file:
+INTERVALO_X	Slago/Capitulo6/EX66_Segmento_Reta.c	/^} INTERVALO_X;$/;"	t	typeref:struct:__anond51e0d560208	file:
+KEY_WORD	C_Kern_Ritchie/NumberSix/01-4Fields.c	/^# define KEY_WORD /;"	d	file:
+LEN	C_Kern_Ritchie/NumberSeven/01-1StdLibraryAccess.c	/^# define LEN /;"	d	file:
+LIB1_H	C_Kern_Ritchie/NumberFour/CompilingExample/lib1.h	/^#define LIB1_H$/;"	d
+LIB2_H	C_Kern_Ritchie/NumberFour/CompilingExample/lib2.h	/^#define LIB2_H$/;"	d
+LIMITE	Slago/Capitulo1/exemplo11_IMC.c	/^# define LIMITE /;"	d	file:
+LIM_ALTO	Slago/Capitulo5/EX55_Polinomio.c	/^# define LIM_ALTO /;"	d	file:
+LIM_BAIXO	Slago/Capitulo5/EX55_Polinomio.c	/^# define LIM_BAIXO /;"	d	file:
+LINELENGHT	C_Kern_Ritchie/NumberTwo/01-4AsciiTable.c	/^# define LINELENGHT /;"	d	file:
+LINES	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^# define LINES /;"	d	file:
+LOOPNUM	C_Kern_Ritchie/NumberThree/01-3BreakContinueGotoLabel.c	/^# define LOOPNUM /;"	d	file:
+Linkando.o	LearnMake/11_implicit/Makefile	/^Linkando.o:$/;"	t
+MAX	Slago/Capitulo3/EX34_Converte_Pol.c	/^# define MAX /;"	d	file:
+MAX	Slago/Capitulo5/EX513_StrCpy.c	/^# define MAX /;"	d	file:
+MAX	Slago/Capitulo5/EX520_Freeman.c	/^# define MAX /;"	d	file:
+MAX	Slago/Capitulo7/EX720_PontPontDinamico.c	/^# define MAX /;"	d	file:
+MAX	Slago/Capitulo7/exemplo727_Tudo.c	/^# define MAX /;"	d	file:
+MAXLEN	C_Kern_Ritchie/NumberFour/CompilingExample/main.c	/^# define MAXLEN /;"	d	file:
+MAXLINE	C_Kern_Ritchie/NumberFive/03-2ShellOptions.c	/^# define MAXLINE /;"	d	file:
+MAXLINE	C_Kern_Ritchie/NumberThree/01-3BreakContinueGotoLabel.c	/^# define MAXLINE /;"	d	file:
+MAXLINESIZE	C_Kern_Ritchie/NumberOne/10-1BiggestLine.c	/^#define MAXLINESIZE /;"	d	file:
+MAXLINESIZE	C_Kern_Ritchie/NumberOne/10-2Scopes.c	/^# define MAXLINESIZE /;"	d	file:
+MAXLINHA	C_Kern_Ritchie/NumberTwo/01-1testingWithTypes.c	/^# define MAXLINHA /;"	d	file:
+MIN	Slago/Capitulo3/EX34_Converte_Pol.c	/^# define MIN /;"	d	file:
+NO	C_Kern_Ritchie/NumberOne/07-1CharacterCount.c	/^#define NO /;"	d	file:
+NO	C_Kern_Ritchie/NumberOne/07-2Exercise.c	/^#define NO /;"	d	file:
+NO	C_Kern_Ritchie/NumberOne/08-2CharInWordCount.c	/^#define NO /;"	d	file:
+NO	C_Kern_Ritchie/NumberSeven/00-1Histogram.c	/^#define NO /;"	d	file:
+NODE	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^    } NODE, *PNT_NODE;$/;"	t	function:main	typeref:struct:main::node	file:
+NULL	C_Kern_Ritchie/NumberFive/02-1AritmeticsWithPointers.c	/^# define NULL /;"	d	file:
+NumLetra	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^} NumLetra;$/;"	t	typeref:struct:__anon280fd31c0108	file:
+OFFSET	Slago/Capitulo8/EX82_stdout.c	/^# define OFFSET /;"	d	file:
+PASSO	Slago/Capitulo3/EX34_Converte_Pol.c	/^# define PASSO /;"	d	file:
+PASSO	Slago/Capitulo5/EX55_Polinomio.c	/^# define PASSO /;"	d	file:
+PERSONALSTRING	C_Kern_Ritchie/NumberTwo/01-1testingWithTypes.c	/^# define PERSONALSTRING /;"	d	file:
+PESSOA	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^} PESSOA ;$/;"	t	typeref:struct:__anon2526b6d60208	file:
+PESSOA	Slago/Capitulo6/exemplo66_Pessoa.c	/^} PESSOA ;$/;"	t	typeref:struct:__anon5f1e48310208	file:
+PESSOA	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^} PESSOA ;$/;"	t	typeref:struct:__anon06da55260208	file:
+PESSOA	Slago/Capitulo6/exemplo69_Tabela.c	/^} PESSOA ;$/;"	t	typeref:struct:__anonbfb5ad320208	file:
+PI	Slago/Capitulo1/exemplo15_Printf.c	/^# define PI /;"	d	file:
+PNT_NODE	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^    } NODE, *PNT_NODE;$/;"	t	function:main	typeref:struct:main::node *	file:
+PRECISAO	Slago/Capitulo4/EX4-8_9_10_11.c	/^# define PRECISAO /;"	d	file:
+Personal_strcmp	C_Kern_Ritchie/NumberFive/02-3AnotherExample.c	/^int Personal_strcmp(s,t)$/;"	f
+Personal_strcmp_withPointers	C_Kern_Ritchie/NumberFive/02-3AnotherExample.c	/^int Personal_strcmp_withPointers(s,t)$/;"	f
+Programa_C	LearnMake/11_implicit/Makefile	/^Programa_C: lib01.o lib02.o$/;"	t
+Programa_CPP	LearnMake/11_implicit/Makefile	/^Programa_CPP:$/;"	t
+SEMI_RETA	Slago/Capitulo6/EX66_Segmento_Reta.c	/^} SEMI_RETA;$/;"	t	typeref:struct:__anond51e0d560408	file:
+SHIFTNUMBER	C_Kern_Ritchie/NumberTwo/01-4AsciiTable.c	/^# define SHIFTNUMBER /;"	d	file:
+SIZE	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^    typedef int SIZE ;$/;"	t	function:main	typeref:typename:int	file:
+SIZEALLOC	C_Kern_Ritchie/NumberFive/02-1AritmeticsWithPointers.c	/^# define SIZEALLOC /;"	d	file:
+START	C_Kern_Ritchie/NumberOne/03-3Constants.c	/^#define START /;"	d	file:
+STATIC	C_Kern_Ritchie/NumberSix/01-4Fields.c	/^# define STATIC /;"	d	file:
+STRING	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^    typedef char *STRING ;$/;"	t	function:main	typeref:typename:char *	file:
+STRINGLEN	C_Kern_Ritchie/NumberTwo/01-2testingWithStrings.c	/^# define STRINGLEN /;"	d	file:
+STRINGLEN	C_Kern_Ritchie/NumberTwo/01-3ConversionOnTypes.c	/^# define STRINGLEN /;"	d	file:
+SUCCESS	C_Kern_Ritchie/NumberTwo/01-1testingWithTypes.c	/^# define SUCCESS /;"	d	file:
+SessionLoad	C_Kern_Ritchie/NumberFive/Session.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	C_Kern_Ritchie/NumberFour/Session.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	C_Kern_Ritchie/NumberOne/Session.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	C_Kern_Ritchie/NumberSeven/Session.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	C_Kern_Ritchie/NumberSix/Session.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	C_Kern_Ritchie/NumberThree/Session.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	C_Kern_Ritchie/NumberTwo/Session.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo1/Session.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo2/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo2/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo3/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo3/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo4/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo4/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo5/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo5/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo6/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo6/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo7/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo7/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo8/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	Slago/Capitulo8/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
+TABULEIRO	Slago/Capitulo5/CampoMinado/Utils.h	/^# define TABULEIRO /;"	d
+TABULEIRO	Slago/Capitulo5/EX524_CampoV1.c	/^# define TABULEIRO /;"	d	file:
+TABULEIRO	Slago/Capitulo5/EX525_CampoV2.c	/^# define TABULEIRO /;"	d	file:
+TABULEIRO	Slago/Capitulo5/EX526_CampoV3.c	/^# define TABULEIRO /;"	d	file:
+TAB_JOGADOR	Slago/Capitulo5/CampoMinado/Utils.h	/^# define TAB_JOGADOR /;"	d
+TAB_JOGADOR	Slago/Capitulo5/EX526_CampoV3.c	/^# define TAB_JOGADOR /;"	d	file:
+TAM	Slago/Capitulo5/EX531_Busca_Binaria.c	/^# define TAM /;"	d	file:
+TAM	Slago/Capitulo5/EX532_Busca_Reverso.c	/^# define TAM /;"	d	file:
+TAM	Slago/Capitulo5/EX533_Trocas.c	/^# define TAM /;"	d	file:
+TAM	Slago/Capitulo5/EX535_Selecao.c	/^# define TAM /;"	d	file:
+TAM	Slago/Capitulo5/EX536_Enxuto.c	/^#define TAM /;"	d	file:
+TAM	Slago/Capitulo5/EX537_Ordena_Strings.c	/^#define TAM /;"	d	file:
+TAM	Slago/Capitulo5/EX538_Insercao.c	/^# define TAM /;"	d	file:
+TAM	Slago/Capitulo5/EX539_Benchmark.c	/^# define TAM /;"	d	file:
+TAM	Slago/Capitulo5/exemplo523_Labirinto10x10.c	/^# define TAM /;"	d	file:
+TAM	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^# define TAM /;"	d	file:
+TAMANHO	Slago/Capitulo5/EX56_Cedulas.c	/^# define TAMANHO /;"	d	file:
+TEMPO	Slago/Capitulo6/EX65_Voo.c	/^} TEMPO;$/;"	t	typeref:struct:__anonc297e15c0208	file:
+UTILS_H	Slago/Capitulo5/CampoMinado/Utils.h	/^# define UTILS_H$/;"	d
+Utils.o	Slago/Capitulo5/CampoMinado/Makefile	/^Utils.o: Utils.c$/;"	t
+VOO	Slago/Capitulo6/EX65_Voo.c	/^} VOO;$/;"	t	typeref:struct:__anonc297e15c0408	file:
+YES	C_Kern_Ritchie/NumberOne/07-1CharacterCount.c	/^#define YES /;"	d	file:
+YES	C_Kern_Ritchie/NumberOne/07-2Exercise.c	/^#define YES /;"	d	file:
+YES	C_Kern_Ritchie/NumberOne/08-2CharInWordCount.c	/^#define YES /;"	d	file:
+YES	C_Kern_Ritchie/NumberSeven/00-1Histogram.c	/^#define YES /;"	d	file:
+__anon06da55260108	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^typedef struct {$/;"	s	file:
+__anon06da55260208	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^typedef struct {$/;"	s	file:
+__anon2526b6d60108	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^typedef struct {$/;"	s	file:
+__anon2526b6d60208	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^typedef struct {$/;"	s	file:
+__anon280fd31c0108	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^typedef struct {$/;"	s	file:
+__anon45544c200108	Slago/Capitulo6/exemplo616_Fora_Do_Campo.c	/^typedef struct {$/;"	s	file:
+__anon5f1e48310108	Slago/Capitulo6/exemplo66_Pessoa.c	/^typedef struct {$/;"	s	file:
+__anon5f1e48310208	Slago/Capitulo6/exemplo66_Pessoa.c	/^typedef struct {$/;"	s	file:
+__anon6b4661bb0108	Slago/Capitulo6/exemplo65_Inicializa_Data.c	/^typedef struct {$/;"	s	file:
+__anon6f8efd730108	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^typedef struct {$/;"	s	file:
+__anon6f8efd73020a	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^    union {$/;"	u	struct:__anon6f8efd730108	file:
+__anon83de2fc90108	Slago/Capitulo6/exemplo613_Etiquetado.c	/^typedef struct {$/;"	s	file:
+__anon83de2fc9020a	Slago/Capitulo6/exemplo613_Etiquetado.c	/^    union {$/;"	u	struct:__anon83de2fc90108	file:
+__anon853543d70108	Slago/Capitulo7/exemplo727_Tudo.c	/^typedef struct {$/;"	s	file:
+__anon8c90e8e30108	C_Kern_Ritchie/NumberSix/01-4Fields.c	/^    struct {$/;"	s	function:main	file:
+__anon9367ee8d0108	Slago/Capitulo6/exemplo61_Estru_Data.c	/^    struct {$/;"	s	function:main	file:
+__anon96687ab90108	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^    struct {$/;"	s	function:main	file:
+__anon9a46cdd90108	Slago/Capitulo6/exemplo64_Nomeada.c	/^    typedef struct {$/;"	s	function:main	file:
+__anon9f26fc3b0108	Slago/Capitulo6/EX64_Horario.c	/^typedef struct {$/;"	s	file:
+__anona4ae6fc10108	Slago/Capitulo6/exemplo617_Overflow_Underflow.c	/^typedef struct {$/;"	s	file:
+__anonaf03b58a0108	Slago/Capitulo6/exemplo615_Campos_Bits.c	/^typedef struct {$/;"	s	file:
+__anonbd9e0db60108	Slago/Capitulo7/EX717_Reescreva_a_Expressao.c	/^typedef struct {$/;"	s	file:
+__anonbfb5ad320108	Slago/Capitulo6/exemplo69_Tabela.c	/^typedef struct {$/;"	s	file:
+__anonbfb5ad320208	Slago/Capitulo6/exemplo69_Tabela.c	/^typedef struct {$/;"	s	file:
+__anonc297e15c0108	Slago/Capitulo6/EX65_Voo.c	/^typedef struct {$/;"	s	file:
+__anonc297e15c0208	Slago/Capitulo6/EX65_Voo.c	/^typedef struct {$/;"	s	file:
+__anonc297e15c0308	Slago/Capitulo6/EX65_Voo.c	/^typedef struct {$/;"	s	file:
+__anonc297e15c0408	Slago/Capitulo6/EX65_Voo.c	/^typedef struct {$/;"	s	file:
+__anonc725a1b10108	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^typedef struct { $/;"	s	file:
+__anonccdb108f010a	Slago/Capitulo6/exemplo612_Uniao.c	/^typedef union {$/;"	u	file:
+__anond15bd6c00108	Slago/Capitulo7/exemplo724_Operador_Seta.c	/^typedef struct {$/;"	s	file:
+__anond51e0d560108	Slago/Capitulo6/EX66_Segmento_Reta.c	/^typedef struct {$/;"	s	file:
+__anond51e0d560208	Slago/Capitulo6/EX66_Segmento_Reta.c	/^typedef struct {$/;"	s	file:
+__anond51e0d560308	Slago/Capitulo6/EX66_Segmento_Reta.c	/^typedef struct {$/;"	s	file:
+__anond51e0d560408	Slago/Capitulo6/EX66_Segmento_Reta.c	/^typedef struct {$/;"	s	file:
+__anone2dd444a0108	Slago/Capitulo7/exemplo723_Pont_Estru.c	/^typedef struct {$/;"	s	file:
+__anone32c1cfd0108	Slago/Capitulo7/EX720_PontPontDinamico.c	/^typedef struct {$/;"	s	file:
+__anone38b916a0108	Slago/Capitulo7/EX718_Livro.c	/^typedef struct {$/;"	s	file:
+__anone50a01cc0108	Slago/Capitulo6/EX62_Complexo.c	/^typedef struct {$/;"	s	file:
+__anone702bfb00108	Slago/Capitulo6/EX61_Livro.c	/^    struct {$/;"	s	function:main	file:
+a	LearnMake/06_strings/Makefile	/^a := one two# a é associado à string "one two"$/;"	m
+a	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    float a;$/;"	m	struct:__anond51e0d560308	typeref:typename:float	file:
+a	Slago/Capitulo6/exemplo612_Uniao.c	/^    char a;$/;"	m	union:__anonccdb108f010a	typeref:typename:char	file:
+a	Slago/Capitulo6/exemplo613_Etiquetado.c	/^        char a;  \/* 1 *\/$/;"	m	union:__anon83de2fc90108::__anon83de2fc9020a	typeref:typename:char	file:
+a	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^        char a;$/;"	m	union:__anon6f8efd730108::__anon6f8efd73020a	typeref:typename:char	file:
+a	Slago/Capitulo6/exemplo615_Campos_Bits.c	/^    unsigned    a : 1;$/;"	m	struct:__anonaf03b58a0108	typeref:typename:unsigned:1	file:
+a	Slago/Capitulo6/exemplo616_Fora_Do_Campo.c	/^    unsigned    a : 1;$/;"	m	struct:__anon45544c200108	typeref:typename:unsigned:1	file:
+a	Slago/Capitulo6/exemplo617_Overflow_Underflow.c	/^    unsigned    a : 1;$/;"	m	struct:__anona4ae6fc10108	typeref:typename:unsigned:1	file:
+aaloc	C_Kern_Ritchie/NumberFive/02-1AritmeticsWithPointers.c	/^static char *aaloc = bufaloc ; \/* Next free position *\/$/;"	v	typeref:typename:char *	file:
+abrir	Slago/Capitulo7/exemplo720_Vet_Pont_Func.c	/^void  abrir(void) { puts("Abrindo...\\n" ); }$/;"	f	typeref:typename:void
+abs	Slago/Capitulo4/EX4-8_9_10_11.c	/^# define abs(/;"	d	file:
+abs	Slago/Capitulo4/macros.h	/^# define abs(/;"	d
+acessa	Slago/Capitulo7/EX721_remove.c	/^lista acessa(lista *p, int i)$/;"	f	typeref:typename:lista
+acessa	Slago/Capitulo7/EX722_acessa.c	/^lista acessa(lista p, int pos)$/;"	f	typeref:typename:lista
+acessa	Slago/Capitulo7/EX726_ultimo.c	/^lista acessa(lista p, int pos){$/;"	f	typeref:typename:lista
+acessa	Slago/Capitulo7/exemplo732_acessa.c	/^lista acessa(lista p, int i)$/;"	f	typeref:typename:lista
+acessa	Slago/Capitulo7/exemplo733_insere_qqr.c	/^lista acessa(lista p, int i)$/;"	f	typeref:typename:lista
+acessa	Slago/Capitulo7/exemplo734_remove_qqr.c	/^lista acessa(lista p, int i)$/;"	f	typeref:typename:lista
+acessa	Slago/Capitulo7/exemplo735_alterando.c	/^lista acessa(lista p, int i)$/;"	f	typeref:typename:lista
+acessa	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^char acessa(lista L, int pos)$/;"	f	typeref:typename:char
+acessa	Slago/Capitulo7/exemplo740_MaiorItem.c	/^char acessa(lista L, int pos)$/;"	f	typeref:typename:char
+acessaUltimo	Slago/Capitulo7/EX725_muitos.c	/^lista acessaUltimo(lista L){$/;"	f	typeref:typename:lista
+alarme	Slago/Capitulo4/exemplo43_Func_Fic.c	/^void alarme(void)$/;"	f	typeref:typename:void
+aleat	Slago/Capitulo4/EX415_aleat_time.c	/^unsigned int aleat()$/;"	f	typeref:typename:unsigned int
+aleat	Slago/Capitulo4/exemplo48_Tipos_Armazenamento.c	/^int aleat(void)$/;"	f	typeref:typename:int
+alfamax	Slago/Capitulo5/EX515_StrUpr.c	/^# define alfamax /;"	d	file:
+alfamax	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^# define alfamax /;"	d	file:
+alfamin	Slago/Capitulo5/EX515_StrUpr.c	/^# define alfamin /;"	d	file:
+alfamin	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^# define alfamin /;"	d	file:
+all	C_Kern_Ritchie/NumberFour/CompilingExample/Makefile	/^all: main$/;"	t
+all	LearnMake/06_strings/Makefile	/^all: small$/;"	t
+all	LearnMake/07_allTarget/Makefile	/^all: one two three$/;"	t
+all	LearnMake/08_multiTarget/Makefile	/^all: f1.o f2.o$/;"	t
+all	LearnMake/09_wildcardStar/Makefile	/^all: one two three four$/;"	t
+all	LearnMake/11_implicit/Makefile	/^all: blah$/;"	t
+all	LearnMake/12_Static-ptrn-rules/Makefile	/^all: $(objects)$/;"	t
+all	LearnMake/13_filter/Makefile	/^all: $(obj_files)$/;"	t
+all	Slago/Capitulo5/CampoMinado/Makefile	/^all: main$/;"	t
+all.c	LearnMake/12_Static-ptrn-rules/Makefile	/^all.c:$/;"	t
+aloca	C_Kern_Ritchie/NumberFive/02-1AritmeticsWithPointers.c	/^char *aloca(n) \/* Returns a pointer to 'n' characters *\/$/;"	f
+altPuts	Slago/Capitulo7/EX76_Puts.c	/^int altPuts(const char* s)$/;"	f	typeref:typename:int
+altStrlen	Slago/Capitulo7/EX77_StrLen.c	/^int altStrlen(const char* s)$/;"	f	typeref:typename:int
+amostra	Slago/Capitulo6/exemplo615_Campos_Bits.c	/^} amostra;$/;"	t	typeref:struct:__anonaf03b58a0108	file:
+amostra	Slago/Capitulo6/exemplo616_Fora_Do_Campo.c	/^} amostra;$/;"	t	typeref:struct:__anon45544c200108	file:
+amostra	Slago/Capitulo6/exemplo617_Overflow_Underflow.c	/^} amostra;$/;"	t	typeref:struct:__anona4ae6fc10108	file:
+and	Slago/Capitulo4/boolean.h	/^# define and /;"	d
+ano	Slago/Capitulo6/EX61_Livro.c	/^        int ano;$/;"	m	struct:main::__anone702bfb00108	typeref:typename:int	file:
+ano	Slago/Capitulo6/EX65_Voo.c	/^    int ano;$/;"	m	struct:__anonc297e15c0208	typeref:typename:int	file:
+ano	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^    int ano;$/;"	m	struct:__anon2526b6d60108	typeref:typename:int	file:
+ano	Slago/Capitulo6/exemplo61_Estru_Data.c	/^        int ano;$/;"	m	struct:main::__anon9367ee8d0108	typeref:typename:int	file:
+ano	Slago/Capitulo6/exemplo62_Rotulada.c	/^        int ano;$/;"	m	struct:main::rotulo	typeref:typename:int	file:
+ano	Slago/Capitulo6/exemplo63_Rot_Nomeada.c	/^        int ano;$/;"	m	struct:main::data	typeref:typename:int	file:
+ano	Slago/Capitulo6/exemplo64_Nomeada.c	/^        int ano;$/;"	m	struct:main::__anon9a46cdd90108	typeref:typename:int	file:
+ano	Slago/Capitulo6/exemplo65_Inicializa_Data.c	/^    int ano;$/;"	m	struct:__anon6b4661bb0108	typeref:typename:int	file:
+ano	Slago/Capitulo6/exemplo66_Pessoa.c	/^    int ano;$/;"	m	struct:__anon5f1e48310108	typeref:typename:int	file:
+ano	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^    int ano;$/;"	m	struct:__anon06da55260108	typeref:typename:int	file:
+ano	Slago/Capitulo6/exemplo69_Tabela.c	/^    int ano;$/;"	m	struct:__anonbfb5ad320108	typeref:typename:int	file:
+ano	Slago/Capitulo7/EX718_Livro.c	/^    char ano[5];$/;"	m	struct:__anone38b916a0108	typeref:typename:char[5]	file:
+area_Gauss_Poligono	Slago/Capitulo5/EX520_Freeman.c	/^float area_Gauss_Poligono(seq)$/;"	f
+arq	Slago/Capitulo8/exemplo81_Variaveis_Arquivo.c	/^FILE *arq, *entrada, *saida;$/;"	v	typeref:typename:FILE *
+atio	C_Kern_Ritchie/NumberTwo/01-3ConversionOnTypes.c	/^int atio(string)$/;"	f
+autor	Slago/Capitulo6/EX61_Livro.c	/^        char autor[50];$/;"	m	struct:main::__anone702bfb00108	typeref:typename:char[50]	file:
+autor	Slago/Capitulo7/EX718_Livro.c	/^    char autor[50];$/;"	m	struct:__anone38b916a0108	typeref:typename:char[50]	file:
+b	LearnMake/06_strings/Makefile	/^b := 'one two'# b é associado à string "'one two'"$/;"	m
+b	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    float b;$/;"	m	struct:__anond51e0d560308	typeref:typename:float	file:
+b	Slago/Capitulo6/exemplo612_Uniao.c	/^    int b;$/;"	m	union:__anonccdb108f010a	typeref:typename:int	file:
+b	Slago/Capitulo6/exemplo613_Etiquetado.c	/^        int b;   \/* 2 *\/ $/;"	m	union:__anon83de2fc90108::__anon83de2fc9020a	typeref:typename:int	file:
+b	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^        int b;$/;"	m	union:__anon6f8efd730108::__anon6f8efd73020a	typeref:typename:int	file:
+b	Slago/Capitulo6/exemplo615_Campos_Bits.c	/^    signed      b : 3;$/;"	m	struct:__anonaf03b58a0108	typeref:typename:signed:3	file:
+b	Slago/Capitulo6/exemplo616_Fora_Do_Campo.c	/^    signed      b : 3;$/;"	m	struct:__anon45544c200108	typeref:typename:signed:3	file:
+b	Slago/Capitulo6/exemplo617_Overflow_Underflow.c	/^    signed      b : 3;$/;"	m	struct:__anona4ae6fc10108	typeref:typename:signed:3	file:
+bla	LearnMake/02_Timestamps/Makefile	/^bla: $/;"	t
+bla	LearnMake/02_Timestamps/Makefile	/^bla: bla.c$/;"	t
+bla	LearnMake/03_passoapasso/Makefile	/^bla: bla.o$/;"	t
+bla.c	LearnMake/03_passoapasso/Makefile	/^bla.c:$/;"	t
+bla.o	LearnMake/03_passoapasso/Makefile	/^bla.o: bla.c$/;"	t
+blah	LearnMake/11_implicit/Makefile	/^blah: blah.o$/;"	t
+blah.c	LearnMake/11_implicit/Makefile	/^blah.c:$/;"	t
+bool	Slago/Capitulo4/boolean.h	/^# define bool(/;"	d
+bufaloc	C_Kern_Ritchie/NumberFive/02-1AritmeticsWithPointers.c	/^static char bufaloc[SIZEALLOC] ; \/* Space for aloc *\/$/;"	v	typeref:typename:char[]	file:
+c	Slago/Capitulo6/exemplo612_Uniao.c	/^    float c;$/;"	m	union:__anonccdb108f010a	typeref:typename:float	file:
+c	Slago/Capitulo6/exemplo613_Etiquetado.c	/^        float c; \/* 3 *\/$/;"	m	union:__anon83de2fc90108::__anon83de2fc9020a	typeref:typename:float	file:
+c	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^        float c;$/;"	m	union:__anon6f8efd730108::__anon6f8efd73020a	typeref:typename:float	file:
+c	Slago/Capitulo6/exemplo615_Campos_Bits.c	/^    unsigned    c : 3;$/;"	m	struct:__anonaf03b58a0108	typeref:typename:unsigned:3	file:
+c	Slago/Capitulo6/exemplo616_Fora_Do_Campo.c	/^    unsigned    c : 3;$/;"	m	struct:__anon45544c200108	typeref:typename:unsigned:3	file:
+c	Slago/Capitulo6/exemplo617_Overflow_Underflow.c	/^    unsigned    c : 3;$/;"	m	struct:__anona4ae6fc10108	typeref:typename:unsigned:3	file:
+cabeca	Slago/Capitulo7/EX726_ultimo.c	/^# define cabeca(/;"	d	file:
+cabeca	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^# define cabeca(/;"	d	file:
+cabeca	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^# define cabeca(/;"	d	file:
+cabeca	Slago/Capitulo7/exemplo740_MaiorItem.c	/^# define cabeca(/;"	d	file:
+calcula_comp_semi_reta	Slago/Capitulo6/EX66_Segmento_Reta.c	/^float calcula_comp_semi_reta(SEMI_RETA semi_reta)$/;"	f	typeref:typename:float
+carrega	Slago/Capitulo7/EX75_Preenche_Vetor.c	/^void carrega(int* v, int n)$/;"	f	typeref:typename:void
+cartesiano	Slago/Capitulo6/EX63_Retas.c	/^struct cartesiano {$/;"	s	file:
+cauda	Slago/Capitulo7/EX726_ultimo.c	/^# define cauda(/;"	d	file:
+cauda	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^# define cauda(/;"	d	file:
+cauda	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^# define cauda(/;"	d	file:
+cauda	Slago/Capitulo7/exemplo740_MaiorItem.c	/^# define cauda(/;"	d	file:
+change	C_Kern_Ritchie/NumberFive/01-2PointerInFunc.c	/^void change(px, py)$/;"	f
+cidade	Slago/Capitulo6/EX65_Voo.c	/^    char cidade[30];$/;"	m	struct:__anonc297e15c0308	typeref:typename:char[30]	file:
+clean	LearnMake/04_clean/Makefile	/^clean:$/;"	t
+clean	LearnMake/05_Vars/Makefile	/^clean:$/;"	t
+clean	LearnMake/07_allTarget/Makefile	/^clean:$/;"	t
+clean	LearnMake/10_AutoVars/Makefile	/^clean:$/;"	t
+clean	LearnMake/11_implicit/Makefile	/^clean:$/;"	t
+clean	LearnMake/12_Static-ptrn-rules/Makefile	/^clean:$/;"	t
+clean	LearnMake/13_filter/Makefile	/^clean:$/;"	t
+clean	Slago/Capitulo5/CampoMinado/Makefile	/^clean:$/;"	t
+colinear	Slago/Capitulo6/EX66_Segmento_Reta.c	/^void colinear(SEMI_RETA semi_reta, CARTESIANO ponto)$/;"	f	typeref:typename:void
+com_if_else	Slago/Capitulo2/EX22_Maior.c	/^void com_if_else(void){$/;"	f	typeref:typename:void
+compara_Letra	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^int compara_Letra(const void* a, const void* b)$/;"	f	typeref:typename:int
+compara_Numero	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^int compara_Numero(const void* a, const void* b)$/;"	f	typeref:typename:int
+comprimento	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^int comprimento(lista L)$/;"	f	typeref:typename:int
+comprimento	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^int comprimento(lista L)$/;"	f	typeref:typename:int
+comprimento	Slago/Capitulo7/exemplo740_MaiorItem.c	/^int comprimento(lista L)$/;"	f	typeref:typename:int
+concatena	Slago/Capitulo7/EX724_concatena.c	/^void concatena(lista *x, lista *y)$/;"	f	typeref:typename:void
+conta	Slago/Capitulo5/EX58_Temp_Media.c	/^int conta (float t[], float m){$/;"	f	typeref:typename:int
+conta	Slago/Capitulo5/exemplo5-8_9_10_11.c	/^int conta (float t[], float m){$/;"	f	typeref:typename:int
+converte	Slago/Capitulo8/EX82_stdout.c	/^void converte(int *l, char *sinal){$/;"	f	typeref:typename:void
+copy	C_Kern_Ritchie/NumberOne/10-1BiggestLine.c	/^void copy (s1, s2) \/* copies the size of 21 in s2; We'll assume that s1 fits at s2*\/$/;"	f
+copy	C_Kern_Ritchie/NumberOne/10-2Scopes.c	/^void copy () $/;"	f	typeref:typename:void
+copy_arq	C_Kern_Ritchie/NumberSeven/02-2Files.c	/^int copy_arq(fp) \/* It copies the file fp on the stdout *\/$/;"	f
+copy_arq	C_Kern_Ritchie/NumberSeven/02-3Stderr_Exit.c	/^int copy_arq(fp) \/* It copies the file fp on the stdout *\/$/;"	f
+count	C_Kern_Ritchie/NumberSix/01-3ArrayOfStruct.c	/^        int count ; \/* Number of occurrences of a word *\/$/;"	m	struct:main::node	typeref:typename:int	file:
+count	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^        int count; \/*Number of occurencies*\/$/;"	m	struct:main::node	typeref:typename:int	file:
+data	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^    struct data {$/;"	s	function:main	file:
+data	Slago/Capitulo6/exemplo63_Rot_Nomeada.c	/^    typedef struct data {$/;"	s	function:main	file:
+day	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^    int day ;$/;"	m	struct:main::__anon96687ab90108	typeref:typename:int	file:
+day	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^    int day ;$/;"	m	struct:main::data	typeref:typename:int	file:
+day_month	C_Kern_Ritchie/NumberFive/02-4MultiDimensionalArrays.c	/^void day_month(year, day_of_the_year, amonth, aday)$/;"	f
+day_of_year	C_Kern_Ritchie/NumberFive/02-4MultiDimensionalArrays.c	/^int day_of_year(year, month, day) \/* Finds the day of the year *\/$/;"	f
+day_of_year	C_Kern_Ritchie/NumberSix/01-2StructuresAndFunctions.c	/^int day_of_year(ad) \/* It finds the day of the year from day and month*\/$/;"	f
+delay	Slago/Capitulo4/exemplo43_Func_Fic.c	/^void delay(milisegundos)$/;"	f
+desocupada	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^    unsigned desocupada : 1; $/;"	m	struct:__anonc725a1b10108	typeref:typename:unsigned:1	file:
+destino	Slago/Capitulo6/EX65_Voo.c	/^    INFO_VOO destino;$/;"	m	struct:__anonc297e15c0408	typeref:typename:INFO_VOO	file:
+destroi	Slago/Capitulo7/EX723_Destroi.c	/^void destroi(lista *p, lista (*f)(lista*))$/;"	f	typeref:typename:void
+dia	Slago/Capitulo6/EX65_Voo.c	/^    int dia;$/;"	m	struct:__anonc297e15c0208	typeref:typename:int	file:
+dia	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^    int dia;$/;"	m	struct:__anon2526b6d60108	typeref:typename:int	file:
+dia	Slago/Capitulo6/exemplo61_Estru_Data.c	/^        int dia;$/;"	m	struct:main::__anon9367ee8d0108	typeref:typename:int	file:
+dia	Slago/Capitulo6/exemplo62_Rotulada.c	/^        int dia;$/;"	m	struct:main::rotulo	typeref:typename:int	file:
+dia	Slago/Capitulo6/exemplo63_Rot_Nomeada.c	/^        int dia;$/;"	m	struct:main::data	typeref:typename:int	file:
+dia	Slago/Capitulo6/exemplo64_Nomeada.c	/^        int dia;$/;"	m	struct:main::__anon9a46cdd90108	typeref:typename:int	file:
+dia	Slago/Capitulo6/exemplo65_Inicializa_Data.c	/^    int dia;$/;"	m	struct:__anon6b4661bb0108	typeref:typename:int	file:
+dia	Slago/Capitulo6/exemplo66_Pessoa.c	/^    int dia;$/;"	m	struct:__anon5f1e48310108	typeref:typename:int	file:
+dia	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^    int dia;$/;"	m	struct:__anon06da55260108	typeref:typename:int	file:
+dia	Slago/Capitulo6/exemplo69_Tabela.c	/^    int dia;$/;"	m	struct:__anonbfb5ad320108	typeref:typename:int	file:
+dia_semana	Slago/Capitulo7/exemplo717_Dia_Da_Semana.c	/^char *dia_semana(int n)$/;"	f	typeref:typename:char *
+diga	Slago/Capitulo4/EX41_Conserte.c	/^# define diga /;"	d	file:
+diga	Slago/Capitulo4/exemplo41_Define.c	/^# define diga /;"	d	file:
+dist_Seq_Freeman	Slago/Capitulo5/EX520_Freeman.c	/^float dist_Seq_Freeman(sequencia)$/;"	f
+dist_media	Slago/Capitulo5/EX54_Desv_Pad.c	/^void dist_media(vetor, indice_vetor, media)$/;"	f
+dist_pontos	Slago/Capitulo6/EX63_Retas.c	/^float dist_pontos(struct cartesiano a, struct cartesiano b)$/;"	f	typeref:typename:float
+dist_pontos	Slago/Capitulo6/EX66_Segmento_Reta.c	/^float dist_pontos(CARTESIANO a, CARTESIANO b)$/;"	f	typeref:typename:float
+div_inteira	Slago/Capitulo4/EX416_Func_Recur.c	/^int div_inteira(int x, int y)$/;"	f	typeref:typename:int
+editar	Slago/Capitulo7/exemplo720_Vet_Pont_Func.c	/^void editar(void) { puts("Editando...\\n"); }$/;"	f	typeref:typename:void
+editora	Slago/Capitulo6/EX61_Livro.c	/^        char editora[25];$/;"	m	struct:main::__anone702bfb00108	typeref:typename:char[25]	file:
+editora	Slago/Capitulo7/EX718_Livro.c	/^    char editora[25];$/;"	m	struct:__anone38b916a0108	typeref:typename:char[25]	file:
+entrada	Slago/Capitulo8/exemplo81_Variaveis_Arquivo.c	/^FILE *arq, *entrada, *saida;$/;"	v	typeref:typename:FILE *
+equacao	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    EQUACAO equacao;$/;"	m	struct:__anond51e0d560408	typeref:typename:EQUACAO	file:
+erro_de_ES	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^    unsigned erro_de_ES : 1; $/;"	m	struct:__anonc725a1b10108	typeref:typename:unsigned:1	file:
+etiq_u	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^    union etiq_u {$/;"	u	function:main	file:
+etiqueta	Slago/Capitulo6/exemplo613_Etiquetado.c	/^    int etiqueta;$/;"	m	struct:__anon83de2fc90108	typeref:typename:int	file:
+etiqueta	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^    int etiqueta;$/;"	m	struct:__anon6f8efd730108	typeref:typename:int	file:
+exibir	Slago/Capitulo7/EX726_ultimo.c	/^void exibir(lista p){$/;"	f	typeref:typename:void
+exibir_inverso	Slago/Capitulo7/EX726_ultimo.c	/^void exibir_inverso(lista p){$/;"	f	typeref:typename:void
+f1.o	LearnMake/08_multiTarget/Makefile	/^f1.o f2.o:$/;"	t
+f2.o	LearnMake/08_multiTarget/Makefile	/^f1.o f2.o:$/;"	t
+false	Slago/Capitulo4/boolean.h	/^# define false /;"	d
+fat	Slago/Capitulo4/EX4-8_9_10_11.c	/^long double fat(long double n)$/;"	f	typeref:typename:long double
+fat	Slago/Capitulo4/EX416_Func_Recur.c	/^int fat(int n)$/;"	f	typeref:typename:int
+fechar	Slago/Capitulo7/exemplo720_Vet_Pont_Func.c	/^void fechar(void) { puts("Fechando...\\n"); }$/;"	f	typeref:typename:void
+fgets	C_Kern_Ritchie/NumberSeven/02-4InOutPut_Lines.c	/^char *fgets(s, n, iop) \/* Get 'til n characters from iop *\/$/;"	f
+file1	LearnMake/05_Vars/Makefile	/^file1:$/;"	t
+file2	LearnMake/05_Vars/Makefile	/^file2:$/;"	t
+files	LearnMake/05_Vars/Makefile	/^files := file1 file2$/;"	m
+files	LearnMake/07_allTarget/Makefile	/^files:=one two three$/;"	m
+fim	Slago/Capitulo4/EX41_Conserte.c	/^# define fim /;"	d	file:
+fim	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    float fim;$/;"	m	struct:__anond51e0d560208	typeref:typename:float	file:
+fone	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^    char fone[21];$/;"	m	struct:__anon2526b6d60208	typeref:typename:char[21]	file:
+fone	Slago/Capitulo6/exemplo66_Pessoa.c	/^    char fone[21];$/;"	m	struct:__anon5f1e48310208	typeref:typename:char[21]	file:
+fone	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^    char fone[21];$/;"	m	struct:__anon06da55260208	typeref:typename:char[21]	file:
+fone	Slago/Capitulo6/exemplo69_Tabela.c	/^    char fone[21];$/;"	m	struct:__anonbfb5ad320208	typeref:typename:char[21]	file:
+four	LearnMake/09_wildcardStar/Makefile	/^four: $(wildcard *.o)$/;"	t
+fputs	C_Kern_Ritchie/NumberSeven/02-4InOutPut_Lines.c	/^int fputs(s, iop) \/* Write the s string no the iop file*\/$/;"	f
+func	C_Kern_Ritchie/NumberSeven/02-4InOutPut_Lines.c	/^int func()$/;"	f	typeref:typename:int
+func	Slago/Capitulo8/Simplifica_Sintaxe.c	/^void func(int c, FILE *e)$/;"	f	typeref:typename:void
+funcao	Slago/Capitulo4/exemplo48_Tipos_Armazenamento.c	/^void funcao(void)$/;"	f	typeref:typename:void
+funcionario	Slago/Capitulo7/EX720_PontPontDinamico.c	/^} funcionario;$/;"	t	typeref:struct:__anone32c1cfd0108	file:
+funcionario	Slago/Capitulo7/exemplo727_Tudo.c	/^} funcionario;$/;"	t	typeref:struct:__anon853543d70108	file:
+hello	LearnMake/01_hello/Makefile	/^hello:$/;"	t
+hey	LearnMake/10_AutoVars/Makefile	/^hey: one two$/;"	t
+hip	Slago/Capitulo4/exemplo46_Hip.c	/^float hip(float a, float b)$/;"	f	typeref:typename:float
+histograma	Slago/Capitulo5/EX510_Histograma.c	/^void histograma(t,n,dias)$/;"	f
+hora	Slago/Capitulo6/EX64_Horario.c	/^    int hora;$/;"	m	struct:__anon9f26fc3b0108	typeref:typename:int	file:
+hora	Slago/Capitulo6/EX65_Voo.c	/^    int hora;$/;"	m	struct:__anonc297e15c0108	typeref:typename:int	file:
+horario	Slago/Capitulo6/EX65_Voo.c	/^    HORA horario;$/;"	m	struct:__anonc297e15c0208	typeref:typename:HORA	file:
+idade	Slago/Capitulo7/EX717_Reescreva_a_Expressao.c	/^    int idade;$/;"	m	struct:__anonbd9e0db60108	typeref:typename:int	file:
+idade	Slago/Capitulo7/exemplo723_Pont_Estru.c	/^    int idade;$/;"	m	struct:__anone2dd444a0108	typeref:typename:int	file:
+idade	Slago/Capitulo7/exemplo724_Operador_Seta.c	/^    int idade;$/;"	m	struct:__anond15bd6c00108	typeref:typename:int	file:
+iguais	Slago/Capitulo7/EX725_muitos.c	/^int iguais(lista A, lista B){$/;"	f	typeref:typename:int
+imaginario	Slago/Capitulo6/EX62_Complexo.c	/^    float imaginario; $/;"	m	struct:__anone50a01cc0108	typeref:typename:float	file:
+inicializa_campo	Slago/Capitulo5/CampoMinado/Utils.c	/^void inicializa_campo(campo, tam_y, tam_x, tabuleiro)$/;"	f
+inicializa_campo	Slago/Capitulo5/EX524_CampoV1.c	/^void inicializa_campo(campo, tam_y, tam_x)$/;"	f
+inicializa_campo	Slago/Capitulo5/EX525_CampoV2.c	/^void inicializa_campo(campo, tam_y, tam_x)$/;"	f
+inicializa_campo	Slago/Capitulo5/EX526_CampoV3.c	/^void inicializa_campo(campo, tam_y, tam_x, tabuleiro)$/;"	f
+inicio	Slago/Capitulo4/EX41_Conserte.c	/^# define inicio /;"	d	file:
+inicio	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    float inicio;$/;"	m	struct:__anond51e0d560208	typeref:typename:float	file:
+input	Slago/Capitulo4/EX41_Conserte.c	/^# define input /;"	d	file:
+insercao	Slago/Capitulo5/EX538_Insercao.c	/^void insercao(int v[], int n) { $/;"	f	typeref:typename:void
+insercao	Slago/Capitulo5/EX539_Benchmark.c	/^void insercao(int v[], int n) { $/;"	f	typeref:typename:void
+insercao	Slago/Capitulo5/exemplo537_Ordena_Insercao.c	/^void insercao(int v[], int n) { $/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/EX721_remove.c	/^void insere(lista *p, char x)$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/EX722_acessa.c	/^void insere(lista *p, char x)$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/EX723_Destroi.c	/^void insere(lista *p, char x)$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/EX724_concatena.c	/^void insere(lista *p, char x)$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/EX725_muitos.c	/^void insere(lista *p, int x){$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/EX726_ultimo.c	/^void insere(lista *p, int x){$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/exemplo729_insere.c	/^void insere(lista *p, char x){$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/exemplo730_Vendo_Funcionar.c	/^void insere(lista *p, char x)$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/exemplo731_remove.c	/^void insere(lista *p, char x)$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/exemplo732_acessa.c	/^void insere(lista *p, char x)$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/exemplo733_insere_qqr.c	/^void insere(lista *p, char x){$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/exemplo734_remove_qqr.c	/^void insere(lista *p, char x)$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/exemplo735_alterando.c	/^void insere(lista *p, char x)$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^void insere(lista *p, char x)$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^void insere(lista *p, char x)$/;"	f	typeref:typename:void
+insere	Slago/Capitulo7/exemplo740_MaiorItem.c	/^void insere(lista *p, char x)$/;"	f	typeref:typename:void
+insere_bomba	Slago/Capitulo5/CampoMinado/Utils.c	/^void insere_bomba(campo, tam_y, tam_x, n_bomba)$/;"	f
+insere_bomba	Slago/Capitulo5/EX524_CampoV1.c	/^void insere_bomba(campo, tam_y, tam_x, n_bomba)$/;"	f
+insere_bomba	Slago/Capitulo5/EX525_CampoV2.c	/^void insere_bomba(campo, tam_y, tam_x, n_bomba)$/;"	f
+insere_bomba	Slago/Capitulo5/EX526_CampoV3.c	/^void insere_bomba(campo, tam_y, tam_x, n_bomba)$/;"	f
+insere_ord	Slago/Capitulo7/EX726_ultimo.c	/^void insere_ord(lista *p, int x){$/;"	f	typeref:typename:void
+intervalo	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    INTERVALO_X intervalo;$/;"	m	struct:__anond51e0d560408	typeref:typename:INTERVALO_X	file:
+is_extern	C_Kern_Ritchie/NumberSix/01-4Fields.c	/^    unsigned is_extern : 1 ;$/;"	m	struct:main::__anon8c90e8e30108	typeref:typename:unsigned:1	file:
+is_keyword	C_Kern_Ritchie/NumberSix/01-4Fields.c	/^    unsigned is_keyword : 1 ;$/;"	m	struct:main::__anon8c90e8e30108	typeref:typename:unsigned:1	file:
+is_static	C_Kern_Ritchie/NumberSix/01-4Fields.c	/^    unsigned is_static : 1 ;$/;"	m	struct:main::__anon8c90e8e30108	typeref:typename:unsigned:1	file:
+item	Slago/Capitulo7/EX721_remove.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/EX722_acessa.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/EX723_Destroi.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/EX724_concatena.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/EX725_muitos.c	/^    int item;$/;"	m	struct:no	typeref:typename:int	file:
+item	Slago/Capitulo7/EX726_ultimo.c	/^    int item;$/;"	m	struct:no	typeref:typename:int	file:
+item	Slago/Capitulo7/exemplo728_Lista_Encadeada.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/exemplo729_insere.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/exemplo730_Vendo_Funcionar.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/exemplo731_remove.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/exemplo732_acessa.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/exemplo733_insere_qqr.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/exemplo734_remove_qqr.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/exemplo735_alterando.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+item	Slago/Capitulo7/exemplo740_MaiorItem.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
+itoa	C_Kern_Ritchie/NumberThree/01-2DoWhile.c	/^void itoa(n, s) \/* convert n to characters in s *\/$/;"	f
+keeper	C_Kern_Ritchie/NumberOne/10-2Scopes.c	/^char keeper[MAXLINESIZE] ; \/* biggest kept line*\/$/;"	v	typeref:typename:char[]
+left	C_Kern_Ritchie/NumberSix/01-3ArrayOfStruct.c	/^        struct node *left ; \/* left son *\/$/;"	m	struct:main::node	typeref:struct:node *	file:
+left	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^        struct node *left; \/*Left Child*\/$/;"	m	struct:main::node	typeref:struct:node *	file:
+leitura_stdin	Slago/Capitulo8/EX82_stdout.c	/^void leitura_stdin(char sinal){$/;"	f	typeref:typename:void
+lendo	Slago/Capitulo7/EX724_concatena.c	/^void lendo(lista p)$/;"	f	typeref:typename:void
+lendo	Slago/Capitulo7/exemplo730_Vendo_Funcionar.c	/^void lendo(lista *x)$/;"	f	typeref:typename:void
+lendo	Slago/Capitulo7/exemplo731_remove.c	/^void lendo(lista *x)$/;"	f	typeref:typename:void
+lendo	Slago/Capitulo7/exemplo732_acessa.c	/^void lendo(lista *x)$/;"	f	typeref:typename:void
+lendo	Slago/Capitulo7/exemplo733_insere_qqr.c	/^void lendo(lista *x)$/;"	f	typeref:typename:void
+lendo	Slago/Capitulo7/exemplo734_remove_qqr.c	/^void lendo(lista *x)$/;"	f	typeref:typename:void
+lendo	Slago/Capitulo7/exemplo735_alterando.c	/^void lendo(lista *x)$/;"	f	typeref:typename:void
+lenght	C_Kern_Ritchie/NumberTwo/01-2testingWithStrings.c	/^int lenght(s)$/;"	f
+ler_diag	Slago/Capitulo5/EX521_Diag_Princ.c	/^void ler_diag(matriz, tamanho)$/;"	f
+letra	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^    char letra;$/;"	m	struct:__anon280fd31c0108	typeref:typename:char	file:
+lib1	C_Kern_Ritchie/NumberFour/CompilingExample/lib1.c	/^char lib1(s)$/;"	f
+lib1.o	C_Kern_Ritchie/NumberFour/CompilingExample/Makefile	/^lib1.o: lib1.c$/;"	t
+lib2	C_Kern_Ritchie/NumberFour/CompilingExample/lib2.c	/^int lib2(x,y)$/;"	f
+lib2.o	C_Kern_Ritchie/NumberFour/CompilingExample/Makefile	/^lib2.o: lib2.c$/;"	t
+line	C_Kern_Ritchie/NumberOne/10-2Scopes.c	/^char line[MAXLINESIZE] ; \/* current line*\/$/;"	v	typeref:typename:char[]
+linha	Slago/Capitulo5/EX510_Histograma.c	/^void linha(int n){$/;"	f	typeref:typename:void
+lista	Slago/Capitulo7/EX721_remove.c	/^} *lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/EX722_acessa.c	/^} *lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/EX723_Destroi.c	/^} * lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/EX724_concatena.c	/^} *lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/EX725_muitos.c	/^} * lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/EX726_ultimo.c	/^} * lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/exemplo728_Lista_Encadeada.c	/^} *lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/exemplo729_insere.c	/^} *lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/exemplo730_Vendo_Funcionar.c	/^} *lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/exemplo731_remove.c	/^} *lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/exemplo732_acessa.c	/^} *lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/exemplo733_insere_qqr.c	/^} *lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/exemplo734_remove_qqr.c	/^} *lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/exemplo735_alterando.c	/^} *lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^} * lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^} * lista;$/;"	t	typeref:struct:no *	file:
+lista	Slago/Capitulo7/exemplo740_MaiorItem.c	/^} * lista;$/;"	t	typeref:struct:no *	file:
+loop	Slago/Capitulo4/exemplo410_Recurs_Sem_Fim.c	/^void loop(void)$/;"	f	typeref:typename:void
+main	C_Kern_Ritchie/NumberFive/01-1PointerIntro.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberFive/01-2PointerInFunc.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberFive/01-3Pointers.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberFive/01-4PointersVsIndex.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberFive/01-5PointersVsIndexV2.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberFive/02-1AritmeticsWithPointers.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberFive/02-2PointersCharFunc.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberFive/02-3AnotherExample.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberFive/02-4MultiDimensionalArrays.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberFive/03-2ShellOptions.c	/^int main(argc, argv)$/;"	f
+main	C_Kern_Ritchie/NumberFour/CompilingExample/Makefile	/^main: main.c lib1.o lib2.o$/;"	t
+main	C_Kern_Ritchie/NumberFour/CompilingExample/main.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberFour/debbuging/main.c	/^int main (){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberOne/00-1gcc_compiled.c	/^int main()$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberOne/00-2array_test.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberOne/01-1HelloWorld.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/01-2HelloWorld.c	/^main()$/;"	f
+main	C_Kern_Ritchie/NumberOne/02-1FahrCelsius.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/02-2FahrCelsius.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/02-3FarhCelsius.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/03-1HeaderFahrCelsius.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/03-2InverseHeaderFahrCelsius.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/03-3Constants.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/04-1GetcharPutchar.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/04-2GetcharPutchar.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/05-1CharCount.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/05-2CharCount.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/06-1LineCount.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/06-2LineTabSpace.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/06-3ManageIOstream.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/07-1CharacterCount.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/07-2Exercise.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/08-1ArrayCharCount.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/08-2CharInWordCount.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberOne/09-1PowerFunction.c	/^int main(){         \/* It tests the pot function*\/$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberOne/10-1BiggestLine.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberOne/10-2Scopes.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSeven/00-1Histogram.c	/^main(){$/;"	f
+main	C_Kern_Ritchie/NumberSeven/00-2SystemExample.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSeven/01-1StdLibraryAccess.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSeven/01-2InOut.c	/^int main(){ \/* Convert to lower case *\/$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSeven/01-3Scanf.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSeven/01-4SscanfSprintf.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSeven/02-1FilesIntro.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSeven/02-2Files.c	/^int main(argc, argv)$/;"	f
+main	C_Kern_Ritchie/NumberSeven/02-3Stderr_Exit.c	/^int main(argc, argv) \/* Cat: conCATenate.*\/$/;"	f
+main	C_Kern_Ritchie/NumberSeven/02-4InOutPut_Lines.c	/^int main(){ system("ncal"); return 0;}$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSix/01-3ArrayOfStruct.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSix/01-4Fields.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberSix/playingWithArraysAndPointers.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberThree/01-1SwitchCaseDefault.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberThree/01-2DoWhile.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberThree/01-3BreakContinueGotoLabel.c	/^int main() \/* Removes ending whites and tabs *\/$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberTwo/01-1testingWithTypes.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberTwo/01-2testingWithStrings.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberTwo/01-3ConversionOnTypes.c	/^int main(){$/;"	f	typeref:typename:int
+main	C_Kern_Ritchie/NumberTwo/01-4AsciiTable.c	/^int main(){$/;"	f	typeref:typename:int
+main	LearnLibs/04float/LibFloatH.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LearnLibs/04float/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LearnLibs/05limits/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LearnLibs/06locale/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LearnLibs/07math/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LearnMake/02_Timestamps/bla.c	/^int main(void){$/;"	f	typeref:typename:int
+main	LearnMake/03_passoapasso/Makefile	/^main: bla$/;"	t
+main	LearnMake/03_passoapasso/bla.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo1/EX12_Circulo.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo1/EX13_Media_Notas.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo1/EX14_Km_Litro.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo1/EX15_Dec_Oc_Hex.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo1/EX16_Converte_Temperatura.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo1/EX17_Pitagoras.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo1/exemplo11_IMC.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo1/exemplo12_Declara_Variavel.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo1/exemplo13_Tipos_Modificados.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo1/exemplo14_Scanf.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo1/exemplo15_Printf.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo1/exemplo16_Saida_Formatada.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/EX210_Calc_Vaza_Switch.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/EX211_Peso_Ideal.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/EX212_Personalidade.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/EX21_Preveja_a_saida.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/EX22_Maior.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/EX23_Bissexto.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/EX24_Abs.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/EX25_Reajuste_salarial.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/EX26_Erro_Detectado.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/EX27_Str_True_False.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/EX28_Rec_Apr_Repr.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/EX29_Bhaskara.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/exemplo21_OpRel_OpLogicos.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/exemplo22_Decisao.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/exemplo23_Blocos_Instrucoes.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/exemplo24_Unica_Alternativa.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/exemplo25_Ternario.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/exemplo26_TernarioV2.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/exemplo27_If_aninhado_encadeado.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/exemplo28_Switch_Com_Vazamento.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo2/exemplo29_Switch_Calculadora.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX310_Digito_Verificador.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX311_Numero_Triangular.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX314_MinMax.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX315_Desconto.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX316_Cred_Deb.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX31_Reescreva_Compacto.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX32_Prejeva_a_Saida.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX33_Regressivo.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX34_Converte_Pol.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX35_Pot_Natural.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX36_Fat.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX37_Pot_Soma_Impares.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX38_Fibo.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/EX39_Exibe_Quadrado.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/exemplo310_Break.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/exemplo31_Forma_Compacta.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/exemplo32_Incr_Decr.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/exemplo33_Contagem.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/exemplo35_Tabuada.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/exemplo36_Itoa.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo3/exemplo38_Digitos.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/EX4-8_9_10_11.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/EX415_aleat_time.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/EX416_Func_Recur.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/EX43_Teste_Macros.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/EX44_Bool.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/exemplo410_Recurs_Sem_Fim.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/exemplo411_Pot_Recursiva.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/exemplo41_Define.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/exemplo42_Include_Header.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/exemplo43_Func_Fic.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/exemplo46_Hip.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/exemplo47_max.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo4/exemplo48_Tipos_Armazenamento.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/CampoMinado/Makefile	/^main: main.c Utils.o $/;"	t
+main	Slago/Capitulo5/CampoMinado/main.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX510_Histograma.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX513_StrCpy.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX514_StrLen.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX515_StrUpr.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX516_StrCat.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX517_StrPos.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX518_StrDel.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX519_StrIns.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX51_Vet_Armazena.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX520_Freeman.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX521_Diag_Princ.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX523_Velha.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX524_CampoV1.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX525_CampoV2.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX526_CampoV3.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX528_Busca.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX529_Sentinela.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX52_Simule.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX530_Convidados.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX531_Busca_Binaria.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX532_Busca_Reverso.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX533_Trocas.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX535_Selecao.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX536_Enxuto.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX537_Ordena_Strings.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX538_Insercao.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX539_Benchmark.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX53_Exiba_Inverso.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX54_Desv_Pad.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX55_Polinomio.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX56_Cedulas.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX58_Temp_Media.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/EX59_minimax.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo5-8_9_10_11.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo512_Strings.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo513_Leia_String.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo514_Inicializa_String.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo515_OpRel_Strings.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo516_StrCmp.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo517_StrCmp_Exemplo.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo518_Matriz.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo519_Leia_Matriz.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo520_Vetor_Strings.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo521_Inicializa_Matriz.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo522_Menu_Opcoes.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo523_Labirinto10x10.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo524_Busca_Linear.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo527_Busca_Binaria.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo52_indices.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo531_Ordena_Trocas.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo53_indice_inadequado.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo54_Vetor_Estatico.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo55_Inicializa_vetor.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo56_Tamanho_Implicito.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo5/exemplo57_Ender_vetor.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/EX61_Livro.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/EX62_Complexo.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/EX63_Retas.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/EX64_Horario.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/EX65_Voo.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/EX66_Segmento_Reta.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo612_Uniao.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo613_Etiquetado.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo615_Campos_Bits.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo616_Fora_Do_Campo.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo617_Overflow_Underflow.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo61_Estru_Data.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo62_Rotulada.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo63_Rot_Nomeada.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo64_Nomeada.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo65_Inicializa_Data.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo66_Pessoa.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo6/exemplo69_Tabela.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX710_Argv.c	/^int main(int argc, char* argv[]){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX713_StrChr.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX714_StrSub.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX715_Monet.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX717_Reescreva_a_Expressao.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX718_Livro.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX71_Explique.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX720_PontPontDinamico.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX721_remove.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX722_acessa.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX723_Destroi.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX724_concatena.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX725_muitos.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX726_ultimo.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX72_Minimax.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX74_Indirecao_Multipla.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX75_Preenche_Vetor.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX76_Puts.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX77_StrLen.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/EX79_CronoSleep.c	/^int main(int argc, char *argv[]){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo710_Incr_Decr.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo711_Pont_Ints.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo712_Matriz_Vet.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo713_Matriz_Pont.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo715_Eco.c	/^int main(int argc, char *argv[]){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo716_Grafico.c	/^int main(int argc, char *argv[]){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo717_Dia_Da_Semana.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo719_Pont_Func.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo71_Pont_Const.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo720_Vet_Pont_Func.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo721_Redundancia_De_Codigo.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo722_Eliminando_Redundancia.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo723_Pont_Estru.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo724_Operador_Seta.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo725_Vet_Dinamic.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo726_Free.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo727_Tudo.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo728_Lista_Encadeada.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo729_insere.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo72_Atribuindo_Endereco.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo730_Vendo_Funcionar.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo731_remove.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo732_acessa.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo733_insere_qqr.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo734_remove_qqr.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo735_alterando.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo73_Acessando.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo740_MaiorItem.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo74_Incompativeis.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo75_Passagem_Ref.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo76_Usando_Ref.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo77_Multi_Camada.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo78_Notacao_Pont_Vet.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo7/exemplo79_Aritimetica.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/EX81_cat.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/EX82_stdout.c	/^int main(int argc, char **argv){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/EX83_Copia_Arquivo.c	/^int main(int argc, char *argv[]){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/EX84_criptoSenha.c	/^int main(int argc, char **argv){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/Simplifica_Sintaxe.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/exemplo811_Lendo_arquivo.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/exemplo812_cripto.c	/^int main(int argc, char *argv[]){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/exemplo81_Variaveis_Arquivo.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/exemplo82_Enviando.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/exemplo83_Cat.c	/^int main(void){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/exemplo87_Abrindo_Arquivo.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/exemplo88_Gravando_Arquivo.c	/^int main(){$/;"	f	typeref:typename:int
+main	Slago/Capitulo8/exemplo89_Fechando.c	/^int main(void){$/;"	f	typeref:typename:int
+main	fibo.py	/^def main():$/;"	f
+main1	C_Kern_Ritchie/NumberFive/03-1ArgcArgv.c	/^int main1(argc, argv) \/* We'll replicate the echo function *\/$/;"	f
+main2	C_Kern_Ritchie/NumberFive/03-1ArgcArgv.c	/^int main2(argc, argv)$/;"	f
+main2	Slago/Capitulo7/EX71_Explique.c	/^int main2(void)$/;"	f	typeref:typename:int
+main3	C_Kern_Ritchie/NumberFive/03-1ArgcArgv.c	/^int main3(argc, argv)$/;"	f
+mainTwo	C_Kern_Ritchie/NumberSix/playingWithArraysAndPointers.c	/^int mainTwo(){$/;"	f	typeref:typename:int
+maior	Slago/Capitulo7/exemplo722_Eliminando_Redundancia.c	/^int maior(int x, int y) { return x<y;}$/;"	f	typeref:typename:int
+maiuscula	Slago/Capitulo8/EX82_stdout.c	/^void maiuscula(int *l){$/;"	f	typeref:typename:void
+marca_N_bomba_contorno	Slago/Capitulo5/CampoMinado/Utils.c	/^void marca_N_bomba_contorno(campo,tam_y,tam_x)$/;"	f
+marca_N_bomba_contorno	Slago/Capitulo5/EX525_CampoV2.c	/^void marca_N_bomba_contorno(campo,tam_y,tam_x)$/;"	f
+marca_N_bomba_contorno	Slago/Capitulo5/EX526_CampoV3.c	/^void marca_N_bomba_contorno(campo,tam_y,tam_x)$/;"	f
+max	C_Kern_Ritchie/NumberOne/10-2Scopes.c	/^int max ; \/* Max size until now*\/$/;"	v	typeref:typename:int
+max	Slago/Capitulo4/exemplo47_max.c	/^double max(double a, double b)$/;"	f	typeref:typename:double
+max	Slago/Capitulo4/macros.h	/^# define max(/;"	d
+max	Slago/Capitulo5/EX58_Temp_Media.c	/^# define max /;"	d	file:
+max	Slago/Capitulo5/exemplo5-8_9_10_11.c	/^# define max /;"	d	file:
+max	Slago/Capitulo5/exemplo55_Inicializa_vetor.c	/^# define max /;"	d	file:
+max	Slago/Capitulo7/exemplo721_Redundancia_De_Codigo.c	/^int max(int v[], int n)$/;"	f	typeref:typename:int
+max	Slago/Capitulo7/exemplo740_MaiorItem.c	/^# define max(/;"	d	file:
+maximo	Slago/Capitulo7/exemplo740_MaiorItem.c	/^char maximo(lista L)$/;"	f	typeref:typename:char
+media	Slago/Capitulo5/EX58_Temp_Media.c	/^float media(float t[]) {$/;"	f	typeref:typename:float
+media	Slago/Capitulo5/exemplo5-8_9_10_11.c	/^float media(float t[]) {$/;"	f	typeref:typename:float
+media_vetor	Slago/Capitulo5/EX54_Desv_Pad.c	/^float media_vetor(vetor, indice_vetor)$/;"	f
+menor	Slago/Capitulo7/exemplo722_Eliminando_Redundancia.c	/^int menor(int x, int y) { return x>y;}$/;"	f	typeref:typename:int
+mes	Slago/Capitulo6/EX65_Voo.c	/^    int mes;$/;"	m	struct:__anonc297e15c0208	typeref:typename:int	file:
+mes	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^    int mes;$/;"	m	struct:__anon2526b6d60108	typeref:typename:int	file:
+mes	Slago/Capitulo6/exemplo61_Estru_Data.c	/^        int mes;$/;"	m	struct:main::__anon9367ee8d0108	typeref:typename:int	file:
+mes	Slago/Capitulo6/exemplo62_Rotulada.c	/^        int mes;$/;"	m	struct:main::rotulo	typeref:typename:int	file:
+mes	Slago/Capitulo6/exemplo63_Rot_Nomeada.c	/^        int mes;$/;"	m	struct:main::data	typeref:typename:int	file:
+mes	Slago/Capitulo6/exemplo64_Nomeada.c	/^        int mes;$/;"	m	struct:main::__anon9a46cdd90108	typeref:typename:int	file:
+mes	Slago/Capitulo6/exemplo65_Inicializa_Data.c	/^    int mes;$/;"	m	struct:__anon6b4661bb0108	typeref:typename:int	file:
+mes	Slago/Capitulo6/exemplo66_Pessoa.c	/^    int mes;$/;"	m	struct:__anon5f1e48310108	typeref:typename:int	file:
+mes	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^    int mes;$/;"	m	struct:__anon06da55260108	typeref:typename:int	file:
+mes	Slago/Capitulo6/exemplo69_Tabela.c	/^    int mes;$/;"	m	struct:__anonbfb5ad320108	typeref:typename:int	file:
+min	Slago/Capitulo7/exemplo721_Redundancia_De_Codigo.c	/^int min(int v[], int n)$/;"	f	typeref:typename:int
+minimax	Slago/Capitulo5/EX59_minimax.c	/^void minimax(vet, min, max, tam_vet)$/;"	f
+minimax	Slago/Capitulo7/EX72_Minimax.c	/^void minimax(int v[], int n, int * a, int * b)$/;"	f	typeref:typename:void
+minmax	Slago/Capitulo7/exemplo722_Eliminando_Redundancia.c	/^int minmax(int v[], int n, int (*cmp)(int,int))$/;"	f	typeref:typename:int
+minuscula	Slago/Capitulo8/EX82_stdout.c	/^void minuscula(int *l){$/;"	f	typeref:typename:void
+minuto	Slago/Capitulo6/EX64_Horario.c	/^    int minuto;$/;"	m	struct:__anon9f26fc3b0108	typeref:typename:int	file:
+minuto	Slago/Capitulo6/EX65_Voo.c	/^    int minuto;$/;"	m	struct:__anonc297e15c0108	typeref:typename:int	file:
+monet	Slago/Capitulo7/EX715_Monet.c	/^char *monet(const long double v)$/;"	f	typeref:typename:char *
+month	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^    int month ; $/;"	m	struct:main::__anon96687ab90108	typeref:typename:int	file:
+month	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^    int month ; $/;"	m	struct:main::data	typeref:typename:int	file:
+month_name	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^    char month_name[4] ;$/;"	m	struct:main::__anon96687ab90108	typeref:typename:char[4]	file:
+month_name	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^    char month_name[4] ;$/;"	m	struct:main::data	typeref:typename:char[4]	file:
+mostra_Sequencial	Slago/Capitulo7/exemplo712_Matriz_Vet.c	/^void mostra_Sequencial(char (*matcar)[8])$/;"	f	typeref:typename:void
+mostra_Sequencial	Slago/Capitulo7/exemplo713_Matriz_Pont.c	/^void mostra_Sequencial(char** sequencia)$/;"	f	typeref:typename:void
+mostra_personalizado	Slago/Capitulo5/CampoMinado/Utils.c	/^int mostra_personalizado(campo, campo_jogador, tam_y, tam_x, pos_y, pos_x)$/;"	f
+mostra_personalizado	Slago/Capitulo5/EX526_CampoV3.c	/^int mostra_personalizado(campo, campo_jogador, tam_y, tam_x, pos_y, pos_x)$/;"	f
+muda_coordenada	Slago/Capitulo5/EX520_Freeman.c	/^void muda_coordenada(coord, direcao)$/;"	f
+mutante	Slago/Capitulo6/exemplo612_Uniao.c	/^} mutante;$/;"	t	typeref:union:__anonccdb108f010a	file:
+mutante	Slago/Capitulo6/exemplo613_Etiquetado.c	/^} mutante;$/;"	t	typeref:struct:__anon83de2fc90108	file:
+mutante	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^} mutante;$/;"	t	typeref:struct:__anon6f8efd730108	file:
+n	Slago/Capitulo4/EX41_Conserte.c	/^int n;$/;"	v	typeref:typename:programa inicio int
+nasc	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^    DATA nasc;$/;"	m	struct:__anon2526b6d60208	typeref:typename:DATA	file:
+nasc	Slago/Capitulo6/exemplo66_Pessoa.c	/^    DATA nasc;$/;"	m	struct:__anon5f1e48310208	typeref:typename:DATA	file:
+nasc	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^    DATA nasc;$/;"	m	struct:__anon06da55260208	typeref:typename:DATA	file:
+nasc	Slago/Capitulo6/exemplo69_Tabela.c	/^    DATA nasc;$/;"	m	struct:__anonbfb5ad320208	typeref:typename:DATA	file:
+no	Slago/Capitulo7/EX721_remove.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/EX722_acessa.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/EX723_Destroi.c	/^typedef struct no{$/;"	s	file:
+no	Slago/Capitulo7/EX724_concatena.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/EX725_muitos.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/EX726_ultimo.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/exemplo728_Lista_Encadeada.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/exemplo729_insere.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/exemplo730_Vendo_Funcionar.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/exemplo731_remove.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/exemplo732_acessa.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/exemplo733_insere_qqr.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/exemplo734_remove_qqr.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/exemplo735_alterando.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^typedef struct no {$/;"	s	file:
+no	Slago/Capitulo7/exemplo740_MaiorItem.c	/^typedef struct no {$/;"	s	file:
+node	C_Kern_Ritchie/NumberSix/01-3ArrayOfStruct.c	/^    struct node { \/* The node *\/$/;"	s	function:main	file:
+node	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^    typedef struct node { \/*The basic node*\/$/;"	s	function:main	file:
+nome	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^    char nome[31];$/;"	m	struct:__anon2526b6d60208	typeref:typename:char[31]	file:
+nome	Slago/Capitulo6/exemplo62_Rotulada.c	/^    } nome;$/;"	t	function:main	typeref:struct:main::rotulo	file:
+nome	Slago/Capitulo6/exemplo66_Pessoa.c	/^    char nome[31];$/;"	m	struct:__anon5f1e48310208	typeref:typename:char[31]	file:
+nome	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^    char nome[31];$/;"	m	struct:__anon06da55260208	typeref:typename:char[31]	file:
+nome	Slago/Capitulo6/exemplo69_Tabela.c	/^    char nome[31];$/;"	m	struct:__anonbfb5ad320208	typeref:typename:char[31]	file:
+nome	Slago/Capitulo7/EX717_Reescreva_a_Expressao.c	/^    char nome[31];$/;"	m	struct:__anonbd9e0db60108	typeref:typename:char[31]	file:
+nome	Slago/Capitulo7/EX720_PontPontDinamico.c	/^    char nome[21];$/;"	m	struct:__anone32c1cfd0108	typeref:typename:char[21]	file:
+nome	Slago/Capitulo7/exemplo723_Pont_Estru.c	/^    char nome[31];$/;"	m	struct:__anone2dd444a0108	typeref:typename:char[31]	file:
+nome	Slago/Capitulo7/exemplo724_Operador_Seta.c	/^    char nome[31];$/;"	m	struct:__anond15bd6c00108	typeref:typename:char[31]	file:
+nome	Slago/Capitulo7/exemplo727_Tudo.c	/^    char nome[21];$/;"	m	struct:__anon853543d70108	typeref:typename:char[21]	file:
+nosound	Slago/Capitulo4/exemplo43_Func_Fic.c	/^void nosound(void)$/;"	f	typeref:typename:void
+not	Slago/Capitulo4/boolean.h	/^# define not /;"	d
+numero	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^    int numero;$/;"	m	struct:__anon280fd31c0108	typeref:typename:int	file:
+numero_bombas_contorno	Slago/Capitulo5/CampoMinado/Utils.c	/^int numero_bombas_contorno(campo, tam_y, tam_x, pos_y, pos_x)$/;"	f
+numero_bombas_contorno	Slago/Capitulo5/EX525_CampoV2.c	/^int numero_bombas_contorno(campo, tam_y, tam_x, pos_y, pos_x)$/;"	f
+numero_bombas_contorno	Slago/Capitulo5/EX526_CampoV3.c	/^int numero_bombas_contorno(campo, tam_y, tam_x, pos_y, pos_x)$/;"	f
+obj_files	LearnMake/13_filter/Makefile	/^obj_files = foo.result bar.o lose.o$/;"	m
+objects	LearnMake/12_Static-ptrn-rules/Makefile	/^objects = foo.o bar.o all.o$/;"	m
+obtem	Slago/Capitulo5/EX58_Temp_Media.c	/^void obtem(float t[]) {$/;"	f	typeref:typename:void
+obtem	Slago/Capitulo5/exemplo5-8_9_10_11.c	/^void obtem(float t[]) {$/;"	f	typeref:typename:void
+ocorr_item	Slago/Capitulo7/EX725_muitos.c	/^int ocorr_item(lista L, int x){$/;"	f	typeref:typename:int
+oi	Slago/Capitulo4/exemplo41_Define.c	/^# define oi /;"	d	file:
+one	LearnMake/07_allTarget/Makefile	/^one:$/;"	t
+one	LearnMake/09_wildcardStar/Makefile	/^one:$/;"	t
+one	LearnMake/10_AutoVars/Makefile	/^one:$/;"	t
+or	Slago/Capitulo4/boolean.h	/^# define or /;"	d
+origem	Slago/Capitulo6/EX65_Voo.c	/^    INFO_VOO origem;$/;"	m	struct:__anonc297e15c0408	typeref:typename:INFO_VOO	file:
+other_file	LearnMake/04_clean/Makefile	/^other_file:$/;"	t
+parametros	Slago/Capitulo4/exemplo43_Func_Fic.c	/^void parametros()$/;"	f	typeref:typename:void
+pega_equacao	Slago/Capitulo6/EX66_Segmento_Reta.c	/^EQUACAO pega_equacao(CARTESIANO p1, CARTESIANO p2)$/;"	f	typeref:typename:EQUACAO
+pega_intervalo	Slago/Capitulo6/EX66_Segmento_Reta.c	/^INTERVALO_X pega_intervalo(CARTESIANO p1, CARTESIANO p2)$/;"	f	typeref:typename:INTERVALO_X
+permutacao	Slago/Capitulo7/exemplo75_Passagem_Ref.c	/^void permutacao(int p, int q)$/;"	f	typeref:typename:void
+permutacao	Slago/Capitulo7/exemplo76_Usando_Ref.c	/^void permutacao(int * p, int * q)$/;"	f	typeref:typename:void
+personal_free	C_Kern_Ritchie/NumberFive/02-1AritmeticsWithPointers.c	/^void personal_free(p) \/* Turn free the space pointed by 'p'*\/$/;"	f
+personal_strcpy	C_Kern_Ritchie/NumberFive/02-2PointersCharFunc.c	/^void personal_strcpy(s,t) \/* Copy the string s to the string t *\/$/;"	f
+pertence	Slago/Capitulo5/EX529_Sentinela.c	/^int pertence(int x, int L[], int n){$/;"	f	typeref:typename:int
+pertence	Slago/Capitulo5/EX530_Convidados.c	/^int pertence(x,L,n)$/;"	f
+pertence	Slago/Capitulo5/EX531_Busca_Binaria.c	/^int pertence(int x, int L[], int n)$/;"	f	typeref:typename:int
+pertence	Slago/Capitulo5/EX532_Busca_Reverso.c	/^int pertence(int x, int L[], int n)$/;"	f	typeref:typename:int
+pertence	Slago/Capitulo5/exemplo524_Busca_Linear.c	/^int pertence(int x, int L[], int n){$/;"	f	typeref:typename:int
+pertence	Slago/Capitulo5/exemplo527_Busca_Binaria.c	/^int pertence(int x, int L[], int n)$/;"	f	typeref:typename:int
+pessoa	Slago/Capitulo7/EX717_Reescreva_a_Expressao.c	/^} pessoa;$/;"	t	typeref:struct:__anonbd9e0db60108	file:
+pessoa	Slago/Capitulo7/exemplo723_Pont_Estru.c	/^} pessoa;$/;"	t	typeref:struct:__anone2dd444a0108	file:
+pessoa	Slago/Capitulo7/exemplo724_Operador_Seta.c	/^} pessoa;$/;"	t	typeref:struct:__anond15bd6c00108	file:
+posicao	Slago/Capitulo5/EX528_Busca.c	/^int posicao(int x, int L[], int n) {$/;"	f	typeref:typename:int
+pot	C_Kern_Ritchie/NumberOne/09-1PowerFunction.c	/^int pot(x, n)       \/* executes the power operation*\/$/;"	f
+pot	Slago/Capitulo4/EX4-8_9_10_11.c	/^long double pot(x,n)$/;"	f
+pot	Slago/Capitulo4/exemplo411_Pot_Recursiva.c	/^double pot(double x, unsigned int n)$/;"	f	typeref:typename:double
+pred	Slago/Capitulo4/EX416_Func_Recur.c	/^int pred(int x) {return x-1;}$/;"	f	typeref:typename:int
+preenche	Slago/Capitulo5/exemplo523_Labirinto10x10.c	/^void preenche(int L[TAM][TAM]) {$/;"	f	typeref:typename:void
+preenche_Estrutura	Slago/Capitulo7/EX718_Livro.c	/^void preenche_Estrutura(INFO* e)$/;"	f	typeref:typename:void
+preenche_tres	Slago/Capitulo5/EX539_Benchmark.c	/^void preenche_tres(int Vor[], int n, int V1[], int V2[])$/;"	f	typeref:typename:void
+print	LearnMake/09_wildcardStar/Makefile	/^print: $(wildcard *.c)$/;"	t
+prod	Slago/Capitulo4/EX416_Func_Recur.c	/^int prod(int x, int y)$/;"	f	typeref:typename:int
+programa	Slago/Capitulo4/EX41_Conserte.c	/^# define programa /;"	d	file:
+prox	Slago/Capitulo7/EX721_remove.c	/^    struct no *prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/EX722_acessa.c	/^    struct no *prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/EX723_Destroi.c	/^    struct no * prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/EX724_concatena.c	/^    struct no * prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/EX725_muitos.c	/^    struct no * prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/EX726_ultimo.c	/^    struct no * prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/exemplo728_Lista_Encadeada.c	/^    struct no *prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/exemplo729_insere.c	/^    struct no *prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/exemplo730_Vendo_Funcionar.c	/^    struct no *prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/exemplo731_remove.c	/^    struct no *prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/exemplo732_acessa.c	/^    struct no *prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/exemplo733_insere_qqr.c	/^    struct no *prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/exemplo734_remove_qqr.c	/^    struct no *prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/exemplo735_alterando.c	/^    struct no *prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^    struct no * prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^    struct no * prox;$/;"	m	struct:no	typeref:struct:no *	file:
+prox	Slago/Capitulo7/exemplo740_MaiorItem.c	/^    struct no * prox;$/;"	m	struct:no	typeref:struct:no *	file:
+qqr	LearnLibs/01assert/VerDepois.h	/^# define qqr(/;"	d
+quad	Slago/Capitulo4/EX4-8_9_10_11.c	/^long double quad(long double n)$/;"	f	typeref:typename:long double
+quad	Slago/Capitulo4/EX41_Conserte.c	/^# define quad(/;"	d	file:
+quad	Slago/Capitulo4/macros.h	/^# define quad(/;"	d
+quadrado	Slago/Capitulo4/EX4-8_9_10_11.c	/^# define quadrado(/;"	d	file:
+quadrado_vetor	Slago/Capitulo5/EX54_Desv_Pad.c	/^void quadrado_vetor(vetor, indice_vetor)$/;"	f
+raiz_newton	Slago/Capitulo4/EX4-8_9_10_11.c	/^long double raiz_newton(w)$/;"	f
+randomico	Slago/Capitulo5/CampoMinado/Utils.h	/^# define randomico /;"	d
+randomico	Slago/Capitulo5/EX524_CampoV1.c	/^# define randomico /;"	d	file:
+randomico	Slago/Capitulo5/EX525_CampoV2.c	/^# define randomico /;"	d	file:
+randomico	Slago/Capitulo5/EX526_CampoV3.c	/^# define randomico /;"	d	file:
+readline	C_Kern_Ritchie/NumberOne/10-1BiggestLine.c	/^int readline(s, lim) \/* reads the line in s, returns the size*\/$/;"	f
+readline	C_Kern_Ritchie/NumberOne/10-2Scopes.c	/^int readline() \/* reads the line in s, returns the size*\/$/;"	f	typeref:typename:int
+real	Slago/Capitulo6/EX62_Complexo.c	/^    float real;$/;"	m	struct:__anone50a01cc0108	typeref:typename:float	file:
+reconhecida	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^    unsigned reconhecida : 1; $/;"	m	struct:__anonc725a1b10108	typeref:typename:unsigned:1	file:
+remove_ord	Slago/Capitulo7/EX726_ultimo.c	/^void remove_ord(lista *p, int x){$/;"	f	typeref:typename:void
+remove_tudo	Slago/Capitulo7/EX726_ultimo.c	/^void remove_tudo(lista *p){$/;"	f	typeref:typename:void
+remover	Slago/Capitulo7/EX721_remove.c	/^char remover(lista *p)$/;"	f	typeref:typename:char
+remover	Slago/Capitulo7/EX723_Destroi.c	/^lista remover(lista *p)$/;"	f	typeref:typename:lista
+remover	Slago/Capitulo7/EX726_ultimo.c	/^void remover(lista *p){$/;"	f	typeref:typename:void
+remover	Slago/Capitulo7/exemplo731_remove.c	/^void remover(lista *p)$/;"	f	typeref:typename:void
+remover	Slago/Capitulo7/exemplo732_acessa.c	/^void remover(lista *p)$/;"	f	typeref:typename:void
+remover	Slago/Capitulo7/exemplo733_insere_qqr.c	/^void remover(lista *p)$/;"	f	typeref:typename:void
+remover	Slago/Capitulo7/exemplo734_remove_qqr.c	/^void remover(lista *p)$/;"	f	typeref:typename:void
+remover	Slago/Capitulo7/exemplo735_alterando.c	/^void remover(lista *p)$/;"	f	typeref:typename:void
+reservado	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^    unsigned reservado : 2; $/;"	m	struct:__anonc725a1b10108	typeref:typename:unsigned:2	file:
+resto_da_div	Slago/Capitulo4/EX416_Func_Recur.c	/^int resto_da_div(int x, int y)$/;"	f	typeref:typename:int
+reverse	C_Kern_Ritchie/NumberThree/01-2DoWhile.c	/^void reverse(s) \/* reverse the string s*\/$/;"	f
+right	C_Kern_Ritchie/NumberSix/01-3ArrayOfStruct.c	/^        struct node *right ; \/* right son *\/$/;"	m	struct:main::node	typeref:struct:node *	file:
+right	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^        struct node *right; \/*Right Child*\/$/;"	m	struct:main::node	typeref:struct:node *	file:
+rotulo	Slago/Capitulo6/exemplo62_Rotulada.c	/^    typedef struct rotulo {$/;"	s	function:main	file:
+s:l	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
+s:l	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
+s:l	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
+s:l	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 11) \/ 23)$/;"	v
+s:l	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:l = 11 - ((10 * winheight(0) + 11) \/ 23)$/;"	v
+s:l	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:l = 12 - ((11 * winheight(0) + 11) \/ 23)$/;"	v
+s:l	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:l = 3 - ((2 * winheight(0) + 11) \/ 23)$/;"	v
+s:l	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:l = 7 - ((6 * winheight(0) + 11) \/ 23)$/;"	v
+s:l	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 11) \/ 23)$/;"	v
+s:l	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 5) \/ 11)$/;"	v
+s:l	C_Kern_Ritchie/NumberSeven/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
+s:l	C_Kern_Ritchie/NumberSix/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
+s:l	C_Kern_Ritchie/NumberThree/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 11) \/ 23)$/;"	v
+s:l	C_Kern_Ritchie/NumberTwo/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 11) \/ 23)$/;"	v
+s:l	Slago/Capitulo1/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 4) \/ 8)$/;"	v
+s:l	Slago/Capitulo2/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
+s:l	Slago/Capitulo2/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
+s:l	Slago/Capitulo2/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 4) \/ 8)$/;"	v
+s:l	Slago/Capitulo3/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
+s:l	Slago/Capitulo3/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
+s:l	Slago/Capitulo3/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
+s:l	Slago/Capitulo3/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
+s:l	Slago/Capitulo3/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
+s:l	Slago/Capitulo4/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
+s:l	Slago/Capitulo4/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
+s:l	Slago/Capitulo4/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
+s:l	Slago/Capitulo4/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
+s:l	Slago/Capitulo4/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
+s:l	Slago/Capitulo5/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
+s:l	Slago/Capitulo5/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
+s:l	Slago/Capitulo5/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
+s:l	Slago/Capitulo5/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
+s:l	Slago/Capitulo5/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
+s:l	Slago/Capitulo5/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
+s:l	Slago/Capitulo6/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 10) \/ 20)$/;"	v
+s:l	Slago/Capitulo6/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 10) \/ 21)$/;"	v
+s:l	Slago/Capitulo6/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 9) \/ 18)$/;"	v
+s:l	Slago/Capitulo6/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 9) \/ 19)$/;"	v
+s:l	Slago/Capitulo6/exemplosSession.vim	/^let s:l = 2 - ((1 * winheight(0) + 10) \/ 20)$/;"	v
+s:l	Slago/Capitulo6/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
+s:l	Slago/Capitulo6/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
+s:l	Slago/Capitulo6/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
+s:l	Slago/Capitulo7/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 10) \/ 20)$/;"	v
+s:l	Slago/Capitulo7/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 9) \/ 19)$/;"	v
+s:l	Slago/Capitulo7/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 10) \/ 20)$/;"	v
+s:l	Slago/Capitulo7/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 20) \/ 40)$/;"	v
+s:l	Slago/Capitulo7/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 9) \/ 19)$/;"	v
+s:l	Slago/Capitulo8/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 10) \/ 20)$/;"	v
+s:l	Slago/Capitulo8/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 9) \/ 19)$/;"	v
+s:l	Slago/Capitulo8/exemplosSession.vim	/^let s:l = 19 - ((17 * winheight(0) + 10) \/ 20)$/;"	v
+s:l	Slago/Capitulo8/exemplosSession.vim	/^let s:l = 6 - ((5 * winheight(0) + 9) \/ 19)$/;"	v
+s:l	Slago/Capitulo8/exemplosSession.vim	/^let s:l = 7 - ((6 * winheight(0) + 9) \/ 19)$/;"	v
+s:l	Slago/Capitulo8/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 10) \/ 20)$/;"	v
+s:l	Slago/Capitulo8/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 9) \/ 19)$/;"	v
+s:l	Slago/Capitulo8/exerciciosSession.vim	/^let s:l = 15 - ((14 * winheight(0) + 20) \/ 40)$/;"	v
+s:save_splitbelow	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo1/Session.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo2/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo2/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo3/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo3/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo4/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo4/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo5/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo5/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo6/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo6/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo7/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo7/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo8/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitbelow	Slago/Capitulo8/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
+s:save_splitright	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo1/Session.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo2/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo2/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo3/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo3/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo4/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo4/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo5/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo5/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo6/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo6/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo7/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo7/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo8/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_splitright	Slago/Capitulo8/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
+s:save_winminheight	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo1/Session.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo2/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo2/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo3/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo3/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo4/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo4/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo5/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo5/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo6/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo6/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo7/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo7/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo8/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminheight	Slago/Capitulo8/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
+s:save_winminwidth	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo1/Session.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo2/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo2/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo3/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo3/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo4/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo4/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo5/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo5/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo6/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo6/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo7/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo7/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo8/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:save_winminwidth	Slago/Capitulo8/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
+s:shortmess_save	C_Kern_Ritchie/NumberSeven/Session.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	C_Kern_Ritchie/NumberSix/Session.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo1/Session.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo2/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo2/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo3/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo3/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo4/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo4/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo5/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo5/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo6/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo6/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo7/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo7/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo8/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:shortmess_save	Slago/Capitulo8/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
+s:so_save	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	C_Kern_Ritchie/NumberSeven/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	C_Kern_Ritchie/NumberSix/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	C_Kern_Ritchie/NumberThree/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	C_Kern_Ritchie/NumberTwo/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo1/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo2/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo2/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo3/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo3/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo4/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo4/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo5/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo5/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo6/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo6/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo7/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo7/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo8/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:so_save	Slago/Capitulo8/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
+s:sx	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	C_Kern_Ritchie/NumberSeven/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	C_Kern_Ritchie/NumberSix/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	C_Kern_Ritchie/NumberThree/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	C_Kern_Ritchie/NumberTwo/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo1/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo2/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo2/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo3/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo3/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo4/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo4/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo5/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo5/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo6/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo6/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo7/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo7/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo8/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	Slago/Capitulo8/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:wipebuf	C_Kern_Ritchie/NumberFive/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	C_Kern_Ritchie/NumberFour/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	C_Kern_Ritchie/NumberOne/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	C_Kern_Ritchie/NumberSeven/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	C_Kern_Ritchie/NumberSix/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	C_Kern_Ritchie/NumberThree/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	C_Kern_Ritchie/NumberTwo/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo1/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo2/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo2/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo3/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo3/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo4/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo4/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo5/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo5/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo6/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo6/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo7/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo7/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo8/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	Slago/Capitulo8/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+saida	Slago/Capitulo8/exemplo81_Variaveis_Arquivo.c	/^FILE *arq, *entrada, *saida;$/;"	v	typeref:typename:FILE *
+salario	Slago/Capitulo7/EX720_PontPontDinamico.c	/^    float salario;$/;"	m	struct:__anone32c1cfd0108	typeref:typename:float	file:
+salario	Slago/Capitulo7/exemplo727_Tudo.c	/^    float salario;$/;"	m	struct:__anon853543d70108	typeref:typename:float	file:
+salvar	Slago/Capitulo7/exemplo720_Vet_Pont_Func.c	/^void salvar(void) { puts("Salvando...\\n"); }$/;"	f	typeref:typename:void
+second_personal_strcpy	C_Kern_Ritchie/NumberFive/02-2PointersCharFunc.c	/^void second_personal_strcpy(s,t)$/;"	f
+second_test	C_Kern_Ritchie/NumberFive/01-5PointersVsIndexV2.c	/^void second_test(array)$/;"	f
+segundo	Slago/Capitulo6/EX64_Horario.c	/^    int segundo;$/;"	m	struct:__anon9f26fc3b0108	typeref:typename:int	file:
+segundo	Slago/Capitulo6/EX65_Voo.c	/^    int segundo;$/;"	m	struct:__anonc297e15c0108	typeref:typename:int	file:
+selecao	Slago/Capitulo5/EX535_Selecao.c	/^void selecao(int v[], int n) {$/;"	f	typeref:typename:void
+selecao	Slago/Capitulo5/EX536_Enxuto.c	/^void selecao(int v[], int n) {$/;"	f	typeref:typename:void
+selecao	Slago/Capitulo5/EX537_Ordena_Strings.c	/^void selecao(char v[][25], int n) {$/;"	f	typeref:typename:void
+selecao	Slago/Capitulo5/exemplo535_Ordena_Selecao.c	/^void selecao(int v[], int n) {$/;"	f	typeref:typename:void
+selecionada	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^    unsigned selecionada : 1; $/;"	m	struct:__anonc725a1b10108	typeref:typename:unsigned:1	file:
+selmin	Slago/Capitulo5/EX535_Selecao.c	/^int selmin(int v[], int i, int n) {$/;"	f	typeref:typename:int
+selmin	Slago/Capitulo5/exemplo534_Seleciona_Min.c	/^int selmin(int v[], int i, int n) {$/;"	f	typeref:typename:int
+selmin	Slago/Capitulo5/exemplo535_Ordena_Selecao.c	/^int selmin(int v[], int i, int n) {$/;"	f	typeref:typename:int
+sem_papel	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^    unsigned sem_papel : 1; $/;"	m	struct:__anonc725a1b10108	typeref:typename:unsigned:1	file:
+separa_freeman	Slago/Capitulo5/EX520_Freeman.c	/^void separa_freeman(original, freeman, ponto_inicial)$/;"	f
+small	LearnMake/06_strings/Makefile	/^small:$/;"	t
+soma_complexo	Slago/Capitulo6/EX62_Complexo.c	/^COMPLEXO soma_complexo(COMPLEXO num1,$/;"	f	typeref:typename:COMPLEXO
+soma_item	Slago/Capitulo7/EX725_muitos.c	/^int soma_item(lista L){$/;"	f	typeref:typename:int
+soma_pred_suc	Slago/Capitulo4/EX416_Func_Recur.c	/^int soma_pred_suc(int x, int y)$/;"	f	typeref:typename:int
+soma_um	Slago/Capitulo7/EX723_Destroi.c	/^lista soma_um(lista *p)$/;"	f	typeref:typename:lista
+soma_vetor	Slago/Capitulo5/EX54_Desv_Pad.c	/^float soma_vetor(vetor, indice_vetor)$/;"	f
+some_file	LearnMake/04_clean/Makefile	/^some_file: other_file$/;"	t
+somefile	LearnMake/05_Vars/Makefile	/^somefile: $(files)$/;"	t
+sound	Slago/Capitulo4/exemplo43_Func_Fic.c	/^void sound(f)$/;"	f
+src_files	LearnMake/13_filter/Makefile	/^src_files = foo.raw bar.c lose.c$/;"	m
+status	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^} status;$/;"	t	typeref:struct:__anonc725a1b10108	file:
+strcat	Slago/Capitulo5/EX516_StrCat.c	/^void strcat(s,t)$/;"	f
+strchar	Slago/Capitulo7/EX713_StrChr.c	/^char *strchar(char *s, char c)$/;"	f	typeref:typename:char *
+strcmp	Slago/Capitulo5/exemplo516_StrCmp.c	/^int strcmp(char s[], char t[])$/;"	f	typeref:typename:int
+strcpy	Slago/Capitulo5/EX513_StrCpy.c	/^void strcpy(char x[], char t[])$/;"	f	typeref:typename:void
+strdel	Slago/Capitulo5/EX518_StrDel.c	/^void strdel(s,p)$/;"	f
+stringsub	Slago/Capitulo7/EX714_StrSub.c	/^char *stringsub(char *s, int i, int n)$/;"	f	typeref:typename:char *
+strins	Slago/Capitulo5/EX519_StrIns.c	/^void strins(s,c,p)$/;"	f
+strlen	Slago/Capitulo5/EX514_StrLen.c	/^int strlen(y)$/;"	f
+strlen	Slago/Capitulo5/EX516_StrCat.c	/^int strlen(y)$/;"	f
+strlen	Slago/Capitulo5/EX518_StrDel.c	/^int strlen(y)$/;"	f
+strlen	Slago/Capitulo5/EX519_StrIns.c	/^int strlen(y)$/;"	f
+strpos	Slago/Capitulo5/EX517_StrPos.c	/^int strpos(s,c)$/;"	f
+strupr	Slago/Capitulo5/EX515_StrUpr.c	/^void strupr(s)$/;"	f
+suc	Slago/Capitulo4/EX416_Func_Recur.c	/^int suc(int x)  {return x+1;}$/;"	f	typeref:typename:int
+t_esgotado	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^    unsigned t_esgotado : 1; $/;"	m	struct:__anonc725a1b10108	typeref:typename:unsigned:1	file:
+tab_day	C_Kern_Ritchie/NumberFive/02-4MultiDimensionalArrays.c	/^static int tab_day[2][13] = {$/;"	v	typeref:typename:int[2][13]	file:
+tempo	Slago/Capitulo6/EX65_Voo.c	/^    TEMPO tempo;$/;"	m	struct:__anonc297e15c0308	typeref:typename:TEMPO	file:
+test	C_Kern_Ritchie/NumberFive/01-3Pointers.c	/^void test(array)$/;"	f
+test	C_Kern_Ritchie/NumberFive/01-5PointersVsIndexV2.c	/^void test(array)$/;"	f
+tex	C_Kern_Ritchie/NumberSix/01-3ArrayOfStruct.c	/^        char *tex ; \/* Points to text *\/$/;"	m	struct:main::node	typeref:typename:char *	file:
+thing_right	LearnMake/09_wildcardStar/Makefile	/^thing_right := $(wildcard *.o)$/;"	m
+thing_wrong	LearnMake/09_wildcardStar/Makefile	/^thing_wrong := *.o # this will get expanded$/;"	m
+third_personal_strcpy	C_Kern_Ritchie/NumberFive/02-2PointersCharFunc.c	/^void third_personal_strcpy(s,t)$/;"	f
+three	LearnMake/07_allTarget/Makefile	/^three:$/;"	t
+three	LearnMake/09_wildcardStar/Makefile	/^three: $(thing_right)$/;"	t
+titulo	Slago/Capitulo6/EX61_Livro.c	/^        char titulo[100];$/;"	m	struct:main::__anone702bfb00108	typeref:typename:char[100]	file:
+titulo	Slago/Capitulo7/EX718_Livro.c	/^    char titulo[100];$/;"	m	struct:__anone38b916a0108	typeref:typename:char[100]	file:
+trocas	Slago/Capitulo5/EX533_Trocas.c	/^void trocas(int v[], int n) {$/;"	f	typeref:typename:void
+trocas	Slago/Capitulo5/exemplo531_Ordena_Trocas.c	/^void trocas(int v[], int n) {$/;"	f	typeref:typename:void
+true	Slago/Capitulo4/boolean.h	/^# define true /;"	d
+two	LearnMake/07_allTarget/Makefile	/^two:$/;"	t
+two	LearnMake/09_wildcardStar/Makefile	/^two:$/;"	t
+two	LearnMake/10_AutoVars/Makefile	/^two:$/;"	t
+vala	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^        char *vala ;$/;"	m	union:main::etiq_u	typeref:typename:char *	file:
+valf	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^        float valf ;$/;"	m	union:main::etiq_u	typeref:typename:float	file:
+vali	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^        int vali ;$/;"	m	union:main::etiq_u	typeref:typename:int	file:
+valor	Slago/Capitulo6/exemplo613_Etiquetado.c	/^    } valor;$/;"	m	struct:__anon83de2fc90108	typeref:union:__anon83de2fc90108::__anon83de2fc9020a	file:
+valor	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^    } valor;$/;"	m	struct:__anon6f8efd730108	typeref:union:__anon6f8efd730108::__anon6f8efd73020a	file:
+verifica_item	Slago/Capitulo7/EX725_muitos.c	/^int verifica_item(lista L, int x){$/;"	f	typeref:typename:int
+visualiza_campo	Slago/Capitulo5/CampoMinado/Utils.c	/^void visualiza_campo(campo, tam_y, tam_x)$/;"	f
+visualiza_campo	Slago/Capitulo5/EX524_CampoV1.c	/^void visualiza_campo(campo, tam_y, tam_x)$/;"	f
+visualiza_campo	Slago/Capitulo5/EX525_CampoV2.c	/^void visualiza_campo(campo, tam_y, tam_x)$/;"	f
+visualiza_campo	Slago/Capitulo5/EX526_CampoV3.c	/^void visualiza_campo(campo, tam_y, tam_x)$/;"	f
+wor	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^        char *wor; \/*Points to the text*\/$/;"	m	struct:main::node	typeref:typename:char *	file:
+x	LearnMake/06_strings/Makefile	/^x := dude$/;"	m
+x	Slago/Capitulo4/exemplo48_Tipos_Armazenamento.c	/^int x = 3;$/;"	v	typeref:typename:int
+x	Slago/Capitulo6/EX63_Retas.c	/^    float x;$/;"	m	struct:cartesiano	typeref:typename:float	file:
+x	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    float x;$/;"	m	struct:__anond51e0d560108	typeref:typename:float	file:
+y	Slago/Capitulo4/exemplo48_Tipos_Armazenamento.c	/^int y=2;$/;"	v	typeref:typename:int
+y	Slago/Capitulo6/EX63_Retas.c	/^    float y;$/;"	m	struct:cartesiano	typeref:typename:float	file:
+y	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    float y;$/;"	m	struct:__anond51e0d560108	typeref:typename:float	file:
+year	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^    int year ;$/;"	m	struct:main::__anon96687ab90108	typeref:typename:int	file:
+year	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^    int year ;$/;"	m	struct:main::data	typeref:typename:int	file:
+years_day	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^    int years_day ;$/;"	m	struct:main::__anon96687ab90108	typeref:typename:int	file:
+years_day	C_Kern_Ritchie/NumberSix/01-1StructuresIntro.c	/^    int years_day ;$/;"	m	struct:main::data	typeref:typename:int	file:
