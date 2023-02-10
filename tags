@@ -9,15 +9,15 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
-$(filter %.o,$(obj_files))	LearnMake/13_filter/Makefile	/^$(filter %.o,$(obj_files)): %.o: %.c$/;"	t
-$(filter %.result,$(obj_files))	LearnMake/13_filter/Makefile	/^$(filter %.result,$(obj_files)): %.result: %.raw$/;"	t
-$(objects)	LearnMake/12_Static-ptrn-rules/Makefile	/^$(objects): %.o: %.c$/;"	t
-%.c	LearnMake/12_Static-ptrn-rules/Makefile	/^%.c:$/;"	t
-%.c	LearnMake/13_filter/Makefile	/^%.c %.raw:$/;"	t
-%.o	LearnMake/12_Static-ptrn-rules/Makefile	/^$(objects): %.o: %.c$/;"	t
-%.o	LearnMake/13_filter/Makefile	/^$(filter %.o,$(obj_files)): %.o: %.c$/;"	t
-%.raw	LearnMake/13_filter/Makefile	/^%.c %.raw:$/;"	t
-%.result	LearnMake/13_filter/Makefile	/^$(filter %.result,$(obj_files)): %.result: %.raw$/;"	t
+$(filter %.o,$(obj_files))	learnmake/13_filter/Makefile	/^$(filter %.o,$(obj_files)): %.o: %.c$/;"	t
+$(filter %.result,$(obj_files))	learnmake/13_filter/Makefile	/^$(filter %.result,$(obj_files)): %.result: %.raw$/;"	t
+$(objects)	learnmake/12_Static-ptrn-rules/Makefile	/^$(objects): %.o: %.c$/;"	t
+%.c	learnmake/12_Static-ptrn-rules/Makefile	/^%.c:$/;"	t
+%.c	learnmake/13_filter/Makefile	/^%.c %.raw:$/;"	t
+%.o	learnmake/12_Static-ptrn-rules/Makefile	/^$(objects): %.o: %.c$/;"	t
+%.o	learnmake/13_filter/Makefile	/^$(filter %.o,$(obj_files)): %.o: %.c$/;"	t
+%.raw	learnmake/13_filter/Makefile	/^%.c %.raw:$/;"	t
+%.result	learnmake/13_filter/Makefile	/^$(filter %.result,$(obj_files)): %.result: %.raw$/;"	t
 ALFAMAX	Slago/Capitulo5/EX515_StrUpr.c	/^# define ALFAMAX /;"	d	file:
 ALFAMAX	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^# define ALFAMAX /;"	d	file:
 ALFAMIN	Slago/Capitulo5/EX515_StrUpr.c	/^# define ALFAMIN /;"	d	file:
@@ -48,8 +48,8 @@ C - A Linguagem de Programação	C_Kern_Ritchie/NumberTwo/README.md	/^# C - A Li
 C - A Linguagem de Programação	C_Kern_Ritchie/README.md	/^# C - A Linguagem de Programação$/;"	c
 CARACTERE	Slago/Capitulo3/EX39_Exibe_Quadrado.c	/^# define CARACTERE /;"	d	file:
 CARTESIANO	Slago/Capitulo6/EX66_Segmento_Reta.c	/^} CARTESIANO;$/;"	t	typeref:struct:__anond51e0d560108	file:
-CC	LearnMake/11_implicit/Makefile	/^CC = clang # Flag para regras implicitas$/;"	m
-CFLAGS	LearnMake/11_implicit/Makefile	/^CFLAGS = -g # Ativa as informações de debug$/;"	m
+CC	learnmake/11_implicit/Makefile	/^CC = clang # Flag para regras implicitas$/;"	m
+CFLAGS	learnmake/11_implicit/Makefile	/^CFLAGS = -g # Ativa as informações de debug$/;"	m
 COMPLEXO	Slago/Capitulo6/EX62_Complexo.c	/^} COMPLEXO;$/;"	t	typeref:struct:__anone50a01cc0108	file:
 C\\_Learning Repo	C_Kern_Ritchie/README.md	/^## C\\_Learning Repo$/;"	s
 C_Slago	Slago/README.md	/^# C_Slago$/;"	c
@@ -112,7 +112,7 @@ LIM_BAIXO	Slago/Capitulo5/EX55_Polinomio.c	/^# define LIM_BAIXO /;"	d	file:
 LINELENGHT	C_Kern_Ritchie/NumberTwo/01-4AsciiTable.c	/^# define LINELENGHT /;"	d	file:
 LINES	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^# define LINES /;"	d	file:
 LOOPNUM	C_Kern_Ritchie/NumberThree/01-3BreakContinueGotoLabel.c	/^# define LOOPNUM /;"	d	file:
-Linkando.o	LearnMake/11_implicit/Makefile	/^Linkando.o:$/;"	t
+Linkando.o	learnmake/11_implicit/Makefile	/^Linkando.o:$/;"	t
 MAX	Slago/Capitulo3/EX34_Converte_Pol.c	/^# define MAX /;"	d	file:
 MAX	Slago/Capitulo5/EX513_StrCpy.c	/^# define MAX /;"	d	file:
 MAX	Slago/Capitulo5/EX520_Freeman.c	/^# define MAX /;"	d	file:
@@ -145,8 +145,8 @@ PNT_NODE	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^    } NODE, *PNT_NODE;$/;"	t	f
 PRECISAO	Slago/Capitulo4/EX4-8_9_10_11.c	/^# define PRECISAO /;"	d	file:
 Personal_strcmp	C_Kern_Ritchie/NumberFive/02-3AnotherExample.c	/^int Personal_strcmp(s,t)$/;"	f
 Personal_strcmp_withPointers	C_Kern_Ritchie/NumberFive/02-3AnotherExample.c	/^int Personal_strcmp_withPointers(s,t)$/;"	f
-Programa_C	LearnMake/11_implicit/Makefile	/^Programa_C: lib01.o lib02.o$/;"	t
-Programa_CPP	LearnMake/11_implicit/Makefile	/^Programa_CPP:$/;"	t
+Programa_C	learnmake/11_implicit/Makefile	/^Programa_C: lib01.o lib02.o$/;"	t
+Programa_CPP	learnmake/11_implicit/Makefile	/^Programa_CPP:$/;"	t
 SEMI_RETA	Slago/Capitulo6/EX66_Segmento_Reta.c	/^} SEMI_RETA;$/;"	t	typeref:struct:__anond51e0d560408	file:
 SHIFTNUMBER	C_Kern_Ritchie/NumberTwo/01-4AsciiTable.c	/^# define SHIFTNUMBER /;"	d	file:
 SIZE	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^    typedef int SIZE ;$/;"	t	function:main	typeref:typename:int	file:
@@ -244,7 +244,6 @@ __anone32c1cfd0108	Slago/Capitulo7/EX720_PontPontDinamico.c	/^typedef struct {$/
 __anone38b916a0108	Slago/Capitulo7/EX718_Livro.c	/^typedef struct {$/;"	s	file:
 __anone50a01cc0108	Slago/Capitulo6/EX62_Complexo.c	/^typedef struct {$/;"	s	file:
 __anone702bfb00108	Slago/Capitulo6/EX61_Livro.c	/^    struct {$/;"	s	function:main	file:
-a	LearnMake/06_strings/Makefile	/^a := one two# a é associado à string "one two"$/;"	m
 a	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    float a;$/;"	m	struct:__anond51e0d560308	typeref:typename:float	file:
 a	Slago/Capitulo6/exemplo612_Uniao.c	/^    char a;$/;"	m	union:__anonccdb108f010a	typeref:typename:char	file:
 a	Slago/Capitulo6/exemplo613_Etiquetado.c	/^        char a;  \/* 1 *\/$/;"	m	union:__anon83de2fc90108::__anon83de2fc9020a	typeref:typename:char	file:
@@ -252,6 +251,7 @@ a	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^        char a;$/;"	m	union:_
 a	Slago/Capitulo6/exemplo615_Campos_Bits.c	/^    unsigned    a : 1;$/;"	m	struct:__anonaf03b58a0108	typeref:typename:unsigned:1	file:
 a	Slago/Capitulo6/exemplo616_Fora_Do_Campo.c	/^    unsigned    a : 1;$/;"	m	struct:__anon45544c200108	typeref:typename:unsigned:1	file:
 a	Slago/Capitulo6/exemplo617_Overflow_Underflow.c	/^    unsigned    a : 1;$/;"	m	struct:__anona4ae6fc10108	typeref:typename:unsigned:1	file:
+a	learnmake/06_strings/Makefile	/^a := one two# a é associado à string "one two"$/;"	m
 aaloc	C_Kern_Ritchie/NumberFive/02-1AritmeticsWithPointers.c	/^static char *aaloc = bufaloc ; \/* Next free position *\/$/;"	v	typeref:typename:char *	file:
 abrir	Slago/Capitulo7/exemplo720_Vet_Pont_Func.c	/^void  abrir(void) { puts("Abrindo...\\n" ); }$/;"	f	typeref:typename:void
 abs	Slago/Capitulo4/EX4-8_9_10_11.c	/^# define abs(/;"	d	file:
@@ -274,15 +274,15 @@ alfamax	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^# define alfamax /;"	d	file
 alfamin	Slago/Capitulo5/EX515_StrUpr.c	/^# define alfamin /;"	d	file:
 alfamin	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^# define alfamin /;"	d	file:
 all	C_Kern_Ritchie/NumberFour/CompilingExample/Makefile	/^all: main$/;"	t
-all	LearnMake/06_strings/Makefile	/^all: small$/;"	t
-all	LearnMake/07_allTarget/Makefile	/^all: one two three$/;"	t
-all	LearnMake/08_multiTarget/Makefile	/^all: f1.o f2.o$/;"	t
-all	LearnMake/09_wildcardStar/Makefile	/^all: one two three four$/;"	t
-all	LearnMake/11_implicit/Makefile	/^all: blah$/;"	t
-all	LearnMake/12_Static-ptrn-rules/Makefile	/^all: $(objects)$/;"	t
-all	LearnMake/13_filter/Makefile	/^all: $(obj_files)$/;"	t
 all	Slago/Capitulo5/CampoMinado/Makefile	/^all: main$/;"	t
-all.c	LearnMake/12_Static-ptrn-rules/Makefile	/^all.c:$/;"	t
+all	learnmake/06_strings/Makefile	/^all: small$/;"	t
+all	learnmake/07_allTarget/Makefile	/^all: one two three$/;"	t
+all	learnmake/08_multiTarget/Makefile	/^all: f1.o f2.o$/;"	t
+all	learnmake/09_wildcardStar/Makefile	/^all: one two three four$/;"	t
+all	learnmake/11_implicit/Makefile	/^all: blah$/;"	t
+all	learnmake/12_Static-ptrn-rules/Makefile	/^all: $(objects)$/;"	t
+all	learnmake/13_filter/Makefile	/^all: $(obj_files)$/;"	t
+all.c	learnmake/12_Static-ptrn-rules/Makefile	/^all.c:$/;"	t
 aloca	C_Kern_Ritchie/NumberFive/02-1AritmeticsWithPointers.c	/^char *aloca(n) \/* Returns a pointer to 'n' characters *\/$/;"	f
 altPuts	Slago/Capitulo7/EX76_Puts.c	/^int altPuts(const char* s)$/;"	f	typeref:typename:int
 altStrlen	Slago/Capitulo7/EX77_StrLen.c	/^int altStrlen(const char* s)$/;"	f	typeref:typename:int
@@ -307,7 +307,6 @@ arq	Slago/Capitulo8/exemplo81_Variaveis_Arquivo.c	/^FILE *arq, *entrada, *saida;
 atio	C_Kern_Ritchie/NumberTwo/01-3ConversionOnTypes.c	/^int atio(string)$/;"	f
 autor	Slago/Capitulo6/EX61_Livro.c	/^        char autor[50];$/;"	m	struct:main::__anone702bfb00108	typeref:typename:char[50]	file:
 autor	Slago/Capitulo7/EX718_Livro.c	/^    char autor[50];$/;"	m	struct:__anone38b916a0108	typeref:typename:char[50]	file:
-b	LearnMake/06_strings/Makefile	/^b := 'one two'# b é associado à string "'one two'"$/;"	m
 b	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    float b;$/;"	m	struct:__anond51e0d560308	typeref:typename:float	file:
 b	Slago/Capitulo6/exemplo612_Uniao.c	/^    int b;$/;"	m	union:__anonccdb108f010a	typeref:typename:int	file:
 b	Slago/Capitulo6/exemplo613_Etiquetado.c	/^        int b;   \/* 2 *\/ $/;"	m	union:__anon83de2fc90108::__anon83de2fc9020a	typeref:typename:int	file:
@@ -315,13 +314,14 @@ b	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^        int b;$/;"	m	union:__
 b	Slago/Capitulo6/exemplo615_Campos_Bits.c	/^    signed      b : 3;$/;"	m	struct:__anonaf03b58a0108	typeref:typename:signed:3	file:
 b	Slago/Capitulo6/exemplo616_Fora_Do_Campo.c	/^    signed      b : 3;$/;"	m	struct:__anon45544c200108	typeref:typename:signed:3	file:
 b	Slago/Capitulo6/exemplo617_Overflow_Underflow.c	/^    signed      b : 3;$/;"	m	struct:__anona4ae6fc10108	typeref:typename:signed:3	file:
-bla	LearnMake/02_Timestamps/Makefile	/^bla: $/;"	t
-bla	LearnMake/02_Timestamps/Makefile	/^bla: bla.c$/;"	t
-bla	LearnMake/03_passoapasso/Makefile	/^bla: bla.o$/;"	t
-bla.c	LearnMake/03_passoapasso/Makefile	/^bla.c:$/;"	t
-bla.o	LearnMake/03_passoapasso/Makefile	/^bla.o: bla.c$/;"	t
-blah	LearnMake/11_implicit/Makefile	/^blah: blah.o$/;"	t
-blah.c	LearnMake/11_implicit/Makefile	/^blah.c:$/;"	t
+b	learnmake/06_strings/Makefile	/^b := 'one two'# b é associado à string "'one two'"$/;"	m
+bla	learnmake/02_Timestamps/Makefile	/^bla: $/;"	t
+bla	learnmake/02_Timestamps/Makefile	/^bla: bla.c$/;"	t
+bla	learnmake/03_passoapasso/Makefile	/^bla: bla.o$/;"	t
+bla.c	learnmake/03_passoapasso/Makefile	/^bla.c:$/;"	t
+bla.o	learnmake/03_passoapasso/Makefile	/^bla.o: bla.c$/;"	t
+blah	learnmake/11_implicit/Makefile	/^blah: blah.o$/;"	t
+blah.c	learnmake/11_implicit/Makefile	/^blah.c:$/;"	t
 bool	Slago/Capitulo4/boolean.h	/^# define bool(/;"	d
 bufaloc	C_Kern_Ritchie/NumberFive/02-1AritmeticsWithPointers.c	/^static char bufaloc[SIZEALLOC] ; \/* Space for aloc *\/$/;"	v	typeref:typename:char[]	file:
 c	Slago/Capitulo6/exemplo612_Uniao.c	/^    float c;$/;"	m	union:__anonccdb108f010a	typeref:typename:float	file:
@@ -343,14 +343,14 @@ cauda	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^# define cauda(/;"	d	file:
 cauda	Slago/Capitulo7/exemplo740_MaiorItem.c	/^# define cauda(/;"	d	file:
 change	C_Kern_Ritchie/NumberFive/01-2PointerInFunc.c	/^void change(px, py)$/;"	f
 cidade	Slago/Capitulo6/EX65_Voo.c	/^    char cidade[30];$/;"	m	struct:__anonc297e15c0308	typeref:typename:char[30]	file:
-clean	LearnMake/04_clean/Makefile	/^clean:$/;"	t
-clean	LearnMake/05_Vars/Makefile	/^clean:$/;"	t
-clean	LearnMake/07_allTarget/Makefile	/^clean:$/;"	t
-clean	LearnMake/10_AutoVars/Makefile	/^clean:$/;"	t
-clean	LearnMake/11_implicit/Makefile	/^clean:$/;"	t
-clean	LearnMake/12_Static-ptrn-rules/Makefile	/^clean:$/;"	t
-clean	LearnMake/13_filter/Makefile	/^clean:$/;"	t
 clean	Slago/Capitulo5/CampoMinado/Makefile	/^clean:$/;"	t
+clean	learnmake/04_clean/Makefile	/^clean:$/;"	t
+clean	learnmake/05_Vars/Makefile	/^clean:$/;"	t
+clean	learnmake/07_allTarget/Makefile	/^clean:$/;"	t
+clean	learnmake/10_AutoVars/Makefile	/^clean:$/;"	t
+clean	learnmake/11_implicit/Makefile	/^clean:$/;"	t
+clean	learnmake/12_Static-ptrn-rules/Makefile	/^clean:$/;"	t
+clean	learnmake/13_filter/Makefile	/^clean:$/;"	t
 colinear	Slago/Capitulo6/EX66_Segmento_Reta.c	/^void colinear(SEMI_RETA semi_reta, CARTESIANO ponto)$/;"	f	typeref:typename:void
 com_if_else	Slago/Capitulo2/EX22_Maior.c	/^void com_if_else(void){$/;"	f	typeref:typename:void
 compara_Letra	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^int compara_Letra(const void* a, const void* b)$/;"	f	typeref:typename:int
@@ -408,32 +408,32 @@ etiqueta	Slago/Capitulo6/exemplo613_Etiquetado.c	/^    int etiqueta;$/;"	m	struc
 etiqueta	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^    int etiqueta;$/;"	m	struct:__anon6f8efd730108	typeref:typename:int	file:
 exibir	Slago/Capitulo7/EX726_ultimo.c	/^void exibir(lista p){$/;"	f	typeref:typename:void
 exibir_inverso	Slago/Capitulo7/EX726_ultimo.c	/^void exibir_inverso(lista p){$/;"	f	typeref:typename:void
-f1.o	LearnMake/08_multiTarget/Makefile	/^f1.o f2.o:$/;"	t
-f2.o	LearnMake/08_multiTarget/Makefile	/^f1.o f2.o:$/;"	t
+f1.o	learnmake/08_multiTarget/Makefile	/^f1.o f2.o:$/;"	t
+f2.o	learnmake/08_multiTarget/Makefile	/^f1.o f2.o:$/;"	t
 false	Slago/Capitulo4/boolean.h	/^# define false /;"	d
 fat	Slago/Capitulo4/EX4-8_9_10_11.c	/^long double fat(long double n)$/;"	f	typeref:typename:long double
 fat	Slago/Capitulo4/EX416_Func_Recur.c	/^int fat(int n)$/;"	f	typeref:typename:int
 fechar	Slago/Capitulo7/exemplo720_Vet_Pont_Func.c	/^void fechar(void) { puts("Fechando...\\n"); }$/;"	f	typeref:typename:void
 fgets	C_Kern_Ritchie/NumberSeven/02-4InOutPut_Lines.c	/^char *fgets(s, n, iop) \/* Get 'til n characters from iop *\/$/;"	f
-file1	LearnMake/05_Vars/Makefile	/^file1:$/;"	t
-file2	LearnMake/05_Vars/Makefile	/^file2:$/;"	t
-files	LearnMake/05_Vars/Makefile	/^files := file1 file2$/;"	m
-files	LearnMake/07_allTarget/Makefile	/^files:=one two three$/;"	m
+file1	learnmake/05_Vars/Makefile	/^file1:$/;"	t
+file2	learnmake/05_Vars/Makefile	/^file2:$/;"	t
+files	learnmake/05_Vars/Makefile	/^files := file1 file2$/;"	m
+files	learnmake/07_allTarget/Makefile	/^files:=one two three$/;"	m
 fim	Slago/Capitulo4/EX41_Conserte.c	/^# define fim /;"	d	file:
 fim	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    float fim;$/;"	m	struct:__anond51e0d560208	typeref:typename:float	file:
 fone	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^    char fone[21];$/;"	m	struct:__anon2526b6d60208	typeref:typename:char[21]	file:
 fone	Slago/Capitulo6/exemplo66_Pessoa.c	/^    char fone[21];$/;"	m	struct:__anon5f1e48310208	typeref:typename:char[21]	file:
 fone	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^    char fone[21];$/;"	m	struct:__anon06da55260208	typeref:typename:char[21]	file:
 fone	Slago/Capitulo6/exemplo69_Tabela.c	/^    char fone[21];$/;"	m	struct:__anonbfb5ad320208	typeref:typename:char[21]	file:
-four	LearnMake/09_wildcardStar/Makefile	/^four: $(wildcard *.o)$/;"	t
+four	learnmake/09_wildcardStar/Makefile	/^four: $(wildcard *.o)$/;"	t
 fputs	C_Kern_Ritchie/NumberSeven/02-4InOutPut_Lines.c	/^int fputs(s, iop) \/* Write the s string no the iop file*\/$/;"	f
 func	C_Kern_Ritchie/NumberSeven/02-4InOutPut_Lines.c	/^int func()$/;"	f	typeref:typename:int
 func	Slago/Capitulo8/Simplifica_Sintaxe.c	/^void func(int c, FILE *e)$/;"	f	typeref:typename:void
 funcao	Slago/Capitulo4/exemplo48_Tipos_Armazenamento.c	/^void funcao(void)$/;"	f	typeref:typename:void
 funcionario	Slago/Capitulo7/EX720_PontPontDinamico.c	/^} funcionario;$/;"	t	typeref:struct:__anone32c1cfd0108	file:
 funcionario	Slago/Capitulo7/exemplo727_Tudo.c	/^} funcionario;$/;"	t	typeref:struct:__anon853543d70108	file:
-hello	LearnMake/01_hello/Makefile	/^hello:$/;"	t
-hey	LearnMake/10_AutoVars/Makefile	/^hey: one two$/;"	t
+hello	learnmake/01_hello/Makefile	/^hello:$/;"	t
+hey	learnmake/10_AutoVars/Makefile	/^hey: one two$/;"	t
 hip	Slago/Capitulo4/exemplo46_Hip.c	/^float hip(float a, float b)$/;"	f	typeref:typename:float
 histograma	Slago/Capitulo5/EX510_Histograma.c	/^void histograma(t,n,dias)$/;"	f
 hora	Slago/Capitulo6/EX64_Horario.c	/^    int hora;$/;"	m	struct:__anon9f26fc3b0108	typeref:typename:int	file:
@@ -497,6 +497,7 @@ item	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^    char item;$/;"	m	struct:no	t
 item	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
 item	Slago/Capitulo7/exemplo740_MaiorItem.c	/^    char item;$/;"	m	struct:no	typeref:typename:char	file:
 itoa	C_Kern_Ritchie/NumberThree/01-2DoWhile.c	/^void itoa(n, s) \/* convert n to characters in s *\/$/;"	f
+jmpbuf	learnlibs/08setjmp/anotacoes.c	/^static jmp_buf jmpbuf;$/;"	v	typeref:typename:jmp_buf	file:
 keeper	C_Kern_Ritchie/NumberOne/10-2Scopes.c	/^char keeper[MAXLINESIZE] ; \/* biggest kept line*\/$/;"	v	typeref:typename:char[]
 left	C_Kern_Ritchie/NumberSix/01-3ArrayOfStruct.c	/^        struct node *left ; \/* left son *\/$/;"	m	struct:main::node	typeref:struct:node *	file:
 left	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^        struct node *left; \/*Left Child*\/$/;"	m	struct:main::node	typeref:struct:node *	file:
@@ -595,14 +596,6 @@ main	C_Kern_Ritchie/NumberTwo/01-1testingWithTypes.c	/^int main(){$/;"	f	typeref
 main	C_Kern_Ritchie/NumberTwo/01-2testingWithStrings.c	/^int main(){$/;"	f	typeref:typename:int
 main	C_Kern_Ritchie/NumberTwo/01-3ConversionOnTypes.c	/^int main(){$/;"	f	typeref:typename:int
 main	C_Kern_Ritchie/NumberTwo/01-4AsciiTable.c	/^int main(){$/;"	f	typeref:typename:int
-main	LearnLibs/04float/LibFloatH.c	/^int main(void){$/;"	f	typeref:typename:int
-main	LearnLibs/04float/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
-main	LearnLibs/05limits/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
-main	LearnLibs/06locale/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
-main	LearnLibs/07math/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
-main	LearnMake/02_Timestamps/bla.c	/^int main(void){$/;"	f	typeref:typename:int
-main	LearnMake/03_passoapasso/Makefile	/^main: bla$/;"	t
-main	LearnMake/03_passoapasso/bla.c	/^int main(void){$/;"	f	typeref:typename:int
 main	Slago/Capitulo1/EX12_Circulo.c	/^int main(){$/;"	f	typeref:typename:int
 main	Slago/Capitulo1/EX13_Media_Notas.c	/^int main(){$/;"	f	typeref:typename:int
 main	Slago/Capitulo1/EX14_Km_Litro.c	/^int main(){$/;"	f	typeref:typename:int
@@ -821,6 +814,14 @@ main	Slago/Capitulo8/exemplo87_Abrindo_Arquivo.c	/^int main(){$/;"	f	typeref:typ
 main	Slago/Capitulo8/exemplo88_Gravando_Arquivo.c	/^int main(){$/;"	f	typeref:typename:int
 main	Slago/Capitulo8/exemplo89_Fechando.c	/^int main(void){$/;"	f	typeref:typename:int
 main	fibo.py	/^def main():$/;"	f
+main	learnlibs/04float/LibFloatH.c	/^int main(void){$/;"	f	typeref:typename:int
+main	learnlibs/04float/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
+main	learnlibs/05limits/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
+main	learnlibs/06locale/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
+main	learnlibs/07math/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
+main	learnmake/02_Timestamps/bla.c	/^int main(void){$/;"	f	typeref:typename:int
+main	learnmake/03_passoapasso/Makefile	/^main: bla$/;"	t
+main	learnmake/03_passoapasso/bla.c	/^int main(void){$/;"	f	typeref:typename:int
 main1	C_Kern_Ritchie/NumberFive/03-1ArgcArgv.c	/^int main1(argc, argv) \/* We'll replicate the echo function *\/$/;"	f
 main2	C_Kern_Ritchie/NumberFive/03-1ArgcArgv.c	/^int main2(argc, argv)$/;"	f
 main2	Slago/Capitulo7/EX71_Explique.c	/^int main2(void)$/;"	f	typeref:typename:int
@@ -914,18 +915,18 @@ numero	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^    int numero;$/;"	m	str
 numero_bombas_contorno	Slago/Capitulo5/CampoMinado/Utils.c	/^int numero_bombas_contorno(campo, tam_y, tam_x, pos_y, pos_x)$/;"	f
 numero_bombas_contorno	Slago/Capitulo5/EX525_CampoV2.c	/^int numero_bombas_contorno(campo, tam_y, tam_x, pos_y, pos_x)$/;"	f
 numero_bombas_contorno	Slago/Capitulo5/EX526_CampoV3.c	/^int numero_bombas_contorno(campo, tam_y, tam_x, pos_y, pos_x)$/;"	f
-obj_files	LearnMake/13_filter/Makefile	/^obj_files = foo.result bar.o lose.o$/;"	m
-objects	LearnMake/12_Static-ptrn-rules/Makefile	/^objects = foo.o bar.o all.o$/;"	m
+obj_files	learnmake/13_filter/Makefile	/^obj_files = foo.result bar.o lose.o$/;"	m
+objects	learnmake/12_Static-ptrn-rules/Makefile	/^objects = foo.o bar.o all.o$/;"	m
 obtem	Slago/Capitulo5/EX58_Temp_Media.c	/^void obtem(float t[]) {$/;"	f	typeref:typename:void
 obtem	Slago/Capitulo5/exemplo5-8_9_10_11.c	/^void obtem(float t[]) {$/;"	f	typeref:typename:void
 ocorr_item	Slago/Capitulo7/EX725_muitos.c	/^int ocorr_item(lista L, int x){$/;"	f	typeref:typename:int
 oi	Slago/Capitulo4/exemplo41_Define.c	/^# define oi /;"	d	file:
-one	LearnMake/07_allTarget/Makefile	/^one:$/;"	t
-one	LearnMake/09_wildcardStar/Makefile	/^one:$/;"	t
-one	LearnMake/10_AutoVars/Makefile	/^one:$/;"	t
+one	learnmake/07_allTarget/Makefile	/^one:$/;"	t
+one	learnmake/09_wildcardStar/Makefile	/^one:$/;"	t
+one	learnmake/10_AutoVars/Makefile	/^one:$/;"	t
 or	Slago/Capitulo4/boolean.h	/^# define or /;"	d
 origem	Slago/Capitulo6/EX65_Voo.c	/^    INFO_VOO origem;$/;"	m	struct:__anonc297e15c0408	typeref:typename:INFO_VOO	file:
-other_file	LearnMake/04_clean/Makefile	/^other_file:$/;"	t
+other_file	learnmake/04_clean/Makefile	/^other_file:$/;"	t
 parametros	Slago/Capitulo4/exemplo43_Func_Fic.c	/^void parametros()$/;"	f	typeref:typename:void
 pega_equacao	Slago/Capitulo6/EX66_Segmento_Reta.c	/^EQUACAO pega_equacao(CARTESIANO p1, CARTESIANO p2)$/;"	f	typeref:typename:EQUACAO
 pega_intervalo	Slago/Capitulo6/EX66_Segmento_Reta.c	/^INTERVALO_X pega_intervalo(CARTESIANO p1, CARTESIANO p2)$/;"	f	typeref:typename:INTERVALO_X
@@ -950,7 +951,8 @@ pred	Slago/Capitulo4/EX416_Func_Recur.c	/^int pred(int x) {return x-1;}$/;"	f	ty
 preenche	Slago/Capitulo5/exemplo523_Labirinto10x10.c	/^void preenche(int L[TAM][TAM]) {$/;"	f	typeref:typename:void
 preenche_Estrutura	Slago/Capitulo7/EX718_Livro.c	/^void preenche_Estrutura(INFO* e)$/;"	f	typeref:typename:void
 preenche_tres	Slago/Capitulo5/EX539_Benchmark.c	/^void preenche_tres(int Vor[], int n, int V1[], int V2[])$/;"	f	typeref:typename:void
-print	LearnMake/09_wildcardStar/Makefile	/^print: $(wildcard *.c)$/;"	t
+print	learnmake/09_wildcardStar/Makefile	/^print: $(wildcard *.c)$/;"	t
+process	learnlibs/08setjmp/anotacoes.c	/^void process(void){printf("Hello World\\n");}$/;"	f	typeref:typename:void
 prod	Slago/Capitulo4/EX416_Func_Recur.c	/^int prod(int x, int y)$/;"	f	typeref:typename:int
 programa	Slago/Capitulo4/EX41_Conserte.c	/^# define programa /;"	d	file:
 prox	Slago/Capitulo7/EX721_remove.c	/^    struct no *prox;$/;"	m	struct:no	typeref:struct:no *	file:
@@ -970,7 +972,7 @@ prox	Slago/Capitulo7/exemplo735_alterando.c	/^    struct no *prox;$/;"	m	struct:
 prox	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^    struct no * prox;$/;"	m	struct:no	typeref:struct:no *	file:
 prox	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^    struct no * prox;$/;"	m	struct:no	typeref:struct:no *	file:
 prox	Slago/Capitulo7/exemplo740_MaiorItem.c	/^    struct no * prox;$/;"	m	struct:no	typeref:struct:no *	file:
-qqr	LearnLibs/01assert/VerDepois.h	/^# define qqr(/;"	d
+qqr	learnlibs/01assert/VerDepois.h	/^# define qqr(/;"	d
 quad	Slago/Capitulo4/EX4-8_9_10_11.c	/^long double quad(long double n)$/;"	f	typeref:typename:long double
 quad	Slago/Capitulo4/EX41_Conserte.c	/^# define quad(/;"	d	file:
 quad	Slago/Capitulo4/macros.h	/^# define quad(/;"	d
@@ -995,6 +997,7 @@ remover	Slago/Capitulo7/exemplo732_acessa.c	/^void remover(lista *p)$/;"	f	typer
 remover	Slago/Capitulo7/exemplo733_insere_qqr.c	/^void remover(lista *p)$/;"	f	typeref:typename:void
 remover	Slago/Capitulo7/exemplo734_remove_qqr.c	/^void remover(lista *p)$/;"	f	typeref:typename:void
 remover	Slago/Capitulo7/exemplo735_alterando.c	/^void remover(lista *p)$/;"	f	typeref:typename:void
+reporterror	learnlibs/08setjmp/anotacoes.c	/^# define reporterror /;"	d	file:
 reservado	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^    unsigned reservado : 2; $/;"	m	struct:__anonc725a1b10108	typeref:typename:unsigned:2	file:
 resto_da_div	Slago/Capitulo4/EX416_Func_Recur.c	/^int resto_da_div(int x, int y)$/;"	f	typeref:typename:int
 reverse	C_Kern_Ritchie/NumberThree/01-2DoWhile.c	/^void reverse(s) \/* reverse the string s*\/$/;"	f
@@ -1229,16 +1232,16 @@ selmin	Slago/Capitulo5/exemplo534_Seleciona_Min.c	/^int selmin(int v[], int i, i
 selmin	Slago/Capitulo5/exemplo535_Ordena_Selecao.c	/^int selmin(int v[], int i, int n) {$/;"	f	typeref:typename:int
 sem_papel	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^    unsigned sem_papel : 1; $/;"	m	struct:__anonc725a1b10108	typeref:typename:unsigned:1	file:
 separa_freeman	Slago/Capitulo5/EX520_Freeman.c	/^void separa_freeman(original, freeman, ponto_inicial)$/;"	f
-small	LearnMake/06_strings/Makefile	/^small:$/;"	t
+small	learnmake/06_strings/Makefile	/^small:$/;"	t
 soma_complexo	Slago/Capitulo6/EX62_Complexo.c	/^COMPLEXO soma_complexo(COMPLEXO num1,$/;"	f	typeref:typename:COMPLEXO
 soma_item	Slago/Capitulo7/EX725_muitos.c	/^int soma_item(lista L){$/;"	f	typeref:typename:int
 soma_pred_suc	Slago/Capitulo4/EX416_Func_Recur.c	/^int soma_pred_suc(int x, int y)$/;"	f	typeref:typename:int
 soma_um	Slago/Capitulo7/EX723_Destroi.c	/^lista soma_um(lista *p)$/;"	f	typeref:typename:lista
 soma_vetor	Slago/Capitulo5/EX54_Desv_Pad.c	/^float soma_vetor(vetor, indice_vetor)$/;"	f
-some_file	LearnMake/04_clean/Makefile	/^some_file: other_file$/;"	t
-somefile	LearnMake/05_Vars/Makefile	/^somefile: $(files)$/;"	t
+some_file	learnmake/04_clean/Makefile	/^some_file: other_file$/;"	t
+somefile	learnmake/05_Vars/Makefile	/^somefile: $(files)$/;"	t
 sound	Slago/Capitulo4/exemplo43_Func_Fic.c	/^void sound(f)$/;"	f
-src_files	LearnMake/13_filter/Makefile	/^src_files = foo.raw bar.c lose.c$/;"	m
+src_files	learnmake/13_filter/Makefile	/^src_files = foo.raw bar.c lose.c$/;"	m
 status	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^} status;$/;"	t	typeref:struct:__anonc725a1b10108	file:
 strcat	Slago/Capitulo5/EX516_StrCat.c	/^void strcat(s,t)$/;"	f
 strchar	Slago/Capitulo7/EX713_StrChr.c	/^char *strchar(char *s, char c)$/;"	f	typeref:typename:char *
@@ -1260,19 +1263,20 @@ tempo	Slago/Capitulo6/EX65_Voo.c	/^    TEMPO tempo;$/;"	m	struct:__anonc297e15c0
 test	C_Kern_Ritchie/NumberFive/01-3Pointers.c	/^void test(array)$/;"	f
 test	C_Kern_Ritchie/NumberFive/01-5PointersVsIndexV2.c	/^void test(array)$/;"	f
 tex	C_Kern_Ritchie/NumberSix/01-3ArrayOfStruct.c	/^        char *tex ; \/* Points to text *\/$/;"	m	struct:main::node	typeref:typename:char *	file:
-thing_right	LearnMake/09_wildcardStar/Makefile	/^thing_right := $(wildcard *.o)$/;"	m
-thing_wrong	LearnMake/09_wildcardStar/Makefile	/^thing_wrong := *.o # this will get expanded$/;"	m
+thing_right	learnmake/09_wildcardStar/Makefile	/^thing_right := $(wildcard *.o)$/;"	m
+thing_wrong	learnmake/09_wildcardStar/Makefile	/^thing_wrong := *.o # this will get expanded$/;"	m
 third_personal_strcpy	C_Kern_Ritchie/NumberFive/02-2PointersCharFunc.c	/^void third_personal_strcpy(s,t)$/;"	f
-three	LearnMake/07_allTarget/Makefile	/^three:$/;"	t
-three	LearnMake/09_wildcardStar/Makefile	/^three: $(thing_right)$/;"	t
+three	learnmake/07_allTarget/Makefile	/^three:$/;"	t
+three	learnmake/09_wildcardStar/Makefile	/^three: $(thing_right)$/;"	t
 titulo	Slago/Capitulo6/EX61_Livro.c	/^        char titulo[100];$/;"	m	struct:main::__anone702bfb00108	typeref:typename:char[100]	file:
 titulo	Slago/Capitulo7/EX718_Livro.c	/^    char titulo[100];$/;"	m	struct:__anone38b916a0108	typeref:typename:char[100]	file:
+top_level	learnlibs/08setjmp/anotacoes.c	/^void top_level(void) {$/;"	f	typeref:typename:void
 trocas	Slago/Capitulo5/EX533_Trocas.c	/^void trocas(int v[], int n) {$/;"	f	typeref:typename:void
 trocas	Slago/Capitulo5/exemplo531_Ordena_Trocas.c	/^void trocas(int v[], int n) {$/;"	f	typeref:typename:void
 true	Slago/Capitulo4/boolean.h	/^# define true /;"	d
-two	LearnMake/07_allTarget/Makefile	/^two:$/;"	t
-two	LearnMake/09_wildcardStar/Makefile	/^two:$/;"	t
-two	LearnMake/10_AutoVars/Makefile	/^two:$/;"	t
+two	learnmake/07_allTarget/Makefile	/^two:$/;"	t
+two	learnmake/09_wildcardStar/Makefile	/^two:$/;"	t
+two	learnmake/10_AutoVars/Makefile	/^two:$/;"	t
 vala	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^        char *vala ;$/;"	m	union:main::etiq_u	typeref:typename:char *	file:
 valf	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^        float valf ;$/;"	m	union:main::etiq_u	typeref:typename:float	file:
 vali	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^        int vali ;$/;"	m	union:main::etiq_u	typeref:typename:int	file:
@@ -1284,10 +1288,10 @@ visualiza_campo	Slago/Capitulo5/EX524_CampoV1.c	/^void visualiza_campo(campo, ta
 visualiza_campo	Slago/Capitulo5/EX525_CampoV2.c	/^void visualiza_campo(campo, tam_y, tam_x)$/;"	f
 visualiza_campo	Slago/Capitulo5/EX526_CampoV3.c	/^void visualiza_campo(campo, tam_y, tam_x)$/;"	f
 wor	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^        char *wor; \/*Points to the text*\/$/;"	m	struct:main::node	typeref:typename:char *	file:
-x	LearnMake/06_strings/Makefile	/^x := dude$/;"	m
 x	Slago/Capitulo4/exemplo48_Tipos_Armazenamento.c	/^int x = 3;$/;"	v	typeref:typename:int
 x	Slago/Capitulo6/EX63_Retas.c	/^    float x;$/;"	m	struct:cartesiano	typeref:typename:float	file:
 x	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    float x;$/;"	m	struct:__anond51e0d560108	typeref:typename:float	file:
+x	learnmake/06_strings/Makefile	/^x := dude$/;"	m
 y	Slago/Capitulo4/exemplo48_Tipos_Armazenamento.c	/^int y=2;$/;"	v	typeref:typename:int
 y	Slago/Capitulo6/EX63_Retas.c	/^    float y;$/;"	m	struct:cartesiano	typeref:typename:float	file:
 y	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    float y;$/;"	m	struct:__anond51e0d560108	typeref:typename:float	file:

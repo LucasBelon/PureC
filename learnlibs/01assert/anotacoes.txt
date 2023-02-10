@@ -1,4 +1,5 @@
 Assert eh uma biblioteca que define MACROS.
+não tem mais grandes coisas
 A utilidade se mostra quando desejamos que
 algo seja escrito na forma
 if(!ok)

@@ -1,0 +1,30 @@
+setjmp permite criar funções dentro de outras 
+funções. Isso é importante para uma maior
+liberdade de estruturar funções, além de se 
+aproveitar funcionalidades provenientes do 
+escopo de funções definidas.
+O problema nasce em ser um tanto difícil de se 
+fazer essa alteração de escopo no momento da 
+tradução para código asm, e, portanto, usar 
+essa biblioteca sempre vai cheirar a gambiarra.
+Além disso, ela viola com violência o fluxo
+natural de chamadas de funções e seus retornos.
+Essa biblioteca se aproveita dos funcionamentos
+obscuros do goto.
+A palavra chave neste caso é visibilidade.
+Transferência de controle.
+
+jmp_buf é um tipo de variável que pode ser 
+pensado como um objeto de dados do tipo rótulo.
+
+longjump é uma função que executa a transferência
+não local do controle.
+
+setjmp é a macro que armazena o estado do 
+contexto atual de chamada em um objeto jmp_buf 
+e marca qual contexto será passado o controle 
+na chamada de longjump.
+
+Usar essa caceta me parece extremamente 
+improvável, e é mais fácil contornar do que 
+ser encurralado pelo uso dela.

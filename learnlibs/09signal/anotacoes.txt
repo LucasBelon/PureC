@@ -1,0 +1,33 @@
+signal.h serve para gerenciar o que acontece 
+com o programa quando este recebe sinais 
+do sistema operacional. Ser interrompido, 
+ser desligado, ser suspenso, ou mesmo a parada 
+imediata, são, geralmente, comportamentos 
+pré-definidos sem o uso da biblioteca. Mas 
+no caso de ser necessário terminar um processo 
+pelo menos até certo ponto antes de se encerrar 
+pode ser útil para evitar corrupção de dados, 
+ou mesmo para recuperar-se a partir do último 
+ponto executado. 
+Essa biblioteca define duas funções.
+
+raise, que reporta à um sinal síncrono (interno
+ao programa)
+
+raise, que permite lidar com o sinal enviado
+
+Pode-se fazer 3 coisas quanto aos sinais:
+- Deixar morrer o programa (comportamento padrão)
+- Ignorar, simplesmente descartando o sinal
+- Lidar com o sinal
+
+Todo esse maquinário pode parecer elegante
+, mas na verdade não é bem assim. Lidar com 
+sinais eventualmente exige mais de uma thread 
+em seu programa. Além de que, sendo possível 
+que o processo se encerre na metade, acabamos 
+por ter problemas de sincronismo e 
+confiabilidade.
+
+Temos aqui mais um exemplo de biblioteca 
+que se possivel não usar.
