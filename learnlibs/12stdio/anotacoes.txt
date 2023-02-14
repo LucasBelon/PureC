@@ -1,1 +1,177 @@
 EU ESPEREI UM TEMPÃO PRA CHEGAR AQUI
+
+I/O é um assunto extremamente cabeludo.
+Cada equipamento diferente, sendo fita magnética,
+disco óptico, disco magnético, ou mesmo chips 
+de memória nand, pode ser acessado por uma 
+interface de conexão simples entre o periférico 
+e o sistema operacional. O unix criou,
+influenciado por outros sistemas, uma interface 
+padrão, com ferramentas e abstrações em que 
+diversos programadores fizeram suas carreiras.
+Como diferenciar arquivos binários dos de 
+texto, ou mesmo como saber se será usado 
+o retorno do carro e o caracter de alimentar 
+linha ao invés de um simples caractere de 
+nova linha? Para quem usa as funções do stdio
+isso não importa muito. Os detalhes feios 
+estão escondidos. E quanto à comunicação 
+entre os diferentes programas existentes? 
+É responsabilidade da stdio manusear as entradas 
+e saídas padrão, stdin stdout e stderr. Existem 
+programas no computador, e a comunicação 
+entre eles, todo o suposto vazio, é pensado 
+no modelo de descritores de arquivos, buffers
+, e flush de memória, e outros truques sujos.
+
+Vamos lá
+  +---------------------------------------+
+  | SO-> |          --------  +-> stdout  |
+  |      | stdin -> Programa / -> (FILE *)|
+  | (env |          -------- \ -> PIPE    |
+  | vars)|                    +-> stderr  |
+  +---------------------------------------+ 
+              ^
+            (FILE *)
+
+FILE é um tipo capaz de armazenar as variáveis
+necessárias para o controle de stream de dados.
+Isso inclui um indicador de posição de arquivo,
+um ponteiro para o buffer, se aplicável, um 
+registro de erros para tentativas mal sucedidas 
+de READ e WRITE, e um indicador de fim de 
+arquivo EOF.
+Adicionalmente, possui fpos_t, um tipo capaz de
+gravar toda informação necessária para
+especificar unicamente cada posição dentro de um
+arquivo.
+
+As funções de mais alto nível são fopen, fclose,
+fgetc, fputc, fgetpos, and fsetpos.
+
+Existem algumas macros: 
+
+_IOFBF _IOLBF _IONBF  
+Essas macros se expandem para valores constantes
+que servem como terceiro argumento para setvbuf()
+
+BUFSIZ
+Expande para um inteiro constante usado
+pela função setbuf()
+
+EOF
+Retorna um inteiro negativo que indica o fim
+do fluxo de entrada de dados.
+
+FOPEN_MAX
+Expande para o número mínimo de
+arquivos que podem ser abertos simultaneamente
+garantidamente.
+
+FILENAME_MAX
+Expande para o número de caracteres que um nome
+de arquivo pode ter, no máximo.
+
+L_tmpnam
+O tamanho máximo do nome que arquivos
+temporários podem ter, gerado por tmpnam()
+
+SEEK_CUR SEEK_END SEEK_SET
+Se expandem para valores usados como terceiro
+argumento da função fseek()
+
+TMP_MAX número mínimo garantido de nomes únicos
+que a função tmpnam() consegue gerar
+
+stderr stdin stdout
+Objetos do tipo FILE *
+
+STREAMS, Fluxos de dados
+Exigem diferentes mapeamentos para diferentes
+tipos de arquivos, sejam eles texto ou binários.
+Arquivos texto podem ser feitos de caracteres
+múltiplos, multibyte. 
+Arquivos binários possuem correspondência um pra
+um em sua representação.
+
+FILES, arquivos e sua abertura
+Arquivos podem ser associados à um fluxo de dados
+pela ação de abertura de arquivo. 
+No caso de um arquivo de disco (em oposição a um
+terminal), é associado um ponteiro de posição
+dentro do arquivo.
+A abertura de um arquivo pode envolver a criação
+de um novo arquivo.
+
+BUFFER, trazendo arquivos aos poucos
+Um arquivo sem buffer deve ter seu resultado
+devolvido ao arquivo o mais imediatamente
+possível, sem que seja bufferizado.
+Arquivos bufferizados devem ter suas alterações
+salvas quando o buffer se encher.
+Pode-se usar um buffer com base em linha, não em
+bloco.
+Uma cópia do objeto FILE, não necessariamente irá
+dar o controle sobre o arquivo.
+
+OPERANDO ARQUIVOS
+Se função definida como int, retornar zero indica
+sucesso.
+
+Remove
+int remove(const char * filename)
+
+Rename
+int rename(const char * old, const char * new)
+
+TMPFILE
+FILE * tmpfile(void)
+Arquivo temporário é aberto com modo "wb+"
+
+TMPNAM
+char * tmpnam(char *s)
+Essa função está depreciada no clang por ser
+insegura.
+
+FUNÇÕES DE ACESSO À ARQUIVOS
+
+int fclose(FILE *stream)
+pode retornar zero ou EOF se nenhum erro for
+detectado.
+
+int fflush(FILE *stream)
+Força o esvaziamento do buffer. Se stream é
+ponteiro nulo, executa para todos os objetos a 
+qual se aplica.
+
+FILE * fopen(const char * filename, 
+             const char * mode)
+Abre arquivo filename e associa um stream à ele.
+
+r - Abrir arquivo de texto para leitura.
+w - Trunca comprimento para zero ou cria arquivo
+de texto para escrita.
+a - append; Abre ou cria arquivo de texto para 
+escrita no final do arquivo (índice de posição no
+texto).
+rb - Abrir arquivo binário para escrita.
+wb - Trunca comprimento para zero ou cria arquivo
+binário para escrita.
+ab - append; Abre ou cria arquivo binário para 
+escrita no final do arquivo (índice de posição no
+texto).
+r+ - Abre arquivo de texto para atualização
+(leitura e escrita)
+w+ - Trunca comprimento para zero ou cria arquivo
+de texto para atualizaçâo (será que timestamps
+são alterados no write?)
+a+ - append; Abre arquivo de texto para
+atualização e escrita no final do arquivo.
+rb+ - Abre arquivo binário para atualização
+(leitura e escrita)
+wb+ - Trunca comprimento para zero ou cria
+arquivo binário para atualização.
+ab+ - append; Abre arquivo binário para
+atualização e escrita no final do arquivo.
+
+
