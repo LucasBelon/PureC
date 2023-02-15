@@ -114,6 +114,18 @@ bloco.
 Uma cópia do objeto FILE, não necessariamente irá
 dar o controle sobre o arquivo.
 
+  +----------------------------------------+
+  | Tela <=> Buffer <=> stream <=> arquivo |
+  +----------------------------------------+
+           |Registers|            |HD's     |
+           |RAM      |            |SSD's    |
+                                  |Disquetes|
+
+O buffer captura do arquivo através de um canal 
+chamado stream. A forma como a stream transfere
+para o buffer permanece um mistério. Seria por
+blocos ou seria bit a bit?
+
 OPERANDO ARQUIVOS
 Se função definida como int, retornar zero indica
 sucesso.
@@ -174,4 +186,42 @@ arquivo binário para atualização.
 ab+ - append; Abre arquivo binário para
 atualização e escrita no final do arquivo.
 
+Deveria, mas não quero saber das funções para
+definir o tamanho do buffer. Ele que se vire.
+Depois eu procuro sobre isso.
 
+ENTRADA E SAÍDA FORMATADA
+
+int fprintf(FILE *stream, const char *format,
+...)
+Escreve output para a stream, esse output é
+controlado pelo format. Após o sinal % algumas
+flags podem ser adicionadas. Retorna o número de
+caracteres escritos ou um número negativo em caso
+de falha.
+
+Flags do printf:
+Exitem 5 flags
+(-) justifica à esquerda. Por exemplo %-30s
+(0) zeros à esquerda. Por exemplo %04x
+(+) Gera um sinal positivo explícito quando um
+número positivo é dado. Por exemplo %+5d
+( ) O espaço gera um espaço no lugar do sinal
+caso seja um número positivo. Por exemplo % 5d
+(#) Altera o comportamento de certas conversões.
+Especificamente para conversões para octal e
+hexadecimal, adicionando os prefixos 0 ou 0x.
+
+Para definir o tamanho do campo a ser exibido
+podemos utilizar dois formatos. %5d ou %d*5.
+
+(Podemos fazer neste caso int i = 3, %d*i?)
+
+int fscanf(FILE *stream, const char *format,
+...)
+
+Scansets são interessantes. É bem semelhante com
+regex, mas para scanear o input. 
+
+Leitura e escrita de baixo nível não foi abordado
+direito. Fiquei um tanto triste.

@@ -1,0 +1,20 @@
+Esse capítulo marca a segunda metade do livro.
+Fora essa, faltam apenas duas bibliotecas para
+olhar com carinho e cuidado. Obviamente vou
+precisar avançar estudos sozinho sobre como
+funciona o padrão C mais atual.
+
+A biblioteca stdlib parece possuir coisas mais
+interessantes do que o nome sugere. 
+
+Existem 6 grupos de funções
+- Matemática de inteiros (abs, div, labs, ldiv)
+- Algorítmos (bsearch, qsort, rand, srand)
+- Conversões de texto (atof, atoi, atol, strtod,
+  strtol, strtoul)
+- Conversões multibyte (mblen, mbstowcs, mbtowc,
+  wcstombs, wctomb)
+- Alocação de armazenamento (calloc, free,
+  malloc, realloc)
+- Interações com o ambiente (abort, atexit, exit,
+  getenv, system)
