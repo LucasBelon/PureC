@@ -4,7 +4,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/C_Learning/NumberThree
+cd ./
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -31,9 +31,9 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberThree
+lcd ./
 tabnext
-edit ~/C_Learning/NumberThree/01-2DoWhile.c
+edit ./01-2DoWhile.c
 argglobal
 setlocal fdm=indent
 setlocal fde=0
@@ -49,9 +49,9 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberThree
+lcd ./
 tabnext
-edit ~/C_Learning/NumberThree/01-3BreakContinueGotoLabel.c
+edit ./01-3BreakContinueGotoLabel.c
 argglobal
 setlocal fdm=indent
 setlocal fde=0
@@ -67,12 +67,12 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberThree
+lcd ./
 tabnext 1
 set stal=1
-badd +0 ~/C_Learning/NumberThree/01-1SwitchCaseDefault.c
-badd +0 ~/C_Learning/NumberThree/01-3BreakContinueGotoLabel.c
-badd +0 ~/C_Learning/NumberThree/01-2DoWhile.c
+badd +0 ./01-1SwitchCaseDefault.c
+badd +0 ./01-3BreakContinueGotoLabel.c
+badd +0 ./01-2DoWhile.c
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif

@@ -4,7 +4,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/C_Learning/NumberTwo
+cd ./
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -33,11 +33,11 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberTwo
+lcd ./
 tabnext
-edit ~/C_Learning/NumberTwo/01-2testingWithStrings.c
+edit ./01-2testingWithStrings.c
 argglobal
-balt ~/C_Learning/NumberTwo/01-1testingWithTypes.c
+balt ./01-1testingWithTypes.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -52,11 +52,11 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberTwo
+lcd ./
 tabnext
-edit ~/C_Learning/NumberTwo/01-3ConversionOnTypes.c
+edit ./01-3ConversionOnTypes.c
 argglobal
-balt ~/C_Learning/NumberTwo/01-2testingWithStrings.c
+balt ./01-2testingWithStrings.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -71,11 +71,11 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberTwo
+lcd ./
 tabnext
-edit ~/C_Learning/NumberTwo/01-4AsciiTable.c
+edit ./01-4AsciiTable.c
 argglobal
-balt ~/C_Learning/NumberTwo/01-3ConversionOnTypes.c
+balt ./01-3ConversionOnTypes.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -90,13 +90,13 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberTwo
+lcd ./
 tabnext 1
 set stal=1
-badd +0 ~/C_Learning/NumberTwo/01-1testingWithTypes.c
-badd +1 ~/C_Learning/NumberTwo/01-2testingWithStrings.c
-badd +1 ~/C_Learning/NumberTwo/01-3ConversionOnTypes.c
-badd +1 ~/C_Learning/NumberTwo/01-4AsciiTable.c
+badd +0 ./01-1testingWithTypes.c
+badd +1 ./01-2testingWithStrings.c
+badd +1 ./01-3ConversionOnTypes.c
+badd +1 ./01-4AsciiTable.c
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif

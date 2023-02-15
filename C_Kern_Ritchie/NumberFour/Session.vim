@@ -4,7 +4,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/C_Learning/NumberFour
+cd ./
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -18,9 +18,9 @@ tabnew
 tabnew
 tabnew
 tabrewind
-edit CompilingExample/main.c
+edit ./CompilingExample/main.c
 argglobal
-balt CompilingExample
+balt ./CompilingExample
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -38,7 +38,7 @@ normal! zt
 keepjumps 12
 normal! 0
 tabnext
-edit CompilingExample/lib1.c
+edit ./CompilingExample/lib1.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -58,7 +58,7 @@ set winwidth=1
 exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 argglobal
-balt CompilingExample/lib2.c
+balt ./CompilingExample/lib2.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -73,11 +73,10 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberFour/CompilingExample
+lcd ./CompilingExample
 wincmd w
 argglobal
-if bufexists("~/C_Learning/NumberFour/CompilingExample/lib2.c") | buffer ~/C_Learning/NumberFour/CompilingExample/lib2.c | else | edit ~/C_Learning/NumberFour/CompilingExample/lib2.c | endif
-balt ~/C_Learning/NumberFour/CompilingExample/lib1.c
+balt ./CompilingExample/lib1.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -92,12 +91,12 @@ keepjumps exe s:l
 normal! zt
 keepjumps 7
 normal! 027|
-lcd ~/C_Learning/NumberFour/CompilingExample
+lcd ./CompilingExample
 wincmd w
 exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 tabnext
-edit ~/C_Learning/NumberFour/CompilingExample/lib1.h
+edit ./CompilingExample/lib1.h
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -117,7 +116,7 @@ set winwidth=1
 exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
 exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
 argglobal
-balt ~/C_Learning/NumberFour/CompilingExample/lib2.h
+balt ./CompilingExample/lib2.h
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -132,11 +131,9 @@ keepjumps exe s:l
 normal! zt
 keepjumps 3
 normal! 0
-lcd ~/C_Learning/NumberFour
+lcd ./
 wincmd w
 argglobal
-if bufexists("~/C_Learning/NumberFour/CompilingExample/lib2.h") | buffer ~/C_Learning/NumberFour/CompilingExample/lib2.h | else | edit ~/C_Learning/NumberFour/CompilingExample/lib2.h | endif
-balt ~/C_Learning/NumberFour/CompilingExample/lib1.h
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -151,14 +148,14 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberFour
+lcd ./
 wincmd w
 exe 'vert 1resize ' . ((&columns * 52 + 53) / 106)
 exe 'vert 2resize ' . ((&columns * 53 + 53) / 106)
 tabnext
-edit ~/C_Learning/NumberFour/CompilingExample/Makefile
+edit ./CompilingExample/Makefile
 argglobal
-balt ~/C_Learning/NumberFour/CompilingExample/What_was_done.txt
+balt ./CompilingExample/What_was_done.txt
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -173,9 +170,9 @@ keepjumps exe s:l
 normal! zt
 keepjumps 11
 normal! 0
-lcd ~/C_Learning/NumberFour/CompilingExample
+lcd ./CompilingExample
 tabnext
-edit ~/C_Learning/NumberFour/CompilingExample/What_was_done.txt
+edit ./CompilingExample/What_was_done.txt
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -195,7 +192,7 @@ set winwidth=1
 exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 argglobal
-balt ~/C_Learning/NumberFour/whatIdidntWrote.txt
+balt ./whatIdidntWrote.txt
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -212,11 +209,9 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberFour/CompilingExample
+lcd ./CompilingExample
 wincmd w
 argglobal
-if bufexists("~/C_Learning/NumberFour/whatIdidntWrote.txt") | buffer ~/C_Learning/NumberFour/whatIdidntWrote.txt | else | edit ~/C_Learning/NumberFour/whatIdidntWrote.txt | endif
-balt ~/C_Learning/NumberFour/CompilingExample/What_was_done.txt
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -231,12 +226,12 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberFour/CompilingExample
+lcd ./CompilingExample
 wincmd w
 exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 tabnext
-edit ~/C_Learning/NumberFour/debbuging/main.c
+edit ./debbuging/main.c
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -270,11 +265,11 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberFour
+lcd ./
 wincmd w
 argglobal
-if bufexists("~/C_Learning/NumberFour/debbuging/HowToDebbug.txt") | buffer ~/C_Learning/NumberFour/debbuging/HowToDebbug.txt | else | edit ~/C_Learning/NumberFour/debbuging/HowToDebbug.txt | endif
-balt ~/C_Learning/NumberFour/debbuging/main.c
+if bufexists("./debbuging/HowToDebbug.txt") | buffer ./debbuging/HowToDebbug.txt | else | edit ./debbuging/HowToDebbug.txt | endif
+balt ./debbuging/main.c
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -289,23 +284,23 @@ keepjumps exe s:l
 normal! zt
 keepjumps 1
 normal! 0
-lcd ~/C_Learning/NumberFour
+lcd ./
 wincmd w
 exe 'vert 1resize ' . ((&columns * 53 + 53) / 106)
 exe 'vert 2resize ' . ((&columns * 52 + 53) / 106)
 tabnext 1
 set stal=1
-badd +0 ~/C_Learning/NumberFour/CompilingExample/main.c
-badd +1 ~/C_Learning/NumberFour/CompilingExample/lib1.c
-badd +1 ~/C_Learning/NumberFour/CompilingExample/lib1.h
-badd +1 ~/C_Learning/NumberFour/CompilingExample/Makefile
-badd +1 ~/C_Learning/NumberFour/debbuging/main.c
-badd +1 ~/C_Learning/NumberFour/CompilingExample
-badd +1 ~/C_Learning/NumberFour/CompilingExample/lib2.c
-badd +1 ~/C_Learning/NumberFour/CompilingExample/lib2.h
-badd +1 ~/C_Learning/NumberFour/CompilingExample/What_was_done.txt
-badd +1 ~/C_Learning/NumberFour/whatIdidntWrote.txt
-badd +1 ~/C_Learning/NumberFour/debbuging/HowToDebbug.txt
+badd +0 ./CompilingExample/main.c
+badd +1 ./CompilingExample/lib1.c
+badd +1 ./CompilingExample/lib1.h
+badd +1 ./CompilingExample/Makefile
+badd +1 ./debbuging/main.c
+badd +1 ./CompilingExample
+badd +1 ./CompilingExample/lib2.c
+badd +1 ./CompilingExample/lib2.h
+badd +1 ./CompilingExample/What_was_done.txt
+badd +1 ./whatIdidntWrote.txt
+badd +1 ./debbuging/HowToDebbug.txt
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
