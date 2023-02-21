@@ -23,3 +23,5 @@ Numero maximo de bytes num char multibyte em
 qualquer locale
 MB_LEN_MAX
 
+
+Ler man limits.h

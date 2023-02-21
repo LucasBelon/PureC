@@ -31,3 +31,5 @@ confiabilidade.
 
 Temos aqui mais um exemplo de biblioteca 
 que se possivel não usar.
+
+Ler man (1 e 3) signal

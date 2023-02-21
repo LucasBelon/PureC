@@ -225,3 +225,7 @@ regex, mas para scanear o input.
 
 Leitura e escrita de baixo nível não foi abordado
 direito. Fiquei um tanto triste.
+
+Foi abordado sim, mas eu passei rápido sem ler
+(pra ser mais burro só se nascer de novo)
+

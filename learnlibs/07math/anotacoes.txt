@@ -56,4 +56,4 @@ fmod(double x, double y) computa o resto da
 divisao de x/y
 
 
-
+Ler man math.h

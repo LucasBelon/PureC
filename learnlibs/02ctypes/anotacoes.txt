@@ -20,3 +20,4 @@ tolower - transforma em minuscula
 toupper - transforma em maiuscula
 
 
+Ler man 3 isalpha

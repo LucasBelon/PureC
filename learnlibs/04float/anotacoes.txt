@@ -74,3 +74,5 @@ Algumas dessas macros sao importantes para
 detectar overflow, underflow e perda de 
 significancia.
 Exemplos no arquivo .c
+
+Ler man float.h

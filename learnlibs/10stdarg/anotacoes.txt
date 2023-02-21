@@ -6,4 +6,11 @@ Ou seja. Funções sem um número fixo de variáveis.
 O truque é que a função anda através de uma lista
 de elementos. Nada mais.
 
-Essa biblioteca declara 3 macros e um tipo de dado. O tipo se chama va_list. Esse tipo é moldado para armazenar os dados das macros va_start, va_end e va_arg
+Essa biblioteca declara 3 macros e um tipo 
+de dado. O tipo se chama va_list. Esse tipo 
+é moldado para armazenar os dados das macros 
+va_start, va_end e va_arg
+
+informações mais interessantes no anotacoes.c
+
+ler man stdarg

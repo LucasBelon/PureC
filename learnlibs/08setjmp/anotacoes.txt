@@ -28,3 +28,6 @@ na chamada de longjump.
 Usar essa caceta me parece extremamente 
 improvável, e é mais fácil contornar do que 
 ser encurralado pelo uso dela.
+
+Ler man 3 setjmp
+

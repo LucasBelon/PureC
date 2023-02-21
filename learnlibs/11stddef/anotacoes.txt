@@ -1,1 +1,3 @@
 Essa biblioteca é inútil. Meu deus
+
+ler man stddef.h

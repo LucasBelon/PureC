@@ -1,3 +1,16 @@
-Locale nao se trata apenas de onde estou geograficamente. Se trata tambem de onde estou virtualmente, em qual ambiente, com quais variaveis de ambiente. Se trata de como irei representar valores monetarios, como irei escrever as horas, inclusive se vou utilizar de virgula ou ponto para numeros com ponto flutuante. A biblioteca armazena uma estrutura, duas funcoes e uma quantidade de macros:
+Locale nao se trata apenas de onde estou 
+geograficamente. Se trata tambem de onde 
+estou virtualmente, em qual ambiente, com 
+quais variaveis de ambiente. Se trata de 
+como irei representar valores monetarios, 
+como irei escrever as horas, inclusive se 
+vou utilizar de virgula ou ponto para numeros 
+com ponto flutuante. A biblioteca armazena 
+uma estrutura, duas funcoes e uma quantidade 
+de macros:
+
+ESSA BIBLIOTECA É CHATA
+
+Ler man locale.h
 
 

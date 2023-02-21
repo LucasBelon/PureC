@@ -3,3 +3,5 @@ que uma system call falha. É meio imprevisível,
 mas pode ser util pra shared libraries
 Basicamente, ele verifica uma entidade do sistema
 linux que grava erros.
+
+Ler man 3 errno (e man errno)
