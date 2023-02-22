@@ -48,6 +48,8 @@ C - A Linguagem de Programação	C_Kern_Ritchie/NumberTwo/README.md	/^# C - A Li
 C - A Linguagem de Programação	C_Kern_Ritchie/README.md	/^# C - A Linguagem de Programação$/;"	c
 CARACTERE	Slago/Capitulo3/EX39_Exibe_Quadrado.c	/^# define CARACTERE /;"	d	file:
 CARTESIANO	Slago/Capitulo6/EX66_Segmento_Reta.c	/^} CARTESIANO;$/;"	t	typeref:struct:__anond51e0d560108	file:
+CC	Projs/guessing_game/Makefile	/^CC=clang$/;"	m
+CC	learnlibs/12stdio/makefile	/^CC=clang$/;"	m
 CC	learnmake/11_implicit/Makefile	/^CC = clang # Flag para regras implicitas$/;"	m
 CFLAGS	learnmake/11_implicit/Makefile	/^CFLAGS = -g # Ativa as informações de debug$/;"	m
 COMPLEXO	Slago/Capitulo6/EX62_Complexo.c	/^} COMPLEXO;$/;"	t	typeref:struct:__anone50a01cc0108	file:
@@ -61,6 +63,7 @@ ChapterSeven - Input & Output	C_Kern_Ritchie/NumberSeven/README.md	/^## ChapterS
 ChapterSix - Structures	C_Kern_Ritchie/NumberSix/README.md	/^## ChapterSix - Structures$/;"	s
 ChapterThree - Control Flow	C_Kern_Ritchie/NumberThree/README.md	/^## ChapterThree - Control Flow$/;"	s
 ChapterTwo - Types, expressions and operators	C_Kern_Ritchie/NumberTwo/README.md	/^## ChapterTwo - Types, expressions and operators$/;"	s
+Comp_info	Projs/guessing_game/helper.h	/^} Comp_info ;$/;"	t	typeref:struct:__anon416386850208
 CorrigeCase	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^void CorrigeCase(s)$/;"	f
 DATA	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^} DATA;$/;"	t	typeref:struct:__anon2526b6d60108	file:
 DATA	Slago/Capitulo6/exemplo63_Rot_Nomeada.c	/^    } DATA;$/;"	t	function:main	typeref:struct:main::data	file:
@@ -92,6 +95,10 @@ EXTERN	C_Kern_Ritchie/NumberSix/01-4Fields.c	/^# define EXTERN /;"	d	file:
 FIM	Slago/Capitulo3/EX33_Regressivo.c	/^# define FIM /;"	d	file:
 FIM_MAI	Slago/Capitulo8/EX82_stdout.c	/^# define FIM_MAI /;"	d	file:
 FIM_MIN	Slago/Capitulo8/EX82_stdout.c	/^# define FIM_MIN /;"	d	file:
+FLAGS	Projs/guessing_game/Makefile	/^FLAGS=Wall$/;"	m
+FLAGS	learnlibs/12stdio/makefile	/^FLAGS=Wall$/;"	m
+HEL	Projs/guessing_game/Makefile	/^HEL=helper$/;"	m
+HELPER_H	Projs/guessing_game/helper.h	/^# define HELPER_H$/;"	d
 HORA	Slago/Capitulo6/EX65_Voo.c	/^} HORA;$/;"	t	typeref:struct:__anonc297e15c0108	file:
 HORARIO	Slago/Capitulo6/EX64_Horario.c	/^} HORARIO;$/;"	t	typeref:struct:__anon9f26fc3b0108	file:
 INCR	C_Kern_Ritchie/NumberOne/03-3Constants.c	/^#define INCR /;"	d	file:
@@ -102,8 +109,14 @@ INICIO	Slago/Capitulo3/EX33_Regressivo.c	/^# define INICIO /;"	d	file:
 INICIO_MAI	Slago/Capitulo8/EX82_stdout.c	/^# define INICIO_MAI /;"	d	file:
 INICIO_MIN	Slago/Capitulo8/EX82_stdout.c	/^# define INICIO_MIN /;"	d	file:
 INTERVALO_X	Slago/Capitulo6/EX66_Segmento_Reta.c	/^} INTERVALO_X;$/;"	t	typeref:struct:__anond51e0d560208	file:
+J00	Projs/guessing_game/helper.h	/^    short J00;$/;"	m	struct:__anon416386850208	typeref:typename:short
+J01	Projs/guessing_game/helper.h	/^    short J01;$/;"	m	struct:__anon416386850208	typeref:typename:short
+J10	Projs/guessing_game/helper.h	/^    short J10;$/;"	m	struct:__anon416386850208	typeref:typename:short
+J11	Projs/guessing_game/helper.h	/^    short J11;$/;"	m	struct:__anon416386850208	typeref:typename:short
 KEY_WORD	C_Kern_Ritchie/NumberSix/01-4Fields.c	/^# define KEY_WORD /;"	d	file:
 LEN	C_Kern_Ritchie/NumberSeven/01-1StdLibraryAccess.c	/^# define LEN /;"	d	file:
+LENGHT	Projs/guessing_game/helper.h	/^# define LENGHT /;"	d
+LENGHT	Projs/guessing_game/main.c	/^# define LENGHT /;"	d	file:
 LIB1_H	C_Kern_Ritchie/NumberFour/CompilingExample/lib1.h	/^#define LIB1_H$/;"	d
 LIB2_H	C_Kern_Ritchie/NumberFour/CompilingExample/lib2.h	/^#define LIB2_H$/;"	d
 LIMITE	Slago/Capitulo1/exemplo11_IMC.c	/^# define LIMITE /;"	d	file:
@@ -113,6 +126,8 @@ LINELENGHT	C_Kern_Ritchie/NumberTwo/01-4AsciiTable.c	/^# define LINELENGHT /;"	d
 LINES	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^# define LINES /;"	d	file:
 LOOPNUM	C_Kern_Ritchie/NumberThree/01-3BreakContinueGotoLabel.c	/^# define LOOPNUM /;"	d	file:
 Linkando.o	learnmake/11_implicit/Makefile	/^Linkando.o:$/;"	t
+MAIN	Projs/guessing_game/Makefile	/^MAIN=main.c$/;"	m
+MAIN	learnlibs/12stdio/makefile	/^MAIN=anotacoes.c$/;"	m
 MAX	Slago/Capitulo3/EX34_Converte_Pol.c	/^# define MAX /;"	d	file:
 MAX	Slago/Capitulo5/EX513_StrCpy.c	/^# define MAX /;"	d	file:
 MAX	Slago/Capitulo5/EX520_Freeman.c	/^# define MAX /;"	d	file:
@@ -133,6 +148,8 @@ NODE	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^    } NODE, *PNT_NODE;$/;"	t	funct
 NULL	C_Kern_Ritchie/NumberFive/02-1AritmeticsWithPointers.c	/^# define NULL /;"	d	file:
 NumLetra	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^} NumLetra;$/;"	t	typeref:struct:__anon280fd31c0108	file:
 OFFSET	Slago/Capitulo8/EX82_stdout.c	/^# define OFFSET /;"	d	file:
+OUTPUT	Projs/guessing_game/Makefile	/^OUTPUT=programa$/;"	m
+OUTPUT	learnlibs/12stdio/makefile	/^OUTPUT=programa$/;"	m
 PASSO	Slago/Capitulo3/EX34_Converte_Pol.c	/^# define PASSO /;"	d	file:
 PASSO	Slago/Capitulo5/EX55_Polinomio.c	/^# define PASSO /;"	d	file:
 PERSONALSTRING	C_Kern_Ritchie/NumberTwo/01-1testingWithTypes.c	/^# define PERSONALSTRING /;"	d	file:
@@ -157,28 +174,6 @@ STRING	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^    typedef char *STRING ;$/;"	t
 STRINGLEN	C_Kern_Ritchie/NumberTwo/01-2testingWithStrings.c	/^# define STRINGLEN /;"	d	file:
 STRINGLEN	C_Kern_Ritchie/NumberTwo/01-3ConversionOnTypes.c	/^# define STRINGLEN /;"	d	file:
 SUCCESS	C_Kern_Ritchie/NumberTwo/01-1testingWithTypes.c	/^# define SUCCESS /;"	d	file:
-SessionLoad	C_Kern_Ritchie/NumberFive/Session.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	C_Kern_Ritchie/NumberFour/Session.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	C_Kern_Ritchie/NumberOne/Session.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	C_Kern_Ritchie/NumberSeven/Session.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	C_Kern_Ritchie/NumberSix/Session.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	C_Kern_Ritchie/NumberThree/Session.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	C_Kern_Ritchie/NumberTwo/Session.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo1/Session.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo2/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo2/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo3/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo3/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo4/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo4/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo5/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo5/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo6/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo6/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo7/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo7/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo8/exemplosSession.vim	/^let SessionLoad = 1$/;"	v
-SessionLoad	Slago/Capitulo8/exerciciosSession.vim	/^let SessionLoad = 1$/;"	v
 TABULEIRO	Slago/Capitulo5/CampoMinado/Utils.h	/^# define TABULEIRO /;"	d
 TABULEIRO	Slago/Capitulo5/EX524_CampoV1.c	/^# define TABULEIRO /;"	d	file:
 TABULEIRO	Slago/Capitulo5/EX525_CampoV2.c	/^# define TABULEIRO /;"	d	file:
@@ -198,6 +193,7 @@ TAM	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^# define TAM /;"	d	file:
 TAMANHO	Slago/Capitulo5/EX56_Cedulas.c	/^# define TAMANHO /;"	d	file:
 TEMPO	Slago/Capitulo6/EX65_Voo.c	/^} TEMPO;$/;"	t	typeref:struct:__anonc297e15c0208	file:
 UTILS_H	Slago/Capitulo5/CampoMinado/Utils.h	/^# define UTILS_H$/;"	d
+User_Stats	Projs/guessing_game/helper.h	/^} User_Stats ;$/;"	t	typeref:struct:__anon416386850108
 Utils.o	Slago/Capitulo5/CampoMinado/Makefile	/^Utils.o: Utils.c$/;"	t
 VOO	Slago/Capitulo6/EX65_Voo.c	/^} VOO;$/;"	t	typeref:struct:__anonc297e15c0408	file:
 YES	C_Kern_Ritchie/NumberOne/07-1CharacterCount.c	/^#define YES /;"	d	file:
@@ -209,6 +205,8 @@ __anon06da55260208	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^typedef str
 __anon2526b6d60108	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^typedef struct {$/;"	s	file:
 __anon2526b6d60208	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^typedef struct {$/;"	s	file:
 __anon280fd31c0108	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^typedef struct {$/;"	s	file:
+__anon416386850108	Projs/guessing_game/helper.h	/^typedef struct {$/;"	s
+__anon416386850208	Projs/guessing_game/helper.h	/^typedef struct {$/;"	s
 __anon45544c200108	Slago/Capitulo6/exemplo616_Fora_Do_Campo.c	/^typedef struct {$/;"	s	file:
 __anon5f1e48310108	Slago/Capitulo6/exemplo66_Pessoa.c	/^typedef struct {$/;"	s	file:
 __anon5f1e48310208	Slago/Capitulo6/exemplo66_Pessoa.c	/^typedef struct {$/;"	s	file:
@@ -266,6 +264,7 @@ acessa	Slago/Capitulo7/exemplo735_alterando.c	/^lista acessa(lista p, int i)$/;"
 acessa	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^char acessa(lista L, int pos)$/;"	f	typeref:typename:char
 acessa	Slago/Capitulo7/exemplo740_MaiorItem.c	/^char acessa(lista L, int pos)$/;"	f	typeref:typename:char
 acessaUltimo	Slago/Capitulo7/EX725_muitos.c	/^lista acessaUltimo(lista L){$/;"	f	typeref:typename:lista
+actual_turn	Projs/guessing_game/helper.h	/^    int actual_turn;$/;"	m	struct:__anon416386850208	typeref:typename:int
 alarme	Slago/Capitulo4/exemplo43_Func_Fic.c	/^void alarme(void)$/;"	f	typeref:typename:void
 aleat	Slago/Capitulo4/EX415_aleat_time.c	/^unsigned int aleat()$/;"	f	typeref:typename:unsigned int
 aleat	Slago/Capitulo4/exemplo48_Tipos_Armazenamento.c	/^int aleat(void)$/;"	f	typeref:typename:int
@@ -274,7 +273,9 @@ alfamax	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^# define alfamax /;"	d	file
 alfamin	Slago/Capitulo5/EX515_StrUpr.c	/^# define alfamin /;"	d	file:
 alfamin	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^# define alfamin /;"	d	file:
 all	C_Kern_Ritchie/NumberFour/CompilingExample/Makefile	/^all: main$/;"	t
+all	Projs/guessing_game/Makefile	/^all: $(HEL).o messages.c $(MAIN)$/;"	t
 all	Slago/Capitulo5/CampoMinado/Makefile	/^all: main$/;"	t
+all	learnlibs/12stdio/makefile	/^all:$/;"	t
 all	learnmake/06_strings/Makefile	/^all: small$/;"	t
 all	learnmake/07_allTarget/Makefile	/^all: one two three$/;"	t
 all	learnmake/08_multiTarget/Makefile	/^all: f1.o f2.o$/;"	t
@@ -289,6 +290,7 @@ altStrlen	Slago/Capitulo7/EX77_StrLen.c	/^int altStrlen(const char* s)$/;"	f	typ
 amostra	Slago/Capitulo6/exemplo615_Campos_Bits.c	/^} amostra;$/;"	t	typeref:struct:__anonaf03b58a0108	file:
 amostra	Slago/Capitulo6/exemplo616_Fora_Do_Campo.c	/^} amostra;$/;"	t	typeref:struct:__anon45544c200108	file:
 amostra	Slago/Capitulo6/exemplo617_Overflow_Underflow.c	/^} amostra;$/;"	t	typeref:struct:__anona4ae6fc10108	file:
+analyse	Projs/guessing_game/helper.c	/^void analyse(User_Stats * User, Comp_info * Comp){$/;"	f	typeref:typename:void
 and	Slago/Capitulo4/boolean.h	/^# define and /;"	d
 ano	Slago/Capitulo6/EX61_Livro.c	/^        int ano;$/;"	m	struct:main::__anone702bfb00108	typeref:typename:int	file:
 ano	Slago/Capitulo6/EX65_Voo.c	/^    int ano;$/;"	m	struct:__anonc297e15c0208	typeref:typename:int	file:
@@ -304,6 +306,7 @@ ano	Slago/Capitulo6/exemplo69_Tabela.c	/^    int ano;$/;"	m	struct:__anonbfb5ad3
 ano	Slago/Capitulo7/EX718_Livro.c	/^    char ano[5];$/;"	m	struct:__anone38b916a0108	typeref:typename:char[5]	file:
 area_Gauss_Poligono	Slago/Capitulo5/EX520_Freeman.c	/^float area_Gauss_Poligono(seq)$/;"	f
 arq	Slago/Capitulo8/exemplo81_Variaveis_Arquivo.c	/^FILE *arq, *entrada, *saida;$/;"	v	typeref:typename:FILE *
+ask_name	Projs/guessing_game/messages.c	/^const char * ask_name =$/;"	v	typeref:typename:const char *
 atio	C_Kern_Ritchie/NumberTwo/01-3ConversionOnTypes.c	/^int atio(string)$/;"	f
 autor	Slago/Capitulo6/EX61_Livro.c	/^        char autor[50];$/;"	m	struct:main::__anone702bfb00108	typeref:typename:char[50]	file:
 autor	Slago/Capitulo7/EX718_Livro.c	/^    char autor[50];$/;"	m	struct:__anone38b916a0108	typeref:typename:char[50]	file:
@@ -315,6 +318,7 @@ b	Slago/Capitulo6/exemplo615_Campos_Bits.c	/^    signed      b : 3;$/;"	m	struct
 b	Slago/Capitulo6/exemplo616_Fora_Do_Campo.c	/^    signed      b : 3;$/;"	m	struct:__anon45544c200108	typeref:typename:signed:3	file:
 b	Slago/Capitulo6/exemplo617_Overflow_Underflow.c	/^    signed      b : 3;$/;"	m	struct:__anona4ae6fc10108	typeref:typename:signed:3	file:
 b	learnmake/06_strings/Makefile	/^b := 'one two'# b é associado à string "'one two'"$/;"	m
+begin_duel	Projs/guessing_game/messages.c	/^const char * begin_duel =$/;"	v	typeref:typename:const char *
 bla	learnmake/02_Timestamps/Makefile	/^bla: $/;"	t
 bla	learnmake/02_Timestamps/Makefile	/^bla: bla.c$/;"	t
 bla	learnmake/03_passoapasso/Makefile	/^bla: bla.o$/;"	t
@@ -342,8 +346,12 @@ cauda	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^# define cauda(/;"	d	file:
 cauda	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^# define cauda(/;"	d	file:
 cauda	Slago/Capitulo7/exemplo740_MaiorItem.c	/^# define cauda(/;"	d	file:
 change	C_Kern_Ritchie/NumberFive/01-2PointerInFunc.c	/^void change(px, py)$/;"	f
+check_0	Projs/guessing_game/messages.c	/^const char * check_0 =$/;"	v	typeref:typename:const char *
+check_1	Projs/guessing_game/messages.c	/^const char * check_1 =$/;"	v	typeref:typename:const char *
 cidade	Slago/Capitulo6/EX65_Voo.c	/^    char cidade[30];$/;"	m	struct:__anonc297e15c0308	typeref:typename:char[30]	file:
+clean	Projs/guessing_game/Makefile	/^clean:$/;"	t
 clean	Slago/Capitulo5/CampoMinado/Makefile	/^clean:$/;"	t
+clean	learnlibs/12stdio/makefile	/^clean:$/;"	t
 clean	learnmake/04_clean/Makefile	/^clean:$/;"	t
 clean	learnmake/05_Vars/Makefile	/^clean:$/;"	t
 clean	learnmake/07_allTarget/Makefile	/^clean:$/;"	t
@@ -351,6 +359,7 @@ clean	learnmake/10_AutoVars/Makefile	/^clean:$/;"	t
 clean	learnmake/11_implicit/Makefile	/^clean:$/;"	t
 clean	learnmake/12_Static-ptrn-rules/Makefile	/^clean:$/;"	t
 clean	learnmake/13_filter/Makefile	/^clean:$/;"	t
+clear	learnlibs/12stdio/makefile	/^clear:$/;"	t
 colinear	Slago/Capitulo6/EX66_Segmento_Reta.c	/^void colinear(SEMI_RETA semi_reta, CARTESIANO ponto)$/;"	f	typeref:typename:void
 com_if_else	Slago/Capitulo2/EX22_Maior.c	/^void com_if_else(void){$/;"	f	typeref:typename:void
 compara_Letra	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^int compara_Letra(const void* a, const void* b)$/;"	f	typeref:typename:int
@@ -359,6 +368,7 @@ comprimento	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^int comprimento(lista L)$
 comprimento	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^int comprimento(lista L)$/;"	f	typeref:typename:int
 comprimento	Slago/Capitulo7/exemplo740_MaiorItem.c	/^int comprimento(lista L)$/;"	f	typeref:typename:int
 concatena	Slago/Capitulo7/EX724_concatena.c	/^void concatena(lista *x, lista *y)$/;"	f	typeref:typename:void
+confirm	Projs/guessing_game/helper.h	/^    short confirm;$/;"	m	struct:__anon416386850108	typeref:typename:short
 conta	Slago/Capitulo5/EX58_Temp_Media.c	/^int conta (float t[], float m){$/;"	f	typeref:typename:int
 conta	Slago/Capitulo5/exemplo5-8_9_10_11.c	/^int conta (float t[], float m){$/;"	f	typeref:typename:int
 converte	Slago/Capitulo8/EX82_stdout.c	/^void converte(int *l, char *sinal){$/;"	f	typeref:typename:void
@@ -406,6 +416,7 @@ erro_de_ES	Slago/Capitulo6/exemplo618_Byte_Impressora.c	/^    unsigned erro_de_E
 etiq_u	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^    union etiq_u {$/;"	u	function:main	file:
 etiqueta	Slago/Capitulo6/exemplo613_Etiquetado.c	/^    int etiqueta;$/;"	m	struct:__anon83de2fc90108	typeref:typename:int	file:
 etiqueta	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^    int etiqueta;$/;"	m	struct:__anon6f8efd730108	typeref:typename:int	file:
+exe	learnlibs/12stdio/makefile	/^exe: $(OUTPUT)$/;"	t
 exibir	Slago/Capitulo7/EX726_ultimo.c	/^void exibir(lista p){$/;"	f	typeref:typename:void
 exibir_inverso	Slago/Capitulo7/EX726_ultimo.c	/^void exibir_inverso(lista p){$/;"	f	typeref:typename:void
 f1.o	learnmake/08_multiTarget/Makefile	/^f1.o f2.o:$/;"	t
@@ -432,7 +443,10 @@ func	Slago/Capitulo8/Simplifica_Sintaxe.c	/^void func(int c, FILE *e)$/;"	f	type
 funcao	Slago/Capitulo4/exemplo48_Tipos_Armazenamento.c	/^void funcao(void)$/;"	f	typeref:typename:void
 funcionario	Slago/Capitulo7/EX720_PontPontDinamico.c	/^} funcionario;$/;"	t	typeref:struct:__anone32c1cfd0108	file:
 funcionario	Slago/Capitulo7/exemplo727_Tudo.c	/^} funcionario;$/;"	t	typeref:struct:__anon853543d70108	file:
+guess	Projs/guessing_game/helper.c	/^short guess(Comp_info * Comp, short * turn){$/;"	f	typeref:typename:short
+guess	Projs/guessing_game/helper.h	/^    short guess;$/;"	m	struct:__anon416386850208	typeref:typename:short
 hello	learnmake/01_hello/Makefile	/^hello:$/;"	t
+helper.o	Projs/guessing_game/Makefile	/^helper.o: helper.c$/;"	t
 hey	learnmake/10_AutoVars/Makefile	/^hey: one two$/;"	t
 hip	Slago/Capitulo4/exemplo46_Hip.c	/^float hip(float a, float b)$/;"	f	typeref:typename:float
 histograma	Slago/Capitulo5/EX510_Histograma.c	/^void histograma(t,n,dias)$/;"	f
@@ -448,6 +462,7 @@ inicializa_campo	Slago/Capitulo5/CampoMinado/Utils.c	/^void inicializa_campo(cam
 inicializa_campo	Slago/Capitulo5/EX524_CampoV1.c	/^void inicializa_campo(campo, tam_y, tam_x)$/;"	f
 inicializa_campo	Slago/Capitulo5/EX525_CampoV2.c	/^void inicializa_campo(campo, tam_y, tam_x)$/;"	f
 inicializa_campo	Slago/Capitulo5/EX526_CampoV3.c	/^void inicializa_campo(campo, tam_y, tam_x, tabuleiro)$/;"	f
+inicio	Projs/guessing_game/messages.c	/^const char * inicio = $/;"	v	typeref:typename:const char *
 inicio	Slago/Capitulo4/EX41_Conserte.c	/^# define inicio /;"	d	file:
 inicio	Slago/Capitulo6/EX66_Segmento_Reta.c	/^    float inicio;$/;"	m	struct:__anond51e0d560208	typeref:typename:float	file:
 input	Slago/Capitulo4/EX41_Conserte.c	/^# define input /;"	d	file:
@@ -596,6 +611,7 @@ main	C_Kern_Ritchie/NumberTwo/01-1testingWithTypes.c	/^int main(){$/;"	f	typeref
 main	C_Kern_Ritchie/NumberTwo/01-2testingWithStrings.c	/^int main(){$/;"	f	typeref:typename:int
 main	C_Kern_Ritchie/NumberTwo/01-3ConversionOnTypes.c	/^int main(){$/;"	f	typeref:typename:int
 main	C_Kern_Ritchie/NumberTwo/01-4AsciiTable.c	/^int main(){$/;"	f	typeref:typename:int
+main	Projs/guessing_game/main.c	/^int main(void){$/;"	f	typeref:typename:int
 main	Slago/Capitulo1/EX12_Circulo.c	/^int main(){$/;"	f	typeref:typename:int
 main	Slago/Capitulo1/EX13_Media_Notas.c	/^int main(){$/;"	f	typeref:typename:int
 main	Slago/Capitulo1/EX14_Km_Litro.c	/^int main(){$/;"	f	typeref:typename:int
@@ -819,6 +835,8 @@ main	learnlibs/04float/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
 main	learnlibs/05limits/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
 main	learnlibs/06locale/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
 main	learnlibs/07math/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
+main	learnlibs/10stdarg/anotacoes.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	learnlibs/12stdio/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
 main	learnmake/02_Timestamps/bla.c	/^int main(void){$/;"	f	typeref:typename:int
 main	learnmake/03_passoapasso/Makefile	/^main: bla$/;"	t
 main	learnmake/03_passoapasso/bla.c	/^int main(void){$/;"	f	typeref:typename:int
@@ -876,6 +894,8 @@ mutante	Slago/Capitulo6/exemplo612_Uniao.c	/^} mutante;$/;"	t	typeref:union:__an
 mutante	Slago/Capitulo6/exemplo613_Etiquetado.c	/^} mutante;$/;"	t	typeref:struct:__anon83de2fc90108	file:
 mutante	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^} mutante;$/;"	t	typeref:struct:__anon6f8efd730108	file:
 n	Slago/Capitulo4/EX41_Conserte.c	/^int n;$/;"	v	typeref:typename:programa inicio int
+n_turns	Projs/guessing_game/helper.h	/^    int n_turns;$/;"	m	struct:__anon416386850208	typeref:typename:int
+name	Projs/guessing_game/helper.h	/^    char name[LENGHT];$/;"	m	struct:__anon416386850108	typeref:typename:char[]
 nasc	Slago/Capitulo6/exemplo610_Inicializa_Tabela.c	/^    DATA nasc;$/;"	m	struct:__anon2526b6d60208	typeref:typename:DATA	file:
 nasc	Slago/Capitulo6/exemplo66_Pessoa.c	/^    DATA nasc;$/;"	m	struct:__anon5f1e48310208	typeref:typename:DATA	file:
 nasc	Slago/Capitulo6/exemplo68_Inicializa_Aninhado.c	/^    DATA nasc;$/;"	m	struct:__anon06da55260208	typeref:typename:DATA	file:
@@ -943,6 +963,9 @@ pertence	Slago/Capitulo5/exemplo527_Busca_Binaria.c	/^int pertence(int x, int L[
 pessoa	Slago/Capitulo7/EX717_Reescreva_a_Expressao.c	/^} pessoa;$/;"	t	typeref:struct:__anonbd9e0db60108	file:
 pessoa	Slago/Capitulo7/exemplo723_Pont_Estru.c	/^} pessoa;$/;"	t	typeref:struct:__anone2dd444a0108	file:
 pessoa	Slago/Capitulo7/exemplo724_Operador_Seta.c	/^} pessoa;$/;"	t	typeref:struct:__anond15bd6c00108	file:
+placar	Projs/guessing_game/helper.c	/^void placar(User_Stats * User, Comp_info * Comp){$/;"	f	typeref:typename:void
+points	Projs/guessing_game/helper.h	/^    short points;$/;"	m	struct:__anon416386850108	typeref:typename:short
+points	Projs/guessing_game/helper.h	/^    short points;$/;"	m	struct:__anon416386850208	typeref:typename:short
 posicao	Slago/Capitulo5/EX528_Busca.c	/^int posicao(int x, int L[], int n) {$/;"	f	typeref:typename:int
 pot	C_Kern_Ritchie/NumberOne/09-1PowerFunction.c	/^int pot(x, n)       \/* executes the power operation*\/$/;"	f
 pot	Slago/Capitulo4/EX4-8_9_10_11.c	/^long double pot(x,n)$/;"	f
@@ -1004,216 +1027,6 @@ reverse	C_Kern_Ritchie/NumberThree/01-2DoWhile.c	/^void reverse(s) \/* reverse t
 right	C_Kern_Ritchie/NumberSix/01-3ArrayOfStruct.c	/^        struct node *right ; \/* right son *\/$/;"	m	struct:main::node	typeref:struct:node *	file:
 right	C_Kern_Ritchie/NumberSix/01-6Typedef.c	/^        struct node *right; \/*Right Child*\/$/;"	m	struct:main::node	typeref:struct:node *	file:
 rotulo	Slago/Capitulo6/exemplo62_Rotulada.c	/^    typedef struct rotulo {$/;"	s	function:main	file:
-s:l	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
-s:l	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
-s:l	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
-s:l	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 11) \/ 23)$/;"	v
-s:l	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:l = 11 - ((10 * winheight(0) + 11) \/ 23)$/;"	v
-s:l	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:l = 12 - ((11 * winheight(0) + 11) \/ 23)$/;"	v
-s:l	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:l = 3 - ((2 * winheight(0) + 11) \/ 23)$/;"	v
-s:l	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:l = 7 - ((6 * winheight(0) + 11) \/ 23)$/;"	v
-s:l	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 11) \/ 23)$/;"	v
-s:l	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 5) \/ 11)$/;"	v
-s:l	C_Kern_Ritchie/NumberSeven/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
-s:l	C_Kern_Ritchie/NumberSix/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
-s:l	C_Kern_Ritchie/NumberThree/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 11) \/ 23)$/;"	v
-s:l	C_Kern_Ritchie/NumberTwo/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 11) \/ 23)$/;"	v
-s:l	Slago/Capitulo1/Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 4) \/ 8)$/;"	v
-s:l	Slago/Capitulo2/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
-s:l	Slago/Capitulo2/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
-s:l	Slago/Capitulo2/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 4) \/ 8)$/;"	v
-s:l	Slago/Capitulo3/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
-s:l	Slago/Capitulo3/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
-s:l	Slago/Capitulo3/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
-s:l	Slago/Capitulo3/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
-s:l	Slago/Capitulo3/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
-s:l	Slago/Capitulo4/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
-s:l	Slago/Capitulo4/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
-s:l	Slago/Capitulo4/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
-s:l	Slago/Capitulo4/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
-s:l	Slago/Capitulo4/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
-s:l	Slago/Capitulo5/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
-s:l	Slago/Capitulo5/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
-s:l	Slago/Capitulo5/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
-s:l	Slago/Capitulo5/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
-s:l	Slago/Capitulo5/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
-s:l	Slago/Capitulo5/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
-s:l	Slago/Capitulo6/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 10) \/ 20)$/;"	v
-s:l	Slago/Capitulo6/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 10) \/ 21)$/;"	v
-s:l	Slago/Capitulo6/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 9) \/ 18)$/;"	v
-s:l	Slago/Capitulo6/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 9) \/ 19)$/;"	v
-s:l	Slago/Capitulo6/exemplosSession.vim	/^let s:l = 2 - ((1 * winheight(0) + 10) \/ 20)$/;"	v
-s:l	Slago/Capitulo6/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 13) \/ 26)$/;"	v
-s:l	Slago/Capitulo6/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 12)$/;"	v
-s:l	Slago/Capitulo6/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 6) \/ 13)$/;"	v
-s:l	Slago/Capitulo7/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 10) \/ 20)$/;"	v
-s:l	Slago/Capitulo7/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 9) \/ 19)$/;"	v
-s:l	Slago/Capitulo7/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 10) \/ 20)$/;"	v
-s:l	Slago/Capitulo7/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 20) \/ 40)$/;"	v
-s:l	Slago/Capitulo7/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 9) \/ 19)$/;"	v
-s:l	Slago/Capitulo8/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 10) \/ 20)$/;"	v
-s:l	Slago/Capitulo8/exemplosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 9) \/ 19)$/;"	v
-s:l	Slago/Capitulo8/exemplosSession.vim	/^let s:l = 19 - ((17 * winheight(0) + 10) \/ 20)$/;"	v
-s:l	Slago/Capitulo8/exemplosSession.vim	/^let s:l = 6 - ((5 * winheight(0) + 9) \/ 19)$/;"	v
-s:l	Slago/Capitulo8/exemplosSession.vim	/^let s:l = 7 - ((6 * winheight(0) + 9) \/ 19)$/;"	v
-s:l	Slago/Capitulo8/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 10) \/ 20)$/;"	v
-s:l	Slago/Capitulo8/exerciciosSession.vim	/^let s:l = 1 - ((0 * winheight(0) + 9) \/ 19)$/;"	v
-s:l	Slago/Capitulo8/exerciciosSession.vim	/^let s:l = 15 - ((14 * winheight(0) + 20) \/ 40)$/;"	v
-s:save_splitbelow	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo1/Session.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo2/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo2/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo3/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo3/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo4/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo4/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo5/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo5/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo6/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo6/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo7/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo7/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo8/exemplosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitbelow	Slago/Capitulo8/exerciciosSession.vim	/^let s:save_splitbelow = &splitbelow$/;"	v
-s:save_splitright	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo1/Session.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo2/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo2/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo3/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo3/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo4/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo4/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo5/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo5/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo6/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo6/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo7/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo7/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo8/exemplosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_splitright	Slago/Capitulo8/exerciciosSession.vim	/^let s:save_splitright = &splitright$/;"	v
-s:save_winminheight	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo1/Session.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo2/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo2/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo3/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo3/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo4/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo4/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo5/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo5/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo6/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo6/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo7/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo7/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo8/exemplosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminheight	Slago/Capitulo8/exerciciosSession.vim	/^let s:save_winminheight = &winminheight$/;"	v
-s:save_winminwidth	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo1/Session.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo2/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo2/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo3/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo3/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo4/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo4/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo5/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo5/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo6/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo6/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo7/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo7/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo8/exemplosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:save_winminwidth	Slago/Capitulo8/exerciciosSession.vim	/^let s:save_winminwidth = &winminwidth$/;"	v
-s:shortmess_save	C_Kern_Ritchie/NumberSeven/Session.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	C_Kern_Ritchie/NumberSix/Session.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo1/Session.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo2/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo2/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo3/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo3/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo4/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo4/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo5/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo5/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo6/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo6/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo7/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo7/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo8/exemplosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:shortmess_save	Slago/Capitulo8/exerciciosSession.vim	/^let s:shortmess_save = &shortmess$/;"	v
-s:so_save	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	C_Kern_Ritchie/NumberSeven/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	C_Kern_Ritchie/NumberSix/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	C_Kern_Ritchie/NumberThree/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	C_Kern_Ritchie/NumberTwo/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo1/Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo2/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo2/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo3/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo3/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo4/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo4/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo5/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo5/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo6/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo6/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo7/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo7/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo8/exemplosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:so_save	Slago/Capitulo8/exerciciosSession.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
-s:sx	C_Kern_Ritchie/NumberFive/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	C_Kern_Ritchie/NumberFour/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	C_Kern_Ritchie/NumberOne/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	C_Kern_Ritchie/NumberSeven/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	C_Kern_Ritchie/NumberSix/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	C_Kern_Ritchie/NumberThree/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	C_Kern_Ritchie/NumberTwo/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo1/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo2/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo2/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo3/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo3/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo4/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo4/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo5/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo5/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo6/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo6/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo7/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo7/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo8/exemplosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:sx	Slago/Capitulo8/exerciciosSession.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:wipebuf	C_Kern_Ritchie/NumberFive/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	C_Kern_Ritchie/NumberFour/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	C_Kern_Ritchie/NumberOne/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	C_Kern_Ritchie/NumberSeven/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	C_Kern_Ritchie/NumberSix/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	C_Kern_Ritchie/NumberThree/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	C_Kern_Ritchie/NumberTwo/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo1/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo2/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo2/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo3/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo3/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo4/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo4/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo5/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo5/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo6/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo6/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo7/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo7/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo8/exemplosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
-s:wipebuf	Slago/Capitulo8/exerciciosSession.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
 saida	Slago/Capitulo8/exemplo81_Variaveis_Arquivo.c	/^FILE *arq, *entrada, *saida;$/;"	v	typeref:typename:FILE *
 salario	Slago/Capitulo7/EX720_PontPontDinamico.c	/^    float salario;$/;"	m	struct:__anone32c1cfd0108	typeref:typename:float	file:
 salario	Slago/Capitulo7/exemplo727_Tudo.c	/^    float salario;$/;"	m	struct:__anon853543d70108	typeref:typename:float	file:
@@ -1274,14 +1087,19 @@ top_level	learnlibs/08setjmp/anotacoes.c	/^void top_level(void) {$/;"	f	typeref:
 trocas	Slago/Capitulo5/EX533_Trocas.c	/^void trocas(int v[], int n) {$/;"	f	typeref:typename:void
 trocas	Slago/Capitulo5/exemplo531_Ordena_Trocas.c	/^void trocas(int v[], int n) {$/;"	f	typeref:typename:void
 true	Slago/Capitulo4/boolean.h	/^# define true /;"	d
+turn_0	Projs/guessing_game/helper.h	/^    short turn_0;$/;"	m	struct:__anon416386850108	typeref:typename:short
+turn_1	Projs/guessing_game/helper.h	/^    short turn_1;$/;"	m	struct:__anon416386850108	typeref:typename:short
+turns	Projs/guessing_game/messages.c	/^const char * turns =$/;"	v	typeref:typename:const char *
 two	learnmake/07_allTarget/Makefile	/^two:$/;"	t
 two	learnmake/09_wildcardStar/Makefile	/^two:$/;"	t
 two	learnmake/10_AutoVars/Makefile	/^two:$/;"	t
+va_fputs	learnlibs/10stdarg/anotacoes.c	/^int va_fputs(FILE *str, ...) {$/;"	f	typeref:typename:int
 vala	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^        char *vala ;$/;"	m	union:main::etiq_u	typeref:typename:char *	file:
 valf	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^        float valf ;$/;"	m	union:main::etiq_u	typeref:typename:float	file:
 vali	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^        int vali ;$/;"	m	union:main::etiq_u	typeref:typename:int	file:
 valor	Slago/Capitulo6/exemplo613_Etiquetado.c	/^    } valor;$/;"	m	struct:__anon83de2fc90108	typeref:union:__anon83de2fc90108::__anon83de2fc9020a	file:
 valor	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^    } valor;$/;"	m	struct:__anon6f8efd730108	typeref:union:__anon6f8efd730108::__anon6f8efd73020a	file:
+vencedor	Projs/guessing_game/helper.h	/^    char vencedor[LENGHT];$/;"	m	struct:__anon416386850208	typeref:typename:char[]
 verifica_item	Slago/Capitulo7/EX725_muitos.c	/^int verifica_item(lista L, int x){$/;"	f	typeref:typename:int
 visualiza_campo	Slago/Capitulo5/CampoMinado/Utils.c	/^void visualiza_campo(campo, tam_y, tam_x)$/;"	f
 visualiza_campo	Slago/Capitulo5/EX524_CampoV1.c	/^void visualiza_campo(campo, tam_y, tam_x)$/;"	f

@@ -1,13 +1,13 @@
 def main():
-    a=1
-    b=1
-    n=1474
+    a = 1
+    b = 1
+    n = 1474
     n_copia = n
 
     print("Fibo n°1: %.0Lf\n", a)
-    for n in range(n,0,-1):
+    for n in range(n, 0, -1):
         print(f"Fibo n°{(n_copia-n+2)}: {a}")
-        temp=a
+        temp = a
         a += b
         b = temp
 
@@ -15,4 +15,6 @@ def main():
     \rsequencia de fibonacci eh:\n\
     \rFibo:{a} \n")
 
-main()
+
+if __name__ == "__main__":
+    main()
