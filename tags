@@ -611,6 +611,7 @@ main	C_Kern_Ritchie/NumberTwo/01-1testingWithTypes.c	/^int main(){$/;"	f	typeref
 main	C_Kern_Ritchie/NumberTwo/01-2testingWithStrings.c	/^int main(){$/;"	f	typeref:typename:int
 main	C_Kern_Ritchie/NumberTwo/01-3ConversionOnTypes.c	/^int main(){$/;"	f	typeref:typename:int
 main	C_Kern_Ritchie/NumberTwo/01-4AsciiTable.c	/^int main(){$/;"	f	typeref:typename:int
+main	Fibo.c	/^int main(){$/;"	f	typeref:typename:int
 main	Projs/guessing_game/main.c	/^int main(void){$/;"	f	typeref:typename:int
 main	Slago/Capitulo1/EX12_Circulo.c	/^int main(){$/;"	f	typeref:typename:int
 main	Slago/Capitulo1/EX13_Media_Notas.c	/^int main(){$/;"	f	typeref:typename:int

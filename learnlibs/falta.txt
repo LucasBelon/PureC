@@ -1,3 +1,14 @@
 
 06locale
 
+cheguei até onde?
+provavelmente ignorei de propósito tudo até chegar em stdio.
+Melhor ir devagar na brincadeira, absorver direito pra evitar
+reestudar
+Eu realmente ignorei muita coisa pra chegar logo em stdio.
+Mas tem ali exatamente o que eu queria saber, se é possível
+utilizar um arquivo pra ler binário. Posso guardar uma estrutura,
+muito mais compacta, pra ler e inicializar um programa com uma
+quantidade de opções pré-definidas.
+Massa demais bixo.
+

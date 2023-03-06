@@ -223,6 +223,8 @@ int fscanf(FILE *stream, const char *format,
 Scansets são interessantes. É bem semelhante com
 regex, mas para scanear o input. 
 
+scanf("%25[a-zA-Z", armazenamento);
+
 Leitura e escrita de baixo nível não foi abordado
 direito. Fiquei um tanto triste.
 
