@@ -125,17 +125,54 @@ int main(void){
     //__builtin_va_list)
     * e o mesmo vale pra vprintf e vscanf.*/
 
-    // Funções para IO de caracteres:
+    // Funções para IO de caracteres:   pg263
     // fgetc, fgets, fputc, fputs, getc, gets,
     // putc, puts, putchar, getchar, ungetc
+    //
+    /* int fgetc(FILE *fp);
+     * fgetc pega o próximo caractere de uma
+     * stream de dados. Parece simples, mas
+     * ela também altera a posição do índice
+     * do arquivo.
+     * "Obtém o próximo uchar, convertido como
+     * int, e avança o indicador de posição
+     * associado."
+     * 
+     * char * fgets(char *buf, 
+     * int size, 
+     * FILE *fp);
+     * Esse pega uma quantidade de caracteres
+     * e armazena num buffer, um array de chars.
+     * Parece que esse não converte chars em ints
+     * Ele para de armazenar em \n ou EOF. 
+     * O caractere nulo é adicionado 
+     * automaticamente no fim da array.
+     * Se ler algo vazio, retorna ponteiro nulo.
+     * 
+     * int fputc(int ch, FILE *fp);
+     * Escreve ch na stream, ch é convertido para
+     * uchar. Retorna o caractere que foi escrito
+     * se bem sucedido, se erro, retorna EOF.
+     *
+     * int fputs(const char *s, FILE *fp);
+     * Escreve uma string apontada por s na
+     * stream. O caractere nulo não é escrito.
+     * Retorna EOF caso erro, senão retorna um
+     * valor não negativo.
+     *
+     * getc(FILE *fp)
+     * Equivalente a fgetc, mas implementado
+     * como uma macro.
+     * Continuar com essas 5 funções abaixo.*/
+    // putc, puts, putchar, getchar, ungetc
 
-    // Funções para IO direto:
+    // Funções para IO direto:   pg266
     // fread, fwrite
 
-    // Funções de posicionamento em arquivo.
+    // Funções de posicionamento em arquivo:   pg 267
     // fgetpos, fseek, fsetpos, ftell, rewind
     
-    // Manuseio de erros:
+    // Manuseio de erros:   pg 268
     // clearerr, feof, perror
 
 }

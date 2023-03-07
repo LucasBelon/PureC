@@ -231,3 +231,8 @@ direito. Fiquei um tanto triste.
 Foi abordado sim, mas eu passei rápido sem ler
 (pra ser mais burro só se nascer de novo)
 
+ADICIONAR MAIS DETALHES SOBRE FUNÇÕES. O QUE CADA
+UMA DELAS RETORNA, E PENSAR UM POUCO SOBRE PORQUE
+UMA E NÃO OUTRA. PENSAR EM CASOS DE USO PRÁTICO.
+
+TESTAR AS FUNÇÕES. PAREI DE TESTAR EM FSCANF 
