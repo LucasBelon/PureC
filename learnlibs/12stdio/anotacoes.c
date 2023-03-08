@@ -9,7 +9,7 @@
 # include <stdio.h>
 
 int main(void){
-    /*
+    /* Funções de operação em arquivos.
     //Testando a remoção de um arquivo teste
     int r = remove("teste");
     printf("%d\n",r);
@@ -160,11 +160,50 @@ int main(void){
      * Retorna EOF caso erro, senão retorna um
      * valor não negativo.
      *
-     * getc(FILE *fp)
+     * int getc(FILE *fp);
      * Equivalente a fgetc, mas implementado
      * como uma macro.
-     * Continuar com essas 5 funções abaixo.*/
-    // putc, puts, putchar, getchar, ungetc
+     *
+     * int getchar(void);
+     * equivalente ao getc, com o 
+     * argumento stdin embutido.
+     * Retorna o próximo caractere da stream 
+     * apontada por stdin. Se a stream está no 
+     * EOF, getchar retorna EOF. Se um erro de 
+     * leitura ocorre, o indicador de erro é 
+     * configurado e getchar retorna EOF.
+     *
+     * gets não existe mais
+     *
+     * int putc(int ch, FILE *fp);
+     * Equivalente a fputc, mas implementado como
+     * macro.
+     * Retorna o caractere escrito. Se houver
+     * erro, retorna EOF.
+     *
+     * int putchar(int ch);
+     * Equivalente a putc, mas com o argumento
+     * stdout embutido.
+     * Retorna o caractere escrito. Se houver
+     * erro, retorna EOF.
+     *
+     * int puts(const char *s);
+     * Escreve a string apontada por s para o
+     * stdout e adiciona o caractere \n ao 
+     * término da operação. O caractere \0 não é
+     * escrito.
+     * Retorna EOF em erro. Se não, um valor
+     * não negativo.
+     *
+     * int ungetc(int ch, FILE *fp);
+     * Devolve um caractere, e apenas um 
+     * caractere, à stream. Leituras subsequentes
+     * poderão obter esse caractere. Uma chamada
+     * à qualquer função de posição de arquivo
+     * descarta o caractere.
+     * Se forem devolvidos caracteres demais, a 
+     * operação pode terminar em erro.
+     * */
 
     // Funções para IO direto:   pg266
     // fread, fwrite
