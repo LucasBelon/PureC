@@ -10,8 +10,7 @@ clean:
 	rm $(OUTPUT)
 
 clear:
-	rm teste
-	rm teste2
+	rm teste; rm teste2; rm novo;
 
 exe: $(OUTPUT)
 	./$(OUTPUT)
