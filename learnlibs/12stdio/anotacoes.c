@@ -4,15 +4,19 @@
  *  temporários*/
 
 # include <stdio.h>
+#include <stdlib.h>
 
 int main(void){
     /* Funções de operação em arquivos.*/
 
     /* int remove(const char *path);
+     *
      * Remove o arquivo de nome apontado por path
      * Retorna -1 pra caso o arquivo não
      * exista. Se bem sucedido, retorna 0.
-     *
+     */
+
+    /*
     //Testando a remoção de um arquivo teste
     int r = remove("teste");
     printf("%d\n",r);
@@ -21,11 +25,14 @@ int main(void){
 
     /* int rename(const char *old_path,
      * const char *new_path);
+     *
      * Renomeia o arquivo apontado por old_path
      * para o novo nome new_path.
      * Retorna -1 para inválido. Retorna 0 para
      * bem sucedido.
-     *
+     */
+
+    /*
     //Testando renomear
     int r = rename("teste", "renomeado");
     printf("%d\n",r);
@@ -33,13 +40,16 @@ int main(void){
 
 
     /* FILE * tmpfile(void);
+     *
      * Cria um arquivo temporário (e de quebra 
      * não é um arquivo visível), e armazena numa
      * stream.
      * Retorna o ponteiro para a stream se bem
      * sucedido, caso contrário retorna um
      * ponteiro nulo.
-     *
+     */
+
+    /*
     //Testando tmpfile
     FILE * a = tmpfile();
     fputs("Eu nascí pra codar", a);
@@ -56,6 +66,7 @@ int main(void){
 
 
     /* int fclose(FILE *stream);
+     *
      * Se existe algo no buffer de gravação, 
      * força o flush do buffer, se não, pula pro
      * próximo passo. Descarta o buffer de
@@ -64,11 +75,13 @@ int main(void){
      * Retorna 0 se bem sucedido, EOF se erros
      * forem detectados.
      *
-     * Teste junto de fopen e fprintf.
+     * Teste junto de fopen e fprintf
+     * na linha.
      */
 
 
     /* int fflush(FILE *stream);
+     *
      * Esvazia forçadamente o buffer, seja 
      * descartando o conteúdo do buffer de
      * leitura, seja gravando o buffer de 
@@ -76,7 +89,9 @@ int main(void){
      * é executada para todas as streams.
      * Retorna 0 se bem sucedido, EOF se erros 
      * forem detectados
-     *
+     */
+
+    /*
     //Como testar o fflush?
     //verificar os vídeos jacob sorber.
     //ele faz uns truques com o printf
@@ -88,6 +103,7 @@ int main(void){
 
     /* FILE * fopen(const char *filename,
      * const char *mode);
+     *
      * Função que abre a stream e associa a um
      * arquivo se existente. Detalhes em 
      * anotações.txt
@@ -95,13 +111,15 @@ int main(void){
      * se bem sucedido. Caso contrário, retorna
      * um ponteiro null.
      *
-     * Teste junto de fclose e fprintf.
+     * Teste junto de fclose e fprintf
+     * na linha.
      */
 
 
     /* FILE * freopen(const char * filename,
      * const char * mode,
      * FILE * stream);
+     *
      * Ele redireciona uma variável FILE*
      * para um novo arquivo, fechando
      * a stream anterior no processo.
@@ -114,7 +132,9 @@ int main(void){
      * Retorna o ponteiro de controle da stream 
      * se bem sucedido. Caso contrário, retorna
      * um ponteiro null.
-     *
+     */
+
+    /*
     // Teste freopen 
     FILE * teste = fopen("teste","w");
     freopen("teste2", "w", teste);
@@ -151,12 +171,15 @@ int main(void){
     /* Formatted input/output functions */
 
     /* int fprintf(FILE *ptr, const char *s, ...)
+     *
      * Insere a string s, formatada, na 
      * stream ptr. 
      * Mais detalhes em anotacoes.txt
-     * Retorna o número de caracteres 
-     * transmitidos. Se falha, um número negativo.
-     *
+     * Retorna número de caracteres transmitidos.
+     * Se falha, retorna um número negativo.
+     */
+
+    /*
     // Teste fprintf.
     FILE * teste = fopen("teste","w");
     fputs("Sou o mestre codador\n", teste);
@@ -175,12 +198,15 @@ int main(void){
     /* int fscanf(FILE *stream, 
      * const char *format, 
      * &var1, &var2, ...);
+     *
      * Lê a partir de stream, restringindo com 
      * format, e armazena em var's.
      * Mais informações em anotacoes.txt
      * Retorna EOF se falha. Retorna número de
      * inputs bem sucedidos se bem sucedido.
-     *
+     */
+
+    /*
     // Teste fscanf
     FILE * teste = fopen("teste","r");
     char eba[BUFSIZ];
@@ -202,6 +228,7 @@ int main(void){
     /* int sprintf(char *s,
      * const char *r,
      * var1, var2, ...);
+     *
      * Existe uma forma de enviar pra char *
      * ao invés do stdout com sprintf.
      * Copiamos pra char *s, formatando pelas 
@@ -216,6 +243,7 @@ int main(void){
     /* int sscanf(const char * s, 
      * const char * format, 
      * &var1, &var2, ...);
+     *
      * Mesmas considerações que sprintf.
      * Retorna o número de itens adicionados a 
      * variáveis se bem sucedido.
@@ -241,131 +269,5 @@ int main(void){
      * __builtin_va_list);
      *
      * E o mesmo vale pra vprintf e vscanf.*/
-    
-    //---------------------------------------------------------------------------------
-
-    /* Funções para IO de caracteres:   pg263 */
-
-    /* int fgetc(FILE *fp);
-     * fgetc pega o próximo caractere de uma
-     * stream de dados. Parece simples, mas
-     * ela também altera a posição do índice
-     * do arquivo.
-     * "Obtém o próximo uchar, convertido como
-     * int, e avança o indicador de posição
-     * associado."
-     * Qual o retorno? Adicionar o tipo de retorno
-     * em todas as funções subsequentes.
-     *
-     */
-
-    //---------------------------------------------------------------------------------
-
-    /* 
-     * char * fgets(char *buf, 
-     * int size, 
-     * FILE *fp);
-     * Esse pega uma quantidade de caracteres
-     * e armazena num buffer, um array de chars.
-     * Parece que esse não converte chars em ints
-     * Ele para de armazenar em \n ou EOF. 
-     * O caractere nulo é adicionado 
-     * automaticamente no fim da array.
-     * Se ler algo vazio, retorna ponteiro nulo.
-     * 
-     */
-
-
-    /* int fputc(int ch, FILE *fp);
-     * Escreve ch na stream, ch é convertido para
-     * uchar. Retorna o caractere que foi escrito
-     * se bem sucedido, se erro, retorna EOF.
-     *
-     */
-
-
-    /* int fputs(const char *s, FILE *fp);
-     * Escreve uma string apontada por s na
-     * stream. O caractere nulo não é escrito.
-     * Retorna EOF caso erro, senão retorna um
-     * valor não negativo.
-     *
-     */
-
-
-    /* int getc(FILE *fp);
-     * Equivalente a fgetc, mas implementado
-     * como uma macro.
-     *
-     */
-
-
-    /* int getchar(void);
-     * equivalente ao getc, com o 
-     * argumento stdin embutido.
-     * Retorna o próximo caractere da stream 
-     * apontada por stdin. Se a stream está no 
-     * EOF, getchar retorna EOF. Se um erro de 
-     * leitura ocorre, o indicador de erro é 
-     * configurado e getchar retorna EOF.
-     *
-     */
-
-
-    /* gets não existe mais
-     *
-     * int putc(int ch, FILE *fp);
-     * Equivalente a fputc, mas implementado como
-     * macro.
-     * Retorna o caractere escrito. Se houver
-     * erro, retorna EOF.
-     *
-     */
-
-
-    /* int putchar(int ch);
-     * Equivalente a putc, mas com o argumento
-     * stdout embutido.
-     * Retorna o caractere escrito. Se houver
-     * erro, retorna EOF.
-     *
-     */
-
-
-    /* int puts(const char *s);
-     * Escreve a string apontada por s para o
-     * stdout e adiciona o caractere \n ao 
-     * término da operação. O caractere \0 não é
-     * escrito.
-     * Retorna EOF em erro. Se não, um valor
-     * não negativo.
-     *
-     */
-
-
-    /* int ungetc(int ch, FILE *fp);
-     * Devolve um caractere, e apenas um 
-     * caractere, à stream. Leituras subsequentes
-     * poderão obter esse caractere. Uma chamada
-     * à qualquer função de posição de arquivo
-     * descarta o caractere.
-     * Se forem devolvidos caracteres demais, a 
-     * operação pode terminar em erro.
-     * */
-
-
-
-
-    /* Me pergunto se não vale a pena separar
-     * esse arquivo em vários. Já temos 360 linhas
-     * */
-
-    // Funções para IO direto:   pg266
-    // fread, fwrite
-
-    // Funções de posicionamento em arquivo:   pg 267
-    // fgetpos, fseek, fsetpos, ftell, rewind
-    
-    // Manuseio de erros:   pg 268
-    // clearerr, feof, perror
+    return 0;
 }

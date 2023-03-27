@@ -18,3 +18,48 @@ Existem 6 grupos de funções
   malloc, realloc)
 - Interações com o ambiente (abort, atexit, exit,
   getenv, system)
+
+O que C standard diz:
+    O cabeçalho declara quatro tipos e várias
+funções, de utilidade geral, assim como várias 
+macros.
+    Os tipos definidos são size_t (que geralmente
+é o maior inteiro disponível, unsigned), e
+wchar_t (que é um tipo de tamanho que aguenta o
+maior char declarado em locale). Esses conhecemos.
+
+div_t - Uma estrutura capaz de armazenar o valor
+retornado pela função div().
+ldiv_t - Uma estrutura capaz de armazenar o valor
+retornado pela função ldiv().
+
+    Existem algumas macros definidas. Uma é NULL, 
+as outras são:
+
+EXIT_FAILURE/EXIT_SUCCESS - Expandem para a
+expressão inteira que pode ser usada como
+argumento da função exit() que retorna o status
+para o ambiente hospedeiro.
+
+RAND_MAX - Expande para uma expressão constante
+inteira, cujo valor é o valor máximo retornado
+pela função rand().
+
+MB_CUR_MAX - Expande para uma expressão inteira
+positiva cujo valor é o número máximo de bytes em
+um caractere multibyte para o presente locale (que
+depende de LC_CTYPE), e cujo valor nunca é maior
+que MB_LEN_MAX.
+
+    Funções serão tratadas em anotacoes.c, mas
+irei anotar aqui as categorias gerais:
+    Funções de conversão de strings.
+    Funções de geradores de sequências 
+pseudo-aleatórias.
+    Funções de gerenciamento de memória.
+    Funções de comunicação com o ambiente
+hospedeiro.
+    Funções de busca e ordenação.
+    Funções de aritmética de inteiros.
+    Funções de caractere multibyte.
+    Funções de strings multibyte.

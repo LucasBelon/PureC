@@ -1,5 +1,0 @@
-adicionar sintaxe de criacao de estrutura
-typedef struct { x; y} nome ;
-
-struct nome X = {.x = valor ; .y = valor2};
-

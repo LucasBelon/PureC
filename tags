@@ -128,6 +128,7 @@ LOOPNUM	C_Kern_Ritchie/NumberThree/01-3BreakContinueGotoLabel.c	/^# define LOOPN
 Linkando.o	learnmake/11_implicit/Makefile	/^Linkando.o:$/;"	t
 MAIN	Projs/guessing_game/Makefile	/^MAIN=main.c$/;"	m
 MAIN	learnlibs/12stdio/makefile	/^MAIN=anotacoes.c$/;"	m
+MAIN2	learnlibs/12stdio/makefile	/^MAIN2=anotacoes2.c$/;"	m
 MAX	Slago/Capitulo3/EX34_Converte_Pol.c	/^# define MAX /;"	d	file:
 MAX	Slago/Capitulo5/EX513_StrCpy.c	/^# define MAX /;"	d	file:
 MAX	Slago/Capitulo5/EX520_Freeman.c	/^# define MAX /;"	d	file:
@@ -150,6 +151,7 @@ NumLetra	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^} NumLetra;$/;"	t	typer
 OFFSET	Slago/Capitulo8/EX82_stdout.c	/^# define OFFSET /;"	d	file:
 OUTPUT	Projs/guessing_game/Makefile	/^OUTPUT=programa$/;"	m
 OUTPUT	learnlibs/12stdio/makefile	/^OUTPUT=programa$/;"	m
+OUTPUT2	learnlibs/12stdio/makefile	/^OUTPUT2=programa2$/;"	m
 PASSO	Slago/Capitulo3/EX34_Converte_Pol.c	/^# define PASSO /;"	d	file:
 PASSO	Slago/Capitulo5/EX55_Polinomio.c	/^# define PASSO /;"	d	file:
 PERSONALSTRING	C_Kern_Ritchie/NumberTwo/01-1testingWithTypes.c	/^# define PERSONALSTRING /;"	d	file:
@@ -275,7 +277,6 @@ alfamin	Slago/Capitulo5/EX522_NomesCapitalizados.c	/^# define alfamin /;"	d	file
 all	C_Kern_Ritchie/NumberFour/CompilingExample/Makefile	/^all: main$/;"	t
 all	Projs/guessing_game/Makefile	/^all: $(HEL).o messages.c $(MAIN)$/;"	t
 all	Slago/Capitulo5/CampoMinado/Makefile	/^all: main$/;"	t
-all	learnlibs/12stdio/makefile	/^all:$/;"	t
 all	learnmake/06_strings/Makefile	/^all: small$/;"	t
 all	learnmake/07_allTarget/Makefile	/^all: one two three$/;"	t
 all	learnmake/08_multiTarget/Makefile	/^all: f1.o f2.o$/;"	t
@@ -364,6 +365,8 @@ colinear	Slago/Capitulo6/EX66_Segmento_Reta.c	/^void colinear(SEMI_RETA semi_ret
 com_if_else	Slago/Capitulo2/EX22_Maior.c	/^void com_if_else(void){$/;"	f	typeref:typename:void
 compara_Letra	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^int compara_Letra(const void* a, const void* b)$/;"	f	typeref:typename:int
 compara_Numero	Slago/Capitulo7/EX716_Ordenacao_Polimorfica.c	/^int compara_Numero(const void* a, const void* b)$/;"	f	typeref:typename:int
+compile1	learnlibs/12stdio/makefile	/^compile1:$/;"	t
+compile2	learnlibs/12stdio/makefile	/^compile2:$/;"	t
 comprimento	Slago/Capitulo7/exemplo737_ComprRecurs.c	/^int comprimento(lista L)$/;"	f	typeref:typename:int
 comprimento	Slago/Capitulo7/exemplo739_AcessaRecurs.c	/^int comprimento(lista L)$/;"	f	typeref:typename:int
 comprimento	Slago/Capitulo7/exemplo740_MaiorItem.c	/^int comprimento(lista L)$/;"	f	typeref:typename:int
@@ -417,6 +420,7 @@ etiq_u	C_Kern_Ritchie/NumberSix/01-5Unions.c	/^    union etiq_u {$/;"	u	function
 etiqueta	Slago/Capitulo6/exemplo613_Etiquetado.c	/^    int etiqueta;$/;"	m	struct:__anon83de2fc90108	typeref:typename:int	file:
 etiqueta	Slago/Capitulo6/exemplo614_Usando_Etiquetado.c	/^    int etiqueta;$/;"	m	struct:__anon6f8efd730108	typeref:typename:int	file:
 exe	learnlibs/12stdio/makefile	/^exe: $(OUTPUT)$/;"	t
+exe2	learnlibs/12stdio/makefile	/^exe2: $(OUTPUT2)$/;"	t
 exibir	Slago/Capitulo7/EX726_ultimo.c	/^void exibir(lista p){$/;"	f	typeref:typename:void
 exibir_inverso	Slago/Capitulo7/EX726_ultimo.c	/^void exibir_inverso(lista p){$/;"	f	typeref:typename:void
 f1.o	learnmake/08_multiTarget/Makefile	/^f1.o f2.o:$/;"	t
@@ -838,6 +842,7 @@ main	learnlibs/06locale/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
 main	learnlibs/07math/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
 main	learnlibs/10stdarg/anotacoes.c	/^int main(void) {$/;"	f	typeref:typename:int
 main	learnlibs/12stdio/anotacoes.c	/^int main(void){$/;"	f	typeref:typename:int
+main	learnlibs/12stdio/anotacoes2.c	/^int main(void){$/;"	f	typeref:typename:int
 main	learnmake/02_Timestamps/bla.c	/^int main(void){$/;"	f	typeref:typename:int
 main	learnmake/03_passoapasso/Makefile	/^main: bla$/;"	t
 main	learnmake/03_passoapasso/bla.c	/^int main(void){$/;"	f	typeref:typename:int
