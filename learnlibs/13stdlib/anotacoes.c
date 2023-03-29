@@ -1,5 +1,6 @@
 /* Arquivo de anotações sobre stdlib.h*/
 
+#include <stdint.h>
 # include <stdio.h>
 # include <stdlib.h>
 
@@ -199,21 +200,215 @@ int main(void){
     /* void exit(int status)
      *
      * causa a finalização normal do programa. Se
-     * mais de uma chamada a exit é registrada
-     * CONTINUAR AQUI --------------------------
+     * mais de uma chamada a exit é registrada,
+     * seu comportamento é indeterminado.
+     * Ao final, o controle é devolvido para o 
+     * sistema. O sistema receberá o código de 
+     * finalização do programa, EXIT_SUCCESS ou
+     * EXIT_FAILURE. 
+     * Esta função não consegue retornar a quem a
+     * chamou
      * */
 
 
-    // Funções de busca e ordenação
+    /* char* getenv(const char *name)
+     *
+     * Procura uma "lista do ambiente", atrás de
+     * uma sublista que combine com name.
+     * Retorna uma string que combina com name,
+     * a qual não deve ser alterada.
+     * Importante testar mais tarde.
+     * */
 
 
-    // Funções de aritmética de inteiros
+    // Funções de busca e ordenação pg 358
+
+    /* void *bsearch(
+     * const void *key,
+     * const void *base,
+     * size_t nmemb,
+     * size_t size,
+     * int (*comparator)(
+     *          const void *,
+     *          const void * )
+     *  )
+     * 
+     * Algoritmo de busca binária, podendo 
+     * receber qualquer tipo de comparador para
+     * compor a função.
+     * Busca qualquer array de nmemb elementos,
+     * com o primeiro elemento apontado por base
+     * buscando um objeto apontado por key. O 
+     * tamanho de cada elemento da array é size.
+     * A função de comparação receberá key e base
+     * nesta ordem.
+     * Retorna um ponteiro para o elemento
+     * encontrado na array, ou, um ponteiro nulo.
+     * Não é especificado qual elemento será
+     * devolvido caso seja encontrado mais de um.
+     */
 
 
-    // Funções de caractere multibyte
+    /*void qsort(
+     * void *base,
+     * size_t nmemb,
+     * size_t size,
+     * int (*comparator)(
+     *          const void *,
+     *          const void * )
+     *  )
+     * Ordena qualquer array de nmemb elementos,
+     * ascendente a depender da funçâo comparação
+     * O tamanho dos elementos da array é size.
+     * A função de comparação receberá dois
+     * objetos a serem comparados, e a função
+     * deve retornar menor que zero, igual a zero
+     * ou maior que zero para, respectivamente, 
+     * que qsort saiba que o primeiro elemento é
+     * menor, igual ou maior do que o segundo.
+     * Não retorna.
+     * Rever anotações de C.
+     */
 
 
-    // Funções de strings multibyte
+    // Funções de aritmética de inteiros pg 359
+
+    /* int abs(int j)
+     *
+     * Computa o valor absolutode j. Se não for 
+     * aplicável, o resultado é indefinido.
+     * Exemplo: abs(INT32_MIN), pois intmin é 
+     * maior em magnitude do que INT32_MAX por 1
+     * */
+
+    /* Exemplo:
+    printf("  Mínimo:%d\n\
+          \r  Máximo: %d\n\
+          \rabs(min): %d\n",
+                 INT32_MIN,
+                 INT32_MAX,
+            abs(INT32_MAX)
+            );
+    */
+
+
+    /* div_t div(int numerator, int denominator) 
+     *
+     * Computa o quociente e resto de uma
+     * divisão entre numerator e denominator.
+     * Se a divisão é inexata, o quociente
+     * resultante é um inteiro de menor magnitude
+     * do que o quociente algébrico mais próximo.
+     * Se o resultado não puder ser representado,
+     * o comportamento é indefinido. Se tudo
+     * estiver certo, quo*denom+resto = numero
+     * original.
+     * A função retorna uma estrutura que
+     * comprime ambos o quociente e o resto. A
+     * estrutura deve ser semelhante a:
+     * struct div_t {
+     *      int quociente;
+     *      int resto;
+     * }
+     * Em qualquer ordem.
+     */
+
+
+    /* long int labs(long int j)
+     *
+     * labs é similar a abs, exceto que retorna
+     * long int.
+     * */
+
+
+    /* ldiv_t ldiv(long int numer,
+     * long int denom)
+     *
+     * A função ldiv é semelhante a div, exceto
+     * que retorna uma estrutura em que seus
+     * membros são long int.
+     * */
+
+
+    // Funções de caractere multibyte pg 360
+    // As funções desta biblioteca são afetadas
+    // pelo locale.
+
+    /* int mblen(const char *s, size_t n)
+     * multibyte lenght
+     *
+     * Se s não é um ponteiro nulo, a função
+     * determina o número de bytes contidos no
+     * caractere multibyte apontado por s. 
+     * Fora o estado de shift de mbtowc(), esta
+     * função é equivalente a
+     * mbtowc((wchar_t *) 0, a, n);
+     * Se s é um ponteiro nulo, retorna um valor
+     * não nulo ou nulo caso o encoding do
+     * caractere multibyte tem ou não encodings
+     * dependentes de estado. Se s não é um
+     * ponteiro nulo, a função retorna 0, se s é
+     * um caractere nulo, ou o número de bytes
+     * que o caractere possui. Ou retorna -1 para
+     * caractere inválido.
+     * */
+
+
+    /* int mbtowc(wchar *pwc, const char *s,
+     * size_t n)
+     *
+     * Se s não é um ponteiro nulo, determina o
+     * número de bytes contidos no caractere
+     * multibyte s. Então determina o código para
+     * o valor de wchar_t correspondente. O
+     * código correspondente ao caractere nulo é
+     * zero. Se o caractere é válido e pwc não é
+     * um ponteiro nulo, mbtowc() armazena o
+     * código no objeto apontado por pwc. No
+     * máximo n bytes de uma array apontada por s
+     * serão examinados.
+     * Se s é um ponteiro nulo, retorna um valor
+     * não nulo ou nulo caso o encoding do
+     * caractere multibyte tem ou não encodings
+     * dependentes de estado, respectivamente. Se
+     * s não é um ponteiro nulo, a função retorna
+     * 0, se s é um caractere nulo, ou o número 
+     * de bytes que o caractere possui. Ou 
+     * retorna -1 para caractere inválido.
+     * NÃO TÔ ENTENDENDO. TÁ DIFÍCIL
+     * */
+
+
+    /* int wctomb(char *s, wchar_t wchar)
+     *
+     * A função determina o número de bytes
+     * necessários para representar um caractere
+     * multibyte correspondente ao código cujo
+     * valor é wchar (incluindo qualquer
+     * alteração no shift state). Armazena a
+     * representação do caractere multibyte num
+     * objeto do tipo lista, apontado por s, se s
+     * não é um ponteiro nulo.
+     * No máximo ME_CUR_MAX caracteres são
+     * armazenados. Se o valor de wchar é zero,
+     * wctomb() é deixado em estado de shift
+     * inicial.
+     * Se s é um ponteiro nulo, wctom() retorna
+     * não nulo ou nulo, caso o encoding do
+     * caractere multibyte, seja ou não
+     * dependente do estado de encoding,
+     * respectivamente. Se s não é um ponteiro
+     * nulo, wctomb() retorna -1 caso o valor de
+     * wchar não corresponde a um caractere
+     * multibyte válido, ou retorna o número de
+     * bytes contidos no caractere multibyte
+     * correspondente ao valor de wchar
+     * Nota: Comecei a entender, mas não comecei
+     * a gostar
+     * */
+
+
+    // Funções de strings multibyte pg 361
 
 
 
