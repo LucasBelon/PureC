@@ -410,7 +410,64 @@ int main(void){
 
     // Funções de strings multibyte pg 361
 
+    /* size_t mbstowcs(wchar_t *pwcs,
+     * const char *s,
+     * size_t n)
+     *
+     * Converte uma sequência de caracteres
+     * multibyte que começam com o estado de
+     * shift inicial a partir da lista apontada
+     * por s numa sequência de códigos
+     * correspondentes e armazena não mais do que
+     * n elementos na array apontada por pwcs.
+     * Nenhum caractere multibyte após um
+     * caractere nulo será examinado ou
+     * convertido. Cada caractere multibyte é
+     * convertido como se fosse feita uma chamada
+     * a mbtowc(), exceto que o estado de shift
+     * de mbtowc() não é afetado.
+     * Não mais do que n elementos serão
+     * modificados na lista apontada por pwcs. Se
+     * a operação de cópia tomar lugar entre
+     * objetos que se sobrepôem, o comportamento
+     * é indefinido.
+     * Se um caractere multibyte é encontrado, a
+     * função retorna (size_t)-1. Caso contrário,
+     * retorna o número de elementos modificados
+     * na lista, sem incluir caracteres
+     * terminados em nulo.*/
 
+
+    /* size_t wcstombs(char *s,
+     * const wchar_t *pwcs,
+     * size_t n)
+     *
+     * Converte uma sequência de códigos
+     * correspondentes a caracteres multibytes de
+     * uma lista apontada por pwcs numa sequência
+     * de caracteres multibyte que começam com o
+     * estado de shift incial e armazena esses
+     * caracteres numa array apontada por s,
+     * parando se um caractere exceder o limite
+     * de n bytes ou se um caractere nulo é
+     * armazenado. Cada caractere é convertido
+     * como uma chamada a wctomb(). Não mais do
+     * que n bytes serão modificados na lista
+     * apontada por s. Se a cópia tomar lugar
+     * entre objetos que se sobrepõem, o
+     * comportamento é indefinido.
+     * Se um caractere encontrado não corresponde
+     * a um caractere multibyte válido,
+     * wcstombs() retorna (size_t)-1. Se não,
+     * wcstombs() retorna o número de bytes
+     * modificados, não incluindo os terminados
+     * em caractere nulo, se houver.*/
+
+    /* Muito interessante todas as funções, mas
+     * as últimas me deixaram confuso. Quanto
+     * mais vejo sobre a biblioteca padrão, mais
+     * simples fica o restante da linguagem C. É
+     * uma experiência no mínimo interessante.*/
 
 
     return 0;
