@@ -35,9 +35,9 @@ int main(void){
     
     while( ++y < log_dbl-1);
     printf("y limite:%d\n\
-            \rexp limite: \n\
-            \r%lf\n",
-            y, exp(y));
+          \rexp limite: \n\
+          \r%lf\n",
+          y, exp(y));
     /* Armazenei log(dblmax) para evitar ficar
      * recalculando o tempo todo. Não fez grande
      * diferença. C é rápido mesmo*/

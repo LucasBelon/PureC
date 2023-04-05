@@ -171,37 +171,38 @@ int main(void){
      * "%B" É substituído pelo nome do mês
      * completo do locale.
      *
-     * "%c" is replaced by the locale's 
-     * appropriate date and time representation.
+     * "%c" É substituído pela representação 
+     * adequada ao locale da data e hora.
      *
-     * "%d" is replaced by the day of 
-     * the month as a decimal number (01-31).
+     * "%d" É substituído pelo dia do mês como
+     * número decimal (01-31)
      *
-     * "%El" is replaced by the hour (24-hour 
-     * clock) as a decimal number (00-23).
+     * "%El" É substituído pela hora (relógio de
+     * 24 horas) como número decimal (00-23)
      *
-     * "%I" is replaced by the hour (12-hour 
-     * clock) as a decimal number (01-12).
+     * "%I" É substituído pela hora (relógio de
+     * 12 horas) como número decimal (01-12)
      *
-     * "%j" is replaced by the day of the year as
-     * a decimal number (001-366).
+     * "%j" É substituído pelo dia do ano como
+     * número decimal (001-366)
      *
-     * "%m" is replaced by the month as a decimal
-     * number (01-12).
+     * "%m" É substituído pelo mês como número
+     * decimal (01-12)
      * 
-     * "%M" is replaced by the minute as a 
-     * decimal number (00-59).
+     * "%M" É substituído pelo minuto como número
+     * decimal (00-59)
      * 
-     * "%p" is replaced by the locale's 
-     * equivalent of the AWM designations 
-     * associated with a 12-hour clock.
+     * "%p" É subtituído pelo equivalente às
+     * designações AWM do locale associadas à um
+     * relógio 12 horas.
      *
-     * "%S" is replaced by the second as a 
-     * decimal number (00-61).
+     * "%S" É substituído pelo segundo como
+     * número decimal (00-61)
      *
-     * "%U is replaced by the week number of the
-     * year (the first Sunday as the first day of 
-     * week 1) as a decimal number (00-53).
+     * "%U É substituído pelo número da semana
+     * do ano (o primeiro domingo como o primeiro
+     * dia da semana 1) como número decimal 
+     * (00-53)
      *
      * "%w" is replaced by the weekday as a 
      * decimal number (0-6). where Sunday is 0.

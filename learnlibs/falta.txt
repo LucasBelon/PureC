@@ -1,14 +1,13 @@
-
-06locale
-
-cheguei até onde?
-provavelmente ignorei de propósito tudo até chegar em stdio.
-Melhor ir devagar na brincadeira, absorver direito pra evitar
-reestudar
-Eu realmente ignorei muita coisa pra chegar logo em stdio.
-Mas tem ali exatamente o que eu queria saber, se é possível
-utilizar um arquivo pra ler binário. Posso guardar uma estrutura,
-muito mais compacta, pra ler e inicializar um programa com uma
-quantidade de opções pré-definidas.
-Massa demais bixo.
-
+Preciso continuar verificando se incluí todas as
+informações das partes "What the C standard Says"
+Consegui até 05, preciso continuar a partir de
+06. Isso me ajuda a rever todas as bibliotecas e
+absorver melhor, agora que já tenho uma 
+compreensão madura sobre o formato de definições
+das bibliotecas. Além de tudo, as últimas
+bibliotecas foram anotadas seguindo um padrão
+muito específico, se apoiando muito mais em WTCSS
+do que no livro em si. Então, creio que o melhor
+é utilizar ambas as anotações, a do livro e a do
+WTCSS, para, se necessário, obter um local de
+verificação rápida sobre as bibliotecas padrão.
