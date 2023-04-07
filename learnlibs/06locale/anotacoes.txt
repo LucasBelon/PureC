@@ -10,6 +10,8 @@ uma estrutura, duas funcoes e uma quantidade
 de macros:
 
 ESSA BIBLIOTECA É CHATA
+Ela continua cgata, mas é importante dar 
+uma olhadela
 
 Ler man locale.h
 
