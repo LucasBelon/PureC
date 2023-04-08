@@ -8,9 +8,11 @@ all: blah
 # $^ nome de todos os pre requisitos
 # $@ nome do alvos
 
-#Compilando um programa C
+# Compilando um programa C
 Programa_C: lib01.o lib02.o
 	$(CC) -c $(CPPFLAGS) $(CFLAGS) $^ -o $@
+# Não escrevi nenhum compilador, nenhuma flag de
+# pré-processador e nenhuma flag de compilador.
 
 
 #Compilando um programa C++

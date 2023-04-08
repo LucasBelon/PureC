@@ -1,1 +1,0 @@
-Criar um buildProject por tipo? pelo menos em C

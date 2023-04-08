@@ -1,9 +1,12 @@
-# Podemos aninhar diferentes alvos em all
-# e como ele é o default, irá rodar sempre
+# Podemos aninhar diferentes alvos em all e como
+# ele é o default, irá rodar sempre. Na verdade,
+# o alvo default será o primeiro definido no
+# makefile, mas fazemos dele o all por
+# padronização.
 
-files:=one two three
+requisites:=one two three
 
-all: one two three
+all: $(requisites)
 
 one:
 	touch one
@@ -15,4 +18,4 @@ three:
 	touch three
 
 clean:
-	rm $(files)
+	rm $(requisites)

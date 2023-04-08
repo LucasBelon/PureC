@@ -1,15 +1,16 @@
+# Vejamos algumas variáveis automáticas.
+
 hey: one two
-	#mostra o nome do alvo
+	# Mostra o nome do alvo
 	echo $@
 	
-	#Mostra todos os pre-requisitos
-	#mais novos do que o alvo
-	#(os que serão executados)
+	# Mostra todos os pre-requisitos mais novos 
+	# do que o alvo (os que serão executados).
 	echo $?
 	
-	#Mostra todos os pré-requisitos
+	# Mostra todos os pré-requisitos
 	echo $^
-	touch hey
+	touch $@
 	
 one:
 	touch one

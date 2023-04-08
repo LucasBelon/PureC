@@ -22,3 +22,6 @@ bla: bla.c
 # processo que geralmente já é demorado
 # (imagine um projeto grande como o Kernel
 # do Linux)
+
+clean: bla
+	rm bla
