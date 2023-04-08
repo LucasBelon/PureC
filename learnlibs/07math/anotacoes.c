@@ -4,6 +4,9 @@
 # include <math.h>
 
 int main(void){
+    /* Essa biblioteca foi bem anotada em
+     * anotacoes.txt
+     * */
     printf("%lf, %lf, %0.0lf°\n",
             acos(0), 
             acos(0)/M_PI, 
