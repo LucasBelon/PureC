@@ -1,0 +1,87 @@
+# Template de makefile para uso em projetos 
+# futuros.
+#
+# A fazer:
+# - opção para uso com C e com C++ (all)
+# - opção para compilar em bibliotecas (shared)
+
+
+# Variáveis e configurações rápidas:
+#
+# Compilador C
+CC := clang # gcc # g++ 
+# Flags do Compilador
+# e linking de bibliotecas específicas
+# como math ou curses
+CFLAGS := -Wall #\
+		  -lm \
+		  -lcurses
+# Flags do Pré-Compilador (manipulador de macros)
+CPPFLAGS := 
+# Nome do executávem final
+OUTPUT := bin/Programa
+# Nome dos arquivos fonte
+# Versão curta
+SRC := $(src/*.c)
+# Nome dos arquivos objeto
+# Versão curta
+ARQUIVOS_OBJETO := $(obj/*.o)
+# Requisitos do alvo all
+ALL_REQUISITOS := Compile_to_obj $(SRC)
+
+# Bibliotecas não padrão que precisam ser
+# instaladas
+DEPENDENCY_LIBS := ncurses
+# Gerenciador de pacotes que irá executar
+# a instalação
+PKG_MANAGER := sudo apt
+
+
+
+# Targets (Gosto de chamar de subscripts)
+# (Talvez seria melhor entender como
+# subscripts encadeados)
+all: $(ALL_REQUISITOS)
+	# Compilação final, linker de objetos e
+	# bibliotecas.
+	$(CC) $(CFLAGS) $(CPPFLAGS) \
+		-o $(OUTPUT) $(ARQUIVOS_OBJETO)
+
+Compile_to_obj: $(ARQUIVOS_OBJETO)
+	# Compilação dos códigos fonte em 
+	# arquivos objeto.
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(SRC) 
+	# COMO FAÇO PRA COMPILAR EM OBJETO MANDANDO PRA 
+	# UM DIRETÓRIO ESPECÍFICO????
+
+
+install_dependencies:
+	# Como descobrir o gerenciador de pacotes
+	# de uma distro? Como instalar sem 
+	# gerenciador?
+	$(pkg_manager) install $(dependency_libs)
+
+
+
+
+# Limpador de arquivos objeto e executáveis
+clean: bin obj
+	rm -f bin/*
+	rm obj/*.o
+
+# STARTER DE DIRETÓRIOS DE PROJETO VAZIOS.
+project_start:
+	mkdir -p \
+		bin \
+		doc/html \
+		doc/latex \
+		src/test \
+		obj \
+		lib \
+		headers;
+	touch \
+		BUGS \
+		Changelog \
+		COPYING \
+		README.md \
+		TODO.txt

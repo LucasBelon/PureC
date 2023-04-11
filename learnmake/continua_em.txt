@@ -1,3 +1,9 @@
 Parei em implicit. É complicado o próximo tópico.
+Mas eu também não tenho obrigação de usar todas 
+as tecnicas existentes, só saber que existe para
+conseguir ler.
 
-Criar um buildProject pro C? algo como make project
+Continuar em Default Shell
+
+Criar um buildProject pro C? algo como make 
+project
