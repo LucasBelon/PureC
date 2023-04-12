@@ -4,33 +4,56 @@
 # A fazer:
 # - opção para uso com C e com C++ (all)
 # - opção para compilar em bibliotecas (shared)
+# - incluir opção de debug e outros tipos de
+#   otimização
+# - incluir opções para as flags
 
 
 # Variáveis e configurações rápidas:
 #
 # Compilador C
-CC := clang # gcc # g++ 
-# Flags do Compilador
-# e linking de bibliotecas específicas
-# como math ou curses
-CFLAGS := -Wall #\
+CC := clang # gcc # default: "cc"
+
+# Talvez eu inclua mais tarde uma opção
+# para compilar e usar com o DBG.
+OPTIMIZATION := #\
+				Não sei o que adicionar\
+				ainda
+
+# Compilador C++
+CXX := clang # default: g++
+
+# Flags do Compilador C
+CFLAGS := -g -Wall
+
+# Flags do Compilador C++
+CXXFLAGS := -Wall
+
+# Flags de link de bibliotecas (ou lib dinâmicas)
+LDFLAGS := #\
 		  -lm \
 		  -lcurses
+
 # Flags do Pré-Compilador (manipulador de macros)
-CPPFLAGS := 
-# Nome do executávem final
+CPPFLAGS :=
+
+# Nome do executável final
 OUTPUT := bin/Programa
+
 # Nome dos arquivos fonte
 # Versão curta
-SRC := $(src/*.c)
+SRC := $(wildcard src/*.c)
+
 # Nome dos arquivos objeto
 # Versão curta
-ARQUIVOS_OBJETO := $(obj/*.o)
+ARQUIVOS_OBJETO := $(wildcard obj/*.o)
+
 # Requisitos do alvo all
 ALL_REQUISITOS := Compile_to_obj $(SRC)
 
 # Bibliotecas não padrão que precisam ser
-# instaladas
+# instaladas. Apenas um exemplo, favor não
+# executar sem saber do que se trata
 DEPENDENCY_LIBS := ncurses
 # Gerenciador de pacotes que irá executar
 # a instalação
@@ -41,23 +64,21 @@ PKG_MANAGER := sudo apt
 # Targets (Gosto de chamar de subscripts)
 # (Talvez seria melhor entender como
 # subscripts encadeados)
-all: $(ALL_REQUISITOS)
+all: $(ARQUIVOS_OBJETO)
 	# Compilação final, linker de objetos e
 	# bibliotecas.
 	$(CC) $(CFLAGS) $(CPPFLAGS) \
-		-o $(OUTPUT) $(ARQUIVOS_OBJETO)
+		$(ARQUIVOS_OBJETO) -o $(OUTPUT)
 
-Compile_to_obj: $(ARQUIVOS_OBJETO)
+obj/%.o: src/%.c
 	# Compilação dos códigos fonte em 
 	# arquivos objeto.
-	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(SRC) 
-	# COMO FAÇO PRA COMPILAR EM OBJETO MANDANDO PRA 
-	# UM DIRETÓRIO ESPECÍFICO????
+	$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
 
 
 install_dependencies:
 	# Como descobrir o gerenciador de pacotes
-	# de uma distro? Como instalar sem 
+	# de uma distro? Como instalar sem
 	# gerenciador?
 	$(pkg_manager) install $(dependency_libs)
 
@@ -66,8 +87,8 @@ install_dependencies:
 
 # Limpador de arquivos objeto e executáveis
 clean: bin obj
-	rm -f bin/*
-	rm obj/*.o
+	rm -f $(wildcard bin/*)
+	rm -f $(wildcard obj/*.o)
 
 # STARTER DE DIRETÓRIOS DE PROJETO VAZIOS.
 project_start:
@@ -85,3 +106,18 @@ project_start:
 		COPYING \
 		README.md \
 		TODO.txt
+
+
+# Variáveis automáticas:
+#
+# $@ Armazena o nome do(s) alvo(s). Sua expansão
+# faz com que o subscript seja repetido para
+# cada item armazenado.
+#
+# $? armazena o nome dos requisitos da regra
+# (requisitos do subscript) mais novos do que
+# o alvo, ou seja, os requisitos que serão
+# executados. Sua expansão é de linha. Não
+# reexecuta o subscript.
+#
+# $^ Armazena todos os pré-requisitos
