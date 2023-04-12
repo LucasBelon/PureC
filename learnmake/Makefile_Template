@@ -60,6 +60,7 @@ DEPENDENCY_LIBS := ncurses
 PKG_MANAGER := sudo apt
 
 
+# VERIFICAR A NECESSIDADE DE USAR LDFLAGS
 
 # Targets (Gosto de chamar de subscripts)
 # (Talvez seria melhor entender como
@@ -67,7 +68,7 @@ PKG_MANAGER := sudo apt
 all: $(ARQUIVOS_OBJETO)
 	# Compilação final, linker de objetos e
 	# bibliotecas.
-	$(CC) $(CFLAGS) $(CPPFLAGS) \
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS)\
 		$(ARQUIVOS_OBJETO) -o $(OUTPUT)
 
 obj/%.o: src/%.c
