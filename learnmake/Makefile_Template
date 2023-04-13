@@ -34,7 +34,7 @@ LDFLAGS := #\
 		  -lm \
 		  -lcurses
 
-# Flags do Pré-Compilador (manipulador de macros)
+# Flags do Pré-Processador (manipulador de macros)
 CPPFLAGS :=
 
 # Nome do executável final
@@ -111,14 +111,28 @@ project_start:
 
 # Variáveis automáticas:
 #
-# $@ Armazena o nome do(s) alvo(s). Sua expansão
-# faz com que o subscript seja repetido para
-# cada item armazenado.
+# $@ - Nome do alvo da regra. Expansão faz
+# subscript ser repetido.
 #
-# $? armazena o nome dos requisitos da regra
-# (requisitos do subscript) mais novos do que
-# o alvo, ou seja, os requisitos que serão
-# executados. Sua expansão é de linha. Não
-# reexecuta o subscript.
+# $% - Nome do membro do alvo, quando o alvo é um
+# membro do arquivo. Se o alvo é foo.a(bar.o),
+# então $@ é foo.a.
 #
-# $^ Armazena todos os pré-requisitos
+# $< - Nome do primeiro pré-requisito.
+#
+# $? - O nome dos pré-requisitos que são mais
+# recentes do que o alvo, com espaços entre eles.
+# Se o alvo não existe, todos os pré-requisitos
+# são adicionados. Expansão de linha
+#
+# $^ - Nome de todos os pré-requisitos separados
+#
+# $+ - Semelhante a $^, mas pré-requisitos
+# repetidos são duplicados na ordem em que são
+# listados.
+#
+# $| - O nome de todos os pré-requisitos
+# order-only.
+#
+# $* - Usado com regras implícitas. Não entendi
+# como usa.
