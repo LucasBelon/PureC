@@ -1,4 +1,5 @@
 # include <stdio.h>
+# include <stdlib.h>
 # define COLUNA_MAXIMA 56
 # define LINHA_MAXIMA 19
 
@@ -23,6 +24,35 @@ char matriz[LINHA_MAXIMA][COLUNA_MAXIMA] = {
     {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
     {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}
     };
+
+/*! TODO: documentar função
+ *
+ */
+char **criaMatriz(void){
+    char** ptr_matriz =
+        malloc(
+            sizeof(char*) *
+                (LINHA_MAXIMA + 2)
+                    );
+    for (int i = 0; i <= LINHA_MAXIMA; ++i)
+        *(ptr_matriz + i) = 
+            malloc(
+                sizeof(char) * 
+                    (COLUNA_MAXIMA + 2)
+                        );
+    return ptr_matriz;
+}
+
+void desenhaBordasMatriz(char **matriz){
+    for (int i=0; i<=LINHA_MAXIMA;++i){
+        for (int j=0; j<=COLUNA_MAXIMA;++j){
+            if (i==0 || i==LINHA_MAXIMA)
+                *(j+*(i+matriz))='-';
+            if (j==0 || j==COLUNA_MAXIMA)
+                *(j+*(i+matriz))='|';
+        }
+    }
+}
 
 /* (matriz) -> None
 Imprime a matriz do jogo.
