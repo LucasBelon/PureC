@@ -1,0 +1,4 @@
+- Criar arquivos cabeçalho e documentar bonitinho. [ ]
+- Testar o Makefile. [ ]
+- Distribuir funções em arquivos condizentemente. [ ]
+- 
