@@ -42,30 +42,7 @@ ser chamada só no início do jogo)
 */
 
 
-def criaElementos(quantidadeNaves, matriz):
-    /* int, (matriz) -> None
-
-          Recebe um inteiro com a quantidade de naves a serem criadas
-          e a matriz de caracteres vazia para colocar os elementos no início do
-          jogo: o canhão do jogador na linha de baixo e na coluna do meio e as
-          naves na parte superior. As naves devem sempre ficar em pares (um em
-          cima do outro) e separados pelos outros pares por uma coluna vazia.
-          Por exemplo, se a quantidade de naves for 4, a parte superior da
-          matriz tem que ficar assim:
-
-          V V
-          V V
-
-          Se for 6 tem que ficar assim:
-
-          V V V
-          V V V
-
-          Se for 5 tem que ficar assim:
-
-          V V V
-          V V
-          */ 
+// def criaElementos(quantidadeNaves, matriz):
 
 // Passo 2: primeira função para mover algum elemento que emite lasers.
 // Nesse caso para mover o canhão do jogador.

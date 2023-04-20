@@ -1,6 +1,3 @@
-short int COLUNA_MAXIMA = 56;
-short int LINHA_MAXIMA = 19;
-
 // Caracteres representativos
 char CANHAO = 'A';
 char NAVE = 'V';

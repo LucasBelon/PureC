@@ -1,82 +1,65 @@
-# include <stdio.h>
-# include <stdlib.h>
-# define COLUNA_MAXIMA 56
-# define LINHA_MAXIMA 19
+# include "../headers/initial_definitions.h"
+# include "../headers/imprimeMatriz.h"
 
-
-/*! TODO: documentar função
- *
- */
 char **
 criaBufferMatriz(void){
-    char** ptr_matriz =
-        malloc(
-            sizeof(char*) *
-                (LINHA_MAXIMA + 2)
-                    );
-    for (int i = 0;
-        i <= LINHA_MAXIMA;
-        ++i)
+    /* Item_MAXIMA é acrescido em 2 por conta das bordas
+     * da matriz do jogo*/
+    char** ptr_matriz = 
+        malloc( sizeof(char*) * (LINHA_MAXIMA + 2) );
+
+    for (int i = 0; i <= (LINHA_MAXIMA + 2); ++i)
+    {
         *(ptr_matriz + i) = 
-            malloc(
-                sizeof(char) * 
-                    (COLUNA_MAXIMA + 2)
-                        );
+            malloc( sizeof(char) * (COLUNA_MAXIMA + 2) );
+    }
     return ptr_matriz;
 }
 
 
-/*! TODO: documentar função
- *
- */
 void 
-iniciaCaractereMatriz(char **matriz){
-    for (int linha=0;
-        linha<=LINHA_MAXIMA;
-        ++linha)
+iniciaCaractereMatriz(char ** matriz){
+    /* Item_MAXIMA é acrescido em 2 por conta das bordas
+     * da matriz do jogo*/
+    for (int linha = 0; linha < (LINHA_MAXIMA + 2); ++linha)
     {
-        for (int coluna=0;
-            coluna<=COLUNA_MAXIMA;
-            ++coluna)
+        for (int coluna = 0; coluna < (COLUNA_MAXIMA + 2); ++coluna)
         {
-            *(coluna+*(linha+matriz))=' ';
-            if (linha==0 || linha==LINHA_MAXIMA)
-                *(coluna+*(linha+matriz))='-';
-            if (coluna==0 || coluna==COLUNA_MAXIMA)
+            // Todos os itens são definidos como espaços em branco
+            // e depois são alterados casos especiais.
+            *(coluna + *(linha + matriz)) = ' ';
+            
+            // Caso da borda superior ou inferior.
+            if (linha == 0 || linha == (LINHA_MAXIMA + 1))
+                *(coluna + *(linha + matriz)) = '-';
+
+            // Caso da borda lateral esquerda ou direita
+            // E as quinas da matriz
+            if (coluna == 0 || coluna == (COLUNA_MAXIMA + 1))
             {
-                if (linha==0 || linha==LINHA_MAXIMA)
-                    *(coluna+*(linha+matriz))='+';
-                else
-                    *(coluna+*(linha+matriz))='|';
+                *(coluna + *(linha + matriz)) = '|';
+                if (linha == 0 || linha == (LINHA_MAXIMA + 1))
+                    *(coluna + *(linha + matriz)) = '+';
             }
         }
     }
 }
 
 
-/* (matriz) -> None
-Imprime a matriz do jogo.
-Cada posição da matriz é um caracter e deve
-ser impresso exatamente com o valor dele.*/ 
 void
-imprimeMatriz(char **matriz){
-    for (int linha = 0;
-        linha <= LINHA_MAXIMA;
-        ++linha)
+imprimeMatriz(char ** matriz){
+    /* Foi escolhido imprimir caractere por caractere
+     * por não se tratar de um conjunto de strings, e
+     * portanto, não possuírem \0 em seu final*/
+    for (int linha = 0; linha < (LINHA_MAXIMA + 2); ++linha)
     {
-        for (int coluna = 0;
-            coluna <= COLUNA_MAXIMA;
-            ++coluna)
-            printf("%c", *(coluna+*(linha+matriz)));
+        for (int coluna = 0; coluna < (COLUNA_MAXIMA + 2); ++coluna)
+            printf("%c", *(coluna + *(linha + matriz)));
         putchar('\n');
     }
 }
 
-// Passo 1: função que cria todos os elementos na matriz do jogo (Deve
-// ser chamada só no início do jogo)
-
-
-/* TESTE DE FUNÇÃO RUDIMENTAR 
+/* Teste de Função Rudimentar
 int 
 main(){
     char** matriz = criaBufferMatriz();
