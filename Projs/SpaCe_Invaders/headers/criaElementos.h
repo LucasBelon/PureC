@@ -2,7 +2,6 @@
 # define criaElementos_H
 
 # include "../headers/initial_definitions.h"
-# include "../headers/imprimeMatriz.h"
 
 /*int, (matriz) -> None
 Recebe um inteiro com a quantidade de naves a serem criadas

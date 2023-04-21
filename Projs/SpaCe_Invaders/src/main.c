@@ -4,50 +4,32 @@
 # include <stdlib.h>
 
 # include "../headers/initial_definitions.h"
-# include "initial_definitions.c"
-
+# include "../headers/joga.h"
 
 
 int main(){
 
     srand(SEMENTE);
 
+    /*
     printf("Digite o numero de naves (inteiro maior que 1 e menor que %d): ", COLUNA_MAXIMA);
     int quantidadeNaves;
     scanf("%d",&quantidadeNaves);
+    */
+    int quantidadeNaves_MAX = COLUNA_MAXIMA - 3;
 
-    resultado = joga(quantidadeNaves)
+    return_Joga resultado;
+    resultado = joga(quantidadeNaves_MAX);
 
-    if resultado[0] == VENCEU:
-        print(">>> CONGRATULATIONS! Você venceu!")
-    else:
-        print(">>> GAME OVER! Você perdeu!")
+    if (resultado.resultado == VENCEU)
+        printf(">>> CONGRATULATIONS! Você venceu!\n");
+    else
+        printf(">>> GAME OVER! Você perdeu!\n");
 
-    print(">>> Pontuação:", resultado[1])
+    printf(">>> Pontuação: %d\n", resultado.pontuacao);
 
     return 0;
 }
-
-// DEMAIS FUNÇÕES NECESSÁRIAS PARA O JOGO
-// !!!!! SEU TRABALHO COMEÇA AQUI. COMPLETE TODAS AS FUNÇÕES !!!!!
-// !!!!! MAS NÃO MODIFIQUE A ASSINATURA DE NENHUMA DELAS E NEM O QUE JÁ ESTÁ
-// FEITO !!!!!
-
-// Passo 0: função para imprimir a matriz do jogo. Ela precisa ser
-// modificada para imprimir os '|' nas laterais direita e esquerda
-
-
-/* def imprimeMatriz(matriz):
-Passo 1: função que cria todos os elementos na matriz do jogo (Deve
-ser chamada só no início do jogo)
-*/
-
-
-// def criaElementos(quantidadeNaves, matriz):
-
-// Passo 2: primeira função para mover algum elemento que emite lasers.
-// Nesse caso para mover o canhão do jogador.
-
 
 //def moveCanhao(direcao, matriz):
     /* int, (matriz) -> bool
@@ -203,77 +185,3 @@ ser chamada só no início do jogo)
           varrer a matriz **inteira** para atualizar a quantidade de lasers
           atingidos antes de retornar*/ 
 
-// Passo 5: a função que de fato implementa o jogo segundo as regras do
-// enunciado. Ela vai chamar toda as funções implementadas nos passos
-// anteriores.
-
-
-//def joga(quantidadeNaves):
-    /* int -> [bool, int]
-
-          Recebe um inteiro que representa a quantidade de naves, implementa de
-          fato o jogo de acordo com as regras do enunciado e retorna uma lista
-          com o resultado do jogo:
-
-          [resultado, pontuacao]
-
-          resultado é uma variável booleana que vale True se o jogador venceu
-          ou False se o jogador perdeu.
-
-          Para o jogador vencer:
-          - O jogador precisa destruir todas as naves
-
-          Para o jogador perder:
-          - O jogador precisa ser atingido pelo tiro de alguma nave
-          - Ou alguma nave precisa alcançar a linha LINHA_MAXIMA da matriz do
-          jogo
-          - Ou o jogador precisa ser atingido por alguma nave
-
-          pontuacao é uma variável inteira que armazena a quantidade de pontos
-          que o jogador fez. A pontuação é definida da seguinte forma:
-
-          +PONTOS_ACERTOU_LASER pontos se o jogador consegue acertar 1 tiro em
-          alguma nave
-          +PONTOS_ACERTOU_NAVE  pontos se o jogador consegue acertar 1 tiro em
-          algum tiro de alguma nave
-
-          A ordem das ações no jogo é:
-          - tiros anteriores do jogador se movem
-          - imprime o estado do jogo na tela
-          - usuário informa se quer atirar ou se mover e a ação escolhida é
-          realizada
-          - tiros anteriores das naves se movem
-          - naves atiram (de acordo com o sorteio de números aleatórios)
-          - naves se movem (de acordo com a rodada - se move apenas nas pares:
-          direita, baixo, esquerda, baixo, direita, etc...
-
-          Dentro de cada função de movimentação e de emissão de lasers é
-          necessário verificar se houve colisões para aumentar a pontuação,
-          para terminar o jogo ou para limpar a tela removendo os elementos que
-          sumiram por terem passado do limite da tela (tiros que subiram demais
-          e tiros que desceram demais)
-
-          Sempre que o jogo terminar, deve imprimir o status final da
-          matriz do jogo*/ 
-
-    // Criação da matriz que manterá o estado do jogo.
-    matriz = []
-    for i in range(LINHA_MAXIMA+1):
-        matriz.append([' ']*(COLUNA_MAXIMA+1))
-
-    // Loop do jogo
-    resultado = VENCEU
-    fimDeJogo = False
-    pontos = 0
-    rodada = 1
-    direcaoNaves = DIREITA
-    while not fimDeJogo:
-        // complete o loop seguindo a ordem das ações explicada no
-        // enunciado e no docstring desta função acima.
-
-        // Remover. Está aqui apenas para não causar loop infinito
-        fimDeJogo = True
-
-        rodada += 1
-
-    return [resultado, pontos]

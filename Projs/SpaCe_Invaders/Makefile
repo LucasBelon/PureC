@@ -2,17 +2,16 @@
 # futuros.
 #
 # A fazer:
-# - opção para uso com C e com C++ (all)
-# - opção para compilar em bibliotecas (shared)
 # - incluir opção de debug e outros tipos de
 #   otimização
 # - incluir opções para as flags
+#   E anotar os efeitos de cada uma
 
 
 # Variáveis e configurações rápidas:
 #
 # Compilador C
-CC := clang # gcc # default: "cc"
+CC := gcc # gcc # default: "cc"
 
 # Talvez eu inclua mais tarde uma opção
 # para compilar e usar com o DBG.
@@ -22,14 +21,8 @@ OPTIMIZATION := #\
 				mas é do tipo -O2\
 				Não confundir com -02
 
-# Compilador C++
-CXX := clang # default: g++
-
 # Flags do Compilador C
 CFLAGS := -g -Wall
-
-# Flags do Compilador C++
-CXXFLAGS := -Wall
 
 # Flags de link de bibliotecas (ou lib dinâmicas)
 LDFLAGS := #\
@@ -39,24 +32,25 @@ LDFLAGS := #\
 # Flags do Pré-Processador (manipulador de macros)
 CPPFLAGS :=
 
+# Diretório de binários
+BIN := bin
 # Nome do executável final
-OUTPUT := bin/Programa
+OUTPUT := $(BIN)/main
 
 # Nome dos arquivos fonte
-# Versão curta
-SRC := $(wildcard src/*.c)
+SRC := src
+# Arquivos Fonte
+ARQUIVOS_FONTE = $(wildcard $(SRC)/*.c)
 
+OBJ := obj
 # Nome dos arquivos objeto
-# Versão curta
-ARQUIVOS_OBJETO := $(wildcard obj/*.o)
-
-# Requisitos do alvo all
-ALL_REQUISITOS := Compile_to_obj $(SRC)
+ARQUIVOS_OBJETO := $(patsubst $(SRC)/%.c, $(OBJ)/%.o, $(ARQUIVOS_FONTE))
 
 # Bibliotecas não padrão que precisam ser
 # instaladas. Apenas um exemplo, favor não
 # executar sem saber do que se trata
 DEPENDENCY_LIBS := ncurses
+
 # Gerenciador de pacotes que irá executar
 # a instalação
 PKG_MANAGER := sudo apt
@@ -67,13 +61,15 @@ PKG_MANAGER := sudo apt
 # Targets (Gosto de chamar de subscripts)
 # (Talvez seria melhor entender como
 # subscripts encadeados)
-all: $(ARQUIVOS_OBJETO)
+all:$(OUTPUT)
+
+$(OUTPUT): $(ARQUIVOS_OBJETO)
 	# Compilação final, linker de objetos e
 	# bibliotecas.
 	$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS)\
-		$(ARQUIVOS_OBJETO) -o $(OUTPUT)
+		$(ARQUIVOS_OBJETO) -o $@
 
-obj/%.o: src/%.c
+$(OBJ)/%.o: $(SRC)/%.c
 	# Compilação dos códigos fonte em 
 	# arquivos objeto.
 	$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
@@ -83,15 +79,15 @@ install_dependencies:
 	# Como descobrir o gerenciador de pacotes
 	# de uma distro? Como instalar sem
 	# gerenciador?
-	$(pkg_manager) install $(dependency_libs)
-
-
-
+	$(PKG_MANAGER) install $(dependency_libs)
 
 # Limpador de arquivos objeto e executáveis
 clean: bin obj
 	rm -f $(wildcard bin/*)
 	rm -f $(wildcard obj/*.o)
+
+exe: $(OUTPUT)
+	./$(OUTPUT)
 
 # STARTER DE DIRETÓRIOS DE PROJETO VAZIOS.
 project_start:

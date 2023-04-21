@@ -1,9 +1,8 @@
 # include "../headers/criaElementos.h"
 
 // Em algum lugar preciso definir essas variáveis
-char CANHAO = 'A';
-char NAVE = 'V';
-int quantidadeNaves_MAX = COLUNA_MAXIMA - 3;
+
+//int quantidadeNaves_MAX = COLUNA_MAXIMA - 3;
 
 
 void
@@ -16,8 +15,10 @@ criaElementos(int quantidadeNaves, char ** matriz){
     
     // Quantas fiadas de naves teremos:
     int fiadas_naves = (quantidadeNaves/2);
+    // Em qual coluna serão posicionadas as naves:
     int ind_col_naves;
     for(ind_col_naves = 0; ind_col_naves < fiadas_naves; ++ind_col_naves){
+        // As linhas (posição vertical) serão decididas à força (1 e 2)
         *((ind_col_naves * 2)+1 + *(1 + matriz)) = NAVE;
         *((ind_col_naves * 2)+1 + *(2 + matriz)) = NAVE;
     }
@@ -26,6 +27,9 @@ criaElementos(int quantidadeNaves, char ** matriz){
     }
 }
 
+/* Teste rudimentar: 
+
+# include "../headers/imprimeMatriz.h"
 int 
 main(){
     char** matriz = criaBufferMatriz();
@@ -34,3 +38,4 @@ main(){
     imprimeMatriz(matriz);
     return 0;
 }
+ */
