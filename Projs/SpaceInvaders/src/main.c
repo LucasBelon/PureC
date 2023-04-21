@@ -3,6 +3,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 
+# include "../headers/initial_definitions.h"
 # include "initial_definitions.c"
 
 
@@ -48,7 +49,7 @@ ser chamada só no início do jogo)
 // Nesse caso para mover o canhão do jogador.
 
 
-def moveCanhao(direcao, matriz):
+//def moveCanhao(direcao, matriz):
     /* int, (matriz) -> bool
 
           Recebe um inteiro com a direção (valores definidos em ESQUERDA e
@@ -69,7 +70,7 @@ def moveCanhao(direcao, matriz):
 // Nesse caso para mover as naves.
 
 
-def moveNaves(direcao, matriz):
+//def moveNaves(direcao, matriz):
     /* int, (matriz) -> [bool, int, int]
 
           Recebe um inteiro com a direcao (valores definidos em ESQUERDA,
@@ -107,7 +108,7 @@ def moveNaves(direcao, matriz):
 // um novo laser pelo canhão do jogador.
 
 
-def emiteLaserCanhao(matriz):
+//def emiteLaserCanhao(matriz):
     /* (matriz) -> [int, int]
 
           Recebe a matriz do jogo e emite um novo laser atirado pelo jogador
@@ -127,7 +128,7 @@ def emiteLaserCanhao(matriz):
 // novos lasers pelas naves.
 
 
-def emiteLasersNaves(matriz):
+//def emiteLasersNaves(matriz):
     /* (matriz) -> [bool, int]
 
           Recebe a matriz do jogo e emite lasers pelas naves (caracter definido
@@ -161,7 +162,7 @@ def emiteLasersNaves(matriz):
 // os lasers do jogador.
 
 
-def moveLasersCanhao(matriz):
+//def moveLasersCanhao(matriz):
     /* (matriz) -> [int, int]
 
           Recebe a matriz do jogo e move todos os lasers atirados pelo jogador
@@ -180,7 +181,7 @@ def moveLasersCanhao(matriz):
 // mover os lasers das naves.
 
 
-def moveLasersNaves(matriz):
+//def moveLasersNaves(matriz):
     /* (matriz) -> [bool, int]
 
           Recebe a matriz do jogo e move todos os lasers atirados pelas naves
@@ -207,7 +208,7 @@ def moveLasersNaves(matriz):
 // anteriores.
 
 
-def joga(quantidadeNaves):
+//def joga(quantidadeNaves):
     /* int -> [bool, int]
 
           Recebe um inteiro que representa a quantidade de naves, implementa de

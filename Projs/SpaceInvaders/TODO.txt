@@ -1,4 +1,4 @@
 - Criar arquivos cabeçalho e documentar bonitinho. [ ]
 - Testar o Makefile (ele está dando problema pra caramba). [ ]
 - Distribuir funções em arquivos condizentemente. [ ]
-- 
+- Fazer com que o programa seja compilável a partir de main.c com o Makefile. Continuar em joga.c
