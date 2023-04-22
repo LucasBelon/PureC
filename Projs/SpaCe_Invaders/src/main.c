@@ -1,14 +1,9 @@
 /* Alterar python para C */
 
-# include <stdio.h>
-# include <stdlib.h>
-
-# include "../headers/initial_definitions.h"
 # include "../headers/joga.h"
-
+# include "../headers/initial_definitions.h"
 
 int main(){
-
     srand(SEMENTE);
 
     /*
@@ -31,22 +26,6 @@ int main(){
     return 0;
 }
 
-//def moveCanhao(direcao, matriz):
-    /* int, (matriz) -> bool
-
-          Recebe um inteiro com a direção (valores definidos em ESQUERDA e
-          DIREITA) para mover o canhão do jogador (caracter definido em CANHAO)
-          e a matriz de caracteres do jogo, para mover o canhão nessa direção.
-          Ao mover tem que observar se atingiu algum laser de alguma nave (caso
-          no qual tem que imprimir um EXPLOSAO no lugar). Nesse caso precisará
-          informar que o canhão foi atingido pois a função retorna esse valor.
-
-          Retorna:
-
-          True se canhão do jogador foi atingido (False se não)
-
-          Obs.: o movimento do canhão é ciclíco quando ele se move além dos
-          limites laterais da matriz do jogo.*/ 
 
 // Passo 2: segunda função para mover algum elemento que emite lasers.
 // Nesse caso para mover as naves.

@@ -1,15 +1,4 @@
-/* Dar um jeito de ir implementando
- * o jogo e ir compilando com o makefile.
- * Se não conseguir seguir essa ordem, pra
- * quê serve o makefile?*/
-
-# include <stdio.h>
-# include <stdlib.h>
-# include "../headers/initial_definitions.h"
-# include "../headers/imprimeMatriz.h"
-# include "../headers/criaElementos.h"
 # include "../headers/joga.h"
-
 
 /* int -> [bool, int]
 
@@ -65,45 +54,95 @@ return_Joga joga(int quantidadeNaves){
 
     // Criação da matriz que manterá o estado do jogo.
     char ** matriz = criaBufferMatriz();
+
     // Inserção dos elementos nulos e bordas da matriz.
     iniciaCaractereMatriz(matriz);
+
     // Inserção dos inimigos e do jogador na matriz.
     criaElementos(COLUNA_MAXIMA - 3 , matriz);
 
-    // Impressão da matriz
-    imprimeMatriz(matriz);
-
-    // Loop do jogo
+    // Inicialização das estruturas:
+    // Retorno da função joga
     return_Joga retorno = 
         {.pontuacao = 0, 
          .resultado = 1};
 
+    // Informações Gerais para controle do jogo:
     Controle_Do_Jogo General_Control = 
-        {.fimDeJogo = 1,
+        {.acaoDoJogador = 0,
+         .fimDeJogo = 1,
          .rodada = 1,
          .direcaoNaves = -3};
 
-    while (!General_Control.fimDeJogo){
+    // Adicionando um tiro de nave para parar a iteração
+    // (Apenas para testes, remover mais tarde)
+    matriz[LINHA_MAXIMA][COLUNA_MAXIMA - 3] = LASER_NAVE;
+
+    // Loop do jogo
+    while (General_Control.fimDeJogo){
         // complete o loop seguindo a ordem das ações explicada no
         // enunciado e no docstring desta função acima.
 
-        /* A ordem das ações no jogo é:
-         * - tiros anteriores do jogador se movem
-         * - imprime o estado do jogo na tela
-         * - usuário informa se quer atirar ou se mover
-         *   e a ação escolhida é realizada
-         * - tiros anteriores das naves se movem
-         * - naves atiram (de acordo com o sorteio de números aleatórios)
-         * - naves se movem (de acordo com a rodada - se move apenas nas pares:
-         *   direita, baixo, esquerda, baixo, direita, etc...
-         * */
+        /* A ordem das ações no jogo é:*/
+        // - tiros anteriores do jogador se movem
 
-        // Remover. Está aqui apenas para não causar loop infinito
-        General_Control.fimDeJogo = 0;
+        // - imprime o estado do jogo na tela
+        imprimeMatriz(matriz);
+        // - usuário informa se quer atirar ou se mover
+        //  e a ação escolhida é realizada
+        printf("Escolha uma ação:\n\
+              \rMover:  [e] Esquerda | [d] Direita\n\
+              \rAtirar: [l] Laser\n");
 
+        // Preciso esvaziar o buffer do stdout
+        // para minha opção ser mostrada na tela.
+        fflush(stdout);
+
+        // Existe um caractere de nova linha 
+        // no buffer que precisa ser consumido pelo espaço
+        // à esquerda do %c
+        scanf(" %c", &General_Control.acaoDoJogador);
+        // Se eu decidisse usar um buffer[1024] nada disso
+        // teria acontecido.
+
+        // Tratamento do input do usuário.
+        // Se o fim de jogo foi definido pela movimentação, o resultado
+        // deve ser alterado.
+        switch (General_Control.acaoDoJogador) {
+            case '[':
+            case 'E':
+            case 'e':
+                retorno.resultado = 
+                    General_Control.fimDeJogo = 
+                    moveCanhao(ESQUERDA, matriz);
+                break;
+            case ']':
+            case 'D':
+            case 'd':
+                retorno.resultado = 
+                    General_Control.fimDeJogo = 
+                    moveCanhao(DIREITA, matriz);
+                break;
+            case '~':
+            case 'L':
+            case 'l':
+                puts("emissão de lasers não implementadas\n");
+                break;
+            default:
+                puts("Nenhuma opção válida foi encontrada. Seguindo partida");
+                break;
+        }
+
+        // - tiros anteriores das naves se movem
+
+        // - naves atiram (de acordo com o sorteio de números aleatórios)
+
+        // - naves se movem (de acordo com a rodada - se move apenas nas pares:
+        //   direita, baixo, esquerda, baixo, direita, etc...
         General_Control.rodada += 1;
     }
 
+    // Imprimimos uma última vez a matriz após encerrar o loop do jogo.
+    imprimeMatriz(matriz);
     return retorno;
 }
-

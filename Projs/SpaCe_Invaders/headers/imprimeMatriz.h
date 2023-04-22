@@ -1,5 +1,4 @@
 # ifndef IMPRIMEMATRIZ_H
-
 # define IMPRIMEMATRIZ_H
 
 /* (None) -> char ** matriz

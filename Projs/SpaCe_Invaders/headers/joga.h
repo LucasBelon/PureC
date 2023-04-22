@@ -1,13 +1,7 @@
-/* Dar um jeito de ir implementando
- * o jogo e ir compilando com o makefile.
- * Se não conseguir seguir essa ordem, pra
- * quê serve o makefile?*/
-
-# include <stdio.h>
-# include <stdlib.h>
-# include "../headers/initial_definitions.h"
-#include "../headers/imprimeMatriz.h"
-#include "../headers/criaElementos.h"
+# include "initial_definitions.h"
+# include "imprimeMatriz.h"
+# include "criaElementos.h"
+# include "moveCanhao.h"
 
 typedef struct return_Joga {
     short int resultado;
@@ -15,6 +9,7 @@ typedef struct return_Joga {
 } return_Joga;
 
 typedef struct Controle_Do_Jogo {
+    char acaoDoJogador;
     int fimDeJogo;
     int rodada;
     int direcaoNaves;

@@ -13,6 +13,7 @@ criaBufferMatriz(void){
         *(ptr_matriz + i) = 
             malloc( sizeof(char) * (COLUNA_MAXIMA + 2) );
     }
+
     return ptr_matriz;
 }
 
@@ -38,6 +39,7 @@ iniciaCaractereMatriz(char ** matriz){
             if (coluna == 0 || coluna == (COLUNA_MAXIMA + 1))
             {
                 *(coluna + *(linha + matriz)) = '|';
+
                 if (linha == 0 || linha == (LINHA_MAXIMA + 1))
                     *(coluna + *(linha + matriz)) = '+';
             }
@@ -55,16 +57,8 @@ imprimeMatriz(char ** matriz){
     {
         for (int coluna = 0; coluna < (COLUNA_MAXIMA + 2); ++coluna)
             printf("%c", *(coluna + *(linha + matriz)));
-        putchar('\n');
-    }
-}
 
-/* Teste de Função Rudimentar
-int 
-main(){
-    char** matriz = criaBufferMatriz();
-    iniciaCaractereMatriz(matriz);
-    imprimeMatriz(matriz);
-    return 0;
+        printf("\n");
+    }
+    fflush(stdout);
 }
-*/
