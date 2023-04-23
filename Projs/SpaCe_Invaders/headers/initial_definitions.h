@@ -24,8 +24,8 @@
 
 // Constantes para definição de vitória
 // São usadas para substituir True e False em todo o projeto.
-# define VENCEU 1
-# define PERDEU 0
+# define VENCEU 0
+# define PERDEU 1
 
 // Valores para score do jogo
 # define PONTOS_ACERTOU_LASER 1

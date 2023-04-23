@@ -31,21 +31,18 @@ _moveu(int pos_atual, int prox_pos, char * linha_canhao){
     {
         *(linha_canhao + pos_atual) = ' ';
         *(linha_canhao + prox_pos) = EXPLOSAO;
-        return PERDEU;
+        return 1;
     }
 
     else {
         *(linha_canhao + pos_atual) = ' ';
         *(linha_canhao + prox_pos) = CANHAO;
-        return VENCEU;
+        return 0;
     }
 }
 
 int
 moveCanhao(int direcao, char **matriz){
-    // Estou usando as Macros VENCEU e PERDEU como substitutos
-    // à True e False.
-    
     // Para essa função só interessa os dados da linha
     // onde a nave pode estar. Então... vou simplificar
     // as coisas armazenando essa linha numa variável:

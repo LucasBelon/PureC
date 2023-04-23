@@ -4,3 +4,5 @@
 - Fazer com que o programa seja compilável a partir de main.c 
   com o Makefile. Continuar em joga.c [Feito]
 - Fazer cada um dos passos. []
+- Comentar o código de moveNaves, refatorar, criar funções melhores
+  para que o joga.c não adicione lógicas que não o pertencem.[]

@@ -49,15 +49,13 @@ matriz do jogo
 */ 
 
 return_Joga joga(int quantidadeNaves){
-    // Variável que guardará o retorno da função.
-
-
     // Criação da matriz que manterá o estado do jogo.
     char ** matriz = criaBufferMatriz();
 
     // Inserção dos elementos nulos e bordas da matriz.
     iniciaCaractereMatriz(matriz);
 
+    // Adicionar interface de usuário aqui.
     // Inserção dos inimigos e do jogador na matriz.
     criaElementos(COLUNA_MAXIMA - 3 , matriz);
 
@@ -66,20 +64,29 @@ return_Joga joga(int quantidadeNaves){
     return_Joga retorno = 
         {.pontuacao = 0, 
          .resultado = 1};
+    // Retorno da função moveNaves
+    return_moveNaves return_moveN;
 
     // Informações Gerais para controle do jogo:
     Controle_Do_Jogo General_Control = 
         {.acaoDoJogador = 0,
-         .fimDeJogo = 1,
+         .fimDeJogo = 0,
          .rodada = 1,
-         .direcaoNaves = -3};
+         .direcaoNaves = DIREITA};
 
+    /*
     // Adicionando um tiro de nave para parar a iteração
     // (Apenas para testes, remover mais tarde)
     matriz[LINHA_MAXIMA][COLUNA_MAXIMA - 3] = LASER_NAVE;
+    */
+
+
+    // Variáveis para auxílio da direção das naves.
+    int indice_ciclico = 0;
+    int direcao_ciclica[] = {DIREITA, ESQUERDA};
 
     // Loop do jogo
-    while (General_Control.fimDeJogo){
+    while (!General_Control.fimDeJogo){
         // complete o loop seguindo a ordem das ações explicada no
         // enunciado e no docstring desta função acima.
 
@@ -113,15 +120,19 @@ return_Joga joga(int quantidadeNaves){
             case 'E':
             case 'e':
                 retorno.resultado = 
-                    General_Control.fimDeJogo = 
                     moveCanhao(ESQUERDA, matriz);
+                if(retorno.resultado == PERDEU){
+                   imprimeMatriz(matriz); 
+                   return retorno;}
                 break;
             case ']':
             case 'D':
             case 'd':
                 retorno.resultado = 
-                    General_Control.fimDeJogo = 
                     moveCanhao(DIREITA, matriz);
+                if(retorno.resultado == PERDEU){
+                   imprimeMatriz(matriz); 
+                   return retorno;}
                 break;
             case '~':
             case 'L':
@@ -137,8 +148,31 @@ return_Joga joga(int quantidadeNaves){
 
         // - naves atiram (de acordo com o sorteio de números aleatórios)
 
+
         // - naves se movem (de acordo com a rodada - se move apenas nas pares:
         //   direita, baixo, esquerda, baixo, direita, etc...
+        if (General_Control.rodada%2)
+        {
+            return_moveN = moveNaves(General_Control.direcaoNaves, matriz) ;
+
+            if (return_moveN.limite_atingido)
+            {
+                return_moveN = moveNaves(BAIXO, matriz) ;
+                if (return_moveN.limite_atingido == ATINGIU_EMBAIXO)
+                {
+                    retorno.resultado = PERDEU;
+                    return retorno;
+                }
+
+                indice_ciclico = (indice_ciclico + 1)%2;
+                General_Control.direcaoNaves = direcao_ciclica[indice_ciclico];
+            }
+            General_Control.fimDeJogo +=
+                return_moveN.jogador_atingido;
+
+
+            retorno.pontuacao += PONTOS_ACERTOU_NAVE * return_moveN.quantidade_atingidas;
+        }
         General_Control.rodada += 1;
     }
 

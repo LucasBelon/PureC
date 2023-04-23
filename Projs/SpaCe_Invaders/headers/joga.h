@@ -2,6 +2,7 @@
 # include "imprimeMatriz.h"
 # include "criaElementos.h"
 # include "moveCanhao.h"
+# include "moveNaves.h"
 
 typedef struct return_Joga {
     short int resultado;
