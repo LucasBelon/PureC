@@ -3,6 +3,8 @@
 - Distribuir funções em arquivos condizentemente. [Em andamento]
 - Fazer com que o programa seja compilável a partir de main.c 
   com o Makefile. Continuar em joga.c [Feito]
-- Fazer cada um dos passos. []
-- Comentar o código de moveNaves, refatorar, criar funções melhores
-  para que o joga.c não adicione lógicas que não o pertencem.[]
+- Fazer cada um dos passos. [Em andamento]
+- Comentar o código de moveNaves,
+  - refatorar [Feito],
+  - criar funções melhores [Feito],
+  - Criar novas funções para joga.c []

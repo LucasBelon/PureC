@@ -1,4 +1,3 @@
-# include "../headers/imprimeMatriz.h"
 # include "../headers/moveNaves.h"
 
 // Passo 2: segunda função para mover algum elemento que emite lasers.
@@ -7,26 +6,56 @@
 
 int
 analisa_limites(char ** matriz, int direcao, int ja_atingiu){
-    for(int linha = 1; linha <= LINHA_MAXIMA; linha++){
+    for(int linha = 1; linha <= LINHA_MAXIMA; linha++)
+    {
         for(int coluna = 1; coluna <= COLUNA_MAXIMA; coluna++)
         {
-            if ( *(coluna+*(linha + matriz)) == NAVE )
+            // Rodamos a matriz procurando a nave para
+            // analisarmos seus índices
+            if ( *(coluna + *(linha + matriz)) == NAVE )
             {
-                if ((linha == LINHA_MAXIMA && direcao == BAIXO) ||
-                        (linha == LINHA_MAXIMA-1 && direcao == BAIXO)) 
-                    return ATINGIU_EMBAIXO;
                 if (coluna == COLUNA_MAXIMA && direcao == DIREITA) 
                     return ATINGIU_DIREITA;
+
                 if (coluna == 1 && direcao == ESQUERDA) 
                     return ATINGIU_ESQUERDA;
+
+                // Como saltamos de 2 em 2 ao se mover para baixo,
+                // preciso avaliar duas fileiras de naves.
+                if (linha == LINHA_MAXIMA && direcao == BAIXO)
+                    return ATINGIU_EMBAIXO;
             }
         }
     }
     return ja_atingiu;
 }
 
+void
+acoesDeMovimento(int coluna, int linha, int delta_X, int delta_Y, char **matriz, return_moveNaves * retorno){
+    if (*(coluna + delta_X + *( linha + delta_Y + matriz)) == CANHAO )
+    {
+        *(coluna + delta_X + *( linha + delta_Y + matriz)) = EXPLOSAO;
+        *(coluna + *( linha + matriz)) = ' ';
+        retorno->jogador_atingido = 1;
+    }
+    else if (*(coluna + *( linha + delta_Y + matriz)) == LASER_CANHAO )
+    {
+        *(coluna + delta_X + *( linha + delta_Y + matriz)) = ' ';
+        *(coluna + *( linha + matriz)) = ' ';
+        retorno->quantidade_atingidas += 1;
+    }
+    else
+    {
+        *(coluna + delta_X + *( linha + delta_Y + matriz)) = NAVE;
+        *(coluna + *( linha + matriz)) = ' ';
+    }
+}
+
 return_moveNaves
 coreMoveNaves(char **matriz, int direcao){
+    // Essa função é uma das coisas mais feias que eu já
+    // escrevi em toda a minha vida. Mas vou deixar como
+    // está por estar muito claro o que ela faz.
     return_moveNaves retorno = 
     {
         .limite_atingido = 0,
@@ -43,50 +72,14 @@ coreMoveNaves(char **matriz, int direcao){
             {
                 if (direcao == BAIXO)
                 {
-                    if (linha == LINHA_MAXIMA || linha == LINHA_MAXIMA - 1)
-                    {
-                        retorno.limite_atingido = ATINGIU_EMBAIXO;
-                        return retorno;
-                    }
-                    if (*(coluna + *( linha - direcao + matriz)) == CANHAO )
-                    {
-                        *(coluna + *( linha - direcao + matriz)) = EXPLOSAO; 
-                        *(coluna + *( linha + matriz)) = ' '; 
-                        retorno.jogador_atingido += 1;
-                    }
-                    else if (*(coluna + *( linha - direcao + matriz)) == LASER_CANHAO )
-                    {
-                        *(coluna + *( linha - direcao + matriz)) = ' '; 
-                        *(coluna + *( linha + matriz)) = ' '; 
-                        retorno.quantidade_atingidas += 1;
-                    }
-                    else
-                    {
-                        *(coluna + *( linha - direcao + matriz)) = NAVE; 
-                        *(coluna + *( linha + matriz)) = ' '; 
-                    }
+                    acoesDeMovimento(coluna, linha, 0, -direcao, matriz, &retorno);
+                    coluna++;
                 }
                 else // direcao == esquerda ou direita
                 {
-                    if (*(coluna + direcao + *( linha + matriz)) == CANHAO )
-                    {
-                        *(coluna + direcao + *( linha + matriz)) = EXPLOSAO; 
-                        *(coluna + *( linha + matriz)) = ' '; 
-                        retorno.jogador_atingido += 1;
-                    }
-                    else if ( *(coluna + direcao + *( linha + matriz)) == LASER_CANHAO )
-                    {
-                        *(coluna + direcao + *( linha + matriz)) = ' '; 
-                        *(coluna + *( linha + matriz)) = ' '; 
-                        retorno.quantidade_atingidas += 1;
-                    }
-                    else
-                    {
-                        *(coluna + direcao + *( linha + matriz)) = NAVE; 
-                        *(coluna + *( linha + matriz)) = ' '; 
-                    }
+                    acoesDeMovimento(coluna, linha, direcao, 0, matriz, &retorno);
+                    coluna++;
                 }
-                coluna++; // Para pular as naves já deslocadas para a direita.
             }
         }
     }
@@ -101,18 +94,11 @@ moveNaves(int direcao, char ** matriz){
         .limite_atingido = 0,
         .quantidade_atingidas = 0
     };
-    return_moveNaves retorno_coreMNaves = {
-        .jogador_atingido = 0,
-        .limite_atingido = 0,
-        .quantidade_atingidas = 0
-    };
+
     retorno.limite_atingido = analisa_limites(matriz, direcao, retorno.limite_atingido);
 
     if(!retorno.limite_atingido){
-        retorno_coreMNaves = coreMoveNaves(matriz, direcao);
-        retorno.jogador_atingido += retorno_coreMNaves.jogador_atingido;
-        retorno.quantidade_atingidas += retorno_coreMNaves.quantidade_atingidas;
-        retorno.limite_atingido = retorno_coreMNaves.limite_atingido;
+        retorno = coreMoveNaves(matriz, direcao);
     }
     return retorno;
 }

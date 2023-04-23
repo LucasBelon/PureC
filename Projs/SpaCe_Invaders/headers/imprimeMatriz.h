@@ -1,5 +1,6 @@
 # ifndef IMPRIMEMATRIZ_H
 # define IMPRIMEMATRIZ_H
+# include "../headers/initial_definitions.h"
 
 /* (None) -> char ** matriz
  * Cria um buffer, a ser acessado por ponteiros.

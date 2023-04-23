@@ -3,6 +3,7 @@
 # include "criaElementos.h"
 # include "moveCanhao.h"
 # include "moveNaves.h"
+# include "emiteLaserCanhao.h"
 
 typedef struct return_Joga {
     short int resultado;

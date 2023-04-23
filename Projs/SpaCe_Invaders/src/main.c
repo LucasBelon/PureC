@@ -1,5 +1,3 @@
-/* Alterar python para C */
-
 # include "../headers/joga.h"
 # include "../headers/initial_definitions.h"
 
@@ -26,25 +24,6 @@ int main(){
     return 0;
 }
 
-// Passo 3: primeira função para emitir lasers. Nesse caso, para emitir
-// um novo laser pelo canhão do jogador.
-
-
-//def emiteLaserCanhao(matriz):
-    /* (matriz) -> [int, int]
-
-          Recebe a matriz do jogo e emite um novo laser atirado pelo jogador
-          (caracter definido em LASER_CANHAO) uma posição acima da posição onde
-          o canhão se encontra.  Ao emitir o laser já tem que observar: se
-          atingiu alguma nave e se atingiu algum laser de alguma nave. Em todos
-          esses casos o laser recém-emitido já tem que sumir da matriz (ele nem
-          chega a ser impresso nesse caso) e tem que atualizar a quantidade de
-          naves atingidas e de lasers atingidos pois a função retorna esses
-          dois valores numa lista.
-
-          Retorna:
-
-          [quantidade de naves atingidas, quantidade de lasers atingidos]*/ 
 
 // Passo 3: segunda função para emitir lasers. Nesse caso para emitir
 // novos lasers pelas naves.

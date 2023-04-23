@@ -16,10 +16,10 @@ criaElementos(int quantidadeNaves, char ** matriz){
     for(ind_col_naves = 0; ind_col_naves < fiadas_naves; ++ind_col_naves)
     {
         // As linhas (posição vertical) serão decididas à força (1 e 2)
-        *((ind_col_naves * 2)+1 + *(1 + matriz)) = NAVE;
-        *((ind_col_naves * 2)+1 + *(2 + matriz)) = NAVE;
+        *( (ind_col_naves * 2) + 1 + *(1 + matriz) ) = NAVE;
+        *( (ind_col_naves * 2) + 1 + *(2 + matriz) ) = NAVE;
     }
 
     if (quantidadeNaves % 2 != 0)
-        *((ind_col_naves * 2)+1 + *(1 + matriz)) = NAVE;
+        *( (ind_col_naves * 2) + 1 + *(1 + matriz) ) = NAVE;
 }

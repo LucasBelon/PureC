@@ -9,9 +9,13 @@ typedef struct return_moveNaves {
     int quantidade_atingidas;
 } return_moveNaves;
                 
-
+/* Verifica se alguma nave está em algum limite */
 int
 analisa_limites(char ** matriz, int direcao, int ja_atingiu);
+
+void
+acoesDeMovimento(int coluna, int linha, int delta_X, int delta_Y, char **matriz, return_moveNaves * retorno);
+
 
 return_moveNaves
 coreMoveNaves(char **matriz, int direcao);

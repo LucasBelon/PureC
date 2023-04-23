@@ -1,4 +1,3 @@
-# include "../headers/initial_definitions.h"
 # include "../headers/imprimeMatriz.h"
 
 char **
@@ -7,6 +6,8 @@ criaBufferMatriz(void){
      * da matriz do jogo*/
     char** ptr_matriz = 
         malloc( sizeof(char*) * (LINHA_MAXIMA + 2) );
+    // Mais tarde fazer verificação de erros na função
+    // malloc. Sempre bom.
 
     for (int i = 0; i <= (LINHA_MAXIMA + 2); ++i)
     {
@@ -28,20 +29,20 @@ iniciaCaractereMatriz(char ** matriz){
         {
             // Todos os itens são definidos como espaços em branco
             // e depois são alterados casos especiais.
-            *(coluna + *(linha + matriz)) = ' ';
+            *( coluna + *(linha + matriz) ) = ' ';
             
             // Caso da borda superior ou inferior.
             if (linha == 0 || linha == (LINHA_MAXIMA + 1))
-                *(coluna + *(linha + matriz)) = '-';
+                *( coluna + *(linha + matriz) ) = '-';
 
             // Caso da borda lateral esquerda ou direita
             // E as quinas da matriz
             if (coluna == 0 || coluna == (COLUNA_MAXIMA + 1))
             {
-                *(coluna + *(linha + matriz)) = '|';
+                *( coluna + *(linha + matriz) ) = '|';
 
                 if (linha == 0 || linha == (LINHA_MAXIMA + 1))
-                    *(coluna + *(linha + matriz)) = '+';
+                    *( coluna + *(linha + matriz) ) = '+';
             }
         }
     }

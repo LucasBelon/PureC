@@ -62,8 +62,11 @@ return_Joga joga(int quantidadeNaves){
     // Inicialização das estruturas:
     // Retorno da função joga
     return_Joga retorno = 
-        {.pontuacao = 0, 
-         .resultado = 1};
+    {
+        .pontuacao = 0, 
+        .resultado = 1
+    };
+
     // Retorno da função moveNaves
     return_moveNaves return_moveN;
 
@@ -116,29 +119,26 @@ return_Joga joga(int quantidadeNaves){
         // Se o fim de jogo foi definido pela movimentação, o resultado
         // deve ser alterado.
         switch (General_Control.acaoDoJogador) {
-            case '[':
-            case 'E':
-            case 'e':
+            case '[': case 'E': case 'e':
                 retorno.resultado = 
                     moveCanhao(ESQUERDA, matriz);
                 if(retorno.resultado == PERDEU){
                    imprimeMatriz(matriz); 
                    return retorno;}
                 break;
-            case ']':
-            case 'D':
-            case 'd':
+            case ']': case 'D': case 'd':
                 retorno.resultado = 
                     moveCanhao(DIREITA, matriz);
                 if(retorno.resultado == PERDEU){
                    imprimeMatriz(matriz); 
                    return retorno;}
                 break;
-            case '~':
-            case 'L':
-            case 'l':
-                puts("emissão de lasers não implementadas\n");
+            /* PRECISO COLOCAR O RETORNO DA FUNÇÃO EM ALGUM LUGAR
+             * LIDAR COM ISSO MAIS TARDE */
+            case '~': case 'L': case 'l':
+                emiteLaserCanhao(matriz);
                 break;
+            /* -------------------------------------------------- */
             default:
                 puts("Nenhuma opção válida foi encontrada. Seguindo partida");
                 break;
@@ -161,6 +161,7 @@ return_Joga joga(int quantidadeNaves){
                 if (return_moveN.limite_atingido == ATINGIU_EMBAIXO)
                 {
                     retorno.resultado = PERDEU;
+                    imprimeMatriz(matriz);
                     return retorno;
                 }
 
