@@ -27,7 +27,8 @@ _proxPosic(int pos_atual, int direcao){
 
 int
 _moveu(int pos_atual, int prox_pos, char * linha_canhao){
-    if ( *(linha_canhao + prox_pos) == LASER_NAVE )
+    if ( *(linha_canhao + prox_pos) == LASER_NAVE ||
+         *(linha_canhao + prox_pos) == NAVE          )
     {
         *(linha_canhao + pos_atual) = ' ';
         *(linha_canhao + prox_pos) = EXPLOSAO;

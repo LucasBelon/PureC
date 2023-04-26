@@ -1,10 +1,20 @@
-- Criar arquivos cabeçalho e documentar bonitinho. [Em andamento]
-- Testar o Makefile (ele está dando problema pra caramba). [Feito]
-- Distribuir funções em arquivos condizentemente. [Em andamento]
+- Criar arquivos cabeçalho e documentar bonitinho.                  [Em andamento]
+
+- Testar o Makefile (ele está dando problema pra caramba).          [Feito]
+
+- Distribuir funções em arquivos condizentemente.                   [Em andamento]
+
 - Fazer com que o programa seja compilável a partir de main.c 
-  com o Makefile. Continuar em joga.c [Feito]
-- Fazer cada um dos passos. [Em andamento]
+  com o Makefile. Continuar em joga.c                               [Feito]
+
+- Fazer cada um dos passos.                                         [Em andamento]
+
 - Comentar o código de moveNaves,
-  - refatorar [Feito],
-  - criar funções melhores [Feito],
-  - Criar novas funções para joga.c []
+  - refatorar                                                       [Feito],
+  - criar funções melhores                                          [Feito],
+  - Criar novas funções para joga.c                                 [Em andamento]
+
+- Alterar a memória da matriz para se dispor como uma array de X x Y elementos.
+  Fazer de forma que tudo já feito não precise ser refeito.
+  Ou seja, uma única chamada à malloc para alocar o espaço 
+  necessário para os elementos.                                     [Feito]

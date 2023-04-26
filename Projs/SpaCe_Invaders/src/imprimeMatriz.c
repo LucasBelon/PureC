@@ -4,6 +4,7 @@ char **
 criaBufferMatriz(void){
     /* Item_MAXIMA é acrescido em 2 por conta das bordas
      * da matriz do jogo*/
+    /*
     char** ptr_matriz = 
         malloc( sizeof(char*) * (LINHA_MAXIMA + 2) );
     // Mais tarde fazer verificação de erros na função
@@ -14,7 +15,15 @@ criaBufferMatriz(void){
         *(ptr_matriz + i) = 
             malloc( sizeof(char) * (COLUNA_MAXIMA + 2) );
     }
+    */
 
+    /* Criei um único blocão de memória. Menos chamadas pra malloc*/
+    char **ptr_matriz = malloc(sizeof(char *) * (LINHA_MAXIMA + 2));
+
+    char *buffer = malloc(sizeof(char) * (LINHA_MAXIMA + 2) * (COLUNA_MAXIMA + 2));
+
+    for (int i = 0; i<=(LINHA_MAXIMA+2);++i)
+        *(ptr_matriz + i) = (buffer + (COLUNA_MAXIMA+2)*i);
     return ptr_matriz;
 }
 

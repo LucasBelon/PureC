@@ -50,7 +50,7 @@ matriz do jogo
 
 return_Joga joga(int quantidadeNaves){
     // Criação da matriz que manterá o estado do jogo.
-    char ** matriz = criaBufferMatriz();
+        char ** matriz = criaBufferMatriz();
 
     // Inserção dos elementos nulos e bordas da matriz.
     iniciaCaractereMatriz(matriz);
@@ -157,13 +157,14 @@ return_Joga joga(int quantidadeNaves){
 
             if (return_moveN.limite_atingido)
             {
-                return_moveN = moveNaves(BAIXO, matriz) ;
                 if (return_moveN.limite_atingido == ATINGIU_EMBAIXO)
                 {
                     retorno.resultado = PERDEU;
                     imprimeMatriz(matriz);
                     return retorno;
                 }
+                return_moveN = moveNaves(BAIXO, matriz) ;
+
 
                 indice_ciclico = (indice_ciclico + 1)%2;
                 General_Control.direcaoNaves = direcao_ciclica[indice_ciclico];

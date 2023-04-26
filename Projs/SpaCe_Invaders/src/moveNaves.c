@@ -22,8 +22,10 @@ analisa_limites(char ** matriz, int direcao, int ja_atingiu){
 
                 // Como saltamos de 2 em 2 ao se mover para baixo,
                 // preciso avaliar duas fileiras de naves.
-                if (linha == LINHA_MAXIMA && direcao == BAIXO)
+                if (linha == LINHA_MAXIMA || linha == LINHA_MAXIMA+1)
+                {
                     return ATINGIU_EMBAIXO;
+                }
             }
         }
     }
