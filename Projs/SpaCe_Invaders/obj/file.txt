@@ -1,0 +1,1 @@
+Se não houver nada no diretório ele não é adicionado ao repositório.

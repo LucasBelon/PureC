@@ -14,7 +14,7 @@
   - criar funções melhores                                          [Feito],
   - Criar novas funções para joga.c                                 [Em andamento]
 
-- Alterar a memória da matriz para se dispor como uma array de X x Y elementos.
+- Alterar a memória da matriz para se dispor como uma array de X*Y elementos.
   Fazer de forma que tudo já feito não precise ser refeito.
   Ou seja, uma única chamada à malloc para alocar o espaço 
   necessário para os elementos.                                     [Feito]
