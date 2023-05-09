@@ -1,3 +1,4 @@
+# include "../headers/emiteLasersNaves.h"
 /* Passo 3: segunda função para emitir lasers.
  * Nesse caso para emitir novos lasers pelas naves.
 
@@ -36,6 +37,31 @@ Obs.1: mesmo que o primeiro laser emitido atinja
 o canhão, tem que varrer a matriz **inteira** 
 para atualizar a quantidade de lasers atingidos 
 antes de retornar */ 
+
+
+typedef struct {
+
+}return_encontraNaves;
+
+
+char
+coreMoveNaves(char **matriz, int direcao){
+    char retorno;
+    // Andar da direita pra esquerda, mas de baixo
+    // pra cima.
+    for(int linha = LINHA_MAXIMA; linha >= 1; --linha)
+    {
+        for(int coluna = 1; coluna <= COLUNA_MAXIMA; ++coluna)
+        {
+            if ( *(coluna + *(linha + matriz)) == NAVE )
+            {
+                ;
+            }
+        }
+    }
+    return retorno;
+}
+
 
 typedef struct {
     int acertou_jogador;

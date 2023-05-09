@@ -1,0 +1,17 @@
+Criar um arquivo que faça algo do tipo
+#ifdef versao_com_int
+typedef numero int
+#endif
+
+#ifdef versao_com_float
+typedef numero float
+#endif
+
+typedef struct {
+    numero * proximo;
+    numero valor;
+    } numero_STRUCT;
+
+Assim posso gerar diferentes funcoes com o mesmo
+código compilando com
+gcc -Dversao_com_int 
