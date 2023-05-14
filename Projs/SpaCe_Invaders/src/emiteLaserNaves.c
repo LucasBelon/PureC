@@ -1,4 +1,4 @@
-# include "../headers/emiteLasersNaves.h"
+# include "../headers/emiteLaserNaves.h"
 /* Passo 3: segunda função para emitir lasers.
  * Nesse caso para emitir novos lasers pelas naves.
 
