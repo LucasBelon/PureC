@@ -4,6 +4,8 @@
 # include "moveCanhao.h"
 # include "moveNaves.h"
 # include "emiteLaserCanhao.h"
+# include "emiteLaserNaves.h"
+
 
 typedef struct return_Joga {
     short int resultado;

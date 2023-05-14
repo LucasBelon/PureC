@@ -147,7 +147,15 @@ return_Joga joga(int quantidadeNaves){
         // - tiros anteriores das naves se movem
 
         // - naves atiram (de acordo com o sorteio de números aleatórios)
-
+        retorno_emiteLaserNaves return_emiteLaserNaves;
+        return_emiteLaserNaves = emiteLasersNaves(matriz);
+        if (return_emiteLaserNaves.acertou_jogador == 1){
+            retorno.resultado = PERDEU;
+            imprimeMatriz(matriz);
+            return retorno;
+        }
+        else
+            retorno.pontuacao += return_emiteLaserNaves.colisao_de_lasers*PONTOS_ACERTOU_LASER;
 
         // - naves se movem (de acordo com a rodada - se move apenas nas pares:
         //   direita, baixo, esquerda, baixo, direita, etc...

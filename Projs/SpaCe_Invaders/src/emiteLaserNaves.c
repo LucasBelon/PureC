@@ -1,79 +1,60 @@
 # include "../headers/emiteLaserNaves.h"
-/* Passo 3: segunda função para emitir lasers.
- * Nesse caso para emitir novos lasers pelas naves.
-
-def emiteLasersNaves(matriz):
-(matriz) -> [bool, int]
-
-Recebe a matriz do jogo e emite lasers pelas 
-naves (caracter definido em LASER_NAVE) uma 
-posição abaixo da posição da nave que emitiu o 
-laser. Ao emitir o laser já tem que observar: se 
-atingiu o canhão do jogador (caso no qual tem 
-que imprimir um EXPLOSAO no lugar) e se atingiu 
-algum laser do jogador. Em todos esses casos, o 
-laser recém-emitido já tem que sumir da matriz (
-ele nem chega a ser impresso nesse caso). No 
-primeiro caso tem que informar que o canhão do 
-jogador foi atingido e no segundo caso tem que 
-atualizar a quantidade de lasers atingidos pois 
-a função retorna esses dois valores numa lista.
-
-Para definir se uma nave deve ou não emitir laser,
-sorteie um número aleatório entre 0 e 1 (use a 
-função random.randint para isso), inclusive. Se 
-o resultado for 0, não emita o laser para aquela 
-nave.  Se o resultado for 1, emita. Essa 
-verificação só deve ser feita para aquelas naves 
-que não possuem nenhuma outra imediatamente 
-abaixo e sempre na ordem da esquerda para a 
-direita da matriz.
-
-Retorna:
-[True se canhão do jogador foi atingido (False 
-se não), quantidade de lasers atingidos]
-
-Obs.1: mesmo que o primeiro laser emitido atinja 
-o canhão, tem que varrer a matriz **inteira** 
-para atualizar a quantidade de lasers atingidos 
-antes de retornar */ 
 
 
-typedef struct {
-
-}return_encontraNaves;
-
-
-char
-coreMoveNaves(char **matriz, int direcao){
-    char retorno;
-    // Andar da direita pra esquerda, mas de baixo
-    // pra cima.
-    for(int linha = LINHA_MAXIMA; linha >= 1; --linha)
-    {
-        for(int coluna = 1; coluna <= COLUNA_MAXIMA; ++coluna)
-        {
-            if ( *(coluna + *(linha + matriz)) == NAVE )
-            {
-                ;
-            }
+retorno_emiteLaserNaves
+Tenta_Atirar(int linha, int coluna, char **matriz){
+    retorno_emiteLaserNaves retorno = {
+        .acertou_jogador = 0,
+        .colisao_de_lasers = 0
+    };
+    if (rand()%2){ // Verificando se deve ou não atirar
+        if (*(coluna + *(linha + 1 + matriz)) == LASER_CANHAO){
+            *(coluna + *(linha + 1 + matriz)) = ' ';
+            retorno.colisao_de_lasers = 1;
+            return retorno;
+        }
+        else if (*(coluna + *(linha + 1 + matriz )) == CANHAO){
+            *(coluna + *(linha + 1 + matriz )) = EXPLOSAO;
+            retorno.acertou_jogador = 1;
+            return retorno;
+        }
+        else {
+            *(coluna + *(linha + 1 + matriz )) = LASER_NAVE;
+            return retorno;
         }
     }
     return retorno;
 }
 
 
-typedef struct {
-    int acertou_jogador;
-    int colisao_de_lasers;
-} retorno_emiteLaserNaves;
-
 
 retorno_emiteLaserNaves
 emiteLasersNaves(char **matriz){
-    retorno_emiteLaserNaves retorno;
-    retorno.acertou_jogador = 0;
-
-
+    retorno_emiteLaserNaves 
+        retorno = {.colisao_de_lasers = 0, .acertou_jogador = 0},
+        tenta_atirar
+    ;
+    // Andar da esquerda pra direita, mas de baixo
+    // pra cima.
+    for(int linha = LINHA_MAXIMA; linha >= 1; --linha)
+    {
+        for(int coluna = 1; coluna <= COLUNA_MAXIMA; ++coluna)
+        {
+            if ( *(coluna + *(linha + matriz)) == NAVE ) // Se eu encontrar uma nave
+            {
+                if (!(linha == LINHA_MAXIMA || linha == LINHA_MAXIMA+1)){ // Numa posição válida e
+                    if ( !(*(coluna + *(linha + 1 + matriz)) == NAVE ) ) { // Se não houver uma nave na linha abaixo
+                        // Tenta atirar.
+                        // Preciso passar a posição atual, a matriz, e o resto a função que se vire.
+                        tenta_atirar = Tenta_Atirar(linha, coluna, matriz);
+                        // Preciso adicionar uma coisa por vez ao retorno e depois entregar tudo mastigado pra função principal.
+                        retorno.acertou_jogador = tenta_atirar.acertou_jogador;
+                        retorno.colisao_de_lasers += tenta_atirar.colisao_de_lasers;
+                    }
+                }
+            }
+        }
+    }
     return retorno;
 }
+
