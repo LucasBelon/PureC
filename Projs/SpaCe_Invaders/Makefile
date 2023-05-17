@@ -85,6 +85,7 @@ install_dependencies:
 clean: bin obj
 	rm -f $(wildcard bin/*)
 	rm -f $(wildcard obj/*.o)
+	touch bin/bin obj/obj
 
 exe: $(OUTPUT)
 	./$(OUTPUT)
