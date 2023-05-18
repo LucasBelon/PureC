@@ -30,10 +30,11 @@ Tenta_Atirar(int linha, int coluna, char **matriz){
 
 retorno_emiteLaserNaves
 emiteLasersNaves(char **matriz){
+
     retorno_emiteLaserNaves 
         retorno = {.colisao_de_lasers = 0, .acertou_jogador = 0},
-        tenta_atirar
-    ;
+        tenta_atirar;
+
     // Andar da esquerda pra direita, mas de baixo
     // pra cima.
     for(int linha = LINHA_MAXIMA; linha >= 1; --linha)

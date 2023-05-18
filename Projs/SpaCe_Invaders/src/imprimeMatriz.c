@@ -4,7 +4,9 @@ char **
 criaBufferMatriz(void){
     /* Item_MAXIMA é acrescido em 2 por conta das bordas
      * da matriz do jogo*/
+
     /*
+     * Versão antiga, com múltiplas chamadas à malloc:
     char** ptr_matriz = 
         malloc( sizeof(char*) * (LINHA_MAXIMA + 2) );
     // Mais tarde fazer verificação de erros na função
@@ -17,14 +19,30 @@ criaBufferMatriz(void){
     }
     */
 
-    /* Criei um único blocão de memória. Menos chamadas pra malloc*/
+    /* Criei um único blocão de memória. Menos chamadas pra malloc.
+     * A lógica é a seguinte. Preciso de uma lista de ponteiros,
+     * e cada um apontará para uma linha. Na verdade, esses diferentes
+     * ponteiros irão apontar para uma certa posição. A existência
+     * de colunas é apenas uma ilusão.*/
     char **ptr_matriz = malloc(sizeof(char *) * (LINHA_MAXIMA + 2));
 
+    /* Crio uma grande array, com tamanho suficiente e compatível com 
+     * a matriz que desejo utilizar.*/
     char *buffer = malloc(sizeof(char) * (LINHA_MAXIMA + 2) * (COLUNA_MAXIMA + 2));
 
+    /* Associo a cada COLUNA_MAXIMA número de elementos, um ponteiro. Isso irá 
+     * criar a ilusão de que tenho linhas individuais, quando na verdade, elas estão
+     * todas sequencialmente dispostas.*/
     for (int i = 0; i<=(LINHA_MAXIMA+2);++i)
         *(ptr_matriz + i) = (buffer + (COLUNA_MAXIMA+2)*i);
     return ptr_matriz;
+    /* Essa forma de disposição de memória pode causar problemas de acesso indevido
+     * já que é possível acessar elementos da linha 2 a partir do ponteiro da linha 1,
+     * bastando apenas pedir o próximo elemento da memória.
+     * Isso também causa a funcionalidade de podermos acessar a matriz utilizando
+     * multiplicações simples de COLUNA_MAXIMA vezes linha desejada.
+     * Se COLUNA MAXIMA é 3, então 3 x 3 deve nos dar o primeiro elemento da quarta
+     * linha (ou o último da terceira?).*/
 }
 
 

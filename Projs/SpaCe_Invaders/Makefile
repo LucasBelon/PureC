@@ -11,7 +11,7 @@
 # Variáveis e configurações rápidas:
 #
 # Compilador C
-CC := gcc # gcc # default: "cc"
+CC := clang # clang # gcc # default: "cc"
 
 # Talvez eu inclua mais tarde uma opção
 # para compilar e usar com o DBG.
