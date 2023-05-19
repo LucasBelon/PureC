@@ -40,7 +40,7 @@ acoesDeMovimento(int coluna, int linha, int delta_X, int delta_Y, char **matriz,
         *(coluna + *( linha + matriz)) = ' ';
         retorno->jogador_atingido = 1;
     }
-    else if (*(coluna + *( linha + delta_Y + matriz)) == LASER_CANHAO )
+    else if (*(coluna + delta_X + *( linha + delta_Y + matriz)) == LASER_CANHAO )
     {
         *(coluna + delta_X + *( linha + delta_Y + matriz)) = ' ';
         *(coluna + *( linha + matriz)) = ' ';

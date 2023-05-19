@@ -1,53 +1,5 @@
 # include "../headers/joga.h"
 
-/* int -> [bool, int]
-
-Recebe um inteiro que representa a quantidade de naves, implementa de
-fato o jogo de acordo com as regras do enunciado e retorna uma lista
-com o resultado do jogo:
-
-[resultado, pontuacao]
-
-resultado é uma variável booleana que vale True se o jogador venceu
-ou False se o jogador perdeu.
-
-Para o jogador vencer:
-- O jogador precisa destruir todas as naves
-
-Para o jogador perder:
-- O jogador precisa ser atingido pelo tiro de alguma nave
-- Ou alguma nave precisa alcançar a linha LINHA_MAXIMA da matriz do
-jogo
-- Ou o jogador precisa ser atingido por alguma nave
-
-pontuacao é uma variável inteira que armazena a quantidade de pontos
-que o jogador fez. A pontuação é definida da seguinte forma:
-
-+PONTOS_ACERTOU_LASER pontos se o jogador consegue acertar 1 tiro em
-alguma nave
-+PONTOS_ACERTOU_NAVE  pontos se o jogador consegue acertar 1 tiro em
-algum tiro de alguma nave
-
-A ordem das ações no jogo é:
-- tiros anteriores do jogador se movem
-- imprime o estado do jogo na tela
-- usuário informa se quer atirar ou se mover e a ação escolhida é
-realizada
-- tiros anteriores das naves se movem
-- naves atiram (de acordo com o sorteio de números aleatórios)
-- naves se movem (de acordo com a rodada - se move apenas nas pares:
-direita, baixo, esquerda, baixo, direita, etc...
-
-Dentro de cada função de movimentação e de emissão de lasers é
-necessário verificar se houve colisões para aumentar a pontuação,
-para terminar o jogo ou para limpar a tela removendo os elementos que
-sumiram por terem passado do limite da tela (tiros que subiram demais
-e tiros que desceram demais)
-
-Sempre que o jogo terminar, deve imprimir o status final da
-matriz do jogo
-*/ 
-
 return_Joga joga(int quantidadeNaves){
     // Criação da matriz que manterá o estado do jogo.
         char ** matriz = criaBufferMatriz();
@@ -69,6 +21,12 @@ return_Joga joga(int quantidadeNaves){
 
     // Retorno da função moveNaves
     return_moveNaves return_moveN;
+
+    // Retorno da função emiteLaserCanhao
+    retorno_emiteLaserCanhao return_emiteLaserCanhao;
+
+    // Retorno da função emiteLaserNaves
+    retorno_emiteLaserNaves return_emiteLaserNaves;
 
     // Informações Gerais para controle do jogo:
     Controle_Do_Jogo General_Control = 
@@ -94,10 +52,15 @@ return_Joga joga(int quantidadeNaves){
         // enunciado e no docstring desta função acima.
 
         /* A ordem das ações no jogo é:*/
-        // - tiros anteriores do jogador se movem
+        // +-------------------------------------+
+        //  tiros anteriores do jogador se movem
 
-        // - imprime o estado do jogo na tela
+        // +-------------------------------------+
+        //  imprime o estado do jogo na tela
         imprimeMatriz(matriz);
+
+
+        // +-------------------------------------------+
         // - usuário informa se quer atirar ou se mover
         //  e a ação escolhida é realizada
         printf("Escolha uma ação:\n\
@@ -124,30 +87,32 @@ return_Joga joga(int quantidadeNaves){
                     moveCanhao(ESQUERDA, matriz);
                 if(retorno.resultado == PERDEU){
                    imprimeMatriz(matriz); 
-                   return retorno;}
+                   return retorno;
+                }
                 break;
             case ']': case 'D': case 'd':
                 retorno.resultado = 
                     moveCanhao(DIREITA, matriz);
                 if(retorno.resultado == PERDEU){
                    imprimeMatriz(matriz); 
-                   return retorno;}
+                   return retorno;
+                }
                 break;
-            /* PRECISO COLOCAR O RETORNO DA FUNÇÃO EM ALGUM LUGAR
-             * LIDAR COM ISSO MAIS TARDE */
             case '~': case 'L': case 'l':
-                emiteLaserCanhao(matriz);
+                return_emiteLaserCanhao = emiteLaserCanhao(matriz);
+                retorno.pontuacao += PONTOS_ACERTOU_NAVE*return_emiteLaserCanhao.navesAtingidas
+                    + PONTOS_ACERTOU_LASER*return_emiteLaserCanhao.lasersAtingidos;
                 break;
-            /* -------------------------------------------------- */
             default:
                 puts("Nenhuma opção válida foi encontrada. Seguindo partida");
                 break;
         }
 
+        // +-------------------------------------------+
         // - tiros anteriores das naves se movem
 
+        // +--------------------------------------------------------------+
         // - naves atiram (de acordo com o sorteio de números aleatórios)
-        retorno_emiteLaserNaves return_emiteLaserNaves;
         return_emiteLaserNaves = emiteLasersNaves(matriz);
         if (return_emiteLaserNaves.acertou_jogador == 1){
             retorno.resultado = PERDEU;
@@ -157,6 +122,7 @@ return_Joga joga(int quantidadeNaves){
         else
             retorno.pontuacao += return_emiteLaserNaves.colisao_de_lasers*PONTOS_ACERTOU_LASER;
 
+        // +--------------------------------------------------------------------+
         // - naves se movem (de acordo com a rodada - se move apenas nas pares:
         //   direita, baixo, esquerda, baixo, direita, etc...
         if (General_Control.rodada%2)

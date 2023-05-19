@@ -11,8 +11,7 @@ int main(){
     */
     int quantidadeNaves_MAX = COLUNA_MAXIMA - 3;
 
-    return_Joga resultado;
-    resultado = joga(quantidadeNaves_MAX);
+    return_Joga resultado = joga(quantidadeNaves_MAX);
 
     if (resultado.resultado == VENCEU)
         printf(">>> CONGRATULATIONS! Você venceu!\n");
