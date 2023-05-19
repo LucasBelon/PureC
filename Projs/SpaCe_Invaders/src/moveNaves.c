@@ -34,7 +34,10 @@ analisa_limites(char ** matriz, int direcao, int ja_atingiu){
 
 void
 acoesDeMovimento(int coluna, int linha, int delta_X, int delta_Y, char **matriz, return_moveNaves * retorno){
-    if (*(coluna + delta_X + *( linha + delta_Y + matriz)) == CANHAO )
+    if (linha + delta_Y == LINHA_MAXIMA){
+        *(coluna + *( linha + matriz)) = ' ';
+    }
+    else if (*(coluna + delta_X + *( linha + delta_Y + matriz)) == CANHAO )
     {
         *(coluna + delta_X + *( linha + delta_Y + matriz)) = EXPLOSAO;
         *(coluna + *( linha + matriz)) = ' ';

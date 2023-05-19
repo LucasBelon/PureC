@@ -5,6 +5,7 @@
 # include "moveNaves.h"
 # include "emiteLaserCanhao.h"
 # include "emiteLaserNaves.h"
+# include "moveLaserCanhao.h"
 
 
 typedef struct return_Joga {

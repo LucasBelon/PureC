@@ -28,6 +28,9 @@ return_Joga joga(int quantidadeNaves){
     // Retorno da função emiteLaserNaves
     retorno_emiteLaserNaves return_emiteLaserNaves;
 
+    // Retorno da função moveLaserCanhao
+    retorno_MLCanhao return_MLCanhao;
+
     // Informações Gerais para controle do jogo:
     Controle_Do_Jogo General_Control = 
         {.acaoDoJogador = 0,
@@ -54,6 +57,9 @@ return_Joga joga(int quantidadeNaves){
         /* A ordem das ações no jogo é:*/
         // +-------------------------------------+
         //  tiros anteriores do jogador se movem
+        return_MLCanhao = moveLasersCanhao(matriz);
+        retorno.pontuacao += return_MLCanhao.lasers_Atingidos*PONTOS_ACERTOU_LASER
+            + return_MLCanhao.naves_Atingidas*PONTOS_ACERTOU_NAVE;
 
         // +-------------------------------------+
         //  imprime o estado do jogo na tela
