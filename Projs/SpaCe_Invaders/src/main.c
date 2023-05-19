@@ -4,7 +4,7 @@
 int main(){
     srand(SEMENTE);
 
-    printf("Digite o numero de naves (inteiro maior que 1 e menor que %d): ", COLUNA_MAXIMA);
+    printf("Digite o numero de naves (inteiro maior que 1 e menor que %d): ", COLUNA_MAXIMA/2);
     fflush(NULL);
     int quantidadeNaves;
     scanf(" %d",&quantidadeNaves);

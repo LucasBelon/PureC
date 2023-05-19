@@ -20,3 +20,4 @@
   necessário para os elementos.                                     [Feito]
 
 - Resolver Bugs                                                     [A fazer]
+  - Naves sempre aparecem todas
