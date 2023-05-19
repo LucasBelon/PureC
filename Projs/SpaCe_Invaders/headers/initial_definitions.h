@@ -38,5 +38,6 @@
 # define ATINGIU_ESQUERDA -1
 # define ATINGIU_DIREITA 1
 # define ATINGIU_EMBAIXO -2
+# define NAO_TEMOS_NAVES 2
 
 # endif // !InitialConsiderations_H

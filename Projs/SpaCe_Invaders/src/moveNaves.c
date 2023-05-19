@@ -6,6 +6,7 @@
 
 int
 analisa_limites(char ** matriz, int direcao, int ja_atingiu){
+    char flag = 0; // Flag para saber se ainda temos naves na tela.
     for(int linha = 1; linha <= LINHA_MAXIMA; linha++)
     {
         for(int coluna = 1; coluna <= COLUNA_MAXIMA; coluna++)
@@ -14,6 +15,7 @@ analisa_limites(char ** matriz, int direcao, int ja_atingiu){
             // analisarmos seus índices
             if ( *(coluna + *(linha + matriz)) == NAVE )
             {
+                flag = 1;
                 if (coluna == COLUNA_MAXIMA && direcao == DIREITA) 
                     return ATINGIU_DIREITA;
 
@@ -29,6 +31,8 @@ analisa_limites(char ** matriz, int direcao, int ja_atingiu){
             }
         }
     }
+    if (flag == 0)
+        return NAO_TEMOS_NAVES;
     return ja_atingiu;
 }
 

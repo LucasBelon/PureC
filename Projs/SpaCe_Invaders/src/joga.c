@@ -31,6 +31,9 @@ return_Joga joga(int quantidadeNaves){
     // Retorno da função moveLaserCanhao
     retorno_MLCanhao return_MLCanhao;
 
+    // Retorno da função moveLaserCanhao
+    retorno_MLNaves return_MLNaves;
+
     // Informações Gerais para controle do jogo:
     Controle_Do_Jogo General_Control = 
         {.acaoDoJogador = 0,
@@ -116,6 +119,15 @@ return_Joga joga(int quantidadeNaves){
 
         // +-------------------------------------------+
         // - tiros anteriores das naves se movem
+        return_MLNaves = moveLasersNaves(matriz);
+        retorno.pontuacao += return_MLCanhao.lasers_Atingidos*PONTOS_ACERTOU_LASER
+            + return_MLCanhao.naves_Atingidas*PONTOS_ACERTOU_NAVE;
+        if (return_MLNaves.Canhao_Atingido > 0)
+        {
+            retorno.resultado = PERDEU;
+            imprimeMatriz(matriz);
+            return retorno;
+        }
 
         // +--------------------------------------------------------------+
         // - naves atiram (de acordo com o sorteio de números aleatórios)
@@ -137,7 +149,13 @@ return_Joga joga(int quantidadeNaves){
 
             if (return_moveN.limite_atingido)
             {
-                if (return_moveN.limite_atingido == ATINGIU_EMBAIXO)
+                if (return_moveN.limite_atingido == NAO_TEMOS_NAVES)
+                {
+                    retorno.resultado = VENCEU;
+                    imprimeMatriz(matriz);
+                    return retorno;
+                }
+                else if (return_moveN.limite_atingido == ATINGIU_EMBAIXO)
                 {
                     retorno.resultado = PERDEU;
                     imprimeMatriz(matriz);

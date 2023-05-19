@@ -31,9 +31,7 @@ moveLasersCanhao(char ** matriz){
         .naves_Atingidas = 0,
         .lasers_Atingidos = 0
     };
-    // Andar da direita pra esquerda, mas de baixo
-    // pra cima.
-    for(int linha = LINHA_MAXIMA; linha >= 1; --linha)
+    for(int linha = 1; linha <= LINHA_MAXIMA; ++linha)
     {
         for(int coluna = 1; coluna <= COLUNA_MAXIMA; ++coluna)
         {

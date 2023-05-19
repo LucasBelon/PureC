@@ -18,3 +18,5 @@
   Fazer de forma que tudo já feito não precise ser refeito.
   Ou seja, uma única chamada à malloc para alocar o espaço 
   necessário para os elementos.                                     [Feito]
+
+- Resolver Bugs                                                     [A fazer]
