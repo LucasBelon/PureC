@@ -9,7 +9,7 @@ return_Joga joga(int quantidadeNaves){
 
     // Adicionar interface de usuário aqui.
     // Inserção dos inimigos e do jogador na matriz.
-    criaElementos(COLUNA_MAXIMA - 3 , matriz);
+    criaElementos(quantidadeNaves , matriz);
 
     // Inicialização das estruturas:
     // Retorno da função joga
@@ -74,7 +74,10 @@ return_Joga joga(int quantidadeNaves){
         //  e a ação escolhida é realizada
         printf("Escolha uma ação:\n\
               \rMover:  [e] Esquerda | [d] Direita\n\
-              \rAtirar: [l] Laser\n");
+              \rAtirar: [l] Laser\n\
+              \rOpções Alternativas:\n\
+              \rMover:  \"[\" Esquerda | \"]\" Direita\n\
+              \rAtirar: \"~\" Laser\n");
 
         // Preciso esvaziar o buffer do stdout
         // para minha opção ser mostrada na tela.
@@ -155,7 +158,7 @@ return_Joga joga(int quantidadeNaves){
                     imprimeMatriz(matriz);
                     return retorno;
                 }
-                else if (return_moveN.limite_atingido == ATINGIU_EMBAIXO)
+                if (return_moveN.limite_atingido == ATINGIU_EMBAIXO)
                 {
                     retorno.resultado = PERDEU;
                     imprimeMatriz(matriz);

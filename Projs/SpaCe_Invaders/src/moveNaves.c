@@ -1,4 +1,5 @@
 # include "../headers/moveNaves.h"
+# include "../headers/imprimeMatriz.h"
 
 // Passo 2: segunda função para mover algum elemento que emite lasers.
 // Nesse caso para mover as naves.
@@ -24,7 +25,9 @@ analisa_limites(char ** matriz, int direcao, int ja_atingiu){
 
                 // Como saltamos de 2 em 2 ao se mover para baixo,
                 // preciso avaliar duas fileiras de naves.
-                if (linha == LINHA_MAXIMA || linha == LINHA_MAXIMA+1)
+                if (linha == LINHA_MAXIMA - 1 || 
+                        linha == LINHA_MAXIMA || 
+                        linha == LINHA_MAXIMA + 1)
                 {
                     return ATINGIU_EMBAIXO;
                 }

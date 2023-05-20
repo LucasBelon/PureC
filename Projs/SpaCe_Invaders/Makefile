@@ -44,7 +44,8 @@ ARQUIVOS_FONTE = $(wildcard $(SRC)/*.c)
 
 OBJ := obj
 # Nome dos arquivos objeto
-ARQUIVOS_OBJETO := $(patsubst $(SRC)/%.c, $(OBJ)/%.o, $(ARQUIVOS_FONTE))
+ARQUIVOS_OBJETO := $(patsubst $(SRC)/%.c, \
+				   $(OBJ)/%.o, $(ARQUIVOS_FONTE))
 
 # Bibliotecas não padrão que precisam ser
 # instaladas. Apenas um exemplo, favor não
