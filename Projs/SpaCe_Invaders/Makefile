@@ -30,7 +30,7 @@ LDFLAGS := #\
 		  -lcurses
 
 # Flags do Pré-Processador (manipulador de macros)
-CPPFLAGS :=
+CPPFLAGS := # -D[efinir identificador]
 
 # Diretório de binários
 BIN := bin
