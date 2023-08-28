@@ -1,3 +1,5 @@
 Criar um readme para cada pasta resumindo
 o que cada arquivo estuda. Como um índice
 que resume o conteúdo.
+
+else while????
